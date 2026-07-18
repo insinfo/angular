@@ -3,12 +3,12 @@ repository: https://github.com/angulardart-community/angular
 
 packages:
    - "**"
-  # - ngast
-  # - ngcompiler
-  # - ngdart
-  # - ngforms
-  # - ngrouter
-  # - ngtest
+  # - ng_ast
+  # - ng_compiler
+  # - ng_core
+  # - ng_forms
+  # - ng_router
+  # - ng_test
 
 ignore:
   # - _tests

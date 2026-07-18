@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
-import 'package:ngdart/angular.dart';
-import 'package:ngtest/angular_test.dart';
+import 'package:ng_core/angular.dart';
+import 'package:ng_test/angular_test.dart';
 
 import 'additional_expression_lib.dart' as lib;
 import 'additional_expression_test.template.dart' as ng;

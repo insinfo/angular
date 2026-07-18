@@ -3,25 +3,25 @@
 // **************************************************************************
 
 import 'generic_directives.dart';
-import 'package:ngdart/src/core/linker/views/component_view.dart' as import0;
+import 'package:ng_core/src/core/linker/views/component_view.dart' as import0;
 import 'generic_directives.dart' as import1;
-import 'package:ngdart/src/core/linker/style_encapsulation.dart' as import2;
-import 'package:ngdart/src/core/linker/views/view.dart' as import3;
-import 'package:ngdart/src/meta/change_detection_constants.dart' as import4;
-import 'package:ngdart/src/utilities.dart' as import5;
+import 'package:ng_core/src/core/linker/style_encapsulation.dart' as import2;
+import 'package:ng_core/src/core/linker/views/view.dart' as import3;
+import 'package:ng_core/src/meta/change_detection_constants.dart' as import4;
+import 'package:ng_core/src/utilities.dart' as import5;
 import 'dart:html' as import6;
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/linker/views/host_view.dart' as import8;
-import 'package:ngdart/src/runtime/check_binding.dart' as import9;
-import 'package:ngdart/src/devtools.dart' as import10;
+import 'package:ng_core/angular.dart';
+import 'package:ng_core/src/core/linker/views/host_view.dart' as import8;
+import 'package:ng_core/src/runtime/check_binding.dart' as import9;
+import 'package:ng_core/src/devtools.dart' as import10;
 import 'dart:core';
-import 'package:ngdart/src/core/linker/view_container.dart';
-import 'package:ngdart/src/common/directives/ng_for.dart' as import13;
-import 'package:ngdart/src/runtime/dom_helpers.dart' as import14;
-import 'package:ngdart/src/core/linker/template_ref.dart';
-import 'package:ngdart/src/core/linker/views/embedded_view.dart' as import16;
-import 'package:ngdart/src/core/linker/views/render_view.dart' as import17;
-import 'package:ngdart/src/core/change_detection/directive_change_detector.dart' as import18;
+import 'package:ng_core/src/core/linker/view_container.dart';
+import 'package:ng_core/src/common/directives/ng_for.dart' as import13;
+import 'package:ng_core/src/runtime/dom_helpers.dart' as import14;
+import 'package:ng_core/src/core/linker/template_ref.dart';
+import 'package:ng_core/src/core/linker/views/embedded_view.dart' as import16;
+import 'package:ng_core/src/core/linker/views/render_view.dart' as import17;
+import 'package:ng_core/src/core/change_detection/directive_change_detector.dart' as import18;
 
 final List<Object> styles$GoldenComponent = const [];
 

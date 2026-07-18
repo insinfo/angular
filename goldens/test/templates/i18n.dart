@@ -1,4 +1,4 @@
-import 'package:ngdart/angular.dart';
+import 'package:ng_core/angular.dart';
 
 import 'i18n.template.dart' as ng;
 

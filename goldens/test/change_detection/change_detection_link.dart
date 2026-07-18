@@ -2,8 +2,8 @@
 library golden;
 
 import 'package:js/js.dart';
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/experimental.dart';
+import 'package:ng_core/angular.dart';
+import 'package:ng_core/experimental.dart';
 
 import 'change_detection_link.template.dart' as ng;
 

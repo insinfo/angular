@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:ngdart/angular.dart';
+import 'package:ng_core/angular.dart';
 
 void main() {
   group('DatePipe', () {

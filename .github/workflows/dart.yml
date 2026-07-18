@@ -1,16 +1,16 @@
-# CI for the angular8 branch of the insinfo/angular fork.
+# CI for the angular9 branch of the insinfo/angular fork.
 #
-# The package sources are byte-identical to the versions published on pub.dev
-# (see README.md), so this workflow only verifies that everything still
-# analyzes, builds and passes its test suites on the pinned Dart SDK.
+# This branch renames the packages to the ng_* family (ng_core, ng_forms,
+# ng_router, ng_test, ng_ast, ng_compiler) for stable publishing; the code
+# itself matches the angular8 branch (pub.dev-faithful sources).
 name: Dart CI
 on:
   push:
     branches:
-      - angular8
+      - angular9
   pull_request:
     branches:
-      - angular8
+      - angular9
 defaults:
   run:
     shell: bash
@@ -36,7 +36,7 @@ jobs:
       # not modify the published code, only errors fail the build.
       - name: Analyze packages
         run: |
-          for pkg in ngast ngcompiler ngdart ngforms ngrouter ngtest; do
+          for pkg in ng_ast ng_compiler ng_core ng_forms ng_router ng_test; do
             echo "::group::dart analyze $pkg"
             (cd $pkg && dart analyze --no-fatal-warnings)
             echo "::endgroup::"
@@ -50,19 +50,19 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - package: ngast
+          - package: ng_ast
             command: dart run test -P ci
-          - package: ngcompiler
+          - package: ng_compiler
             command: dart run test -P ci
           # --delete-conflicting-outputs: the pub.dev-published packages ship
           # their generated *.mocks.dart files, which build_runner detects as
           # pre-existing outputs and asks permission to replace (impossible in
           # a non-interactive runner, exit code 78).
-          - package: ngforms
+          - package: ng_forms
             command: dart run build_runner test --delete-conflicting-outputs --fail-on-severe -- -P ci
-          - package: ngrouter
+          - package: ng_router
             command: dart run build_runner test --delete-conflicting-outputs --fail-on-severe -- -P ci
-          - package: ngtest
+          - package: ng_test
             command: dart run build_runner test --delete-conflicting-outputs --fail-on-severe -- -P ci
     steps:
       - name: Setup Dart SDK

@@ -4,9 +4,9 @@ import 'dart:isolate';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:build/build.dart';
 import 'package:build_test/build_test.dart';
-import 'package:ngcompiler/v1/src/compiler/template_compiler.dart';
-import 'package:ngcompiler/v1/src/source_gen/template_compiler/component_visitor_exceptions.dart';
-import 'package:ngcompiler/v1/src/source_gen/template_compiler/find_components.dart';
+import 'package:ng_compiler/v1/src/compiler/template_compiler.dart';
+import 'package:ng_compiler/v1/src/source_gen/template_compiler/component_visitor_exceptions.dart';
+import 'package:ng_compiler/v1/src/source_gen/template_compiler/find_components.dart';
 import 'package:package_config/package_config.dart';
 import 'package:source_gen/source_gen.dart';
 
@@ -40,7 +40,7 @@ Future<NormalizedComponentWithViewDirectives> resolveAndFindComponent(
   String source,
 ) async {
   final library = await resolve(
-      "import 'package:ngdart/angular.dart';"
+      "import 'package:ng_core/angular.dart';"
       '$source',
       await _packageConfigFuture);
   final artifacts = findComponentsAndDirectives(

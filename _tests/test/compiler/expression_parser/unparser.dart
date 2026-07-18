@@ -1,4 +1,4 @@
-import 'package:ngcompiler/v1/src/compiler/expression_parser/ast.dart';
+import 'package:ng_compiler/v1/src/compiler/expression_parser/ast.dart';
 
 class Unparser implements AstVisitor<void, void> {
   static final _quoteRegExp = RegExp(r'"');

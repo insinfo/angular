@@ -1,7 +1,7 @@
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/visitor.dart';
-import 'package:ngcompiler/v1/src/compiler/analyzed_class.dart';
-import 'package:ngcompiler/v1/src/compiler/expression_parser/ast.dart';
+import 'package:ng_compiler/v1/src/compiler/analyzed_class.dart';
+import 'package:ng_compiler/v1/src/compiler/expression_parser/ast.dart';
 import 'package:test/test.dart';
 
 import '../resolve_util.dart';

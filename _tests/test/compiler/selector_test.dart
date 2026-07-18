@@ -1,6 +1,6 @@
 import 'package:_tests/test_util.dart';
-import 'package:ngcompiler/v1/src/compiler/attribute_matcher.dart';
-import 'package:ngcompiler/v1/src/compiler/selector.dart'
+import 'package:ng_compiler/v1/src/compiler/attribute_matcher.dart';
+import 'package:ng_compiler/v1/src/compiler/selector.dart'
     show CssSelector, SelectorMatcher;
 import 'package:test/test.dart';
 

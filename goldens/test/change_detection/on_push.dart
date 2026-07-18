@@ -2,7 +2,7 @@
 library golden;
 
 import 'package:js/js.dart';
-import 'package:ngdart/angular.dart';
+import 'package:ng_core/angular.dart';
 
 import 'on_push.template.dart' as ng;
 

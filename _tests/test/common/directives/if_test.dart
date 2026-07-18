@@ -1,7 +1,7 @@
 import 'package:test/test.dart';
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/runtime/check_binding.dart';
-import 'package:ngtest/angular_test.dart';
+import 'package:ng_core/angular.dart';
+import 'package:ng_core/src/runtime/check_binding.dart';
+import 'package:ng_test/angular_test.dart';
 
 import 'if_test.template.dart' as ng;
 

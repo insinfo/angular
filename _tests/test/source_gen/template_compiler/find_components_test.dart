@@ -1,4 +1,4 @@
-import 'package:ngcompiler/v2/context.dart';
+import 'package:ng_compiler/v2/context.dart';
 import 'package:test/test.dart';
 
 import '../../resolve_util.dart';

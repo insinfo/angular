@@ -1,4 +1,4 @@
-import 'package:ngdart/angular.dart';
+import 'package:ng_core/angular.dart';
 
 import 'hello_world.template.dart' as ng;
 

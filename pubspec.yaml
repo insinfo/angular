@@ -5,12 +5,12 @@ environment:
   sdk: ">=3.6.0 <4.0.0"
 
 workspace:
-  - ngast
-  - ngcompiler
-  - ngdart
-  - ngforms
-  - ngrouter
-  - ngtest
+  - ng_ast
+  - ng_compiler
+  - ng_core
+  - ng_forms
+  - ng_router
+  - ng_test
 
 dev_dependencies:
   lints: ^2.1.0

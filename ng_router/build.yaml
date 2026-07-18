@@ -1,0 +1,6 @@
+targets:
+  $default:
+    builders:
+      ng_core:
+        generate_for:
+          exclude: ["test/url_test.dart"]

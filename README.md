@@ -1,6 +1,6 @@
-## AngularDart — `angular8` branch (fork)
+## AngularDart — `angular9` branch (ng_* rename)
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/insinfo/angular/dart.yml?branch=angular8)](https://github.com/insinfo/angular/actions/workflows/dart.yml)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/insinfo/angular/dart.yml?branch=angular9)](https://github.com/insinfo/angular/actions/workflows/dart.yml)
 
 This repository is a fork of
 [angulardart-community/angular](https://github.com/angulardart-community/angular),
@@ -8,75 +8,81 @@ maintained by [insinfo](https://github.com/insinfo).
 
 ### What this branch is
 
-The `angular8` branch is **faithful to the code published on pub.dev**: the
-source of each package below is byte-identical to the corresponding version
-published on pub.dev (verified by hash). Its purpose is to keep existing
-applications that depend on these exact versions working, buildable and
-testable, even though the upstream project appears to be unmaintained.
+The `angular9` branch renames the AngularDart packages to the **`ng_*`
+family** so they can be published to pub.dev as stable versions under names
+owned by this fork. The naming follows the
+[Effective Dart](https://dart.dev/effective-dart/style) conventions and
+mirrors the `@angular/*` npm scope of Angular TypeScript
+(`@angular/core` → `ng_core`, `@angular/forms` → `ng_forms`, ...):
 
-| Package      | Version pinned on this branch                                             |
-|--------------|----------------------------------------------------------------------------|
-| [ngdart]     | [8.0.0-dev.4](https://pub.dev/packages/ngdart/versions/8.0.0-dev.4)        |
-| [ngforms]    | [5.0.0-dev.3](https://pub.dev/packages/ngforms/versions/5.0.0-dev.3)       |
-| [ngrouter]   | [4.0.0-dev.3](https://pub.dev/packages/ngrouter/versions/4.0.0-dev.3)      |
-| [ngtest]     | [5.0.0-dev.3](https://pub.dev/packages/ngtest/versions/5.0.0-dev.3)        |
-| [ngast]      | [3.0.0-dev.2](https://pub.dev/packages/ngast/versions/3.0.0-dev.2)         |
-| [ngcompiler] | [3.0.0-dev.3](https://pub.dev/packages/ngcompiler/versions/3.0.0-dev.3)    |
+| Original (angular8) | Renamed  | Version | npm counterpart |
+|---------------------|----------|---------|-----------------|
+| ngdart 8.0.0-dev.4  | [ng_core]     | 8.0.0 | `@angular/core` (+ common, platform-browser) |
+| ngforms 5.0.0-dev.3 | [ng_forms]    | 5.0.0 | `@angular/forms` |
+| ngrouter 4.0.0-dev.3| [ng_router]   | 4.0.0 | `@angular/router` |
+| ngtest 5.0.0-dev.3  | [ng_test]     | 5.0.0 | `@angular/core/testing` |
+| ngast 3.0.0-dev.2   | [ng_ast]      | 3.0.0 | (template parser) |
+| ngcompiler 3.0.0-dev.3 | [ng_compiler] | 3.0.0 | `@angular/compiler` |
 
-Only repository infrastructure (workspace resolution, test suites, CI) was
-adapted so everything runs on Dart >= 3.6; the `lib/` source of the packages
-is untouched.
+The **code is the same** as the [`angular8`](../../tree/angular8) branch —
+which is byte-identical to the versions published on pub.dev — only the
+package names, imports and generated-code references changed, and the `-dev`
+version suffixes were dropped (these versions have been used in production
+for years).
+
+In the future the plan is to split `ng_core` further, following the Angular
+TS package layout (`ng_common`, `ng_web`, `ng_http`, ...).
+
+### Migrating an app from ngdart to ng_core
+
+1. In `pubspec.yaml`: `ngdart` → `ng_core`, `ngforms` → `ng_forms`,
+   `ngrouter` → `ng_router`, `ngtest` → `ng_test`.
+2. In your Dart code, update the imports:
+   - `package:ngdart/` → `package:ng_core/`
+   - `package:ngforms/ngforms.dart` → `package:ng_forms/ng_forms.dart`
+   - `package:ngrouter/ngrouter.dart` → `package:ng_router/ng_router.dart`
+   - `package:ngtest/angular_test.dart` → `package:ng_test/angular_test.dart`
+3. Rebuild (`dart run build_runner build`). The public API is unchanged.
 
 ### Using this branch (git dependency)
 
-This branch will be kept alive so it can be consumed directly from git:
-
 ```yaml
 dependencies:
-  ngdart:
+  ng_core:
     git:
       url: https://github.com/insinfo/angular.git
-      ref: angular8
-      path: ngdart
-  ngforms:
+      ref: angular9
+      path: ng_core
+  ng_forms:
     git:
       url: https://github.com/insinfo/angular.git
-      ref: angular8
-      path: ngforms
-  ngrouter:
+      ref: angular9
+      path: ng_forms
+  ng_router:
     git:
       url: https://github.com/insinfo/angular.git
-      ref: angular8
-      path: ngrouter
+      ref: angular9
+      path: ng_router
 
 dev_dependencies:
-  ngtest:
+  ng_test:
     git:
       url: https://github.com/insinfo/angular.git
-      ref: angular8
-      path: ngtest
+      ref: angular9
+      path: ng_test
 ```
 
-### Roadmap
+### Branches
 
-- **This branch (`angular8`)**: stays identical to the pub.dev releases, for
-  use via git dependency. No breaking changes.
-- **Rename branch (planned)**: since the original package names are owned by
-  the upstream publisher, publishing stable versions (e.g. `8.0.0` without the
-  `-dev` suffix) to pub.dev requires renaming the packages. That work will
-  happen in a separate branch, keeping this one untouched.
+- [`angular8`](../../tree/angular8): sources byte-identical to the pub.dev
+  releases (ngdart 8.0.0-dev.4, ...), for apps that keep the original names.
+- **`angular9`** (this branch): the `ng_*` rename, targeting stable pub.dev
+  publishing.
 
 ### Documentation site
 
-A static mirror of the AngularDart documentation site (guide, tutorial,
-codelabs, cheat sheet, ...) lives in [`site/`](site/) and is
-published with GitHub Pages at:
-
-**https://insinfo.github.io/angular/**
-
-The deploy is automated by
-[`.github/workflows/pages.yml`](.github/workflows/pages.yml) whenever
-`site/` changes on this branch.
+A static mirror of the AngularDart documentation site is published from the
+`angular8` branch at: **https://insinfo.github.io/angular/**
 
 ### Upstream resources
 
@@ -85,9 +91,9 @@ The deploy is automated by
 - Original AngularDart project (restricted maintenance):
   https://github.com/angulardart
 
-[ngdart]: https://github.com/insinfo/angular/tree/angular8/ngdart
-[ngforms]: https://github.com/insinfo/angular/tree/angular8/ngforms
-[ngrouter]: https://github.com/insinfo/angular/tree/angular8/ngrouter
-[ngtest]: https://github.com/insinfo/angular/tree/angular8/ngtest
-[ngast]: https://github.com/insinfo/angular/tree/angular8/ngast
-[ngcompiler]: https://github.com/insinfo/angular/tree/angular8/ngcompiler
+[ng_core]: https://github.com/insinfo/angular/tree/angular9/ng_core
+[ng_forms]: https://github.com/insinfo/angular/tree/angular9/ng_forms
+[ng_router]: https://github.com/insinfo/angular/tree/angular9/ng_router
+[ng_test]: https://github.com/insinfo/angular/tree/angular9/ng_test
+[ng_ast]: https://github.com/insinfo/angular/tree/angular9/ng_ast
+[ng_compiler]: https://github.com/insinfo/angular/tree/angular9/ng_compiler

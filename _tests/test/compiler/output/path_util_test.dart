@@ -1,5 +1,5 @@
 import 'package:_tests/test_util.dart';
-import 'package:ngcompiler/v1/src/compiler/output/path_util.dart'
+import 'package:ng_compiler/v1/src/compiler/output/path_util.dart'
     show getImportModulePath;
 import 'package:test/test.dart';
 

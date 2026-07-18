@@ -6,7 +6,7 @@ import 'dart:html';
 
 import 'package:js/js.dart';
 import 'package:test/test.dart';
-import 'package:ngdart/angular.dart';
+import 'package:ng_core/angular.dart';
 
 import 'run_app_test.template.dart' as ng;
 

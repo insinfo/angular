@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:ngdart/src/common/pipes/uppercase_pipe.dart';
+import 'package:ng_core/src/common/pipes/uppercase_pipe.dart';
 
 void main() {
   group('UpperCasePipe', () {
