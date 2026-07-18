@@ -69,14 +69,14 @@ dev_dependencies:
 ### Documentation site
 
 A static mirror of the AngularDart documentation site (guide, tutorial,
-codelabs, cheat sheet, ...) lives in [`site_ngdart/`](site_ngdart/) and is
+codelabs, cheat sheet, ...) lives in [`site/`](site/) and is
 published with GitHub Pages at:
 
 **https://insinfo.github.io/angular/**
 
 The deploy is automated by
 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) whenever
-`site_ngdart/` changes on this branch.
+`site/` changes on this branch.
 
 ### Upstream resources
 
