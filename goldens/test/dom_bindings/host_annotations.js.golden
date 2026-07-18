@@ -4385,6 +4385,12 @@
     },
     _modifiers_closure2: function _modifiers_closure2() {
     },
+    deopt(any, $T) {
+      var t1 = self,
+        t2 = any == null ? null : any;
+      t2 = t1.deopt(t2);
+      return $T._as(t2 == null ? null : t2);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -8009,21 +8015,21 @@
   };
   A.GoldenComponent.prototype = {
     onClickNoArguments$0() {
-      self.deopt("onClickNoArguments");
+      A.deopt("onClickNoArguments", type$.dynamic);
     },
     onDblClickInferArgument$1($event) {
-      self.deopt(A._setArrayType(["onDblClickInferArgument", type$.Object._as($event)], type$.JSArray_Object));
+      A.deopt(A._setArrayType(["onDblClickInferArgument", type$.Object._as($event)], type$.JSArray_Object), type$.dynamic);
     },
     onMouseDownManualArgument$1($event) {
-      self.deopt(A._setArrayType(["onMouseDownManualArgument", type$.Object._as($event)], type$.JSArray_Object));
+      A.deopt(A._setArrayType(["onMouseDownManualArgument", type$.Object._as($event)], type$.JSArray_Object), type$.dynamic);
     },
     onSpecialKeyHandler$0() {
-      self.deopt("onSpecialKeyHandler");
+      A.deopt("onSpecialKeyHandler", type$.dynamic);
     }
   };
   A.ListensToOutput.prototype = {
     onCustomEvent$0() {
-      self.deopt("onCustomEvent");
+      A.deopt("onCustomEvent", type$.dynamic);
     }
   };
   A.HasOutput.prototype = {};
@@ -8069,7 +8075,7 @@
     },
     _handleEvent_0$1($$event) {
       this.__ComponentView_ctx_F === $ && A.throwLateFieldNI("ctx");
-      self.deopt(A._setArrayType(["onMouseUpMultipleArguments", $$event == null ? type$.Object._as($$event) : $$event, "Hello"], type$.JSArray_Object));
+      A.deopt(A._setArrayType(["onMouseUpMultipleArguments", $$event == null ? type$.Object._as($$event) : $$event, "Hello"], type$.JSArray_Object), type$.dynamic);
     }
   };
   A._ViewGoldenComponentHost0.prototype = {
@@ -8088,7 +8094,7 @@
         t1 = type$.JSObject._as(t1.style);
         t1.setProperty("color", "red");
       }
-      t1 = self.deopt();
+      t1 = A.deopt(null, type$.bool);
       t3 = t2._expr_0;
       if (t3 !== t1) {
         t3 = t2.__ComponentView_rootElement_F;
@@ -8096,7 +8102,7 @@
         A.updateAttribute(t3, "getter-add-attr-bool", t1 ? "" : null);
         t2._expr_0 = t1;
       }
-      t1 = self.deopt();
+      t1 = A.deopt(null, type$.String);
       t3 = t2._expr_1;
       if (t3 !== t1) {
         t3 = t2.__ComponentView_rootElement_F;
@@ -8639,7 +8645,7 @@
     });
     _lazyFinal($, "EventManager__keyEvents", "$get$EventManager__keyEvents", () => new A._KeyEventsHandler());
     _lazyFinal($, "_modifiers", "$get$_modifiers", () => A.LinkedHashMap_LinkedHashMap$_literal(["alt", new A._modifiers_closure(), "control", new A._modifiers_closure0(), "meta", new A._modifiers_closure1(), "shift", new A._modifiers_closure2()], type$.String, A.findType("bool(JSObject)")));
-    _lazyFinal($, "GoldenComponent_finalAddAttributeBool", "$get$GoldenComponent_finalAddAttributeBool", () => self.deopt());
+    _lazyFinal($, "GoldenComponent_finalAddAttributeBool", "$get$GoldenComponent_finalAddAttributeBool", () => A.deopt(null, type$.dynamic));
   })();
   (function nativeSupport() {
     !function() {

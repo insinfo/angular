@@ -4221,6 +4221,12 @@
     OpaqueToken: function OpaqueToken(t0) {
       this.$ti = t0;
     },
+    deopt(any, $T) {
+      var t1 = self,
+        t2 = any == null ? null : any;
+      t2 = t1.deopt(t2);
+      return $T._as(t2 == null ? null : t2);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -6902,7 +6908,7 @@
   };
   A.ApplicationRef_bootstrap_closure.prototype = {
     call$0() {
-      var t3, styles, t4, t5, t6, t7, t8, component, existing, replacement,
+      var t3, styles, t4, t5, t6, t7, t8, component, existing, replacement, _null = null,
         _s11_ = "rootElement",
         _s13_ = "componentView",
         _s9_ = "component",
@@ -6915,7 +6921,7 @@
       t3 = new A.ViewGoldenComponent0(A._ComponentViewData__ComponentViewData(hostView, 0, B.ChangeDetectionCheckedState_2));
       styles = $.ViewGoldenComponent0__componentStyles;
       if (styles == null)
-        styles = $.ViewGoldenComponent0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, null);
+        styles = $.ViewGoldenComponent0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
       t3.__ComponentView_componentStyles_F = styles;
       t4 = self;
       t5 = type$.JSObject;
@@ -6928,7 +6934,7 @@
       t3 === $ && A.throwLateFieldNI(_s13_);
       t7 = t3.__ComponentView_rootElement_F;
       t7 === $ && A.throwLateFieldNI(_s11_);
-      t8 = t6._eval$1("HostView.T")._as(new A.GoldenComponent(self.deopt()));
+      t8 = t6._eval$1("HostView.T")._as(new A.GoldenComponent(A.deopt(_null, type$.bool)));
       hostView.__HostView_component_F !== $ && A.throwLateFieldAI(_s9_);
       hostView.set$__HostView_component_F(t8);
       hostView.initRootNode$1(t7);
@@ -6947,10 +6953,10 @@
         replacement = t3;
       } else {
         t6._as(t5._as(t4.document).body).append(t3);
-        replacement = null;
+        replacement = _null;
       }
       A.checkTypeBound(type$.Testability, type$.Object, "T", "provideTypeOptional");
-      new A._ElementInjector(hostView, 0).$get$2(B.Type_Testability_a1W, null);
+      new A._ElementInjector(hostView, 0).$get$2(B.Type_Testability_a1W, _null);
       t2._loadedRootComponent$2(component, replacement);
       return component;
     },
@@ -7551,20 +7557,21 @@
       t1.create$1(t2);
     },
     detectChangesInternal$0() {
-      var currVal_2, _this = this,
+      var t2, currVal_2, _this = this,
         t1 = _this.__ComponentView_ctx_F;
       t1 === $ && A.throwLateFieldNI("ctx");
       if (_this._component_view$_data._component_view$_changeDetectorState === B.ChangeDetectorState_0) {
         _this.__ViewGoldenComponent0__FancyButtonComponent_0_6_F === $ && A.throwLateFieldNI("_FancyButtonComponent_0_6");
-        self.deopt(true);
+        t2 = type$.void;
+        A.deopt(true, t2);
         _this.__ViewGoldenComponent0__FancyButtonComponent_1_6_F === $ && A.throwLateFieldNI("_FancyButtonComponent_1_6");
-        self.deopt(true);
+        A.deopt(true, t2);
       }
       currVal_2 = t1.value;
       t1 = _this._expr_2;
       if (t1 !== currVal_2) {
         _this.__ViewGoldenComponent0__FancyButtonComponent_2_6_F === $ && A.throwLateFieldNI("_FancyButtonComponent_2_6");
-        self.deopt(currVal_2);
+        A.deopt(currVal_2, type$.void);
         _this._expr_2 = currVal_2;
       }
       t1 = _this.__ViewGoldenComponent0__compView_0_F;

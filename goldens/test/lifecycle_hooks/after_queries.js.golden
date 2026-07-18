@@ -4290,18 +4290,24 @@
     OpaqueToken: function OpaqueToken(t0) {
       this.$ti = t0;
     },
+    deopt(any, $T) {
+      var t1 = self,
+        t2 = any == null ? null : any;
+      t2 = t1.deopt(t2);
+      return $T._as(t2 == null ? null : t2);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
       injector.$get$1(B.Type_ApplicationRef_aTW).bootstrap$1$1(new A.ComponentFactory("golden", A.after_queries_template__viewFactory_GoldenComponentHost0$closure(), type$.ComponentFactory_GoldenComponent), type$.GoldenComponent);
     },
     GoldenComponent$() {
-      var t1 = new A.GoldenComponent(self.deopt());
+      var t1 = new A.GoldenComponent(A.deopt(null, type$.bool));
       t1.GoldenComponent$0();
       return t1;
     },
     UsesAfterView$() {
-      var t1 = new A.UsesAfterView(self.deopt());
+      var t1 = new A.UsesAfterView(A.deopt(null, type$.bool));
       t1.UsesAfterView$0();
       return t1;
     },
@@ -7956,23 +7962,23 @@
   };
   A.GoldenComponent.prototype = {
     GoldenComponent$0() {
-      self.deopt(new A.GoldenComponent_closure(this));
+      A.deopt(new A.GoldenComponent_closure(this), type$.dynamic);
     }
   };
   A.GoldenComponent_closure.prototype = {
     call$0() {
-      this.$this.__GoldenComponent_value_A = A._asString(self.deopt("value"));
+      this.$this.__GoldenComponent_value_A = A._asString(A.deopt("value", type$.String));
     },
     $signature: 1
   };
   A.UsesAfterView.prototype = {
     UsesAfterView$0() {
-      self.deopt(new A.UsesAfterView_closure(this));
+      A.deopt(new A.UsesAfterView_closure(this), type$.dynamic);
     }
   };
   A.UsesAfterView_closure.prototype = {
     call$0() {
-      this.$this.__UsesAfterView_value_A = A._asString(self.deopt("value"));
+      this.$this.__UsesAfterView_value_A = A._asString(A.deopt("value", type$.String));
     },
     $signature: 1
   };
@@ -8039,7 +8045,7 @@
       t3 = _this._expr_0;
       if (t3 !== t2) {
         _this.__ViewGoldenComponent0__ChildComponent_2_6_F === $ && A.throwLateFieldNI("_ChildComponent_2_6");
-        self.deopt(t2);
+        A.deopt(t2, type$.dynamic);
         _this._expr_0 = t2;
       }
       t2 = _this.__ViewGoldenComponent0__NgIf_3_10_F;
@@ -8050,10 +8056,10 @@
       t1.detectChangesInNestedViews$0();
       if (firstCheck) {
         _this.__ViewGoldenComponent0__UsesAfterContent_1_6_F === $ && A.throwLateFieldNI(_s21_);
-        self.deopt("ngAfterContentInit");
+        A.deopt("ngAfterContentInit", type$.dynamic);
       }
       _this.__ViewGoldenComponent0__UsesAfterContent_1_6_F === $ && A.throwLateFieldNI(_s21_);
-      self.deopt("ngAfterContentChecked");
+      A.deopt("ngAfterContentChecked", type$.dynamic);
       t1 = _this.__ViewGoldenComponent0__compView_0_F;
       t1 === $ && A.throwLateFieldNI("_compView_0");
       t1.detectChangesDeprecated$0();
@@ -8065,10 +8071,10 @@
       t1.detectChangesDeprecated$0();
       if (firstCheck) {
         _this.__ViewGoldenComponent0__UsesAfterView_0_6_F === $ && A.throwLateFieldNI(_s18_);
-        self.deopt("ngAfterViewInit");
+        A.deopt("ngAfterViewInit", type$.dynamic);
       }
       _this.__ViewGoldenComponent0__UsesAfterView_0_6_F === $ && A.throwLateFieldNI(_s18_);
-      self.deopt("ngAfterViewChecked");
+      A.deopt("ngAfterViewChecked", type$.dynamic);
     },
     destroyInternal$0() {
       var _this = this,
@@ -8107,7 +8113,7 @@
       t2 = _this._expr_0;
       if (t2 !== t1) {
         _this.___ViewGoldenComponent1__ChildComponent_0_6_F === $ && A.throwLateFieldNI("_ChildComponent_0_6");
-        self.deopt(t1);
+        A.deopt(t1, type$.dynamic);
         _this._expr_0 = t1;
       }
       t1 = _this.___ViewGoldenComponent1__compView_0_F;
@@ -8174,7 +8180,7 @@
       t3 = _this._expr_0;
       if (t3 !== t2) {
         _this.__ViewUsesAfterView0__ChildComponent_0_6_F === $ && A.throwLateFieldNI("_ChildComponent_0_6");
-        self.deopt(t2);
+        A.deopt(t2, type$.dynamic);
         _this._expr_0 = t2;
       }
       t2 = _this.__ViewUsesAfterView0__NgIf_1_10_F;
@@ -8217,7 +8223,7 @@
       t2 = _this._expr_0;
       if (t2 !== t1) {
         _this.___ViewUsesAfterView1__ChildComponent_0_6_F === $ && A.throwLateFieldNI("_ChildComponent_0_6");
-        self.deopt(t1);
+        A.deopt(t1, type$.dynamic);
         _this._expr_0 = t1;
       }
       t1 = _this.___ViewUsesAfterView1__compView_0_F;

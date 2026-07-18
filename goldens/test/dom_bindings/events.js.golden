@@ -4250,6 +4250,11 @@
     EventManager: function EventManager(t0) {
       this.zone = t0;
     },
+    deopt(any, $T) {
+      var t1 = self;
+      t1 = t1.deopt(any);
+      return $T._as(t1 == null ? null : t1);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -7633,24 +7638,24 @@
   A.GoldenComponent.prototype = {};
   A.UsesDomEvents.prototype = {
     tearOffNoArguments$0() {
-      self.deopt("tearOffNoArguments");
+      A.deopt("tearOffNoArguments", type$.dynamic);
     },
     tearOffWithArguments$1(e) {
-      self.deopt(A._setArrayType(["tearOffWithArguments", type$.Object._as(e)], type$.JSArray_Object));
+      A.deopt(A._setArrayType(["tearOffWithArguments", type$.Object._as(e)], type$.JSArray_Object), type$.dynamic);
     },
     callEventWithArguments$1(e) {
-      self.deopt(A._setArrayType(["callEventWithArguments", type$.Object._as(e)], type$.JSArray_Object));
+      A.deopt(A._setArrayType(["callEventWithArguments", type$.Object._as(e)], type$.JSArray_Object), type$.dynamic);
     }
   };
   A.UsesOutputs.prototype = {
     tearOffNoArguments$0() {
-      self.deopt("tearOffNoArguments");
+      A.deopt("tearOffNoArguments", type$.dynamic);
     },
     tearOffWithArguments$1(e) {
-      self.deopt(A._setArrayType(["tearOffWithArguments", type$.Object._as(e)], type$.JSArray_Object));
+      A.deopt(A._setArrayType(["tearOffWithArguments", type$.Object._as(e)], type$.JSArray_Object), type$.dynamic);
     },
     callEventWithArguments$1(e) {
-      self.deopt(A._setArrayType(["callEventWithArguments", type$.Object._as(e)], type$.JSArray_Object));
+      A.deopt(A._setArrayType(["callEventWithArguments", type$.Object._as(e)], type$.JSArray_Object), type$.dynamic);
     }
   };
   A.HasNgEvents.prototype = {};

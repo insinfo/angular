@@ -4221,6 +4221,11 @@
     OpaqueToken: function OpaqueToken(t0) {
       this.$ti = t0;
     },
+    deopt(any, $T) {
+      var t1 = self;
+      t1 = t1.deopt(any);
+      return $T._as(t1 == null ? null : t1);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -7515,15 +7520,16 @@
   };
   A.GoldenComponent.prototype = {
     GoldenComponent$0() {
-      self.deopt(new A.GoldenComponent_closure(this));
+      A.deopt(new A.GoldenComponent_closure(this), type$.dynamic);
     }
   };
   A.GoldenComponent_closure.prototype = {
     call$0() {
-      var t1 = this.$this;
-      t1.__GoldenComponent_a_A = A._asString(self.deopt("a"));
-      t1.__GoldenComponent_b_A = A._asString(self.deopt("b"));
-      t1.__GoldenComponent_c_A = A._asString(self.deopt("c"));
+      var t1 = this.$this,
+        t2 = type$.String;
+      t1.__GoldenComponent_a_A = A._asString(A.deopt("a", t2));
+      t1.__GoldenComponent_b_A = A._asString(A.deopt("b", t2));
+      t1.__GoldenComponent_c_A = A._asString(A.deopt("c", t2));
     },
     $signature: 1
   };
@@ -7598,7 +7604,7 @@
       if (t2 === B.ChangeDetectorState_0) {
         t2 = _this.__ViewGoldenComponent0__UsesOnInit_0_6_F;
         t2 === $ && A.throwLateFieldNI(_s15_);
-        self.deopt(A._setArrayType([t2.a, t2.b, t2.c], type$.JSArray_nullable_String));
+        A.deopt(A._setArrayType([t2.a, t2.b, t2.c], type$.JSArray_nullable_String), type$.dynamic);
       }
       t2 = t1.__GoldenComponent_a_A;
       t3 = _this._expr_3;

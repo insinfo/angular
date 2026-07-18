@@ -4323,6 +4323,11 @@
     OpaqueToken: function OpaqueToken(t0) {
       this.$ti = t0;
     },
+    deopt($T) {
+      var t1 = self;
+      t1 = t1.deopt(null);
+      return $T._as(t1 == null ? null : t1);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -7131,7 +7136,7 @@
   };
   A.ApplicationRef_bootstrap_closure.prototype = {
     call$0() {
-      var t3, styles, t4, t5, t6, t7, t8, component, existing, replacement,
+      var t3, styles, t4, t5, t6, t7, t8, t9, component, existing, replacement,
         _s11_ = "rootElement",
         _s13_ = "componentView",
         _s9_ = "component",
@@ -7157,9 +7162,11 @@
       t3 === $ && A.throwLateFieldNI(_s13_);
       t7 = t3.__ComponentView_rootElement_F;
       t7 === $ && A.throwLateFieldNI(_s11_);
-      t8 = t6._eval$1("HostView.T")._as(new A.GoldenComponent(self.deopt(), self.deopt(), self.deopt(), self.deopt()));
+      t8 = type$.bool;
+      t9 = type$.String;
+      t9 = t6._eval$1("HostView.T")._as(new A.GoldenComponent(A.deopt(t8), A.deopt(t9), A.deopt(t8), A.deopt(t9)));
       hostView.__HostView_component_F !== $ && A.throwLateFieldAI(_s9_);
-      hostView.set$__HostView_component_F(t8);
+      hostView.set$__HostView_component_F(t9);
       hostView.initRootNode$1(t7);
       t7 = hostView.__HostView_component_F;
       t7 === $ && A.throwLateFieldNI(_s9_);

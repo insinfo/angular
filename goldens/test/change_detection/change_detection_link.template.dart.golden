@@ -169,11 +169,11 @@ class ViewOnPushLink0 extends import0.ComponentView<import1.OnPushLink> {
     if (import13.isDevToolsEnabled) {
       import13.Inspector.instance.recordInput(this._NgIf_2_10, 'ngIf', _ctx.isVisible);
     }
-    this._NgIf_2_10.ngIf = _ctx.isVisible /* REF:asset:goldens/test/change_detection/change_detection_link.dart:999:1016 */;
+    this._NgIf_2_10.ngIf = _ctx.isVisible /* REF:asset:goldens/test/change_detection/change_detection_link.dart:1120:1137 */;
     if (import13.isDevToolsEnabled) {
       import13.Inspector.instance.recordInput(this._NgIf_5_10, 'ngIf', _ctx.isVisible);
     }
-    this._NgIf_5_10.ngIf = _ctx.isVisible /* REF:asset:goldens/test/change_detection/change_detection_link.dart:1196:1213 */;
+    this._NgIf_5_10.ngIf = _ctx.isVisible /* REF:asset:goldens/test/change_detection/change_detection_link.dart:1317:1334 */;
     this._appEl_0.detectChangesInNestedViews();
     this._appEl_2.detectChangesInNestedViews();
     this._appEl_5.detectChangesInNestedViews();

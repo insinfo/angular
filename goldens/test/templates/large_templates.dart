@@ -1,17 +1,19 @@
-@JS()
 library golden;
 
 // This code is roughly intended to reflect large-internal clients, i.e.
 // https://source.corp.google.com/piper///depot/google3/ads/awapps2/cm/client/overview/root/lib/overview.template.dart
 
-import 'package:js/js.dart';
+import 'dart:js_interop';
 import 'package:ngx_dart/angular.dart';
 
 import 'large_templates.template.dart' as ng;
 
 /// Avoids Dart2JS thinking something is constant/unchanging.
-@JS()
-external T deopt<T>([Object? any]);
+@JS('deopt')
+external ExternalDartReference? _deopt([ExternalDartReference? any]);
+
+T deopt<T>([Object? any]) =>
+    _deopt(any?.toExternalReference)?.toDartObject as T;
 
 void main() {
   runApp(ng.createGoldenComponentFactory());

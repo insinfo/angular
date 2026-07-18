@@ -799,339 +799,339 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_0_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_0_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:638:655 */;
+    this._NgIf_0_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:759:776 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_1_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_1_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:676:693 */;
+    this._NgIf_1_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:797:814 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_2_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_2_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:714:731 */;
+    this._NgIf_2_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:835:852 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_3_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_3_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:752:769 */;
+    this._NgIf_3_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:873:890 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_4_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_4_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:790:807 */;
+    this._NgIf_4_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:911:928 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_5_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_5_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:828:845 */;
+    this._NgIf_5_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:949:966 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_6_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_6_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:866:883 */;
+    this._NgIf_6_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:987:1004 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_7_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_7_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:904:921 */;
+    this._NgIf_7_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1025:1042 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_8_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_8_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:942:959 */;
+    this._NgIf_8_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1063:1080 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_9_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_9_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:980:997 */;
+    this._NgIf_9_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1101:1118 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_10_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_10_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1018:1035 */;
+    this._NgIf_10_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1139:1156 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_11_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_11_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1056:1073 */;
+    this._NgIf_11_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1177:1194 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_12_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_12_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1094:1111 */;
+    this._NgIf_12_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1215:1232 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_13_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_13_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1132:1149 */;
+    this._NgIf_13_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1253:1270 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_14_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_14_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1170:1187 */;
+    this._NgIf_14_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1291:1308 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_15_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_15_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1208:1225 */;
+    this._NgIf_15_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1329:1346 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_16_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_16_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1246:1263 */;
+    this._NgIf_16_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1367:1384 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_17_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_17_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1284:1301 */;
+    this._NgIf_17_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1405:1422 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_18_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_18_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1322:1339 */;
+    this._NgIf_18_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1443:1460 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_19_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_19_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1360:1377 */;
+    this._NgIf_19_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1481:1498 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_20_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_20_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1398:1415 */;
+    this._NgIf_20_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1519:1536 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_21_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_21_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1436:1453 */;
+    this._NgIf_21_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1557:1574 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_22_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_22_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1474:1491 */;
+    this._NgIf_22_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1595:1612 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_23_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_23_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1512:1529 */;
+    this._NgIf_23_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1633:1650 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_24_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_24_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1550:1567 */;
+    this._NgIf_24_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1671:1688 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_25_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_25_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1588:1605 */;
+    this._NgIf_25_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1709:1726 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_26_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_26_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1626:1643 */;
+    this._NgIf_26_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1747:1764 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_27_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_27_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1664:1681 */;
+    this._NgIf_27_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1785:1802 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_28_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_28_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1702:1719 */;
+    this._NgIf_28_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1823:1840 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_29_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_29_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1740:1757 */;
+    this._NgIf_29_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1861:1878 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_30_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_30_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1778:1795 */;
+    this._NgIf_30_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1899:1916 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_31_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_31_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1816:1833 */;
+    this._NgIf_31_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1937:1954 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_32_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_32_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1854:1871 */;
+    this._NgIf_32_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1975:1992 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_33_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_33_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1892:1909 */;
+    this._NgIf_33_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2013:2030 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_34_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_34_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1930:1947 */;
+    this._NgIf_34_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2051:2068 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_35_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_35_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1968:1985 */;
+    this._NgIf_35_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2089:2106 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_36_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_36_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2006:2023 */;
+    this._NgIf_36_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2127:2144 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_37_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_37_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2044:2061 */;
+    this._NgIf_37_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2165:2182 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_38_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_38_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2082:2099 */;
+    this._NgIf_38_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2203:2220 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_39_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_39_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2120:2137 */;
+    this._NgIf_39_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2241:2258 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_40_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_40_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2158:2175 */;
+    this._NgIf_40_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2279:2296 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_41_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_41_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2196:2213 */;
+    this._NgIf_41_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2317:2334 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_42_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_42_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2234:2251 */;
+    this._NgIf_42_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2355:2372 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_43_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_43_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2272:2289 */;
+    this._NgIf_43_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2393:2410 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_44_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_44_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2310:2327 */;
+    this._NgIf_44_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2431:2448 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_45_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_45_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2348:2365 */;
+    this._NgIf_45_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2469:2486 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_46_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_46_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2386:2403 */;
+    this._NgIf_46_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2507:2524 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_47_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_47_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2424:2441 */;
+    this._NgIf_47_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2545:2562 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_48_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_48_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2462:2479 */;
+    this._NgIf_48_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2583:2600 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_49_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_49_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2500:2517 */;
+    this._NgIf_49_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2621:2638 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_50_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_50_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2538:2555 */;
+    this._NgIf_50_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2659:2676 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_51_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_51_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2576:2593 */;
+    this._NgIf_51_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2697:2714 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_52_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_52_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2614:2631 */;
+    this._NgIf_52_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2735:2752 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_53_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_53_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2652:2669 */;
+    this._NgIf_53_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2773:2790 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_54_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_54_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2690:2707 */;
+    this._NgIf_54_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2811:2828 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_55_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_55_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2728:2745 */;
+    this._NgIf_55_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2849:2866 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_56_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_56_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2766:2783 */;
+    this._NgIf_56_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2887:2904 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_57_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_57_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2804:2821 */;
+    this._NgIf_57_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2925:2942 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_58_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_58_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2842:2859 */;
+    this._NgIf_58_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2963:2980 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_59_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_59_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2880:2897 */;
+    this._NgIf_59_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3001:3018 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_60_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_60_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2918:2935 */;
+    this._NgIf_60_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3039:3056 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_61_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_61_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2956:2973 */;
+    this._NgIf_61_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3077:3094 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_62_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_62_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2994:3011 */;
+    this._NgIf_62_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3115:3132 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_63_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_63_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3032:3049 */;
+    this._NgIf_63_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3153:3170 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_64_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_64_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3070:3087 */;
+    this._NgIf_64_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3191:3208 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_65_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_65_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3108:3125 */;
+    this._NgIf_65_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3229:3246 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_66_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_66_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3146:3163 */;
+    this._NgIf_66_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3267:3284 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_67_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_67_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3184:3201 */;
+    this._NgIf_67_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3305:3322 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_68_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_68_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3222:3239 */;
+    this._NgIf_68_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3343:3360 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_69_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_69_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3260:3277 */;
+    this._NgIf_69_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3381:3398 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_70_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_70_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3298:3315 */;
+    this._NgIf_70_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3419:3436 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_71_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_71_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3336:3353 */;
+    this._NgIf_71_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3457:3474 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_72_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_72_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3374:3391 */;
+    this._NgIf_72_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3495:3512 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_73_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_73_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3412:3429 */;
+    this._NgIf_73_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3533:3550 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_74_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_74_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3450:3467 */;
+    this._NgIf_74_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3571:3588 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_75_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_75_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3488:3505 */;
+    this._NgIf_75_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3609:3626 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_76_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_76_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3526:3543 */;
+    this._NgIf_76_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3647:3664 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_77_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_77_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3564:3581 */;
+    this._NgIf_77_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3685:3702 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_78_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_78_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3602:3619 */;
+    this._NgIf_78_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3723:3740 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_79_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_79_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3640:3657 */;
+    this._NgIf_79_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3761:3778 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_80_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_80_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3678:3695 */;
+    this._NgIf_80_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3799:3816 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_81_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_81_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3716:3733 */;
+    this._NgIf_81_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3837:3854 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_82_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_82_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3754:3771 */;
+    this._NgIf_82_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3875:3892 */;
     if (import11.isDevToolsEnabled) {
       import11.Inspector.instance.recordInput(this._NgIf_83_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_83_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3792:3809 */;
+    this._NgIf_83_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3913:3930 */;
     this._appEl_0.detectChangesInNestedViews();
     this._appEl_1.detectChangesInNestedViews();
     this._appEl_2.detectChangesInNestedViews();

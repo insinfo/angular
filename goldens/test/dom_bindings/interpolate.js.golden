@@ -4228,6 +4228,12 @@
       this._currentValue = "";
       this.element = t0;
     },
+    deopt(any, $T) {
+      var t1 = self,
+        t2 = any == null ? null : any;
+      t2 = t1.deopt(t2);
+      return $T._as(t2 == null ? null : t2);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -7660,14 +7666,16 @@
   };
   A.GoldenComponent.prototype = {
     GoldenComponent$0() {
-      self.deopt(new A.GoldenComponent_closure(this));
+      A.deopt(new A.GoldenComponent_closure(this), type$.dynamic);
     }
   };
   A.GoldenComponent_closure.prototype = {
     call$0() {
-      var t1 = this.$this;
-      t1.__GoldenComponent_string_A = A._asString(self.deopt("value"));
-      t1.__GoldenComponent_anything_A = type$.Object._as(self.deopt("anything"));
+      var t2,
+        t1 = this.$this;
+      t1.__GoldenComponent_string_A = A._asString(A.deopt("value", type$.String));
+      t2 = type$.Object;
+      t1.__GoldenComponent_anything_A = t2._as(A.deopt("anything", t2));
     },
     $signature: 1
   };
@@ -7683,7 +7691,7 @@
   A.NullCheckedInterpolate.prototype = {};
   A.ViewGoldenComponent0.prototype = {
     build$0() {
-      var t2, t3, t4, _this = this, _null = null,
+      var t2, t3, t4, t5, _this = this, _null = null,
         parentRenderNode = _this.initViewRoot$0(),
         t1 = new A.ViewSimpleStringInterpolate0(A.TextBinding$(), A._ComponentViewData__ComponentViewData(_this, 0, B.ChangeDetectionCheckedState_2)),
         styles = $.ViewSimpleStringInterpolate0__componentStyles;
@@ -7739,63 +7747,64 @@
       _this.__ViewGoldenComponent0__compView_3_F !== $ && A.throwLateFieldAI("_compView_3");
       _this.__ViewGoldenComponent0__compView_3_F = t4;
       parentRenderNode.append(t1);
-      t1 = new A.AdjacentInterpolate(self.deopt(), self.deopt(), self.deopt());
+      t1 = type$.String;
+      t5 = new A.AdjacentInterpolate(A.deopt(_null, t1), A.deopt(_null, t1), A.deopt(_null, t1));
       _this.__ViewGoldenComponent0__AdjacentInterpolate_3_6_F !== $ && A.throwLateFieldAI("_AdjacentInterpolate_3_6");
-      _this.__ViewGoldenComponent0__AdjacentInterpolate_3_6_F = t1;
-      t4.create$1(t1);
-      t1 = new A.ViewLiteralsInterpolate0(A._ComponentViewData__ComponentViewData(_this, 4, B.ChangeDetectionCheckedState_2));
+      _this.__ViewGoldenComponent0__AdjacentInterpolate_3_6_F = t5;
+      t4.create$1(t5);
+      t5 = new A.ViewLiteralsInterpolate0(A._ComponentViewData__ComponentViewData(_this, 4, B.ChangeDetectionCheckedState_2));
       styles = $.ViewLiteralsInterpolate0__componentStyles;
       if (styles == null)
         styles = $.ViewLiteralsInterpolate0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
-      t1.__ComponentView_componentStyles_F = styles;
+      t5.__ComponentView_componentStyles_F = styles;
       t4 = t3._as(t3._as(t2.document).createElement("literals"));
-      t1.__ComponentView_rootElement_F = t4;
+      t5.__ComponentView_rootElement_F = t4;
       _this.__ViewGoldenComponent0__compView_4_F !== $ && A.throwLateFieldAI("_compView_4");
-      _this.__ViewGoldenComponent0__compView_4_F = t1;
+      _this.__ViewGoldenComponent0__compView_4_F = t5;
       parentRenderNode.append(t4);
       t4 = new A.LiteralsInterpolate();
       _this.__ViewGoldenComponent0__LiteralsInterpolate_4_6_F !== $ && A.throwLateFieldAI("_LiteralsInterpolate_4_6");
       _this.__ViewGoldenComponent0__LiteralsInterpolate_4_6_F = t4;
-      t1.create$1(t4);
+      t5.create$1(t4);
       t4 = new A.ViewPropertyInterpolate0(A._ComponentViewData__ComponentViewData(_this, 5, B.ChangeDetectionCheckedState_2));
       styles = $.ViewPropertyInterpolate0__componentStyles;
       if (styles == null)
         styles = $.ViewPropertyInterpolate0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
       t4.__ComponentView_componentStyles_F = styles;
-      t1 = t3._as(t3._as(t2.document).createElement("property"));
-      t4.__ComponentView_rootElement_F = t1;
+      t5 = t3._as(t3._as(t2.document).createElement("property"));
+      t4.__ComponentView_rootElement_F = t5;
       _this.__ViewGoldenComponent0__compView_5_F !== $ && A.throwLateFieldAI("_compView_5");
       _this.__ViewGoldenComponent0__compView_5_F = t4;
-      parentRenderNode.append(t1);
-      t1 = new A.PropertyInterpolate(self.deopt(), self.deopt());
+      parentRenderNode.append(t5);
+      t5 = new A.PropertyInterpolate(A.deopt(_null, t1), A.deopt(_null, t1));
       _this.__ViewGoldenComponent0__PropertyInterpolate_5_6_F !== $ && A.throwLateFieldAI("_PropertyInterpolate_5_6");
-      _this.__ViewGoldenComponent0__PropertyInterpolate_5_6_F = t1;
-      t4.create$1(t1);
-      t1 = new A.ViewInputInterpolate0(A._ComponentViewData__ComponentViewData(_this, 6, B.ChangeDetectionCheckedState_2));
+      _this.__ViewGoldenComponent0__PropertyInterpolate_5_6_F = t5;
+      t4.create$1(t5);
+      t5 = new A.ViewInputInterpolate0(A._ComponentViewData__ComponentViewData(_this, 6, B.ChangeDetectionCheckedState_2));
       styles = $.ViewInputInterpolate0__componentStyles;
       if (styles == null)
         styles = $.ViewInputInterpolate0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
-      t1.__ComponentView_componentStyles_F = styles;
+      t5.__ComponentView_componentStyles_F = styles;
       t4 = t3._as(t3._as(t2.document).createElement("inputs"));
-      t1.__ComponentView_rootElement_F = t4;
+      t5.__ComponentView_rootElement_F = t4;
       _this.__ViewGoldenComponent0__compView_6_F !== $ && A.throwLateFieldAI("_compView_6");
-      _this.__ViewGoldenComponent0__compView_6_F = t1;
+      _this.__ViewGoldenComponent0__compView_6_F = t5;
       parentRenderNode.append(t4);
-      t4 = new A.InputInterpolate(self.deopt(), self.deopt());
+      t4 = new A.InputInterpolate(A.deopt(_null, t1), A.deopt(_null, t1));
       _this.__ViewGoldenComponent0__InputInterpolate_6_6_F !== $ && A.throwLateFieldAI("_InputInterpolate_6_6");
       _this.__ViewGoldenComponent0__InputInterpolate_6_6_F = t4;
-      t1.create$1(t4);
+      t5.create$1(t4);
       t4 = new A.ViewMaximumInterpolateLimit0(A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A.TextBinding$(), A._ComponentViewData__ComponentViewData(_this, 7, B.ChangeDetectionCheckedState_2));
       styles = $.ViewMaximumInterpolateLimit0__componentStyles;
       if (styles == null)
         styles = $.ViewMaximumInterpolateLimit0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
       t4.__ComponentView_componentStyles_F = styles;
-      t1 = t3._as(t3._as(t2.document).createElement("max-interpolate-limit"));
-      t4.__ComponentView_rootElement_F = t1;
+      t5 = t3._as(t3._as(t2.document).createElement("max-interpolate-limit"));
+      t4.__ComponentView_rootElement_F = t5;
       _this.__ViewGoldenComponent0__compView_7_F !== $ && A.throwLateFieldAI("_compView_7");
       _this.__ViewGoldenComponent0__compView_7_F = t4;
-      parentRenderNode.append(t1);
-      t1 = new A.MaximumInterpolateLimit(self.deopt(), self.deopt(), self.deopt(), self.deopt(), self.deopt(), self.deopt(), self.deopt(), self.deopt(), self.deopt(), self.deopt());
+      parentRenderNode.append(t5);
+      t1 = new A.MaximumInterpolateLimit(A.deopt(_null, t1), A.deopt(_null, t1), A.deopt(_null, t1), A.deopt(_null, t1), A.deopt(_null, t1), A.deopt(_null, t1), A.deopt(_null, t1), A.deopt(_null, t1), A.deopt(_null, t1), A.deopt(_null, t1));
       _this.__ViewGoldenComponent0__MaximumInterpolateLimit_7_6_F !== $ && A.throwLateFieldAI("_MaximumInterpolateLimit_7_6");
       _this.__ViewGoldenComponent0__MaximumInterpolateLimit_7_6_F = t1;
       t4.create$1(t1);
@@ -8005,7 +8014,7 @@
       t1 = _this._expr_0;
       if (t1 !== currVal_0) {
         _this.__ViewInputInterpolate0__ChildComponent_0_6_F === $ && A.throwLateFieldNI("_ChildComponent_0_6");
-        self.deopt(currVal_0);
+        A.deopt(currVal_0, type$.dynamic);
         _this._expr_0 = currVal_0;
       }
       t1 = _this.__ViewInputInterpolate0__compView_0_F;

@@ -4285,6 +4285,12 @@
     OpaqueToken: function OpaqueToken(t0) {
       this.$ti = t0;
     },
+    deopt(any, $T) {
+      var t1 = self,
+        t2 = any == null ? null : any;
+      t2 = t1.deopt(t2);
+      return $T._as(t2 == null ? null : t2);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -8005,7 +8011,7 @@
       _this.__ViewGoldenComponent0__compView_0_F !== $ && A.throwLateFieldAI("_compView_0");
       _this.__ViewGoldenComponent0__compView_0_F = t1;
       parentRenderNode.append(t2);
-      t2 = new A.OnPushLink(self.deopt());
+      t2 = new A.OnPushLink(A.deopt(null, type$.bool));
       _this.__ViewGoldenComponent0__OnPushLink_0_6_F !== $ && A.throwLateFieldAI("_OnPushLink_0_6");
       _this.__ViewGoldenComponent0__OnPushLink_0_6_F = t2;
       t1.create$1(t2);
@@ -8092,7 +8098,7 @@
       t2 = _this.__ViewOnPushLink0__appEl_5_F = new A.ViewContainer(5, _this, _anchor_5);
       _this.__ViewOnPushLink0__NgIf_5_10_F !== $ && A.throwLateFieldAI("_NgIf_5_10");
       _this.__ViewOnPushLink0__NgIf_5_10_F = new A.NgIf(new A.TemplateRef(t2, A.change_detection_link_template__viewFactory_OnPushLink4$closure()), t2);
-      self.deopt(t1);
+      A.deopt(t1, type$.void);
     },
     detectChangesInCheckAlwaysViews$0() {
       var _this = this,
@@ -8135,7 +8141,7 @@
       if (_this._viewQuery_embeddedContainer_1_isDirty) {
         t1 = t1.mapNestedViewsWithSingleResult$2$1(new A.ViewOnPushLink0_detectChangesInternal_closure(), type$.ViewContainerRef, type$._ViewOnPushLink2);
         t1 = t1.length !== 0 ? B.JSArray_methods.get$first(t1) : null;
-        self.deopt(type$.nullable_ViewContainerRef._as(t1));
+        A.deopt(type$.nullable_ViewContainerRef._as(t1), type$.void);
         _this._viewQuery_embeddedContainer_1_isDirty = false;
       }
       t1 = _this.__ViewOnPushLink0__compView_3_F;
@@ -8257,7 +8263,7 @@
       t1 = _this.__ViewNestedOnPushLink0__appEl_0_F = new A.ViewContainer(0, _this, _anchor_0);
       _this.__ViewNestedOnPushLink0__TemplateRef_0_9_F !== $ && A.throwLateFieldAI("_TemplateRef_0_9");
       _this.__ViewNestedOnPushLink0__TemplateRef_0_9_F = new A.TemplateRef(t1, A.change_detection_link_template__viewFactory_NestedOnPushLink1$closure());
-      self.deopt(t1);
+      A.deopt(t1, type$.void);
     },
     detectChangesInCheckAlwaysViews$0() {
       var t1 = this.__ViewNestedOnPushLink0__appEl_0_F;

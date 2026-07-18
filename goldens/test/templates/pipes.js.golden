@@ -4364,6 +4364,12 @@
       this._currentValue = "";
       this.element = t0;
     },
+    deopt(any, $T) {
+      var t1 = self,
+        t2 = any == null ? null : any;
+      t2 = t1.deopt(t2);
+      return $T._as(t2 == null ? null : t2);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -7844,14 +7850,15 @@
   };
   A.GoldenComponent.prototype = {
     GoldenComponent$0() {
-      self.deopt(new A.GoldenComponent_closure(this));
+      A.deopt(new A.GoldenComponent_closure(this), type$.dynamic);
     }
   };
   A.GoldenComponent_closure.prototype = {
     call$0() {
-      var t1 = this.$this;
-      t1.__GoldenComponent_a_A = A._asString(self.deopt());
-      t1.__GoldenComponent_b_A = A._asString(self.deopt());
+      var t1 = this.$this,
+        t2 = type$.String;
+      t1.__GoldenComponent_a_A = A._asString(A.deopt(null, t2));
+      t1.__GoldenComponent_b_A = A._asString(A.deopt(null, t2));
     },
     $signature: 1
   };
@@ -7880,7 +7887,8 @@
   };
   A.PureLifecyclePipe.prototype = {
     transform$1(a) {
-      return self.deopt(type$.Object._as(a));
+      var t1 = type$.Object;
+      return A.deopt(t1._as(a), t1);
     }
   };
   A.ImpureTimePipe.prototype = {};
@@ -7946,7 +7954,7 @@
       t2 = new A.DateTime(Date.now(), 0, false).toString$0(0);
       _this._textBinding_21.updateText$1(t2);
       _this.__ViewGoldenComponent0__pipe_impureLifecycle_6_F === $ && A.throwLateFieldNI("_pipe_impureLifecycle_6");
-      t1 = self.deopt(t1.__GoldenComponent_a_A);
+      t1 = A.deopt(t1.__GoldenComponent_a_A, type$.Object);
       if (!(typeof t1 == "string"))
         t1 = A.S(t1);
       _this._textBinding_24.updateText$1(t1);

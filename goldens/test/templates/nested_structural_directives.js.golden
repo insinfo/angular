@@ -8718,7 +8718,7 @@
   };
   A._ViewGoldenComponentHost0.prototype = {
     build$0() {
-      var t2, _this = this,
+      var t2, t3, _this = this,
         _s13_ = "componentView",
         t1 = new A.ViewGoldenComponent0(A._ComponentViewData__ComponentViewData(_this, 0, B.ChangeDetectionCheckedState_2)),
         styles = $.ViewGoldenComponent0__componentStyles;
@@ -8728,17 +8728,21 @@
         $.ViewGoldenComponent0__componentStyles = styles;
       }
       t1.__ComponentView_componentStyles_F = styles;
-      t2 = type$.JSObject;
-      t1.__ComponentView_rootElement_F = t2._as(t2._as(self.document).createElement("golden"));
-      t2 = A._instanceType(_this);
-      t2._eval$1("ComponentView<HostView.T>")._as(t1);
+      t2 = self;
+      t3 = type$.JSObject;
+      t1.__ComponentView_rootElement_F = t3._as(t3._as(t2.document).createElement("golden"));
+      t3 = A._instanceType(_this);
+      t3._eval$1("ComponentView<HostView.T>")._as(t1);
       _this.__HostView_componentView_F !== $ && A.throwLateFieldAI(_s13_);
       _this.set$__HostView_componentView_F(t1);
       t1 = _this.__HostView_componentView_F;
       t1 === $ && A.throwLateFieldNI(_s13_);
       t1 = t1.__ComponentView_rootElement_F;
       t1 === $ && A.throwLateFieldNI("rootElement");
-      t2 = t2._eval$1("HostView.T")._as(new A.GoldenComponent(self.deopt()));
+      t2 = t2.deopt(null);
+      if (t2 == null)
+        t2 = null;
+      t2 = t3._eval$1("HostView.T")._as(new A.GoldenComponent(type$.List_List_int._as(t2)));
       _this.__HostView_component_F !== $ && A.throwLateFieldAI("component");
       _this.set$__HostView_component_F(t2);
       _this.initRootNode$1(t1);
@@ -8918,6 +8922,7 @@
       JsIdentityLinkedHashMap_dynamic__DuplicateItemRecordList: findType("JsIdentityLinkedHashMap<@,_DuplicateItemRecordList>"),
       List_DynamicView: findType("List<DynamicView>"),
       List_List_Object: findType("List<List<Object>>"),
+      List_List_int: findType("List<List<int>>"),
       List_Object: findType("List<Object>"),
       List_dynamic: findType("List<@>"),
       Null: findType("Null"),

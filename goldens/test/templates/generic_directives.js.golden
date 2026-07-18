@@ -4326,13 +4326,19 @@
     OpaqueToken: function OpaqueToken(t0) {
       this.$ti = t0;
     },
+    deopt(any, $T) {
+      var t1 = self,
+        t2 = any == null ? null : any;
+      t2 = t1.deopt(t2);
+      return $T._as(t2 == null ? null : t2);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
       injector.$get$1(B.Type_ApplicationRef_aTW).bootstrap$1$1(new A.ComponentFactory("golden", A.generic_directives_template__viewFactory_GoldenComponentHost0$closure(), type$.ComponentFactory_GoldenComponent), type$.GoldenComponent);
     },
     UsesFunctionTypeComp__function($name) {
-      self.deopt(A._asString($name));
+      A.deopt(A._asString($name), type$.dynamic);
     },
     GoldenComponent: function GoldenComponent() {
     },
@@ -8771,7 +8777,7 @@
   A.UsesGenericChangeDetector.prototype = {};
   A.ViewGoldenComponent0.prototype = {
     build$0() {
-      var t2, t3, t4, _this = this, _null = null,
+      var t2, t3, t4, t5, t6, _this = this, _null = null,
         parentRenderNode = _this.initViewRoot$0(),
         t1 = new A.ViewUsesUntypedComp0(A._ComponentViewData__ComponentViewData(_this, 0, B.ChangeDetectionCheckedState_2)),
         styles = $.ViewUsesUntypedComp0__componentStyles;
@@ -8785,133 +8791,135 @@
       _this.__ViewGoldenComponent0__compView_0_F !== $ && A.throwLateFieldAI("_compView_0");
       _this.__ViewGoldenComponent0__compView_0_F = t1;
       parentRenderNode.append(t4);
-      t4 = new A.UsesUntypedComp(self.deopt());
+      t4 = type$.int;
+      t5 = new A.UsesUntypedComp(A.deopt(_null, t4));
       _this.__ViewGoldenComponent0__UsesUntypedComp_0_6_F !== $ && A.throwLateFieldAI("_UsesUntypedComp_0_6");
-      _this.__ViewGoldenComponent0__UsesUntypedComp_0_6_F = t4;
-      t1.create$1(t4);
-      t4 = new A.ViewUsesGenericComp0(A._ComponentViewData__ComponentViewData(_this, 1, B.ChangeDetectionCheckedState_2));
+      _this.__ViewGoldenComponent0__UsesUntypedComp_0_6_F = t5;
+      t1.create$1(t5);
+      t5 = new A.ViewUsesGenericComp0(A._ComponentViewData__ComponentViewData(_this, 1, B.ChangeDetectionCheckedState_2));
       styles = $.ViewUsesGenericComp0__componentStyles;
       if (styles == null)
         styles = $.ViewUsesGenericComp0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
-      t4.__ComponentView_componentStyles_F = styles;
+      t5.__ComponentView_componentStyles_F = styles;
       t1 = t3._as(t3._as(t2.document).createElement("uses-generic-comp"));
-      t4.__ComponentView_rootElement_F = t1;
+      t5.__ComponentView_rootElement_F = t1;
       _this.__ViewGoldenComponent0__compView_1_F !== $ && A.throwLateFieldAI("_compView_1");
-      _this.__ViewGoldenComponent0__compView_1_F = t4;
+      _this.__ViewGoldenComponent0__compView_1_F = t5;
       parentRenderNode.append(t1);
-      t1 = new A.UsesGenericComp(self.deopt());
+      t1 = new A.UsesGenericComp(A.deopt(_null, t4));
       _this.__ViewGoldenComponent0__UsesGenericComp_1_6_F !== $ && A.throwLateFieldAI("_UsesGenericComp_1_6");
       _this.__ViewGoldenComponent0__UsesGenericComp_1_6_F = t1;
-      t4.create$1(t1);
+      t5.create$1(t1);
       t1 = new A.ViewUsesGenericCompGeneric0(A._ComponentViewData__ComponentViewData(_this, 2, B.ChangeDetectionCheckedState_2), type$.ViewUsesGenericCompGeneric0_dynamic);
       styles = $.ViewUsesGenericCompGeneric0__componentStyles;
       if (styles == null)
         styles = $.ViewUsesGenericCompGeneric0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
       t1.__ComponentView_componentStyles_F = styles;
-      t4 = t3._as(t3._as(t2.document).createElement("uses-generic-comp-generic"));
-      t1.__ComponentView_rootElement_F = t4;
+      t5 = t3._as(t3._as(t2.document).createElement("uses-generic-comp-generic"));
+      t1.__ComponentView_rootElement_F = t5;
       _this.__ViewGoldenComponent0__compView_2_F !== $ && A.throwLateFieldAI("_compView_2");
       _this.__ViewGoldenComponent0__compView_2_F = t1;
-      parentRenderNode.append(t4);
-      t4 = new A.UsesGenericCompGeneric(self.deopt(), type$.UsesGenericCompGeneric_dynamic);
+      parentRenderNode.append(t5);
+      t5 = new A.UsesGenericCompGeneric(A.deopt(_null, type$.List_dynamic), type$.UsesGenericCompGeneric_dynamic);
       _this.__ViewGoldenComponent0__UsesGenericCompGeneric_2_6_F !== $ && A.throwLateFieldAI("_UsesGenericCompGeneric_2_6");
-      _this.__ViewGoldenComponent0__UsesGenericCompGeneric_2_6_F = t4;
-      t1.create$1(t4);
-      t4 = new A.ViewUsesMappingComp10(A._ComponentViewData__ComponentViewData(_this, 3, B.ChangeDetectionCheckedState_2));
+      _this.__ViewGoldenComponent0__UsesGenericCompGeneric_2_6_F = t5;
+      t1.create$1(t5);
+      t5 = new A.ViewUsesMappingComp10(A._ComponentViewData__ComponentViewData(_this, 3, B.ChangeDetectionCheckedState_2));
       styles = $.ViewUsesMappingComp10__componentStyles;
       if (styles == null)
         styles = $.ViewUsesMappingComp10__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
-      t4.__ComponentView_componentStyles_F = styles;
+      t5.__ComponentView_componentStyles_F = styles;
       t1 = t3._as(t3._as(t2.document).createElement("uses-mapping-comp-1"));
-      t4.__ComponentView_rootElement_F = t1;
+      t5.__ComponentView_rootElement_F = t1;
       _this.__ViewGoldenComponent0__compView_3_F !== $ && A.throwLateFieldAI("_compView_3");
-      _this.__ViewGoldenComponent0__compView_3_F = t4;
+      _this.__ViewGoldenComponent0__compView_3_F = t5;
       parentRenderNode.append(t1);
-      t1 = new A.UsesMappingComp1(self.deopt(), self.deopt());
+      t1 = type$.String;
+      t6 = new A.UsesMappingComp1(A.deopt(_null, t4), A.deopt(_null, t1));
       _this.__ViewGoldenComponent0__UsesMappingComp1_3_6_F !== $ && A.throwLateFieldAI("_UsesMappingComp1_3_6");
-      _this.__ViewGoldenComponent0__UsesMappingComp1_3_6_F = t1;
-      t4.create$1(t1);
-      t1 = new A.ViewUsesMappingComp20(A._ComponentViewData__ComponentViewData(_this, 4, B.ChangeDetectionCheckedState_2));
+      _this.__ViewGoldenComponent0__UsesMappingComp1_3_6_F = t6;
+      t5.create$1(t6);
+      t6 = new A.ViewUsesMappingComp20(A._ComponentViewData__ComponentViewData(_this, 4, B.ChangeDetectionCheckedState_2));
       styles = $.ViewUsesMappingComp20__componentStyles;
       if (styles == null)
         styles = $.ViewUsesMappingComp20__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
-      t1.__ComponentView_componentStyles_F = styles;
-      t4 = t3._as(t3._as(t2.document).createElement("uses-mapping-comp-2"));
-      t1.__ComponentView_rootElement_F = t4;
+      t6.__ComponentView_componentStyles_F = styles;
+      t5 = t3._as(t3._as(t2.document).createElement("uses-mapping-comp-2"));
+      t6.__ComponentView_rootElement_F = t5;
       _this.__ViewGoldenComponent0__compView_4_F !== $ && A.throwLateFieldAI("_compView_4");
-      _this.__ViewGoldenComponent0__compView_4_F = t1;
-      parentRenderNode.append(t4);
-      t4 = new A.UsesMappingComp2(self.deopt());
+      _this.__ViewGoldenComponent0__compView_4_F = t6;
+      parentRenderNode.append(t5);
+      t5 = new A.UsesMappingComp2(A.deopt(_null, type$.Map_int_String));
       _this.__ViewGoldenComponent0__UsesMappingComp2_4_6_F !== $ && A.throwLateFieldAI("_UsesMappingComp2_4_6");
-      _this.__ViewGoldenComponent0__UsesMappingComp2_4_6_F = t4;
-      t1.create$1(t4);
-      t4 = new A.ViewUsesBoundCompWithBounds0(A._ComponentViewData__ComponentViewData(_this, 5, B.ChangeDetectionCheckedState_2));
+      _this.__ViewGoldenComponent0__UsesMappingComp2_4_6_F = t5;
+      t6.create$1(t5);
+      t5 = new A.ViewUsesBoundCompWithBounds0(A._ComponentViewData__ComponentViewData(_this, 5, B.ChangeDetectionCheckedState_2));
       styles = $.ViewUsesBoundCompWithBounds0__componentStyles;
       if (styles == null)
         styles = $.ViewUsesBoundCompWithBounds0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
-      t4.__ComponentView_componentStyles_F = styles;
-      t1 = t3._as(t3._as(t2.document).createElement("uses-bound-comp-with-bounds"));
-      t4.__ComponentView_rootElement_F = t1;
+      t5.__ComponentView_componentStyles_F = styles;
+      t6 = t3._as(t3._as(t2.document).createElement("uses-bound-comp-with-bounds"));
+      t5.__ComponentView_rootElement_F = t6;
       _this.__ViewGoldenComponent0__compView_5_F !== $ && A.throwLateFieldAI("_compView_5");
-      _this.__ViewGoldenComponent0__compView_5_F = t4;
-      parentRenderNode.append(t1);
-      t1 = new A.UsesBoundCompWithBounds(self.deopt());
+      _this.__ViewGoldenComponent0__compView_5_F = t5;
+      parentRenderNode.append(t6);
+      t6 = new A.UsesBoundCompWithBounds(A.deopt(_null, type$.dynamic));
       _this.__ViewGoldenComponent0__UsesBoundCompWithBounds_5_6_F !== $ && A.throwLateFieldAI("_UsesBoundCompWithBounds_5_6");
-      _this.__ViewGoldenComponent0__UsesBoundCompWithBounds_5_6_F = t1;
-      t4.create$1(t1);
-      t1 = new A.ViewUsesFunctionTypeComp0(A._ComponentViewData__ComponentViewData(_this, 6, B.ChangeDetectionCheckedState_2));
+      _this.__ViewGoldenComponent0__UsesBoundCompWithBounds_5_6_F = t6;
+      t5.create$1(t6);
+      t6 = new A.ViewUsesFunctionTypeComp0(A._ComponentViewData__ComponentViewData(_this, 6, B.ChangeDetectionCheckedState_2));
       styles = $.ViewUsesFunctionTypeComp0__componentStyles;
       if (styles == null)
         styles = $.ViewUsesFunctionTypeComp0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
-      t1.__ComponentView_componentStyles_F = styles;
-      t4 = t3._as(t3._as(t2.document).createElement("uses-function-type-comp"));
-      t1.__ComponentView_rootElement_F = t4;
+      t6.__ComponentView_componentStyles_F = styles;
+      t5 = t3._as(t3._as(t2.document).createElement("uses-function-type-comp"));
+      t6.__ComponentView_rootElement_F = t5;
       _this.__ViewGoldenComponent0__compView_6_F !== $ && A.throwLateFieldAI("_compView_6");
-      _this.__ViewGoldenComponent0__compView_6_F = t1;
-      parentRenderNode.append(t4);
-      t4 = new A.UsesFunctionTypeComp();
+      _this.__ViewGoldenComponent0__compView_6_F = t6;
+      parentRenderNode.append(t5);
+      t5 = new A.UsesFunctionTypeComp();
       _this.__ViewGoldenComponent0__UsesFunctionTypeComp_6_6_F !== $ && A.throwLateFieldAI("_UsesFunctionTypeComp_6_6");
-      _this.__ViewGoldenComponent0__UsesFunctionTypeComp_6_6_F = t4;
-      t1.create$1(t4);
-      t4 = new A.ViewUsesNestedParentComp0(A._ComponentViewData__ComponentViewData(_this, 7, B.ChangeDetectionCheckedState_2));
+      _this.__ViewGoldenComponent0__UsesFunctionTypeComp_6_6_F = t5;
+      t6.create$1(t5);
+      t5 = new A.ViewUsesNestedParentComp0(A._ComponentViewData__ComponentViewData(_this, 7, B.ChangeDetectionCheckedState_2));
       styles = $.ViewUsesNestedParentComp0__componentStyles;
       if (styles == null)
         styles = $.ViewUsesNestedParentComp0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
-      t4.__ComponentView_componentStyles_F = styles;
-      t1 = t3._as(t3._as(t2.document).createElement("uses-nested-parent-comp"));
-      t4.__ComponentView_rootElement_F = t1;
+      t5.__ComponentView_componentStyles_F = styles;
+      t6 = t3._as(t3._as(t2.document).createElement("uses-nested-parent-comp"));
+      t5.__ComponentView_rootElement_F = t6;
       _this.__ViewGoldenComponent0__compView_7_F !== $ && A.throwLateFieldAI("_compView_7");
-      _this.__ViewGoldenComponent0__compView_7_F = t4;
-      parentRenderNode.append(t1);
-      t1 = new A.UsesNestedParentComp(self.deopt(), self.deopt(), self.deopt());
+      _this.__ViewGoldenComponent0__compView_7_F = t5;
+      parentRenderNode.append(t6);
+      t6 = new A.UsesNestedParentComp(A.deopt(_null, t4), A.deopt(_null, t4), A.deopt(_null, type$.List_int));
       _this.__ViewGoldenComponent0__UsesNestedParentComp_7_6_F !== $ && A.throwLateFieldAI("_UsesNestedParentComp_7_6");
-      _this.__ViewGoldenComponent0__UsesNestedParentComp_7_6_F = t1;
-      t4.create$1(t1);
-      t1 = new A.ViewUsesMultipleTypesComp0(A._ComponentViewData__ComponentViewData(_this, 8, B.ChangeDetectionCheckedState_2));
+      _this.__ViewGoldenComponent0__UsesNestedParentComp_7_6_F = t6;
+      t5.create$1(t6);
+      t6 = new A.ViewUsesMultipleTypesComp0(A._ComponentViewData__ComponentViewData(_this, 8, B.ChangeDetectionCheckedState_2));
       styles = $.ViewUsesMultipleTypesComp0__componentStyles;
       if (styles == null)
         styles = $.ViewUsesMultipleTypesComp0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
-      t1.__ComponentView_componentStyles_F = styles;
-      t4 = t3._as(t3._as(t2.document).createElement("uses-multiple-types-comp"));
-      t1.__ComponentView_rootElement_F = t4;
+      t6.__ComponentView_componentStyles_F = styles;
+      t5 = t3._as(t3._as(t2.document).createElement("uses-multiple-types-comp"));
+      t6.__ComponentView_rootElement_F = t5;
       _this.__ViewGoldenComponent0__compView_8_F !== $ && A.throwLateFieldAI("_compView_8");
-      _this.__ViewGoldenComponent0__compView_8_F = t1;
-      parentRenderNode.append(t4);
-      t4 = new A.UsesMultipleTypesComp(self.deopt(), self.deopt());
+      _this.__ViewGoldenComponent0__compView_8_F = t6;
+      parentRenderNode.append(t5);
+      t4 = new A.UsesMultipleTypesComp(A.deopt(_null, t1), A.deopt(_null, t4));
       _this.__ViewGoldenComponent0__UsesMultipleTypesComp_8_6_F !== $ && A.throwLateFieldAI("_UsesMultipleTypesComp_8_6");
       _this.__ViewGoldenComponent0__UsesMultipleTypesComp_8_6_F = t4;
-      t1.create$1(t4);
+      t6.create$1(t4);
       t4 = new A.ViewUsesGenericChangeDetector0(A._ComponentViewData__ComponentViewData(_this, 9, B.ChangeDetectionCheckedState_2));
       styles = $.ViewUsesGenericChangeDetector0__componentStyles;
       if (styles == null)
         styles = $.ViewUsesGenericChangeDetector0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
       t4.__ComponentView_componentStyles_F = styles;
-      t1 = t3._as(t3._as(t2.document).createElement("uses-generic-change-detector"));
-      t4.__ComponentView_rootElement_F = t1;
+      t2 = t3._as(t3._as(t2.document).createElement("uses-generic-change-detector"));
+      t4.__ComponentView_rootElement_F = t2;
       _this.__ViewGoldenComponent0__compView_9_F !== $ && A.throwLateFieldAI("_compView_9");
       _this.__ViewGoldenComponent0__compView_9_F = t4;
-      parentRenderNode.append(t1);
-      t1 = new A.UsesGenericChangeDetector(self.deopt());
+      parentRenderNode.append(t2);
+      t1 = new A.UsesGenericChangeDetector(A.deopt(_null, t1));
       _this.__ViewGoldenComponent0__UsesGenericChangeDetector_9_6_F !== $ && A.throwLateFieldAI("_UsesGenericChangeDetector_9_6");
       _this.__ViewGoldenComponent0__UsesGenericChangeDetector_9_6_F = t1;
       t4.create$1(t1);
@@ -9935,6 +9943,8 @@
       List_List_Object: findType("List<List<Object>>"),
       List_Object: findType("List<Object>"),
       List_dynamic: findType("List<@>"),
+      List_int: findType("List<int>"),
+      Map_int_String: findType("Map<int,String>"),
       MappingComp1_int_String: findType("MappingComp1<int,String>"),
       MappingComp2_int_String: findType("MappingComp2<int,String>"),
       NestedParentComp_int: findType("NestedParentComp<int>"),

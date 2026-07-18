@@ -1,14 +1,16 @@
-@JS()
 library golden;
 
-import 'package:js/js.dart';
+import 'dart:js_interop';
 import 'package:ngx_dart/angular.dart';
 
 import 'on_init_and_destroy.template.dart' as ng;
 
 /// Avoids Dart2JS thinking something is constant/unchanging.
-@JS()
-external T deopt<T>([Object? any]);
+@JS('deopt')
+external ExternalDartReference? _deopt([ExternalDartReference? any]);
+
+T deopt<T>([Object? any]) =>
+    _deopt(any?.toExternalReference)?.toDartObject as T;
 
 void main() {
   runApp(ng.createGoldenComponentFactory());

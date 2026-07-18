@@ -4396,6 +4396,12 @@
       this._currentValue = "";
       this.element = t0;
     },
+    deopt(any, $T) {
+      var t1 = self,
+        t2 = any == null ? null : any;
+      t2 = t1.deopt(t2);
+      return $T._as(t2 == null ? null : t2);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -8906,10 +8912,11 @@
       _this.__ViewGoldenComponent0__ContentHasReference_8_6_F !== $ && A.throwLateFieldAI("_ContentHasReference_8_6");
       _this.__ViewGoldenComponent0__ContentHasReference_8_6_F = t1;
       t5.createAndProject$2(t1, A._setArrayType([B.List_empty0], t6));
-      self.deopt(type$.nullable_List_AnotherDirective._as(A._setArrayType([t3], type$.JSArray_AnotherDirective)));
-      self.deopt(t3);
-      self.deopt(new A.ElementRef());
-      self.deopt(_el_1);
+      t6 = type$.dynamic;
+      A.deopt(type$.nullable_List_AnotherDirective._as(A._setArrayType([t3], type$.JSArray_AnotherDirective)), t6);
+      A.deopt(t3, t6);
+      A.deopt(new A.ElementRef(), t6);
+      A.deopt(_el_1, t6);
     },
     detectChangesInternal$0() {
       var t1, t2, t3, _this = this;
@@ -8927,13 +8934,13 @@
         t3 === $ && A.throwLateFieldNI("_AnotherDirective_1_6");
         t3 = A._setArrayType([t2, t3], type$.JSArray_AnotherDirective);
         B.JSArray_methods.addAll$1(t3, t1.mapNestedViewsWithSingleResult$2$1(new A.ViewGoldenComponent0_detectChangesInternal_closure(), type$.AnotherDirective, type$._ViewGoldenComponent1));
-        self.deopt(type$.nullable_List_AnotherDirective._as(t3));
+        A.deopt(type$.nullable_List_AnotherDirective._as(t3), type$.dynamic);
         _this._viewQuery_AnotherDirective_4_isDirty = false;
       }
       if (_this._viewQuery_q3_5_isDirty) {
         t1 = t1.mapNestedViewsWithSingleResult$2$1(new A.ViewGoldenComponent0_detectChangesInternal_closure0(), type$.AnotherDirective, type$._ViewGoldenComponent1);
         t1 = t1.length !== 0 ? B.JSArray_methods.get$first(t1) : null;
-        self.deopt(type$.nullable_AnotherDirective._as(t1));
+        A.deopt(type$.nullable_AnotherDirective._as(t1), type$.dynamic);
         _this._viewQuery_q3_5_isDirty = false;
       }
       t1 = _this.__ViewGoldenComponent0__compView_3_F;
@@ -9033,7 +9040,7 @@
       _this.__HostView_component_F !== $ && A.throwLateFieldAI(_s9_);
       _this.set$__HostView_component_F(t2);
       _this.__HostView_component_F === $ && A.throwLateFieldNI(_s9_);
-      self.deopt(type$.nullable_List_AnotherDirective._as(A._setArrayType([], type$.JSArray_AnotherDirective)));
+      A.deopt(type$.nullable_List_AnotherDirective._as(A._setArrayType([], type$.JSArray_AnotherDirective)), type$.dynamic);
       _this.initRootNode$1(t1);
     }
   };
@@ -9066,7 +9073,7 @@
         t2 = _this.__ViewEmbeddedQueries0__appEl_2_F;
         t2 === $ && A.throwLateFieldNI("_appEl_2");
         B.JSArray_methods.addAll$1(t1, t2.mapNestedViewsWithSingleResult$2$1(new A.ViewEmbeddedQueries0_detectChangesInternal_closure0(), t3, type$._ViewEmbeddedQueries2));
-        self.deopt(type$.nullable_List_AnotherDirective._as(t1));
+        A.deopt(type$.nullable_List_AnotherDirective._as(t1), type$.dynamic);
         _this._viewQuery_AnotherDirective_0_isDirty = false;
       }
     }
@@ -9096,7 +9103,7 @@
       t1 = _this.__ViewNestedNgForQueriesList0__appEl_0_F = new A.ViewContainer(0, _this, _anchor_0);
       _this.__ViewNestedNgForQueriesList0__NgIf_0_10_F !== $ && A.throwLateFieldAI("_NgIf_0_10");
       _this.__ViewNestedNgForQueriesList0__NgIf_0_10_F = new A.NgIf(new A.TemplateRef(t1, A.queries_template__viewFactory_NestedNgForQueriesList1$closure()), t1);
-      self.deopt(type$.nullable_List_AnotherDirective._as(A._setArrayType([], type$.JSArray_AnotherDirective)));
+      A.deopt(type$.nullable_List_AnotherDirective._as(A._setArrayType([], type$.JSArray_AnotherDirective)), type$.dynamic);
     },
     detectChangesInternal$0() {
       this.__ComponentView_ctx_F === $ && A.throwLateFieldNI("ctx");
@@ -9208,7 +9215,7 @@
       t2 = _this.__ViewStaticSingleQuery0__appEl_1_F = new A.ViewContainer(1, _this, _anchor_1);
       _this.__ViewStaticSingleQuery0__NgIf_1_10_F !== $ && A.throwLateFieldAI("_NgIf_1_10");
       _this.__ViewStaticSingleQuery0__NgIf_1_10_F = new A.NgIf(new A.TemplateRef(t2, A.queries_template__viewFactory_StaticSingleQuery1$closure()), t2);
-      self.deopt(t1);
+      A.deopt(t1, type$.dynamic);
     },
     detectChangesInternal$0() {
       this.__ComponentView_ctx_F === $ && A.throwLateFieldNI("ctx");
@@ -9267,7 +9274,7 @@
         t1 = _this.__ViewDynamicSingleQuery0__AnotherDirective_1_6_F;
         t1 === $ && A.throwLateFieldNI("_AnotherDirective_1_6");
         t2.push(t1);
-        self.deopt(type$.nullable_AnotherDirective._as(B.JSArray_methods.get$first(t2)));
+        A.deopt(type$.nullable_AnotherDirective._as(B.JSArray_methods.get$first(t2)), type$.dynamic);
         _this._viewQuery_AnotherDirective_0_isDirty = false;
       }
     },
@@ -9310,7 +9317,7 @@
       parentRenderNode = this.initViewRoot$0();
       _el_0 = A.appendDiv(type$.JSObject._as(self.document), parentRenderNode);
       this.project$2(_el_0, 0);
-      self.deopt(_el_0);
+      A.deopt(_el_0, type$.dynamic);
     }
   };
   A.ViewContentHasReference0.prototype = {

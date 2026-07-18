@@ -6937,7 +6937,8 @@
       t3 === $ && A.throwLateFieldNI(_s13_);
       t7 = t3.__ComponentView_rootElement_F;
       t7 === $ && A.throwLateFieldNI(_s11_);
-      t8 = t6._eval$1("HostView.T")._as(new A.GoldenComponent(self.deopt()));
+      t8 = t4.deopt(null);
+      t8 = t6._eval$1("HostView.T")._as(new A.GoldenComponent(A._asString(t8 == null ? _null : t8)));
       hostView.__HostView_component_F !== $ && A.throwLateFieldAI(_s9_);
       hostView.set$__HostView_component_F(t8);
       hostView.initRootNode$1(t7);

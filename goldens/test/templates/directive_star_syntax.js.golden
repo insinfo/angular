@@ -4345,6 +4345,11 @@
       this._currentValue = "";
       this.element = t0;
     },
+    deopt($T) {
+      var t1 = self;
+      t1 = t1.deopt(null);
+      return $T._as(t1 == null ? null : t1);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -8657,7 +8662,7 @@
       t1 === $ && A.throwLateFieldNI(_s13_);
       t1 = t1.__ComponentView_rootElement_F;
       t1 === $ && A.throwLateFieldNI("rootElement");
-      t2 = t2._eval$1("HostView.T")._as(new A.GoldenComponent(self.deopt(), self.deopt(), self.deopt()));
+      t2 = t2._eval$1("HostView.T")._as(new A.GoldenComponent(A.deopt(type$.bool), A.deopt(type$.String), A.deopt(type$.List_int)));
       _this.__HostView_component_F !== $ && A.throwLateFieldAI("component");
       _this.set$__HostView_component_F(t2);
       _this.initRootNode$1(t1);
@@ -8837,6 +8842,7 @@
       List_List_Object: findType("List<List<Object>>"),
       List_Object: findType("List<Object>"),
       List_dynamic: findType("List<@>"),
+      List_int: findType("List<int>"),
       Null: findType("Null"),
       Null_Function: findType("Null()"),
       Object: findType("Object"),

@@ -4228,6 +4228,12 @@
     OpaqueToken: function OpaqueToken(t0) {
       this.$ti = t0;
     },
+    deopt(any, $T) {
+      var t1 = self,
+        t2 = any == null ? null : any;
+      t2 = t1.deopt(t2);
+      return $T._as(t2 == null ? null : t2);
+    },
     main() {
       var injector = A.appInjector(A.run___identityInjector$closure());
       A.checkTypeBound(type$.ApplicationRef, type$.Object, "T", "provideType");
@@ -6929,7 +6935,7 @@
   };
   A.ApplicationRef_bootstrap_closure.prototype = {
     call$0() {
-      var t3, styles, t4, t5, t6, t7, t8, component, existing, replacement,
+      var t3, styles, t4, t5, t6, t7, t8, component, existing, replacement, _null = null,
         _s11_ = "rootElement",
         _s13_ = "componentView",
         _s9_ = "component",
@@ -6942,7 +6948,7 @@
       t3 = new A.ViewGoldenComponent0(A._ComponentViewData__ComponentViewData(hostView, 0, B.ChangeDetectionCheckedState_2));
       styles = $.ViewGoldenComponent0__componentStyles;
       if (styles == null)
-        styles = $.ViewGoldenComponent0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, null);
+        styles = $.ViewGoldenComponent0__componentStyles = A._UnscopedComponentStyles$(B.List_empty0, _null);
       t3.__ComponentView_componentStyles_F = styles;
       t4 = self;
       t5 = type$.JSObject;
@@ -6955,7 +6961,8 @@
       t3 === $ && A.throwLateFieldNI(_s13_);
       t7 = t3.__ComponentView_rootElement_F;
       t7 === $ && A.throwLateFieldNI(_s11_);
-      t8 = t6._eval$1("HostView.T")._as(new A.GoldenComponent(self.deopt(), self.deopt()));
+      t8 = type$.String;
+      t8 = t6._eval$1("HostView.T")._as(new A.GoldenComponent(A.deopt(_null, t8), A.deopt(_null, t8)));
       hostView.__HostView_component_F !== $ && A.throwLateFieldAI(_s9_);
       hostView.set$__HostView_component_F(t8);
       hostView.initRootNode$1(t7);
@@ -6974,10 +6981,10 @@
         replacement = t3;
       } else {
         t6._as(t5._as(t4.document).body).append(t3);
-        replacement = null;
+        replacement = _null;
       }
       A.checkTypeBound(type$.Testability, type$.Object, "T", "provideTypeOptional");
-      new A._ElementInjector(hostView, 0).$get$2(B.Type_Testability_a1W, null);
+      new A._ElementInjector(hostView, 0).$get$2(B.Type_Testability_a1W, _null);
       t2._loadedRootComponent$2(component, replacement);
       return component;
     },
@@ -7637,35 +7644,36 @@
       firstCheck = _this._component_view$_data._component_view$_changeDetectorState === B.ChangeDetectorState_0;
       if (firstCheck) {
         _this.__ViewGoldenComponent0__HasInputComponent_0_6_F === $ && A.throwLateFieldNI("_HasInputComponent_0_6");
-        self.deopt(t1.immutableValue);
+        A.deopt(t1.immutableValue, type$.dynamic);
       }
       currVal_1 = t1.mutableValue;
       t1 = _this._expr_1;
       if (t1 !== currVal_1) {
         _this.__ViewGoldenComponent0__HasInputComponent_1_6_F === $ && A.throwLateFieldNI("_HasInputComponent_1_6");
-        self.deopt(currVal_1);
+        A.deopt(currVal_1, type$.dynamic);
         _this._expr_1 = currVal_1;
       }
       if (firstCheck) {
         _this.__ViewGoldenComponent0__HasInputComponent_2_6_F === $ && A.throwLateFieldNI("_HasInputComponent_2_6");
-        self.deopt("literalValue");
+        t1 = type$.dynamic;
+        A.deopt("literalValue", t1);
         _this.__ViewGoldenComponent0__HasInputComponent_3_6_F === $ && A.throwLateFieldNI("_HasInputComponent_3_6");
-        self.deopt("attributeValue");
+        A.deopt("attributeValue", t1);
         _this.__ViewGoldenComponent0__HasInputComponent_4_6_F === $ && A.throwLateFieldNI("_HasInputComponent_4_6");
-        self.deopt($.$get$ViewGoldenComponent0__message_0());
+        A.deopt($.$get$ViewGoldenComponent0__message_0(), t1);
         _this.__ViewGoldenComponent0__HasInputsComponent_5_6_F === $ && A.throwLateFieldNI(_s23_);
-        self.deopt(12);
+        A.deopt(12, t1);
       }
       t1 = _this._expr_5;
       if (t1 !== currVal_1) {
         _this.__ViewGoldenComponent0__HasInputsComponent_5_6_F === $ && A.throwLateFieldNI(_s23_);
-        self.deopt(currVal_1);
+        A.deopt(currVal_1, type$.dynamic);
         _this._expr_5 = currVal_1;
       }
       t1 = _this._expr_7;
       if (t1 !== currVal_1) {
         _this.__ViewGoldenComponent0__HasRenamedInputComponent_6_6_F === $ && A.throwLateFieldNI("_HasRenamedInputComponent_6_6");
-        self.deopt(currVal_1);
+        A.deopt(currVal_1, type$.dynamic);
         _this._expr_7 = currVal_1;
       }
       t1 = _this.__ViewGoldenComponent0__compView_0_F;
