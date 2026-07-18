@@ -1,5 +1,3 @@
-library golden;
-
 import 'dart:async';
 
 import 'dart:js_interop';

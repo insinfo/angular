@@ -95,13 +95,13 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
   @override
   void detectChangesInternal() {
     final _ctx = this.ctx;
-    this._textBinding_4.updateText(import11.interpolate0(this._pipe_identity_0_0(_ctx.a))) /* REF:asset:goldens/test/templates/pipes.dart:556:579 */;
-    this._textBinding_7.updateText(import11.interpolate0(this._pipe_concat_1_0(_ctx.a, _ctx.b))) /* REF:asset:goldens/test/templates/pipes.dart:625:649 */;
-    this._textBinding_10.updateText(import11.interpolate0(this._pipe_merge_2_0(_ctx.a, _ctx.b))) /* REF:asset:goldens/test/templates/pipes.dart:695:718 */;
-    this._textBinding_13.updateText(import11.interpolate0(this._pipe_typed_3_0(_ctx.a, 1))) /* REF:asset:goldens/test/templates/pipes.dart:764:787 */;
-    this._textBinding_16.updateText(import11.interpolate0(this._pipe_pureLifecycle_4_0(_ctx.a))) /* REF:asset:goldens/test/templates/pipes.dart:833:861 */;
-    this._textBinding_21.updateText(import11.interpolate0(this._pipe_time_5.transform('now'))) /* REF:asset:goldens/test/templates/pipes.dart:956:979 */;
-    this._textBinding_24.updateText(import11.interpolate0(this._pipe_impureLifecycle_6.transform(_ctx.a))) /* REF:asset:goldens/test/templates/pipes.dart:1025:1055 */;
+    this._textBinding_4.updateText(import11.interpolate0(this._pipe_identity_0_0(_ctx.a))) /* REF:asset:goldens/test/templates/pipes.dart:537:560 */;
+    this._textBinding_7.updateText(import11.interpolate0(this._pipe_concat_1_0(_ctx.a, _ctx.b))) /* REF:asset:goldens/test/templates/pipes.dart:606:630 */;
+    this._textBinding_10.updateText(import11.interpolate0(this._pipe_merge_2_0(_ctx.a, _ctx.b))) /* REF:asset:goldens/test/templates/pipes.dart:676:699 */;
+    this._textBinding_13.updateText(import11.interpolate0(this._pipe_typed_3_0(_ctx.a, 1))) /* REF:asset:goldens/test/templates/pipes.dart:745:768 */;
+    this._textBinding_16.updateText(import11.interpolate0(this._pipe_pureLifecycle_4_0(_ctx.a))) /* REF:asset:goldens/test/templates/pipes.dart:814:842 */;
+    this._textBinding_21.updateText(import11.interpolate0(this._pipe_time_5.transform('now'))) /* REF:asset:goldens/test/templates/pipes.dart:937:960 */;
+    this._textBinding_24.updateText(import11.interpolate0(this._pipe_impureLifecycle_6.transform(_ctx.a))) /* REF:asset:goldens/test/templates/pipes.dart:1006:1036 */;
   }
 
   @override

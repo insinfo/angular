@@ -61,7 +61,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import8.isDevToolsEnabled) {
         import8.Inspector.instance.recordInput(this._Child_0_6, 'name', currVal_0);
       }
-      this._Child_0_6.name = currVal_0 /* REF:asset:goldens/test/change_detection/on_push.dart:559:572 */;
+      this._Child_0_6.name = currVal_0 /* REF:asset:goldens/test/change_detection/on_push.dart:540:553 */;
       changed = true;
       this._expr_0 = currVal_0;
     }
@@ -74,7 +74,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import8.isDevToolsEnabled) {
         import8.Inspector.instance.recordInput(this._ChildWithDoCheck_1_6, 'name', currVal_1);
       }
-      this._ChildWithDoCheck_1_6.name = currVal_1 /* REF:asset:goldens/test/change_detection/on_push.dart:607:620 */;
+      this._ChildWithDoCheck_1_6.name = currVal_1 /* REF:asset:goldens/test/change_detection/on_push.dart:588:601 */;
       changed = true;
       this._expr_1 = currVal_1;
     }
@@ -158,7 +158,7 @@ class ViewChild0 extends import0.ComponentView<import1.Child> {
   @override
   void detectChangesInternal() {
     final _ctx = this.ctx;
-    this._textBinding_1.updateText(import13.interpolateString0(_ctx.name)) /* REF:asset:goldens/test/change_detection/on_push.dart:819:827 */;
+    this._textBinding_1.updateText(import13.interpolateString0(_ctx.name)) /* REF:asset:goldens/test/change_detection/on_push.dart:800:808 */;
   }
 
   static void _debugClearComponentStyles() {
@@ -234,7 +234,7 @@ class ViewChildWithDoCheck0 extends import0.ComponentView<import1.ChildWithDoChe
   @override
   void detectChangesInternal() {
     final _ctx = this.ctx;
-    this._textBinding_1.updateText(import13.interpolateString0(_ctx.name)) /* REF:asset:goldens/test/change_detection/on_push.dart:1003:1011 */;
+    this._textBinding_1.updateText(import13.interpolateString0(_ctx.name)) /* REF:asset:goldens/test/change_detection/on_push.dart:984:992 */;
   }
 
   static void _debugClearComponentStyles() {

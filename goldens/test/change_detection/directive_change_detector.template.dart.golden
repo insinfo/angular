@@ -55,7 +55,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import9.isDevToolsEnabled) {
         import9.Inspector.instance.recordInput(this._NgModelLike_0_6, 'ngModel', currVal_0);
       }
-      this._NgModelLike_0_6.model = currVal_0 /* REF:asset:goldens/test/change_detection/directive_change_detector.dart:560:579 */;
+      this._NgModelLike_0_6.model = currVal_0 /* REF:asset:goldens/test/change_detection/directive_change_detector.dart:541:560 */;
       changed = true;
       this._expr_0 = currVal_0;
     }

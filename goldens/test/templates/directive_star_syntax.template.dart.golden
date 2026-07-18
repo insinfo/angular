@@ -70,13 +70,13 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     if (import12.isDevToolsEnabled) {
       import12.Inspector.instance.recordInput(this._NgIf_0_10, 'ngIf', _ctx.show);
     }
-    this._NgIf_0_10.ngIf = _ctx.show /* REF:asset:goldens/test/templates/directive_star_syntax.dart:558:570 */;
+    this._NgIf_0_10.ngIf = _ctx.show /* REF:asset:goldens/test/templates/directive_star_syntax.dart:539:551 */;
     final currVal_0 = _ctx.values;
     if (import14.checkBinding(this._expr_0, currVal_0, 'values', 'asset:goldens/test/templates/directive_star_syntax.dart')) {
       if (import12.isDevToolsEnabled) {
         import12.Inspector.instance.recordInput(this._NgFor_2_10, 'ngForOf', currVal_0);
       }
-      this._NgFor_2_10.ngForOf = currVal_0 /* REF:asset:goldens/test/templates/directive_star_syntax.dart:629:687 */;
+      this._NgFor_2_10.ngForOf = currVal_0 /* REF:asset:goldens/test/templates/directive_star_syntax.dart:610:668 */;
       this._expr_0 = currVal_0;
     }
     if ((!import14.debugThrowIfChanged)) {
@@ -133,7 +133,7 @@ class _ViewGoldenComponent1 extends import16.EmbeddedView<import1.GoldenComponen
   @override
   void detectChangesInternal() {
     final _ctx = this.ctx;
-    this._textBinding_2.updateText(import19.interpolateString0(_ctx.value)) /* REF:asset:goldens/test/templates/directive_star_syntax.dart:588:597 */;
+    this._textBinding_2.updateText(import19.interpolateString0(_ctx.value)) /* REF:asset:goldens/test/templates/directive_star_syntax.dart:569:578 */;
   }
 }
 
@@ -164,9 +164,9 @@ class _ViewGoldenComponent2 extends import16.EmbeddedView<import1.GoldenComponen
     final local_index = import8.unsafeCast<int>(this.locals['index']);
     final local_v = import8.unsafeCast<int>(this.locals['\$implicit']);
     final local_odd = import8.unsafeCast<bool>(this.locals['odd']);
-    this._textBinding_1.updateTextWithPrimitive(local_index) /* REF:asset:goldens/test/templates/directive_star_syntax.dart:697:706 */;
-    this._textBinding_3.updateTextWithPrimitive(local_v) /* REF:asset:goldens/test/templates/directive_star_syntax.dart:708:713 */;
-    this._textBinding_5.updateTextWithPrimitive(local_odd) /* REF:asset:goldens/test/templates/directive_star_syntax.dart:715:722 */;
+    this._textBinding_1.updateTextWithPrimitive(local_index) /* REF:asset:goldens/test/templates/directive_star_syntax.dart:678:687 */;
+    this._textBinding_3.updateTextWithPrimitive(local_v) /* REF:asset:goldens/test/templates/directive_star_syntax.dart:689:694 */;
+    this._textBinding_5.updateTextWithPrimitive(local_odd) /* REF:asset:goldens/test/templates/directive_star_syntax.dart:696:703 */;
   }
 }
 

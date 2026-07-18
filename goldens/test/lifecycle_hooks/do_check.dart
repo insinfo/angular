@@ -1,5 +1,3 @@
-library golden;
-
 import 'dart:js_interop';
 import 'package:ngx_dart/angular.dart';
 

@@ -1,5 +1,3 @@
-library golden;
-
 import 'dart:js_interop';
 import 'package:ngx_dart/angular.dart';
 import 'package:ngx_dart/experimental.dart';
@@ -53,10 +51,10 @@ class GoldenComponent {}
 )
 class OnPushLink {
   @ViewChild('container', read: ViewContainerRef)
-  set container(ViewContainerRef? _) => deopt(_);
+  set container(ViewContainerRef? value) => deopt(value);
 
   @ViewChild('embeddedContainer', read: ViewContainerRef)
-  set embeddedContainer(ViewContainerRef? _) => deopt(_);
+  set embeddedContainer(ViewContainerRef? value) => deopt(value);
 
   bool isVisible = deopt();
 }
@@ -79,5 +77,5 @@ class NestedOnPush {}
 )
 class NestedOnPushLink {
   @ViewChild('container', read: ViewContainerRef)
-  set container(ViewContainerRef? _) => deopt(_);
+  set container(ViewContainerRef? value) => deopt(value);
 }

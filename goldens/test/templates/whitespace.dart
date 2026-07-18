@@ -1,5 +1,3 @@
-library golden;
-
 import 'package:ngx_dart/angular.dart';
 
 import 'whitespace.template.dart' as ng;

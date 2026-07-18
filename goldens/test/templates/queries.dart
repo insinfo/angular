@@ -1,9 +1,7 @@
-library golden;
-
-import 'package:web/web.dart';
-
 import 'dart:js_interop';
+
 import 'package:ngx_dart/angular.dart';
+import 'package:web/web.dart';
 
 import 'queries.template.dart' as ng;
 

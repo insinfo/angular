@@ -82,7 +82,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import10.isDevToolsEnabled) {
         import10.Inspector.instance.recordInput(this._NoEncapsulation_0_6, 'floatingLabel', currVal_0);
       }
-      this._NoEncapsulation_0_6.floatingLabel = currVal_0 /* REF:asset:goldens/test/templates/encapsulation.dart:596:627 */;
+      this._NoEncapsulation_0_6.floatingLabel = currVal_0 /* REF:asset:goldens/test/templates/encapsulation.dart:577:608 */;
       this._expr_0 = currVal_0;
     }
     final currVal_1 = _ctx.trailingLabel;
@@ -90,7 +90,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import10.isDevToolsEnabled) {
         import10.Inspector.instance.recordInput(this._NoEncapsulation_0_6, 'trailingGlyphAriaLabel', currVal_1);
       }
-      this._NoEncapsulation_0_6.trailingGlyphAriaLabel = currVal_1 /* REF:asset:goldens/test/templates/encapsulation.dart:634:674 */;
+      this._NoEncapsulation_0_6.trailingGlyphAriaLabel = currVal_1 /* REF:asset:goldens/test/templates/encapsulation.dart:615:655 */;
       this._expr_1 = currVal_1;
     }
     final currVal_2 = _ctx.disabled;
@@ -98,7 +98,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import10.isDevToolsEnabled) {
         import10.Inspector.instance.recordInput(this._NoEncapsulation_0_6, 'disabled', currVal_2);
       }
-      this._NoEncapsulation_0_6.disabled = currVal_2 /* REF:asset:goldens/test/templates/encapsulation.dart:681:702 */;
+      this._NoEncapsulation_0_6.disabled = currVal_2 /* REF:asset:goldens/test/templates/encapsulation.dart:662:683 */;
       this._expr_2 = currVal_2;
     }
     final currVal_4 = _ctx.floatingLabel;
@@ -106,7 +106,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import10.isDevToolsEnabled) {
         import10.Inspector.instance.recordInput(this._EmulatedEncapsulation_5_6, 'floatingLabel', currVal_4);
       }
-      this._EmulatedEncapsulation_5_6.floatingLabel = currVal_4 /* REF:asset:goldens/test/templates/encapsulation.dart:866:897 */;
+      this._EmulatedEncapsulation_5_6.floatingLabel = currVal_4 /* REF:asset:goldens/test/templates/encapsulation.dart:847:878 */;
       this._expr_4 = currVal_4;
     }
     final currVal_5 = _ctx.trailingLabel;
@@ -114,7 +114,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import10.isDevToolsEnabled) {
         import10.Inspector.instance.recordInput(this._EmulatedEncapsulation_5_6, 'trailingGlyphAriaLabel', currVal_5);
       }
-      this._EmulatedEncapsulation_5_6.trailingGlyphAriaLabel = currVal_5 /* REF:asset:goldens/test/templates/encapsulation.dart:904:944 */;
+      this._EmulatedEncapsulation_5_6.trailingGlyphAriaLabel = currVal_5 /* REF:asset:goldens/test/templates/encapsulation.dart:885:925 */;
       this._expr_5 = currVal_5;
     }
     final currVal_6 = _ctx.disabled;
@@ -122,17 +122,17 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import10.isDevToolsEnabled) {
         import10.Inspector.instance.recordInput(this._EmulatedEncapsulation_5_6, 'disabled', currVal_6);
       }
-      this._EmulatedEncapsulation_5_6.disabled = currVal_6 /* REF:asset:goldens/test/templates/encapsulation.dart:951:972 */;
+      this._EmulatedEncapsulation_5_6.disabled = currVal_6 /* REF:asset:goldens/test/templates/encapsulation.dart:932:953 */;
       this._expr_6 = currVal_6;
     }
     final currVal_3 = import11.interpolateString1('highlight ', _ctx.addClass, '');
     if (import9.checkBinding(this._expr_3, currVal_3, 'highlight {{addClass}}', 'asset:goldens/test/templates/encapsulation.dart')) {
-      this.updateChildClass(this._el_3, currVal_3) /* REF:asset:goldens/test/templates/encapsulation.dart:750:780 */;
+      this.updateChildClass(this._el_3, currVal_3) /* REF:asset:goldens/test/templates/encapsulation.dart:731:761 */;
       this._expr_3 = currVal_3;
     }
     final currVal_7 = import11.interpolateString1('highlight ', _ctx.addClass, '');
     if (import9.checkBinding(this._expr_7, currVal_7, 'highlight {{addClass}}', 'asset:goldens/test/templates/encapsulation.dart')) {
-      this.updateChildClass(this._el_8, currVal_7) /* REF:asset:goldens/test/templates/encapsulation.dart:1020:1050 */;
+      this.updateChildClass(this._el_8, currVal_7) /* REF:asset:goldens/test/templates/encapsulation.dart:1001:1031 */;
       this._expr_7 = currVal_7;
     }
     this._compView_0.detectChanges();
@@ -220,17 +220,17 @@ class ViewNoEncapsulation0 extends import0.ComponentView<import1.NoEncapsulation
     final _ctx = this.ctx;
     final currVal_0 = _ctx.floatingLabel;
     if (import9.checkBinding(this._expr_0, currVal_0, 'floatingLabel', 'asset:goldens/test/templates/encapsulation.dart')) {
-      import8.updateClassBinding(this._el_0, 'floated-label', currVal_0) /* REF:asset:goldens/test/templates/encapsulation.dart:1398:1435 */;
+      import8.updateClassBinding(this._el_0, 'floated-label', currVal_0) /* REF:asset:goldens/test/templates/encapsulation.dart:1379:1416 */;
       this._expr_0 = currVal_0;
     }
     final currVal_1 = _ctx.trailingGlyphAriaLabel;
     if (import9.checkBinding(this._expr_1, currVal_1, 'trailingGlyphAriaLabel', 'asset:goldens/test/templates/encapsulation.dart')) {
-      import8.updateAttribute(this._el_1, 'aria-label', currVal_1) /* REF:asset:goldens/test/templates/encapsulation.dart:1483:1525 */;
+      import8.updateAttribute(this._el_1, 'aria-label', currVal_1) /* REF:asset:goldens/test/templates/encapsulation.dart:1464:1506 */;
       this._expr_1 = currVal_1;
     }
     final currVal_2 = _ctx.disabled;
     if (import9.checkBinding(this._expr_2, currVal_2, 'disabled', 'asset:goldens/test/templates/encapsulation.dart')) {
-      import8.updateAttribute(this._el_1, 'disabled', (currVal_2 ? '' : null)) /* REF:asset:goldens/test/templates/encapsulation.dart:1538:1567 */;
+      import8.updateAttribute(this._el_1, 'disabled', (currVal_2 ? '' : null)) /* REF:asset:goldens/test/templates/encapsulation.dart:1519:1548 */;
       this._expr_2 = currVal_2;
     }
   }
@@ -312,17 +312,17 @@ class ViewEmulatedEncapsulation0 extends import0.ComponentView<import1.EmulatedE
     final _ctx = this.ctx;
     final currVal_0 = _ctx.floatingLabel;
     if (import9.checkBinding(this._expr_0, currVal_0, 'floatingLabel', 'asset:goldens/test/templates/encapsulation.dart')) {
-      import8.updateClassBinding(this._el_0, 'floated-label', currVal_0) /* REF:asset:goldens/test/templates/encapsulation.dart:2334:2371 */;
+      import8.updateClassBinding(this._el_0, 'floated-label', currVal_0) /* REF:asset:goldens/test/templates/encapsulation.dart:2315:2352 */;
       this._expr_0 = currVal_0;
     }
     final currVal_1 = _ctx.trailingGlyphAriaLabel;
     if (import9.checkBinding(this._expr_1, currVal_1, 'trailingGlyphAriaLabel', 'asset:goldens/test/templates/encapsulation.dart')) {
-      import8.updateAttribute(this._el_1, 'aria-label', currVal_1) /* REF:asset:goldens/test/templates/encapsulation.dart:2418:2460 */;
+      import8.updateAttribute(this._el_1, 'aria-label', currVal_1) /* REF:asset:goldens/test/templates/encapsulation.dart:2399:2441 */;
       this._expr_1 = currVal_1;
     }
     final currVal_2 = _ctx.disabled;
     if (import9.checkBinding(this._expr_2, currVal_2, 'disabled', 'asset:goldens/test/templates/encapsulation.dart')) {
-      import8.updateAttribute(this._el_1, 'disabled', (currVal_2 ? '' : null)) /* REF:asset:goldens/test/templates/encapsulation.dart:2472:2501 */;
+      import8.updateAttribute(this._el_1, 'disabled', (currVal_2 ? '' : null)) /* REF:asset:goldens/test/templates/encapsulation.dart:2453:2482 */;
       this._expr_2 = currVal_2;
     }
   }

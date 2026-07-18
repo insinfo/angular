@@ -82,7 +82,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import12.isDevToolsEnabled) {
         import12.Inspector.instance.recordInput(this._NgFor_9_10, 'ngForOf', currVal_0);
       }
-      this._NgFor_9_10.ngForOf = currVal_0 /* REF:asset:goldens/test/templates/type_inference.dart:434:471 */;
+      this._NgFor_9_10.ngForOf = currVal_0 /* REF:asset:goldens/test/templates/type_inference.dart:415:452 */;
       this._expr_0 = currVal_0;
     }
     if ((!import13.debugThrowIfChanged)) {
@@ -93,7 +93,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
       if (import12.isDevToolsEnabled) {
         import12.Inspector.instance.recordInput(this._NgFor_11_10, 'ngForOf', currVal_1);
       }
-      this._NgFor_11_10.ngForOf = currVal_1 /* REF:asset:goldens/test/templates/type_inference.dart:546:586 */;
+      this._NgFor_11_10.ngForOf = currVal_1 /* REF:asset:goldens/test/templates/type_inference.dart:527:567 */;
       this._expr_1 = currVal_1;
     }
     if ((!import13.debugThrowIfChanged)) {
@@ -101,9 +101,9 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     }
     this._appEl_9.detectChangesInNestedViews();
     this._appEl_11.detectChangesInNestedViews();
-    this._textBinding_1.updateText(import14.interpolateString0((_ctx.stringA + _ctx.stringB))) /* REF:asset:goldens/test/templates/type_inference.dart:280:301 */;
-    this._textBinding_4.updateText(import14.interpolateString0(_ctx.stringA.toUpperCase())) /* REF:asset:goldens/test/templates/type_inference.dart:328:353 */;
-    this._textBinding_7.updateText(import14.interpolate0(import1.GoldenComponent.max(_ctx.int1, _ctx.int2).isEven)) /* REF:asset:goldens/test/templates/type_inference.dart:388:414 */;
+    this._textBinding_1.updateText(import14.interpolateString0((_ctx.stringA + _ctx.stringB))) /* REF:asset:goldens/test/templates/type_inference.dart:261:282 */;
+    this._textBinding_4.updateText(import14.interpolateString0(_ctx.stringA.toUpperCase())) /* REF:asset:goldens/test/templates/type_inference.dart:309:334 */;
+    this._textBinding_7.updateText(import14.interpolate0(import1.GoldenComponent.max(_ctx.int1, _ctx.int2).isEven)) /* REF:asset:goldens/test/templates/type_inference.dart:369:395 */;
   }
 
   @override
@@ -148,7 +148,7 @@ class _ViewGoldenComponent1 extends import16.EmbeddedView<import1.GoldenComponen
   @override
   void detectChangesInternal() {
     final local_duration = import8.unsafeCast<Duration>(this.locals['\$implicit']);
-    this._textBinding_0.updateTextWithPrimitive(local_duration.inMilliseconds) /* REF:asset:goldens/test/templates/type_inference.dart:479:506 */;
+    this._textBinding_0.updateTextWithPrimitive(local_duration.inMilliseconds) /* REF:asset:goldens/test/templates/type_inference.dart:460:487 */;
   }
 }
 
@@ -181,7 +181,7 @@ class _ViewGoldenComponent2 extends import16.EmbeddedView<import1.GoldenComponen
       if (import12.isDevToolsEnabled) {
         import12.Inspector.instance.recordInput(this._NgFor_0_10, 'ngForOf', currVal_0);
       }
-      this._NgFor_0_10.ngForOf = currVal_0 /* REF:asset:goldens/test/templates/type_inference.dart:608:645 */;
+      this._NgFor_0_10.ngForOf = currVal_0 /* REF:asset:goldens/test/templates/type_inference.dart:589:626 */;
       this._expr_0 = currVal_0;
     }
     if ((!import13.debugThrowIfChanged)) {
@@ -211,7 +211,7 @@ class _ViewGoldenComponent3 extends import16.EmbeddedView<import1.GoldenComponen
   @override
   void detectChangesInternal() {
     final local_duration = import8.unsafeCast<Duration>(this.locals['\$implicit']);
-    this._textBinding_0.updateTextWithPrimitive(local_duration.inMilliseconds) /* REF:asset:goldens/test/templates/type_inference.dart:655:682 */;
+    this._textBinding_0.updateTextWithPrimitive(local_duration.inMilliseconds) /* REF:asset:goldens/test/templates/type_inference.dart:636:663 */;
   }
 }
 
