@@ -66,10 +66,22 @@ dev_dependencies:
   `-dev` suffix) to pub.dev requires renaming the packages. That work will
   happen in a separate branch, keeping this one untouched.
 
+### Documentation site
+
+A static mirror of the AngularDart documentation site (guide, tutorial,
+codelabs, cheat sheet, ...) lives in [`site_ngdart/`](site_ngdart/) and is
+published with GitHub Pages at:
+
+**https://insinfo.github.io/angular/**
+
+The deploy is automated by
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml) whenever
+`site_ngdart/` changes on this branch.
+
 ### Upstream resources
 
 - Original repository: https://github.com/angulardart-community/angular
-- AngularDart documentation: https://angulardart.xyz
+- Original documentation site: https://angulardart.xyz
 - Original AngularDart project (restricted maintenance):
   https://github.com/angulardart
 

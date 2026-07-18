@@ -54,12 +54,16 @@ jobs:
             command: dart run test -P ci
           - package: ngcompiler
             command: dart run test -P ci
+          # --delete-conflicting-outputs: the pub.dev-published packages ship
+          # their generated *.mocks.dart files, which build_runner detects as
+          # pre-existing outputs and asks permission to replace (impossible in
+          # a non-interactive runner, exit code 78).
           - package: ngforms
-            command: dart run build_runner test --fail-on-severe -- -P ci
+            command: dart run build_runner test --delete-conflicting-outputs --fail-on-severe -- -P ci
           - package: ngrouter
-            command: dart run build_runner test --fail-on-severe -- -P ci
+            command: dart run build_runner test --delete-conflicting-outputs --fail-on-severe -- -P ci
           - package: ngtest
-            command: dart run build_runner test --fail-on-severe -- -P ci
+            command: dart run build_runner test --delete-conflicting-outputs --fail-on-severe -- -P ci
     steps:
       - name: Setup Dart SDK
         uses: dart-lang/setup-dart@v1
