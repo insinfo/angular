@@ -62,8 +62,10 @@ void main() {
       String expected = '<!-- comments? -->no.';
       expect(sanitizeHtmlInternal(testInput), expected);
       testInput = '<?pi nodes?>no.';
-      expected = '<!--?pi nodes?-->no.';
-      expect(sanitizeHtmlInternal(testInput), expected);
+      // Older Chrome preserves the bogus comment produced by a processing
+      // instruction; newer Chrome drops it entirely.
+      expect(sanitizeHtmlInternal(testInput),
+          anyOf('<!--?pi nodes?-->no.', 'no.'));
     });
     test('escaped entities', () {
       String testInput = '<p>Hello &lt; World</p>';
