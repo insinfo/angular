@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 import 'package:ngx_router/ngx_router.dart';
 import 'package:ngx_router/src/location/testing/mock_location_strategy.dart'; // by some cause it is not visilble by ngx_router/testing.dart above
 import 'package:ngx_router/testing.dart';

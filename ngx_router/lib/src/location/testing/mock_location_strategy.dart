@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:html' show EventListener, PopStateEvent;
 
-import 'package:ngx_core/angular.dart' show Injectable;
+import 'package:ngx_dart/angular.dart' show Injectable;
 import 'package:ngx_router/src/location/location_strategy.dart'
     show LocationStrategy;
 

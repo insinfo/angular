@@ -2,10 +2,10 @@ import 'dart:async';
 import 'dart:html';
 
 import 'package:test/test.dart';
-import 'package:ngx_core/angular.dart';
-import 'package:ngx_core/src/core/application_ref.dart';
-import 'package:ngx_core/src/core/linker/app_view_utils.dart';
-import 'package:ngx_core/src/runtime/dom_events.dart';
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/application_ref.dart';
+import 'package:ngx_dart/src/core/linker/app_view_utils.dart';
+import 'package:ngx_dart/src/runtime/dom_events.dart';
 
 import 'application_ref_test.template.dart' as ng;
 

@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:collection/collection.dart';
 import 'package:meta/meta.dart';
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 
 import '../stabilizer.dart';
 

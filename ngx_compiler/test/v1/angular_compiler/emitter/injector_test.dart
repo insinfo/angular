@@ -203,7 +203,7 @@ void main() {
         classUrl: TypeLink(
           'MultiToken',
           ''
-              'package:ngx_core'
+              'package:ngx_dart'
               '/src/core/di/opaque_token.dart',
         ),
       );

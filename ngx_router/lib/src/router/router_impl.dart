@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:collection/collection.dart';
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 
 import '../directives/router_outlet_directive.dart';
 import '../lifecycle.dart';

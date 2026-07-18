@@ -4,7 +4,7 @@ import 'package:build/build.dart';
 import 'package:meta/meta.dart';
 import 'package:ngx_compiler/v1/src/angular_compiler/cli/messages.dart';
 import 'package:ngx_compiler/v2/asset.dart';
-import 'package:ngx_core/src/utilities.dart';
+import 'package:ngx_dart/src/utilities.dart';
 import 'package:source_gen/source_gen.dart';
 
 import 'src/context/build_error.dart';

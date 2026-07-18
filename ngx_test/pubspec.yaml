@@ -13,7 +13,7 @@ environment:
 dependencies:
   collection: ^1.18.0
   meta: ^1.11.0
-  ngx_core: ^8.0.0
+  ngx_dart: ^8.0.0
 
 dev_dependencies:
   build_runner: ^2.4.6

@@ -10,7 +10,7 @@ import 'package:ngx_compiler/v1/src/compiler/template_compiler.dart';
 import 'package:ngx_compiler/v1/src/compiler/template_parser/ast_template_parser.dart';
 import 'package:ngx_compiler/v1/src/source_gen/template_compiler/component_visitor_exceptions.dart';
 import 'package:ngx_compiler/v1/src/source_gen/template_compiler/find_components.dart';
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 import 'package:source_gen/source_gen.dart';
 
 /// The bulk of "compilation" for AngularDart's components and templates.

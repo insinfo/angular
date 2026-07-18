@@ -1,7 +1,7 @@
 import 'dart:html';
 import 'dart:js_util' as js_util;
 
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 import 'package:ngx_forms/src/directives/shared.dart' show setElementDisabled;
 
 import 'control_value_accessor.dart';

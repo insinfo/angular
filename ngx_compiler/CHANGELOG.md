@@ -1,3 +1,8 @@
+## 3.0.1
+
+- Depend on `ngx_dart` instead of `ngx_core` (the `ngx_core` name on pub.dev
+  belongs to an unrelated package). Version 3.0.0 is retracted.
+
 ## 3.0.0-dev.3
 
  - **REFACTOR**(ngast,ngcompiler): reduce dynamic usage in i18n.

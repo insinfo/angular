@@ -1,3 +1,3 @@
 Not intended for public use. Please see the
-[`ngx_core`](https://pub.dev/packages/ngx_core) package for more info on
+[`ngx_dart`](https://pub.dev/packages/ngx_dart) package for more info on
 AngularDart.

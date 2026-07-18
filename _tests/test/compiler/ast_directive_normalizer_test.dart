@@ -4,7 +4,7 @@ import 'package:ngx_compiler/v1/angular_compiler.dart';
 import 'package:ngx_compiler/v1/src/compiler/ast_directive_normalizer.dart';
 import 'package:ngx_compiler/v1/src/compiler/compile_metadata.dart';
 import 'package:ngx_compiler/v2/context.dart';
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 import 'package:test/test.dart';
 
 void main() {

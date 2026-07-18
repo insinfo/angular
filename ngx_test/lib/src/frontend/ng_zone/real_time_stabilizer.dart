@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:collection/collection.dart';
 import 'package:meta/meta.dart';
-import 'package:ngx_core/angular.dart';
-import 'package:ngx_core/experimental.dart';
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/experimental.dart';
 
 import 'base_stabilizer.dart';
 import 'timer_hook_zone.dart';

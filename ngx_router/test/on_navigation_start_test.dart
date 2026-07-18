@@ -1,5 +1,5 @@
 import 'package:async/async.dart' show StreamGroup;
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 import 'package:ngx_router/ngx_router.dart';
 import 'package:ngx_router/testing.dart';
 import 'package:ngx_test/angular_test.dart';

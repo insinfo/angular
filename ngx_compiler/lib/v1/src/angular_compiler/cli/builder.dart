@@ -16,7 +16,7 @@ class Compiler implements Generator {
 
   // Ideally this would be part of this generator, and not delegated to an
   // external function, but today much of the AngularDart compiler still lives
-  // inside package:ngx_core, and is non-trivial to
+  // inside package:ngx_dart, and is non-trivial to
   // move over atomically.
   //
   // Once we're able to remove this parameter, we should.

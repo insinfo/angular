@@ -1,6 +1,6 @@
 # CI for the angular9 branch of the insinfo/angular fork.
 #
-# This branch renames the packages to the ngx_* family (ngx_core, ngx_forms,
+# This branch renames the packages to the ngx_* family (ngx_dart, ngx_forms,
 # ngx_router, ngx_test, ngx_ast, ngx_compiler) for stable publishing; the code
 # itself matches the angular8 branch (pub.dev-faithful sources).
 name: Dart CI
@@ -36,7 +36,7 @@ jobs:
       # not modify the published code, only errors fail the build.
       - name: Analyze packages
         run: |
-          for pkg in ngx_ast ngx_compiler ngx_core ngx_forms ngx_router ngx_test; do
+          for pkg in ngx_ast ngx_compiler ngx_dart ngx_forms ngx_router ngx_test; do
             echo "::group::dart analyze $pkg"
             (cd $pkg && dart analyze --no-fatal-warnings)
             echo "::endgroup::"

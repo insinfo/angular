@@ -2,7 +2,7 @@ import 'package:collection/collection.dart';
 import 'package:ngx_compiler/v1/cli.dart';
 import 'package:ngx_compiler/v1/src/compiler/template_ast.dart';
 import 'package:ngx_compiler/v2/context.dart';
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 
 import 'analyzed_class.dart';
 import 'expression_parser/ast.dart' as ast;

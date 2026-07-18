@@ -5,7 +5,7 @@ import 'package:ngx_compiler/v1/src/compiler/ir/model.dart' as ir;
 import 'package:ngx_compiler/v1/src/compiler/view_type.dart';
 import 'package:ngx_compiler/v1/src/source_gen/common/url_resolver.dart'
     show toTemplateExtension;
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 
 import '../compile_metadata.dart'
     show

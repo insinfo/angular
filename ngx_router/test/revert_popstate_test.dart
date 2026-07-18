@@ -1,6 +1,6 @@
 import 'dart:html' show window;
 
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 import 'package:ngx_router/ngx_router.dart';
 import 'package:ngx_test/angular_test.dart';
 import 'package:test/test.dart';

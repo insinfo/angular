@@ -1,5 +1,5 @@
 import 'package:ngx_compiler/v2/context.dart';
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 import 'package:source_span/source_span.dart';
 
 import 'compile_metadata.dart'

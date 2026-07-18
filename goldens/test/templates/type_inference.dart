@@ -1,6 +1,6 @@
 library golden;
 
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 
 import 'type_inference.template.dart' as ng;
 

@@ -15,7 +15,7 @@ Documentation and examples:
 [pub_test]: https://pub.dev/packages/test
 [build_runner]: https://pub.dev/packages/build_runner
 [test_folder]: https://github.com/angulardart-community/angular/tree/master/_tests/test
-[webdev_angular]: https://pub.dev/packages/ngx_core
+[webdev_angular]: https://pub.dev/packages/ngx_dart
 
 Additional resources:
 

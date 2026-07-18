@@ -19,7 +19,7 @@ import 'package:ngx_compiler/v1/src/source_gen/common/annotation_matcher.dart';
 import 'package:ngx_compiler/v1/src/source_gen/common/url_resolver.dart';
 import 'package:ngx_compiler/v2/analyzer.dart';
 import 'package:ngx_compiler/v2/context.dart';
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 import 'package:path/path.dart' as p;
 import 'package:source_gen/source_gen.dart';
 

@@ -1,7 +1,7 @@
 @TestOn('browser')
 
 import 'package:test/test.dart';
-import 'package:ngx_core/src/security/dom_sanitization_service.dart';
+import 'package:ngx_dart/src/security/dom_sanitization_service.dart';
 
 void main() {
   final DomSanitizationService sanitizer = DomSanitizationService();

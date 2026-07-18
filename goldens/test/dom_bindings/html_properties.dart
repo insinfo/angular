@@ -3,7 +3,7 @@
 
 // import 'package:js/js.dart';
 // import 'package:safe_html/safe_html.dart';
-// import 'package:ngx_core/angular.dart';
+// import 'package:ngx_dart/angular.dart';
 
 // import 'html_properties.template.dart' as ng;
 

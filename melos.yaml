@@ -5,7 +5,7 @@ packages:
    - "**"
   # - ngx_ast
   # - ngx_compiler
-  # - ngx_core
+  # - ngx_dart
   # - ngx_forms
   # - ngx_router
   # - ngx_test

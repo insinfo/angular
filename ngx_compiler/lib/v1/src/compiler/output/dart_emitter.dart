@@ -74,29 +74,29 @@ class _DartEmitterVisitor extends AbstractEmitterVisitor
     implements o.TypeVisitor<void, EmitterVisitorContext> {
   // List of packages that are public api and can be imported without prefix.
   static const _allowListedImports = [
-    'package:ngx_core/angular.dart',
+    'package:ngx_dart/angular.dart',
     'dart:core',
     // ElementRef.
-    'asset:ngx_core/lib/src/core/linker/element_ref.dart',
-    'package:ngx_core/src/core/linker/element_ref.dart',
+    'asset:ngx_dart/lib/src/core/linker/element_ref.dart',
+    'package:ngx_dart/src/core/linker/element_ref.dart',
     // ViewContainer.
-    'asset:ngx_core/lib/src/core/linker/view_container.dart',
-    'package:ngx_core/src/core/linker/view_container.dart',
+    'asset:ngx_dart/lib/src/core/linker/view_container.dart',
+    'package:ngx_dart/src/core/linker/view_container.dart',
     // TemplateRef.
-    'asset:ngx_core/lib/src/core/linker/template_ref.dart',
-    'package:ngx_core/src/core/linker/template_ref.dart',
+    'asset:ngx_dart/lib/src/core/linker/template_ref.dart',
+    'package:ngx_dart/src/core/linker/template_ref.dart',
     // ChangeDetectionStrategy, Differs*
-    'asset:ngx_core/lib/src/core/change_detection/change_detection.dart',
-    'package:ngx_core/src/core/change_detection/change_detection.dart',
+    'asset:ngx_dart/lib/src/core/change_detection/change_detection.dart',
+    'package:ngx_dart/src/core/change_detection/change_detection.dart',
     // NgIf.
-    'asset:ngx_core/lib/src/common/directives/ng_if.dart',
-    'package:ngx_core/src/common/directives/ng_if.dart',
+    'asset:ngx_dart/lib/src/common/directives/ng_if.dart',
+    'package:ngx_dart/src/common/directives/ng_if.dart',
     // AppView.
-    'asset:ngx_core/lib/src/core/linker/app_view.dart',
-    'package:ngx_core/src/core/linker/app_view.dart',
+    'asset:ngx_dart/lib/src/core/linker/app_view.dart',
+    'package:ngx_dart/src/core/linker/app_view.dart',
     // RenderComponentType.
-    'asset:ngx_core/lib/src/core/render/api.dart',
-    'package:ngx_core/src/core/render/api.dart',
+    'asset:ngx_dart/lib/src/core/render/api.dart',
+    'package:ngx_dart/src/core/render/api.dart',
   ];
 
   final String _moduleUrl;

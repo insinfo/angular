@@ -17,7 +17,7 @@ import 'tokens.dart';
 
 /// Determines details for generating code as a result of `@Injector.generate`.
 class InjectorReader {
-  static const _package = 'package:ngx_core';
+  static const _package = 'package:ngx_dart';
   static const _runtime = '$_package/src/di/injector.dart';
   static const _utilities = '$_package/src/utilities.dart';
   static const _$Injector = Reference('Injector', _runtime);

@@ -7,7 +7,7 @@ import 'package:ngx_compiler/v1/src/compiler/semantic_analysis/binding_converter
 import 'package:ngx_compiler/v1/src/compiler/template_ast.dart' as ast;
 import 'package:ngx_compiler/v1/src/compiler/view_compiler/compile_element.dart';
 import 'package:ngx_compiler/v1/src/compiler/view_compiler/ir/provider_source.dart';
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 
 /// Converts a list of [ast.DirectiveAst] nodes into [ir.MatchedDirective]
 /// instances.

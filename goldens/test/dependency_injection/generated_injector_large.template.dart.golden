@@ -3,17 +3,17 @@
 // **************************************************************************
 
 import 'generated_injector_large.dart';
-import 'package:ngx_core/src/di/injector.dart' as _i1;
+import 'package:ngx_dart/src/di/injector.dart' as _i1;
 import 'generated_injector_large.dart' as _i2;
-import 'package:ngx_core/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_dart/src/core/linker/views/component_view.dart' as import0;
 import 'generated_injector_large.dart' as import1;
-import 'package:ngx_core/src/core/linker/style_encapsulation.dart' as import2;
-import 'package:ngx_core/src/core/linker/views/view.dart' as import3;
-import 'package:ngx_core/src/meta/change_detection_constants.dart' as import4;
-import 'package:ngx_core/src/utilities.dart' as import5;
+import 'package:ngx_dart/src/core/linker/style_encapsulation.dart' as import2;
+import 'package:ngx_dart/src/core/linker/views/view.dart' as import3;
+import 'package:ngx_dart/src/meta/change_detection_constants.dart' as import4;
+import 'package:ngx_dart/src/utilities.dart' as import5;
 import 'dart:html' as import6;
-import 'package:ngx_core/angular.dart';
-import 'package:ngx_core/src/core/linker/views/host_view.dart' as import8;
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import8;
 
 final List<Object> styles$GoldenComponent = const [];
 

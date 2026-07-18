@@ -1,6 +1,6 @@
 targets:
   $default:
     builders:
-      ngx_core:
+      ngx_dart:
         generate_for:
           exclude: ["test/url_test.dart"]

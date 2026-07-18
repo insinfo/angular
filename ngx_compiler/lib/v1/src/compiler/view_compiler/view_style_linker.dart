@@ -1,7 +1,7 @@
 import 'package:ngx_compiler/v1/src/compiler/identifiers.dart';
 import 'package:ngx_compiler/v1/src/compiler/output/output_ast.dart' as o;
 import 'package:ngx_compiler/v1/src/compiler/view_type.dart';
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 
 import 'compile_view.dart';
 

@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:ngx_core/src/common/pipes/number_pipe.dart';
+import 'package:ngx_dart/src/common/pipes/number_pipe.dart';
 
 void main() {
   group('Number pipes', () {

@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:html';
 
 import 'package:collection/collection.dart';
-import 'package:ngx_core/angular.dart';
-import 'package:ngx_core/src/utilities.dart';
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/utilities.dart';
 
 import '../router/router.dart';
 import '../router/router_state.dart';

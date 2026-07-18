@@ -1,5 +1,5 @@
 import 'package:meta/meta.dart';
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 
 import '../errors.dart';
 import 'ng_zone/timer_hook_zone.dart';

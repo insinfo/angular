@@ -1,8 +1,8 @@
 import 'dart:html' as html;
 
 import 'package:test/test.dart';
-import 'package:ngx_core/angular.dart';
-import 'package:ngx_core/src/devtools.dart';
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/devtools.dart';
 import 'package:ngx_test/angular_test.dart';
 
 import 'inspector_test.template.dart' as ng;

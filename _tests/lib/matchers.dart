@@ -1,7 +1,7 @@
 import 'dart:html';
 
 import 'package:test/test.dart';
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 
 /// Matches textual content of an element including children.
 Matcher hasTextContent(String expected) => _HasTextContent(expected);

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 import 'package:ngx_test/src/frontend/ng_zone/fake_time_stabilizer.dart';
 import 'package:ngx_test/src/frontend/ng_zone/real_time_stabilizer.dart';
 import 'package:ngx_test/src/frontend/ng_zone/timer_hook_zone.dart';

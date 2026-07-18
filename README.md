@@ -13,11 +13,11 @@ family** so they can be published to pub.dev as stable versions under names
 owned by this fork. The naming follows the
 [Effective Dart](https://dart.dev/effective-dart/style) conventions and
 mirrors the `@angular/*` npm scope of Angular TypeScript
-(`@angular/core` → `ngx_core`, `@angular/forms` → `ngx_forms`, ...):
+(`@angular/core` → `ngx_dart`, `@angular/forms` → `ngx_forms`, ...):
 
 | Original (angular8) | Renamed  | Version | npm counterpart |
 |---------------------|----------|---------|-----------------|
-| ngdart 8.0.0-dev.4  | [ngx_core]     | 8.0.0 | `@angular/core` (+ common, platform-browser) |
+| ngdart 8.0.0-dev.4  | [ngx_dart]     | 8.0.0 | `@angular/core` (+ common, platform-browser) |
 | ngforms 5.0.0-dev.3 | [ngx_forms]    | 5.0.0 | `@angular/forms` |
 | ngrouter 4.0.0-dev.3| [ngx_router]   | 4.0.0 | `@angular/router` |
 | ngtest 5.0.0-dev.3  | [ngx_test]     | 5.0.0 | `@angular/core/testing` |
@@ -30,15 +30,15 @@ package names, imports and generated-code references changed, and the `-dev`
 version suffixes were dropped (these versions have been used in production
 for years).
 
-In the future the plan is to split `ngx_core` further, following the Angular
+In the future the plan is to split `ngx_dart` further, following the Angular
 TS package layout (`ngx_common`, `ngx_web`, `ngx_http`, ...).
 
-### Migrating an app from ngdart to ngx_core
+### Migrating an app from ngdart to ngx_dart
 
-1. In `pubspec.yaml`: `ngdart` → `ngx_core`, `ngforms` → `ngx_forms`,
+1. In `pubspec.yaml`: `ngdart` → `ngx_dart`, `ngforms` → `ngx_forms`,
    `ngrouter` → `ngx_router`, `ngtest` → `ngx_test`.
 2. In your Dart code, update the imports:
-   - `package:ngdart/` → `package:ngx_core/`
+   - `package:ngdart/` → `package:ngx_dart/`
    - `package:ngforms/ngforms.dart` → `package:ngx_forms/ngx_forms.dart`
    - `package:ngrouter/ngrouter.dart` → `package:ngx_router/ngx_router.dart`
    - `package:ngtest/angular_test.dart` → `package:ngx_test/angular_test.dart`
@@ -48,11 +48,11 @@ TS package layout (`ngx_common`, `ngx_web`, `ngx_http`, ...).
 
 ```yaml
 dependencies:
-  ngx_core:
+  ngx_dart:
     git:
       url: https://github.com/insinfo/angular.git
       ref: angular9
-      path: ngx_core
+      path: ngx_dart
   ngx_forms:
     git:
       url: https://github.com/insinfo/angular.git
@@ -91,7 +91,7 @@ A static mirror of the AngularDart documentation site is published from the
 - Original AngularDart project (restricted maintenance):
   https://github.com/angulardart
 
-[ngx_core]: https://github.com/insinfo/angular/tree/angular9/ngx_core
+[ngx_dart]: https://github.com/insinfo/angular/tree/angular9/ngx_dart
 [ngx_forms]: https://github.com/insinfo/angular/tree/angular9/ngx_forms
 [ngx_router]: https://github.com/insinfo/angular/tree/angular9/ngx_router
 [ngx_test]: https://github.com/insinfo/angular/tree/angular9/ngx_test

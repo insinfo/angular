@@ -1,6 +1,6 @@
 import 'dart:html';
 
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 import 'package:ngx_test/src/bootstrap.dart';
 import 'package:test/test.dart';
 

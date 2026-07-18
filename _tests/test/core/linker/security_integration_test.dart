@@ -3,9 +3,9 @@
 import 'dart:html';
 
 import 'package:ngx_test/angular_test.dart';
-import 'package:ngx_core/src/security/dom_sanitization_service.dart';
+import 'package:ngx_dart/src/security/dom_sanitization_service.dart';
 import 'package:test/test.dart';
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 
 import 'security_integration_test.template.dart' as ng;
 

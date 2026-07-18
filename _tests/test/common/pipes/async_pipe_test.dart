@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:ngx_core/angular.dart';
-import 'package:ngx_core/src/common/pipes/invalid_pipe_argument_exception.dart';
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/common/pipes/invalid_pipe_argument_exception.dart';
 import 'package:test/test.dart';
 
 void main() {

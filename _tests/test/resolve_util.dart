@@ -40,7 +40,7 @@ Future<NormalizedComponentWithViewDirectives> resolveAndFindComponent(
   String source,
 ) async {
   final library = await resolve(
-      "import 'package:ngx_core/angular.dart';"
+      "import 'package:ngx_dart/angular.dart';"
       '$source',
       await _packageConfigFuture);
   final artifacts = findComponentsAndDirectives(

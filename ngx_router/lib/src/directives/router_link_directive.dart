@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:html'
     show AnchorElement, Element, Event, KeyboardEvent, KeyCode, MouseEvent;
 
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 
 import '../location.dart' show Location;
 import '../router/navigation_params.dart';

@@ -2,7 +2,7 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/src/dart/element/element.dart';
 import 'package:ngx_compiler/v1/angular_compiler.dart';
 import 'package:ngx_compiler/v1/cli.dart';
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 import 'package:source_gen/source_gen.dart';
 
 // See internal bug b/35319372 for details.

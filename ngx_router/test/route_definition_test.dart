@@ -1,4 +1,4 @@
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 import 'package:ngx_router/src/route_definition.dart';
 import 'package:test/test.dart';
 

@@ -20,7 +20,7 @@ import 'package:ngx_compiler/v1/src/compiler/view_compiler/bound_value_converter
 import 'package:ngx_compiler/v1/src/compiler/view_compiler/update_statement_visitor.dart';
 import 'package:ngx_compiler/v1/src/compiler/view_type.dart';
 import 'package:ngx_compiler/v2/context.dart';
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 
 import 'compile_element.dart' show CompileElement, CompileNode;
 import 'compile_view.dart';

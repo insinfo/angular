@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/examples/hello_world/melos_examples_hello_world.iml" filepath="$PROJECT_DIR$/examples/hello_world/melos_examples_hello_world.iml" />
       <module fileurl="file://$PROJECT_DIR$/ngx_ast/melos_ngx_ast.iml" filepath="$PROJECT_DIR$/ngx_ast/melos_ngx_ast.iml" />
       <module fileurl="file://$PROJECT_DIR$/ngx_compiler/melos_ngx_compiler.iml" filepath="$PROJECT_DIR$/ngx_compiler/melos_ngx_compiler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ngx_core/melos_ngx_core.iml" filepath="$PROJECT_DIR$/ngx_core/melos_ngx_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_dart/melos_ngx_dart.iml" filepath="$PROJECT_DIR$/ngx_dart/melos_ngx_dart.iml" />
       <module fileurl="file://$PROJECT_DIR$/ngx_forms/melos_ngx_forms.iml" filepath="$PROJECT_DIR$/ngx_forms/melos_ngx_forms.iml" />
       <module fileurl="file://$PROJECT_DIR$/ngx_router/melos_ngx_router.iml" filepath="$PROJECT_DIR$/ngx_router/melos_ngx_router.iml" />
       <module fileurl="file://$PROJECT_DIR$/ngx_test/melos_ngx_test.iml" filepath="$PROJECT_DIR$/ngx_test/melos_ngx_test.iml" />

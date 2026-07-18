@@ -1,7 +1,7 @@
 import 'dart:html';
 
 import 'package:test/test.dart';
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 import 'package:ngx_test/angular_test.dart';
 
 import 'i18n_escape_test.template.dart' as ng;

@@ -1,5 +1,5 @@
-import 'package:ngx_core/angular.dart';
-import 'package:ngx_core/src/runtime/check_binding.dart';
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/runtime/check_binding.dart';
 import 'package:ngx_forms/ngx_forms.dart';
 import 'package:ngx_test/angular_test.dart';
 import 'package:test/test.dart';

@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:ngx_core/angular.dart';
+import 'package:ngx_dart/angular.dart';
 import 'package:ngx_test/angular_test.dart';
 
 import 'clear_component_styles_test.template.dart' as ng;

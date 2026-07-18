@@ -2,7 +2,7 @@ import 'package:ngx_ast/ngx_ast.dart' as ast;
 import 'package:ngx_compiler/v1/angular_compiler.dart';
 import 'package:ngx_compiler/v1/cli.dart';
 import 'package:ngx_compiler/v2/context.dart';
-import 'package:ngx_core/src/meta.dart';
+import 'package:ngx_dart/src/meta.dart';
 
 import 'compile_metadata.dart';
 import 'parse_util.dart';

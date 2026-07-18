@@ -1,8 +1,8 @@
 import 'compile_metadata.dart'
     show CompileIdentifierMetadata, CompileTokenMetadata;
 
-const _angularRootUrl = 'package:ngx_core/angular.dart';
-const _angularLib = 'asset:ngx_core/lib';
+const _angularRootUrl = 'package:ngx_dart/angular.dart';
+const _angularLib = 'asset:ngx_dart/lib';
 
 const _appViewUtilsModuleUrl =
     '$_angularLib/src/core/linker/app_view_utils.dart';
@@ -202,16 +202,16 @@ class Identifiers {
   static final elementRefToken = identifierToken(elementRef);
   static final viewContainerRef = CompileIdentifierMetadata(
       name: 'ViewContainerRef',
-      moduleUrl: 'asset:ngx_core/lib/src/core/linker/view_container_ref.dart');
+      moduleUrl: 'asset:ngx_dart/lib/src/core/linker/view_container_ref.dart');
   static final viewContainerRefToken =
       identifierToken(Identifiers.viewContainerRef);
   static final componentLoader = CompileIdentifierMetadata(
       name: 'ComponentLoader',
-      moduleUrl: 'asset:ngx_core/lib/src/core/linker/component_loader.dart');
+      moduleUrl: 'asset:ngx_dart/lib/src/core/linker/component_loader.dart');
   static final componentLoaderToken = identifierToken(componentLoader);
   static final changeDetectorRef = CompileIdentifierMetadata(
       name: 'ChangeDetectorRef',
-      moduleUrl: 'asset:ngx_core/lib/src/core/change_detection/'
+      moduleUrl: 'asset:ngx_dart/lib/src/core/change_detection/'
           'change_detector_ref.dart');
   static final changeDetectorRefToken =
       identifierToken(Identifiers.changeDetectorRef);
@@ -219,7 +219,7 @@ class Identifiers {
       name: 'ComponentFactory', moduleUrl: _angularRootUrl);
   static final directiveChangeDetector = CompileIdentifierMetadata(
       name: 'DirectiveChangeDetector',
-      moduleUrl: 'asset:ngx_core/lib/src/core/'
+      moduleUrl: 'asset:ngx_dart/lib/src/core/'
           'change_detection/directive_change_detector.dart');
   static final componentRef = CompileIdentifierMetadata(
       name: 'ComponentRef', moduleUrl: _angularRootUrl);

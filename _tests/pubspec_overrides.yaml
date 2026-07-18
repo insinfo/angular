@@ -1,10 +1,10 @@
-# melos_managed_dependency_overrides: ngx_ast,ngx_compiler,ngx_core,ngx_test
+# melos_managed_dependency_overrides: ngx_ast,ngx_compiler,ngx_dart,ngx_test
 dependency_overrides:
   ngx_ast:
     path: ../ngx_ast
   ngx_compiler:
     path: ../ngx_compiler
-  ngx_core:
-    path: ../ngx_core
+  ngx_dart:
+    path: ../ngx_dart
   ngx_test:
     path: ../ngx_test

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:ngx_core/angular.dart' show Injectable;
+import 'package:ngx_dart/angular.dart' show Injectable;
 
 import 'location_strategy.dart' show LocationStrategy;
 
@@ -24,7 +24,7 @@ import 'location_strategy.dart' show LocationStrategy;
 /// ### Example
 ///
 /// ```
-/// import 'package:ngx_core/angular.dart';
+/// import 'package:ngx_dart/angular.dart';
 /// import 'package:ngx_router/ngx_router.dart';
 ///
 /// @Component(
