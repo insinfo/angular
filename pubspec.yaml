@@ -14,3 +14,12 @@ workspace:
 
 dev_dependencies:
   lints: ^2.1.0
+
+# The published packages pin dev dependencies from the Dart 3.1 era. Some of
+# those (test 1.24.x, frontend_server_client 3.x) look for the JIT
+# frontend_server.dart.snapshot, which the Dart SDK 3.6 replaced with an AOT
+# snapshot. Overriding here keeps the package pubspecs byte-identical to
+# pub.dev while letting builds and tests run on Dart >= 3.6.
+dependency_overrides:
+  test: ^1.26.0
+  frontend_server_client: ^4.0.0

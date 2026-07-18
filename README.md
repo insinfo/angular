@@ -1,63 +1,81 @@
-## AngularDart packages maintained by AngularDart Community
+## AngularDart — `angular8` branch (fork)
 
-## Packages
+[![Build Status](https://img.shields.io/github/actions/workflow/status/insinfo/angular/dart.yml?branch=angular8)](https://github.com/insinfo/angular/actions/workflows/dart.yml)
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/angulardart-community/angular/dart.yml?branch=master)](https://github.com/angulardart-community/angular/actions/workflows/dart.yml)
+This repository is a fork of
+[angulardart-community/angular](https://github.com/angulardart-community/angular),
+maintained by [insinfo](https://github.com/insinfo).
 
-| Source code |Published Version                                                                                 |Pre-Release Version (if any)                                                                                      |
-|-------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| [ngdart]    |[![Pub Package](https://img.shields.io/pub/v/ngdart.svg)](https://pub.dev/packages/ngdart)        |[![Pub Package](https://img.shields.io/pub/v/ngdart?include_prereleases)](https://pub.dev/packages/ngdart)        |
-| [ngforms]   |[![Pub Package](https://img.shields.io/pub/v/ngforms.svg)](https://pub.dev/packages/ngforms)      |[![Pub Package](https://img.shields.io/pub/v/ngforms?include_prereleases)](https://pub.dev/packages/ngforms)      |
-| [ngrouter]  |[![Pub Package](https://img.shields.io/pub/v/ngrouter.svg)](https://pub.dev/packages/ngrouter)    |[![Pub Package](https://img.shields.io/pub/v/ngrouter?include_prereleases)](https://pub.dev/packages/ngrouter)    |
-| [ngtest]    |[![Pub Package](https://img.shields.io/pub/v/ngtest.svg)](https://pub.dev/packages/ngtest)        |[![Pub Package](https://img.shields.io/pub/v/ngtest?include_prereleases)](https://pub.dev/packages/ngtest)        |
-| [ngast]     |[![Pub Package](https://img.shields.io/pub/v/ngast.svg)](https://pub.dev/packages/ngast)          |[![Pub Package](https://img.shields.io/pub/v/ngast?include_prereleases)](https://pub.dev/packages/ngast)          |
-| [ngcompiler]|[![Pub Package](https://img.shields.io/pub/v/ngcompiler.svg)](https://pub.dev/packages/ngcompiler)|[![Pub Package](https://img.shields.io/pub/v/ngcompiler?include_prereleases)](https://pub.dev/packages/ngcompiler)|
+### What this branch is
 
-The following packages are in an external repository:
+The `angular8` branch is **faithful to the code published on pub.dev**: the
+source of each package below is byte-identical to the corresponding version
+published on pub.dev (verified by hash). Its purpose is to keep existing
+applications that depend on these exact versions working, buildable and
+testable, even though the upstream project appears to be unmaintained.
 
-- [ngdart_cli]: [![Pub Package](https://img.shields.io/pub/v/ngdart_cli.svg)](https://pub.dev/packages/ngdart_cli)
-- [ngcomponents]: [![Pub Package](https://img.shields.io/pub/v/ngcomponents.svg)](https://pub.dev/packages/ngcomponents)
+| Package      | Version pinned on this branch                                             |
+|--------------|----------------------------------------------------------------------------|
+| [ngdart]     | [8.0.0-dev.4](https://pub.dev/packages/ngdart/versions/8.0.0-dev.4)        |
+| [ngforms]    | [5.0.0-dev.3](https://pub.dev/packages/ngforms/versions/5.0.0-dev.3)       |
+| [ngrouter]   | [4.0.0-dev.3](https://pub.dev/packages/ngrouter/versions/4.0.0-dev.3)      |
+| [ngtest]     | [5.0.0-dev.3](https://pub.dev/packages/ngtest/versions/5.0.0-dev.3)        |
+| [ngast]      | [3.0.0-dev.2](https://pub.dev/packages/ngast/versions/3.0.0-dev.2)         |
+| [ngcompiler] | [3.0.0-dev.3](https://pub.dev/packages/ngcompiler/versions/3.0.0-dev.3)    |
 
-## Resources
+Only repository infrastructure (workspace resolution, test suites, CI) was
+adapted so everything runs on Dart >= 3.6; the `lib/` source of the packages
+is untouched.
 
-AngularDart documentation: [https://angulardart.xyz](https://angulardart.xyz).
+### Using this branch (git dependency)
 
-Source code Git repositories [https://github.com/angulardart-community](https://github.com/angulardart-community)
+This branch will be kept alive so it can be consumed directly from git:
 
-Join the [Gitter chat room](https://gitter.im/angulardart/community) to ask questions.
+```yaml
+dependencies:
+  ngdart:
+    git:
+      url: https://github.com/insinfo/angular.git
+      ref: angular8
+      path: ngdart
+  ngforms:
+    git:
+      url: https://github.com/insinfo/angular.git
+      ref: angular8
+      path: ngforms
+  ngrouter:
+    git:
+      url: https://github.com/insinfo/angular.git
+      ref: angular8
+      path: ngrouter
 
-## The original Packages (in the restricted maintenance mode)
+dev_dependencies:
+  ngtest:
+    git:
+      url: https://github.com/insinfo/angular.git
+      ref: angular8
+      path: ngtest
+```
 
-See https://github.com/angulardart for updates on the original AngularDart project.
+### Roadmap
 
-| Source code                  | Published Version                                                                                                  |
-|------------------------------|:------------------------------------------------------------------------------------------------------------------:|
-| [angular]                    | [![Pub Package](https://img.shields.io/pub/v/angular.svg)](https://pub.dev/packages/angular)                       |
-| [angular_forms]              | [![Pub Package](https://img.shields.io/pub/v/angular_forms.svg)](https://pub.dev/packages/angular_forms)           |
-| [angular_router]             | [![Pub Package](https://img.shields.io/pub/v/angular_router.svg)](https://pub.dev/packages/angular_router)         |
-| [angular_test]               | [![Pub Package](https://img.shields.io/pub/v/angular_test.svg)](https://pub.dev/packages/angular_test)             |
-| [angular_components]&dagger; | [![Pub Package](https://img.shields.io/pub/v/angular_components.svg)](https://pub.dev/packages/angular_components) |
-| [angular_ast]&ddagger;       | [![Pub Package](https://img.shields.io/pub/v/angular_ast.svg)](https://pub.dev/packages/angular_ast)               |
-| [angular_compiler]&ddagger;  | [![Pub Package](https://img.shields.io/pub/v/angular_compiler.svg)](https://pub.dev/packages/angular_compiler)     |
+- **This branch (`angular8`)**: stays identical to the pub.dev releases, for
+  use via git dependency. No breaking changes.
+- **Rename branch (planned)**: since the original package names are owned by
+  the upstream publisher, publishing stable versions (e.g. `8.0.0` without the
+  `-dev` suffix) to pub.dev requires renaming the packages. That work will
+  happen in a separate branch, keeping this one untouched.
 
-&dagger; _`angular_components` source is in another [repository](https://github.com/angulardart/angular_components)._
+### Upstream resources
 
-&ddagger; _Infrastructure packages. Not typically used directly.
-Included for completeness._
+- Original repository: https://github.com/angulardart-community/angular
+- AngularDart documentation: https://angulardart.xyz
+- Original AngularDart project (restricted maintenance):
+  https://github.com/angulardart
 
-[angular]: https://github.com/angulardart/angular/tree/master/angular
-[angular_ast]: https://github.com/angulardart/angular/tree/master/angular_ast
-[angular_compiler]: https://github.com/angulardart/angular/tree/master/angular_compiler
-[angular_components]: https://github.com/angulardart/angular_components/tree/master/angular_components
-[angular_forms]: https://github.com/angulardart/angular/tree/master/angular_forms
-[angular_router]: https://github.com/angulardart/angular/tree/master/angular_router
-[angular_test]: https://github.com/angulardart/angular/tree/master/angular_test
-[ngdart]: https://github.com/angulardart-community/angular/tree/master/ngdart 
-[ngforms]: https://github.com/angulardart-community/angular/tree/master/ngforms 
-[ngrouter]: https://github.com/angulardart-community/angular/tree/master/ngrouter 
-[ngtest]: https://github.com/angulardart-community/angular/tree/master/ngtest 
-[ngast]: https://github.com/angulardart-community/angular/tree/master/ngast 
-[ngcompiler]: https://github.com/angulardart-community/angular/tree/master/ngcompiler
-[ngdart_cli]: https://github.com/angulardart-community/ngdart_cli
-[ngcomponents]: https://github.com/angulardart-community/angular_components
-
+[ngdart]: https://github.com/insinfo/angular/tree/angular8/ngdart
+[ngforms]: https://github.com/insinfo/angular/tree/angular8/ngforms
+[ngrouter]: https://github.com/insinfo/angular/tree/angular8/ngrouter
+[ngtest]: https://github.com/insinfo/angular/tree/angular8/ngtest
+[ngast]: https://github.com/insinfo/angular/tree/angular8/ngast
+[ngcompiler]: https://github.com/insinfo/angular/tree/angular8/ngcompiler
