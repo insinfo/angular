@@ -6,7 +6,7 @@
 ///
 /// **NOTE**: This is not an externally stable API. Use at your own risk.
 @experimental
-library;
+library angular_compiler.cli;
 
 import 'package:meta/meta.dart';
 

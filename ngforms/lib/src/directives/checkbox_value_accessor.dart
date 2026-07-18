@@ -1,5 +1,6 @@
+import 'dart:html';
+
 import 'package:ngdart/angular.dart';
-import 'package:web/web.dart';
 
 import 'control_value_accessor.dart'
     show ChangeHandler, ControlValueAccessor, ngValueAccessor, TouchHandler;
@@ -25,10 +26,10 @@ const checkboxValueAccessor = ExistingProvider.forToken(
 class CheckboxControlValueAccessor extends Object
     with TouchHandler, ChangeHandler<bool>
     implements ControlValueAccessor<bool> {
-  final HTMLInputElement _element;
+  final InputElement _element;
 
-  CheckboxControlValueAccessor(HTMLElement element)
-      : _element = element as HTMLInputElement;
+  CheckboxControlValueAccessor(HtmlElement element)
+      : _element = element as InputElement;
 
   @HostListener('change', ['\$event.target.checked'])
   void handleChange(bool checked) {

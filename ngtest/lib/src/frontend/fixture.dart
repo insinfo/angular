@@ -1,6 +1,7 @@
+import 'dart:html';
+
 import 'package:ngdart/angular.dart';
 import 'package:ngdart/src/utilities.dart';
-import 'package:web/web.dart';
 
 import 'bed.dart';
 import 'stabilizer.dart';
@@ -35,7 +36,7 @@ class NgTestFixture<T> {
   Future<void> dispose() async {
     await update();
     // Remove the test bed's host element.
-    _rootComponentRef.location.parentElement!.remove();
+    _rootComponentRef.location.parent!.remove();
     _applicationRef.dispose();
     if (isDevMode) {
       debugClearComponentStyles();
@@ -77,7 +78,7 @@ class NgTestFixture<T> {
   /// All text nodes within the fixture.
   ///
   /// Provided as a convenience to do simple `expect` matchers.
-  String? get text => rootElement.textContent;
+  String? get text => rootElement.text;
 
   /// A component instance to use for read-only operations (expect, assert)
   /// ONLY.

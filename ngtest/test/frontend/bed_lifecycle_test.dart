@@ -1,9 +1,8 @@
-import 'dart:js_interop';
+import 'dart:html';
 
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'bed_lifecycle_test.template.dart' as ng;
 
@@ -12,8 +11,8 @@ void main() {
   late Element testRoot;
 
   setUp(() {
-    docRoot = document.createElement('doc-root');
-    testRoot = document.createElement('ng-test-bed-example-test');
+    docRoot = Element.tag('doc-root');
+    testRoot = Element.tag('ng-test-bed-example-test');
     docRoot.append(testRoot);
   });
 
@@ -28,12 +27,12 @@ void main() {
       host: testRoot,
     );
     final NgTestFixture<AngularLifecycle> fixture = await testBed.create();
-    expect(docRoot.textContent, isEmpty);
+    expect(docRoot.text, isEmpty);
     await fixture.update((c) => c.value = 'New value');
-    expect(docRoot.textContent, equals('New value'));
+    expect(docRoot.text, 'New value');
     await fixture.dispose();
-    print((docRoot.innerHTML as JSString).toDart);
-    expect(docRoot.textContent, isEmpty);
+    print(docRoot.innerHtml);
+    expect(docRoot.text, isEmpty);
   });
 
   test('should invoke ngAfterChanges, then ngOnInit', () async {

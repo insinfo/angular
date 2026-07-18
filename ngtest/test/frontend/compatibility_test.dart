@@ -1,10 +1,9 @@
-import 'dart:js_interop';
+import 'dart:html';
 
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
 import 'package:ngtest/compatibility.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'compatibility_test.template.dart' as ng;
 
@@ -13,8 +12,8 @@ void main() {
   late Element testRoot;
 
   setUp(() {
-    docRoot = document.createElement('doc-root');
-    testRoot = document.createElement('ng-test-bed-example-test');
+    docRoot = Element.tag('doc-root');
+    testRoot = Element.tag('ng-test-bed-example-test');
     docRoot.append(testRoot);
   });
 
@@ -38,13 +37,13 @@ void main() {
       // (our component), the node is updated (after change detection), and
       // after destroying the test the document root has been cleared.
       final fixture = await testBed.create();
-      expect(docRoot.textContent, isEmpty);
+      expect(docRoot.text, isEmpty);
       testService = injectFromFixture(fixture, TestService);
       await fixture.update((_) => testService!.value = 'New value');
-      expect(docRoot.textContent, 'New value');
+      expect(docRoot.text, 'New value');
       await fixture.dispose();
-      print((docRoot.innerHTML as JSString).toDart);
-      expect(docRoot.textContent, isEmpty);
+      print(docRoot.innerHtml);
+      expect(docRoot.text, isEmpty);
     });
     group('and beforeComponentCreated without error', () {
       test('should handle synchronous fn', () async {
@@ -54,7 +53,7 @@ void main() {
         }, beforeChangeDetection: (_) {
           expect(testService, isNotNull);
         });
-        expect(docRoot.textContent, 'New value');
+        expect(docRoot.text, 'New value');
         await fixture.dispose();
       });
 
@@ -65,7 +64,7 @@ void main() {
         }, beforeChangeDetection: (_) {
           expect(testService, isNotNull);
         });
-        expect(docRoot.textContent, 'New value');
+        expect(docRoot.text, 'New value');
         await fixture.dispose();
       });
 
@@ -77,7 +76,7 @@ void main() {
         }, beforeChangeDetection: (_) {
           expect(testService, isNotNull);
         });
-        expect(docRoot.textContent, 'New value');
+        expect(docRoot.text, 'New value');
         await fixture.dispose();
       });
     });

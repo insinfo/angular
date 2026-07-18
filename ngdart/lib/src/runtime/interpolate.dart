@@ -1,5 +1,4 @@
 /// Functions that are used to process interpolations (e.g. `{{ ... }}`).
-library;
 
 /// Fallback for an expression that has more than two successive interpolations.
 ///

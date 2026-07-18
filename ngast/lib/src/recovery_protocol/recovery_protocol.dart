@@ -1,3 +1,5 @@
+library angular_ast.src.recovery_protocol.recovery_protocol;
+
 import '../parser/reader.dart';
 import '../scanner.dart';
 import '../token/tokens.dart';

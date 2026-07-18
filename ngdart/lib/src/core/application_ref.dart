@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:html';
 
 import 'package:meta/dart2js.dart' as dart2js;
 import 'package:ngdart/src/core/exception_handler.dart';
@@ -6,7 +7,6 @@ import 'package:ngdart/src/devtools.dart';
 import 'package:ngdart/src/di/injector.dart';
 import 'package:ngdart/src/testability.dart';
 import 'package:ngdart/src/utilities.dart';
-import 'package:web/web.dart';
 
 import 'change_detection/host.dart';
 import 'linker/component_factory.dart' show ComponentRef, ComponentFactory;
@@ -70,7 +70,7 @@ class ApplicationRef extends ChangeDetectionHost {
   ) {
     return unsafeCast(run(() {
       final component = componentFactory.create(_injector);
-      final existing = document.querySelector(componentFactory.selector);
+      final existing = querySelector(componentFactory.selector);
       Element? replacement;
       if (existing != null) {
         final newElement = component.location;

@@ -1,11 +1,10 @@
-import 'dart:js_interop';
-import 'dart:js_interop_unsafe';
+import 'dart:html';
+import 'dart:js_util' as js_util;
 
 import 'package:ngdart/angular.dart';
 import 'package:ngforms/ngforms.dart';
 import 'package:ngtest/angular_test.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'accessor_test.template.dart' as ng;
 
@@ -71,7 +70,7 @@ typedef ChangeFunctionSimple = dynamic Function(dynamic value);
   ],
 )
 class IntValueAccessor implements ControlValueAccessor<dynamic>, Validator {
-  final HTMLElement _elementRef;
+  final HtmlElement _elementRef;
 
   @HostListener('input')
   void onChangeBinding() => onChange(null);
@@ -92,7 +91,7 @@ class IntValueAccessor implements ControlValueAccessor<dynamic>, Validator {
   @override
   void writeValue(dynamic value) {
     var normalizedValue = value!.toString();
-    _elementRef['value'] = normalizedValue.toJS;
+    js_util.setProperty(_elementRef, 'value', normalizedValue);
   }
 
   @override

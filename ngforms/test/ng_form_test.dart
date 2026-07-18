@@ -1,8 +1,9 @@
+import 'dart:html';
+
 import 'package:ngdart/angular.dart';
 import 'package:ngforms/ngforms.dart';
 import 'package:ngtest/angular_test.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'ng_form_test.template.dart' as ng;
 
@@ -170,7 +171,7 @@ class NgFormTest {
   NgControlName? loginControlDir;
 
   @ViewChild('input')
-  HTMLInputElement? inputElement;
+  InputElement? inputElement;
 
   bool disabled = false;
   bool needsLogin = true;
@@ -198,7 +199,7 @@ class OnPushControlTest {
   var requiresName = false;
 
   @ViewChild('submit')
-  HTMLButtonElement? submitButton;
+  ButtonElement? submitButton;
 }
 
 @Component(
@@ -223,5 +224,5 @@ class OnPushControlGroupTest {
   var requiresGroup = false;
 
   @ViewChild('submit')
-  HTMLButtonElement? submitButton;
+  ButtonElement? submitButton;
 }

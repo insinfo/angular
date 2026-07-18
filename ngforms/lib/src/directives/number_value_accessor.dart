@@ -1,5 +1,6 @@
+import 'dart:html';
+
 import 'package:ngdart/angular.dart';
-import 'package:web/web.dart';
 
 import 'control_value_accessor.dart'
     show ChangeHandler, ControlValueAccessor, ngValueAccessor, TouchHandler;
@@ -24,10 +25,9 @@ const numberValueAccessor = ExistingProvider.forToken(
 class NumberValueAccessor extends Object
     with TouchHandler, ChangeHandler<double?>
     implements ControlValueAccessor<Object?> {
-  final HTMLInputElement _element;
+  final InputElement _element;
 
-  NumberValueAccessor(HTMLElement element)
-      : _element = element as HTMLInputElement;
+  NumberValueAccessor(HtmlElement element) : _element = element as InputElement;
 
   @HostListener('change', ['\$event.target.value'])
   @HostListener('input', ['\$event.target.value'])

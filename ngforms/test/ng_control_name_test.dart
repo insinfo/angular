@@ -1,8 +1,9 @@
+import 'dart:html';
+
 import 'package:ngdart/angular.dart';
 import 'package:ngforms/ngforms.dart';
 import 'package:ngtest/angular_test.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'ng_control_name_test.template.dart' as ng;
 
@@ -90,7 +91,7 @@ class NgControlNameTest {
   NgControlName? controlName;
 
   @ViewChild('input')
-  HTMLInputElement? inputElement;
+  InputElement? inputElement;
 
   String? loginValue;
 

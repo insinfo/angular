@@ -1,4 +1,4 @@
-part of 'tokens.dart';
+part of ngast.src.token.tokens;
 
 /// A [NgSimpleToken] that has a custom lexeme, i.e. not predefined by type.
 ///

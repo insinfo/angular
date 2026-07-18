@@ -747,7 +747,7 @@ class CompileView {
           null,
           [o.StmtModifier.privateStmt]);
 
-  static final _eventParam = o.FnParam(
+  final _eventParam = o.FnParam(
     EventHandlerVars.event.name!,
     o.importType(null),
   );

@@ -1,4 +1,4 @@
-import 'dart:js_interop';
+import 'dart:html' show Element;
 
 import 'package:meta/dart2js.dart' as dart2js;
 import 'package:meta/meta.dart';
@@ -8,7 +8,6 @@ import 'package:ngdart/src/di/errors.dart';
 import 'package:ngdart/src/di/injector.dart';
 import 'package:ngdart/src/meta.dart';
 import 'package:ngdart/src/utilities.dart';
-import 'package:web/web.dart';
 
 /// The base implementation of all views.
 ///
@@ -125,9 +124,7 @@ abstract class View implements ChangeDetectorRef {
 
   @override
   void markChildForCheck(Object child) {
-    // ignore: invalid_runtime_check_with_js_interop_types
-    assert(child is! JSAny || !child.isA<Element>(),
-        'Expected a component instance');
+    assert(child is! Element, 'Expected a component instance');
     queryChangeDetectorRefs[child]?.markForCheck();
   }
 

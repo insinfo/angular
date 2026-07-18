@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:html';
 
 import 'package:meta/dart2js.dart' as dart2js;
 import 'package:meta/meta.dart';
@@ -7,7 +8,6 @@ import 'package:ngdart/src/core/linker/style_encapsulation.dart';
 import 'package:ngdart/src/devtools.dart';
 import 'package:ngdart/src/meta.dart';
 import 'package:ngdart/src/utilities.dart';
-import 'package:web/web.dart';
 
 import 'render_view.dart';
 import 'view.dart';
@@ -44,7 +44,7 @@ abstract class ComponentView<T extends Object> extends RenderView {
   late final ComponentStyles componentStyles;
 
   /// The root element of this component, created from its selector.
-  late final HTMLElement rootElement;
+  late final HtmlElement rootElement;
 
   final _ComponentViewData _data;
 
@@ -110,7 +110,7 @@ abstract class ComponentView<T extends Object> extends RenderView {
   /// requires less code to assign the return value of a function that's going
   /// to be called anyways, than to generate an extra statement to load a field.
   @dart2js.noInline
-  HTMLElement initViewRoot() {
+  HtmlElement initViewRoot() {
     final hostElement = rootElement;
     componentStyles.addHostShimClassHtmlElement(hostElement);
     return hostElement;
@@ -215,7 +215,7 @@ abstract class ComponentView<T extends Object> extends RenderView {
 
   @dart2js.noInline
   @override
-  void updateChildClass(HTMLElement element, String newClass) {
+  void updateChildClass(HtmlElement element, String newClass) {
     if (identical(element, rootElement)) {
       componentStyles.updateChildClassForHostHtmlElement(element, newClass);
       final parent = parentView;

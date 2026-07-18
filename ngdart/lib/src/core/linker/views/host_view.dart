@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:meta/dart2js.dart' as dart2js;
 import 'package:meta/meta.dart';
 import 'package:ngdart/src/core/change_detection/host.dart';
@@ -8,7 +10,6 @@ import 'package:ngdart/src/di/injector.dart';
 import 'package:ngdart/src/meta.dart';
 import 'package:ngdart/src/runtime/dom_helpers.dart';
 import 'package:ngdart/src/utilities.dart';
-import 'package:web/web.dart';
 
 import 'component_view.dart';
 import 'dynamic_view.dart';

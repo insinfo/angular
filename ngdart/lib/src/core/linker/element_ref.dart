@@ -5,10 +5,9 @@
 ///
 /// **DEPRECATED**: A wrapper around a native DOM element inside of a View.
 ///
-/// Inject `Element` or `HTMLElement` from `dart:html` instead; this will be
+/// Inject `Element` or `HtmlElement` from `dart:html` instead; this will be
 /// removed in a future version of AngularDart, and has unnecessary overhead.
-@Deprecated(
-    'Inject or reference package:web/web.dart Element or HTMLElement instead')
+@Deprecated('Inject or reference dart:html Element or HtmlElement instead')
 class ElementRef {
   final dynamic nativeElement;
 
@@ -16,7 +15,6 @@ class ElementRef {
   //
   // Then it is upcasted to dynamic for the public API to be non-breaking.
   // ignore: prefer_initializing_formals
-  @Deprecated(
-      'Inject or reference package:web/web.dart Element or HTMLElement instead')
+  @Deprecated('Inject or reference dart:html Element or HtmlElement instead')
   const ElementRef(this.nativeElement);
 }

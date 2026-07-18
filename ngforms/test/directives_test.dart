@@ -1,8 +1,9 @@
+import 'dart:html';
+
 import 'package:mockito/annotations.dart';
 import 'package:ngforms/ngforms.dart';
 import 'package:ngforms/src/directives/shared.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 @GenerateMocks([ControlValueAccessor])
 import 'directives_test.mocks.dart'; // ignore: uri_does_not_exist
@@ -40,7 +41,7 @@ void main() {
     late DefaultValueAccessor defaultAccessor;
 
     setUp(() {
-      defaultAccessor = DefaultValueAccessor(HTMLInputElement());
+      defaultAccessor = DefaultValueAccessor(InputElement());
     });
     test('should throw when given an empty array', () {
       expect(() => selectValueAccessor([]),
@@ -50,25 +51,25 @@ void main() {
       expect(selectValueAccessor([defaultAccessor]), defaultAccessor);
     });
     test('should return checkbox accessor when provided', () {
-      var checkboxAccessor = CheckboxControlValueAccessor(HTMLInputElement());
+      var checkboxAccessor = CheckboxControlValueAccessor(InputElement());
       expect(selectValueAccessor([defaultAccessor, checkboxAccessor]),
           checkboxAccessor);
     });
     test('should return select accessor when provided', () {
-      var selectAccessor = SelectControlValueAccessor(HTMLSelectElement());
+      var selectAccessor = SelectControlValueAccessor(SelectElement());
       expect(selectValueAccessor([defaultAccessor, selectAccessor]),
           selectAccessor);
     });
     test('should throw when more than one build-in accessor is provided', () {
-      var checkboxAccessor = CheckboxControlValueAccessor(HTMLInputElement());
-      var selectAccessor = SelectControlValueAccessor(HTMLSelectElement());
+      var checkboxAccessor = CheckboxControlValueAccessor(InputElement());
+      var selectAccessor = SelectControlValueAccessor(SelectElement());
       expect(() => selectValueAccessor([checkboxAccessor, selectAccessor]),
           throwsWith('More than one built-in value accessor matches'));
     });
     test('should return custom accessor when provided', () {
       // ignore: undefined_function
       var customAccessor = MockControlValueAccessor();
-      var checkboxAccessor = CheckboxControlValueAccessor(HTMLInputElement());
+      var checkboxAccessor = CheckboxControlValueAccessor(InputElement());
       expect(
           selectValueAccessor(
               [defaultAccessor, customAccessor, checkboxAccessor]),

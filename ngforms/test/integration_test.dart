@@ -1,15 +1,15 @@
 import 'dart:async';
+import 'dart:html';
 
 import 'package:ngdart/angular.dart';
 import 'package:ngforms/ngforms.dart';
 import 'package:ngtest/angular_test.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'integration_test.template.dart' as ng;
 
 void dispatchEvent(Element element, String eventType) {
-  element.dispatchEvent(Event(eventType, EventInit(bubbles: true)));
+  element.dispatchEvent(Event(eventType, canBubble: true));
 }
 
 void main() {
@@ -22,8 +22,7 @@ void main() {
           beforeChangeDetection: (InputFormTest component) {
         component.form = ControlGroup({'login': Control('loginValue')});
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, 'loginValue');
     });
 
@@ -35,8 +34,7 @@ void main() {
         component.form = form;
       });
       await fixture.update((_) {
-        var input =
-            fixture.rootElement.querySelector('input') as HTMLInputElement;
+        var input = fixture.rootElement.querySelector('input') as InputElement;
         input.value = 'updatedValue';
         dispatchEvent(input, 'input');
       });
@@ -50,8 +48,7 @@ void main() {
           beforeChangeDetection: (InputFormTest component) {
         component.form = form;
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       form.valueChanges.listen((_) {
         throw UnsupportedError('should not happen');
       });
@@ -84,8 +81,7 @@ void main() {
           beforeChangeDetection: (SingleControlTest component) {
         component.form = control;
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, 'loginValue');
       await fixture.update((_) {
         input.value = 'updatedValue';
@@ -104,8 +100,7 @@ void main() {
       await fixture.update((InputFormTest component) {
         component.form = ControlGroup({'login': Control('newValue')});
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, 'newValue');
     });
 
@@ -121,8 +116,7 @@ void main() {
       await fixture.update((_) {
         login.updateValue('newValue');
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, 'newValue');
     });
 
@@ -151,8 +145,7 @@ void main() {
           beforeChangeDetection: (InputFormTest component) {
         component.form = form;
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, 'old');
       await fixture.update((InputFormTest component) {
         input.value = 'new';
@@ -169,8 +162,7 @@ void main() {
           beforeChangeDetection: (InputWithoutTypeTest component) {
         component.form = form;
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, 'old');
       await fixture.update((InputWithoutTypeTest component) {
         input.value = 'new';
@@ -187,7 +179,7 @@ void main() {
         component.form = form;
       });
       var textarea =
-          fixture.rootElement.querySelector('textarea') as HTMLTextAreaElement;
+          fixture.rootElement.querySelector('textarea') as TextAreaElement;
       expect(textarea.value, 'old');
       await fixture.update((_) {
         textarea.value = 'new';
@@ -203,8 +195,7 @@ void main() {
           await testBed.create(beforeChangeDetection: (CheckboxTest component) {
         component.form = form;
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.checked, true);
       await fixture.update((_) {
         input.checked = false;
@@ -220,8 +211,7 @@ void main() {
           await testBed.create(beforeChangeDetection: (NumberTest component) {
         component.form = form;
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, '10');
       await fixture.update((_) {
         input.value = '20';
@@ -239,8 +229,7 @@ void main() {
           beforeChangeDetection: (NumberRequiredTest component) {
         component.form = form;
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       await fixture.update((_) {
         input.value = '';
         dispatchEvent(input, 'input');
@@ -265,8 +254,7 @@ void main() {
         component.form = form;
         component.data = '';
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, '');
     });
 
@@ -280,8 +268,7 @@ void main() {
           await testBed.create(beforeChangeDetection: (RadioTest component) {
         component.form = form;
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.checked, false);
       await fixture.update((_) {
         dispatchEvent(input, 'change');
@@ -297,9 +284,9 @@ void main() {
             NgTestBed<BasicSelectTest>(ng.createBasicSelectTestFactory());
         var fixture = await testBed.create();
         var select =
-            fixture.rootElement.querySelector('select') as HTMLSelectElement;
+            fixture.rootElement.querySelector('select') as SelectElement;
         var sfOption =
-            fixture.rootElement.querySelector('option') as HTMLOptionElement;
+            fixture.rootElement.querySelector('option') as OptionElement;
         expect(select.value, 'SF');
         expect(sfOption.selected, true);
       });
@@ -308,7 +295,7 @@ void main() {
         var testBed = NgTestBed<SelectForTest>(ng.createSelectForTestFactory());
         var fixture = await testBed.create();
         var sfOption =
-            fixture.rootElement.querySelector('option') as HTMLOptionElement;
+            fixture.rootElement.querySelector('option') as OptionElement;
         expect(sfOption.value, '0');
         await fixture.update((SelectForTest component) {
           component.cities.first['id'] = '2';
@@ -325,9 +312,9 @@ void main() {
           component.form = form;
         });
         var select =
-            fixture.rootElement.querySelector('select') as HTMLSelectElement;
+            fixture.rootElement.querySelector('select') as SelectElement;
         var sfOption =
-            fixture.rootElement.querySelector('option') as HTMLOptionElement;
+            fixture.rootElement.querySelector('option') as OptionElement;
         expect(select.value, 'SF');
         expect(sfOption.selected, true);
         await fixture.update((_) {
@@ -343,7 +330,7 @@ void main() {
             ng.createSelectControlDynamicDataTestFactory());
         var fixture = await testBed.create();
         var select =
-            fixture.rootElement.querySelector('select') as HTMLSelectElement;
+            fixture.rootElement.querySelector('select') as SelectElement;
         expect(select.value, 'NYC');
       });
 
@@ -355,9 +342,9 @@ void main() {
           component.selectedCity = component.cities[1];
         });
         var select =
-            fixture.rootElement.querySelector('select') as HTMLSelectElement;
-        var nycOption = fixture.rootElement.querySelectorAll('option').item(1)
-            as HTMLOptionElement;
+            fixture.rootElement.querySelector('select') as SelectElement;
+        var nycOption =
+            fixture.rootElement.querySelectorAll('option')[1] as OptionElement;
         expect(select.value, '1: Object');
         expect(nycOption.selected, true);
         await fixture.update((_) {
@@ -385,9 +372,9 @@ void main() {
           component.selectedCity = component.cities[2];
         });
         var select =
-            fixture.rootElement.querySelector('select') as HTMLSelectElement;
-        var buffalo = fixture.rootElement.querySelectorAll('option').item(2)
-            as HTMLOptionElement;
+            fixture.rootElement.querySelector('select') as SelectElement;
+        var buffalo =
+            fixture.rootElement.querySelectorAll('option')[2] as OptionElement;
         expect(select.value, '2: Object');
         expect(buffalo.selected, true);
       });
@@ -404,7 +391,7 @@ void main() {
           component.selectedCity = component.cities[1];
         });
         var select =
-            fixture.rootElement.querySelector('select') as HTMLSelectElement;
+            fixture.rootElement.querySelector('select') as SelectElement;
         expect(select.value, '1: Object');
         await fixture.update((SelectOptionValueMapTest component) {
           component.cities.removeLast();
@@ -425,9 +412,9 @@ void main() {
           component.selectedCity = component.cities[1];
         });
         var select =
-            fixture.rootElement.querySelector('select') as HTMLSelectElement;
-        var buffalo = fixture.rootElement.querySelectorAll('option').item(1)
-            as HTMLOptionElement;
+            fixture.rootElement.querySelector('select') as SelectElement;
+        var buffalo =
+            fixture.rootElement.querySelectorAll('option')[1] as OptionElement;
         expect(select.value, '1: Buffalo');
         expect(buffalo.selected, true);
       });
@@ -448,9 +435,9 @@ void main() {
           component.selectedCity = component.cities[1];
         });
         var select =
-            fixture.rootElement.querySelector('select') as HTMLSelectElement;
-        var firstSF = fixture.rootElement.querySelectorAll('option').item(1)
-            as HTMLOptionElement;
+            fixture.rootElement.querySelector('select') as SelectElement;
+        var firstSF =
+            fixture.rootElement.querySelectorAll('option')[1] as OptionElement;
         expect(select.value, '1: Object');
         expect(firstSF.selected, true);
       });
@@ -472,9 +459,9 @@ void main() {
           component.selectedCity = component.cities[2];
         });
         var select =
-            fixture.rootElement.querySelector('select') as HTMLSelectElement;
-        var secondNYC = fixture.rootElement.querySelectorAll('option').item(2)
-            as HTMLOptionElement;
+            fixture.rootElement.querySelector('select') as SelectElement;
+        var secondNYC =
+            fixture.rootElement.querySelectorAll('option')[2] as OptionElement;
         expect(select.value, '2: Object');
         expect(secondNYC.selected, true);
       });
@@ -488,8 +475,7 @@ void main() {
           beforeChangeDetection: (CustomAccessorTest component) {
         component.form = form;
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, '!aa!');
       await fixture.update((_) {
         input.value = '!bb!';
@@ -527,11 +513,11 @@ void main() {
           component.form = form;
         });
         var required =
-            fixture.rootElement.querySelector('[required]') as HTMLInputElement;
+            fixture.rootElement.querySelector('[required]') as InputElement;
         var minLength = fixture.rootElement.querySelector('[ngControl=min]')
-            as HTMLInputElement;
+            as InputElement;
         var maxLength = fixture.rootElement.querySelector('[ngControl=max]')
-            as HTMLInputElement;
+            as InputElement;
         await fixture.update((_) {
           required.value = '';
           minLength.value = '1';
@@ -565,7 +551,7 @@ void main() {
         expect(form.valid, true);
         await fixture.update((_) {
           var input =
-              fixture.rootElement.querySelector('input') as HTMLInputElement;
+              fixture.rootElement.querySelector('input') as InputElement;
           input.value = '';
           dispatchEvent(input, 'input');
         });
@@ -578,8 +564,7 @@ void main() {
         var testBed =
             NgTestBed<NestedFormTest>(ng.createNestedFormTestFactory());
         var fixture = await testBed.create();
-        var input =
-            fixture.rootElement.querySelector('input') as HTMLInputElement;
+        var input = fixture.rootElement.querySelector('input') as InputElement;
         expect(input.value, 'value');
       });
 
@@ -587,8 +572,7 @@ void main() {
         var testBed =
             NgTestBed<NestedFormTest>(ng.createNestedFormTestFactory());
         var fixture = await testBed.create();
-        var input =
-            fixture.rootElement.querySelector('input') as HTMLInputElement;
+        var input = fixture.rootElement.querySelector('input') as InputElement;
         late ControlGroup form;
         await fixture.update((NestedFormTest component) {
           input.value = 'updatedValue';
@@ -610,8 +594,7 @@ void main() {
       await fixture.update((ComplexNgModelTest component) {
         component.name = 'oldValue';
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, 'oldValue');
       late ComplexNgModelTest comp;
       await fixture.update((ComplexNgModelTest component) {
@@ -629,8 +612,7 @@ void main() {
       await fixture.update((SingleFieldNgModelTest component) {
         component.name = 'oldValue';
       });
-      var input =
-          fixture.rootElement.querySelector('input') as HTMLInputElement;
+      var input = fixture.rootElement.querySelector('input') as InputElement;
       expect(input.value, 'oldValue');
 
       late SingleFieldNgModelTest comp;
@@ -720,8 +702,7 @@ void main() {
         await fixture.update((NgModelComplexTest component) {
           component.name = 'oldValue';
         });
-        var input =
-            fixture.rootElement.querySelector('input') as HTMLInputElement;
+        var input = fixture.rootElement.querySelector('input') as InputElement;
         expect(input.value, 'oldValue');
         late NgModelComplexTest comp;
         await fixture.update((NgModelComplexTest component) {
@@ -739,8 +720,7 @@ void main() {
         await fixture.update((NgModelSingleFieldTest component) {
           component.name = 'oldValue';
         });
-        var input =
-            fixture.rootElement.querySelector('input') as HTMLInputElement;
+        var input = fixture.rootElement.querySelector('input') as InputElement;
         expect(input.value, 'oldValue');
         late NgModelSingleFieldTest comp;
         await fixture.update((NgModelSingleFieldTest component) {
@@ -764,8 +744,7 @@ void main() {
             beforeChangeDetection: (TemplateRadioTest component) {
           component.data = data;
         });
-        var input =
-            fixture.rootElement.querySelector('input') as HTMLInputElement;
+        var input = fixture.rootElement.querySelector('input') as InputElement;
         expect(input.checked, false);
         await fixture.update((_) {
           dispatchEvent(input, 'change');
@@ -787,8 +766,7 @@ void main() {
         var testBed = NgTestBed<NgModelInitialViewTest>(
             ng.createNgModelInitialViewTestFactory());
         var fixture = await testBed.create();
-        var input =
-            fixture.rootElement.querySelector('input') as HTMLInputElement;
+        var input = fixture.rootElement.querySelector('input') as InputElement;
         await fixture.update((_) {
           input.value = 'aa';
           input.selectionStart = 1;
@@ -806,8 +784,7 @@ void main() {
         await fixture.update((NgModelRevertViewTest component) {
           component.name = '';
         });
-        var input =
-            fixture.rootElement.querySelector('input') as HTMLInputElement;
+        var input = fixture.rootElement.querySelector('input') as InputElement;
         late NgModelRevertViewTest comp;
         await fixture.update((NgModelRevertViewTest component) {
           input.value = 'aa';

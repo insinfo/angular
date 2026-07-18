@@ -1,7 +1,5 @@
-import 'dart:js_interop';
-import 'dart:js_interop_unsafe';
-
-import 'package:web/web.dart';
+import 'dart:html';
+import 'dart:js_util' as js_util;
 
 import '../model.dart' show Control, AbstractControlGroup;
 import '../validators.dart' show Validators;
@@ -97,6 +95,6 @@ ControlValueAccessor<dynamic>? selectValueAccessor(
   return null;
 }
 
-void setElementDisabled(HTMLElement element, bool isDisabled) {
-  element['disabled'] = isDisabled.toJS;
+void setElementDisabled(HtmlElement element, bool isDisabled) {
+  js_util.setProperty(element, 'disabled', isDisabled);
 }

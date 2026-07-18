@@ -151,9 +151,7 @@ class _AstToExpressionVisitor
     if (_metadata.template!.preserveWhitespace! ||
         value.contains('\u00A0') ||
         value.contains(ngSpace) ||
-        !value.contains('\n')) {
-      return replaceNgSpace(value);
-    }
+        !value.contains('\n')) return replaceNgSpace(value);
     return replaceNgSpace(value.replaceAll('\n', '').trimLeft());
   }
 
@@ -163,9 +161,7 @@ class _AstToExpressionVisitor
     if (_metadata.template!.preserveWhitespace! ||
         value.contains('\u00A0') ||
         value.contains(ngSpace) ||
-        !value.contains('\n')) {
-      return replaceNgSpace(value);
-    }
+        !value.contains('\n')) return replaceNgSpace(value);
     return replaceNgSpace(value.replaceAll('\n', '').trimRight());
   }
 

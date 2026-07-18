@@ -1,41 +1,38 @@
 part of 'testability.dart';
 
 @JS('ngTestabilityRegistries')
-external JSArray<JSTestabilityRegistry>? _ngJSTestabilityRegistries;
+external List<JsTestabilityRegistry>? _ngJsTestabilityRegistries;
 
 @JS('getAngularTestability')
-external set _jsGetAngularTestability(JSFunction function);
+external set _jsGetAngularTestability(
+    Object? Function(Element element) function);
 
 @JS('getAllAngularTestabilities')
-external set _jsGetAllAngularTestabilities(JSFunction function);
+external set _jsGetAllAngularTestabilities(List<Object> Function() function);
 
 @JS('frameworkStabilizers')
-external JSArray<JSFunction>? _jsFrameworkStabilizers;
-
-extension on JSArray {
-  external void push(JSAny item);
-}
+external List<Object?>? _jsFrameworkStabilizers;
 
 class _JSTestabilityProxy implements _TestabilityProxy {
   const _JSTestabilityProxy();
 
   @override
   void addToWindow(TestabilityRegistry registry) {
-    var registries = _ngJSTestabilityRegistries;
+    var registries = _ngJsTestabilityRegistries;
     if (registries == null) {
-      registries = JSArray<JSTestabilityRegistry>();
-      _ngJSTestabilityRegistries = registries;
-      _jsGetAngularTestability = _getAngularTestability.toJS;
-      _jsGetAllAngularTestabilities = _getAllAngularTestabilities.toJS;
-      (_jsFrameworkStabilizers ??= JSArray<JSFunction>())
-          .push(_whenAllStable.toJS);
+      registries = <JsTestabilityRegistry>[];
+      _ngJsTestabilityRegistries = registries;
+      _jsGetAngularTestability = allowInterop(_getAngularTestability);
+      _jsGetAllAngularTestabilities = allowInterop(_getAllAngularTestabilities);
+      (_jsFrameworkStabilizers ??= <Object?>[])
+          .add(allowInterop(_whenAllStable));
     }
-    registries.push(registry.toJS);
+    registries.add(registry.asJsApi());
   }
 
   /// For every registered [TestabilityRegistry], tries `getAngularTestability`.
-  static JSTestability? _getAngularTestability(Element element) {
-    final registry = _ngJSTestabilityRegistries;
+  static JsTestability? _getAngularTestability(Element element) {
+    final registry = _ngJsTestabilityRegistries;
     if (registry == null) {
       return null;
     }
@@ -49,21 +46,21 @@ class _JSTestabilityProxy implements _TestabilityProxy {
   }
 
   /// For every registered [TestabilityRegistry], returns the JS API for it.
-  static JSArray<JSTestability> _getAllAngularTestabilities() {
-    final registry = _ngJSTestabilityRegistries;
-    var result = JSArray<JSTestability>();
-    if (registry != null) {
-      for (var i = 0; i < registry.length; i++) {
-        final testabilities = registry[i].getAllAngularTestabilities();
-        result = result.callMethod('concat'.toJS, testabilities)
-            as JSArray<JSTestability>;
-      }
+  static List<JsTestability> _getAllAngularTestabilities() {
+    final registry = _ngJsTestabilityRegistries;
+    if (registry == null) {
+      return <JsTestability>[];
+    }
+    final result = <JsTestability>[];
+    for (var i = 0; i < registry.length; i++) {
+      final testabilities = registry[i].getAllAngularTestabilities();
+      result.addAll(testabilities);
     }
     return result;
   }
 
   /// For every testability, calls [callback] when they _all_ report stable.
-  static void _whenAllStable(JSFunction callback) {
+  static void _whenAllStable(void Function() callback) {
     final testabilities = _getAllAngularTestabilities();
 
     var pendingStable = testabilities.length;
@@ -71,46 +68,41 @@ class _JSTestabilityProxy implements _TestabilityProxy {
     void decrement() {
       pendingStable--;
       if (pendingStable == 0) {
-        callback.callAsFunction();
+        callback();
       }
     }
 
     for (var i = 0; i < testabilities.length; i++) {
-      testabilities[i].whenStable(decrement.toJS);
+      testabilities[i].whenStable(allowInterop(decrement));
     }
   }
 }
 
 extension on Testability {
-  JSTestability get toJS {
-    return JSTestability(
-      isStable: (() => isStable).toJS,
-      whenStable: (JSFunction callback) {
-        whenStable(() {
-          callback.callAsFunction();
-        });
-      }.toJS,
+  JsTestability asJsApi() {
+    return JsTestability(
+      isStable: allowInterop(() => isStable),
+      whenStable: allowInterop(whenStable),
     );
   }
 }
 
 extension on TestabilityRegistry {
-  JSTestabilityRegistry get toJS {
-    JSTestability? getAngularTestability(Element element) {
+  JsTestabilityRegistry asJsApi() {
+    JsTestability? getAngularTestability(Element element) {
       final dartTestability = testabilityFor(element);
-      return dartTestability?.toJS;
+      return dartTestability?.asJsApi();
     }
 
-    JSArray<JSTestability> getAllAngularTestabilities() {
+    List<JsTestability> getAllAngularTestabilities() {
       return allTestabilities
-          .map((testability) => testability.toJS)
-          .toList()
-          .toJS;
+          .map((testability) => testability.asJsApi())
+          .toList();
     }
 
-    return JSTestabilityRegistry(
-      getAngularTestability: getAngularTestability.toJS,
-      getAllAngularTestabilities: getAllAngularTestabilities.toJS,
+    return JsTestabilityRegistry(
+      getAngularTestability: allowInterop(getAngularTestability),
+      getAllAngularTestabilities: allowInterop(getAllAngularTestabilities),
     );
   }
 }

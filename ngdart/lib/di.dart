@@ -4,8 +4,6 @@
 /// //third_party/dart/angular/lib/di.dart, which exports this file.
 ///
 /// See go/angular-di.dart-deprecated.
-library;
-
 export 'src/di/injector.dart' show Injector, InjectorFactory;
 export 'src/meta.dart'
     show

@@ -1,13 +1,12 @@
 import 'dart:async';
 import 'dart:convert' show json;
 import 'dart:developer';
-import 'dart:js_interop';
+import 'dart:html';
 
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/serializer.dart';
 import 'package:meta/meta.dart';
 import 'package:stream_transform/stream_transform.dart';
-import 'package:web/web.dart';
 
 import '../core/application_ref.dart';
 import '../core/linker/views/component_view.dart';
@@ -70,11 +69,10 @@ class Inspector {
   /// inspecting another.
   void inspect(ApplicationRef applicationRef) {
     if (_applicationRef != null) {
-      console.error('''
+      window.console.error('''
 AngularDart DevTools does not yet support apps with multiple runApp()
 invocations. Please contact angulardart-eng@ if you encounter this error.
-'''
-          .toJS);
+''');
       return;
     }
 
@@ -230,7 +228,7 @@ invocations. Please contact angulardart-eng@ if you encounter this error.
   }
 
   /// Returns the root element of the component for [id].
-  HTMLElement getComponentElement(int id) {
+  HtmlElement getComponentElement(int id) {
     final componentView =
         _referenceCounter.toObject(id) as ComponentView<Object>;
     return componentView.rootElement;
@@ -249,7 +247,7 @@ invocations. Please contact angulardart-eng@ if you encounter this error.
       if (componentView != null) {
         return _referenceCounter.toId(componentView, groupName);
       }
-      current = current.parentElement;
+      current = current.parent;
     }
     return -1;
   }
@@ -282,10 +280,7 @@ invocations. Please contact angulardart-eng@ if you encounter this error.
   List<Map<String, Object>> getComponents(String groupName) {
     final json = <Map<String, Object>>[];
     for (final element in _contentRoots) {
-      final treeWalker = document.createTreeWalker(
-        element,
-        /* NodeFilter.SHOW_ELEMENT */ 0x1,
-      );
+      final treeWalker = TreeWalker(element, NodeFilter.SHOW_ELEMENT);
       _collectJson(treeWalker, groupName, json);
     }
     return json;
@@ -298,12 +293,10 @@ invocations. Please contact angulardart-eng@ if you encounter this error.
   @visibleForTesting
   BuiltList<InspectorNode> getNodes(String groupName) {
     return BuiltList.build((b) {
-      final whatToShow = /* NodeFilter.SHOW_ELEMENT */
-          0x1 | /* NodeFilter.SHOW_COMMENT */ 0x80;
-
       for (final element in _contentRoots) {
         // Structural directives can be anchored on comments.
-        final treeWalker = document.createTreeWalker(element, whatToShow);
+        final whatToShow = NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_COMMENT;
+        final treeWalker = TreeWalker(element, whatToShow);
         _collectNodes(treeWalker, groupName, b);
       }
     });
