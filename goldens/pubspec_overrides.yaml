@@ -1,8 +1,8 @@
-# melos_managed_dependency_overrides: ng_ast,ng_compiler,ng_core
+# melos_managed_dependency_overrides: ngx_ast,ngx_compiler,ngx_core
 dependency_overrides:
-  ng_ast:
-    path: ../ng_ast
-  ng_compiler:
-    path: ../ng_compiler
-  ng_core:
-    path: ../ng_core
+  ngx_ast:
+    path: ../ngx_ast
+  ngx_compiler:
+    path: ../ngx_compiler
+  ngx_core:
+    path: ../ngx_core

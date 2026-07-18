@@ -1,8 +1,8 @@
-import 'package:ng_compiler/v1/src/compiler/compile_metadata.dart'
+import 'package:ngx_compiler/v1/src/compiler/compile_metadata.dart'
     show CompileIdentifierMetadata;
-import 'package:ng_compiler/v1/src/compiler/output/dart_emitter.dart'
+import 'package:ngx_compiler/v1/src/compiler/output/dart_emitter.dart'
     show DartEmitter;
-import 'package:ng_compiler/v1/src/compiler/output/output_ast.dart' as o;
+import 'package:ngx_compiler/v1/src/compiler/output/output_ast.dart' as o;
 import 'package:test/test.dart';
 
 var someModuleUrl = 'asset:somePackage/lib/somePath';

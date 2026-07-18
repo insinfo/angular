@@ -3,8 +3,8 @@ library angular2.test.common.styling.shim_test;
 import 'dart:html';
 
 import 'package:test/test.dart';
-import 'package:ng_core/angular.dart';
-import 'package:ng_test/angular_test.dart';
+import 'package:ngx_core/angular.dart';
+import 'package:ngx_test/angular_test.dart';
 
 import 'shim_test.template.dart' as ng;
 

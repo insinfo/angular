@@ -4,8 +4,8 @@ import 'dart:async';
 
 import 'package:test/test.dart';
 import 'package:_tests/matchers.dart';
-import 'package:ng_core/angular.dart';
-import 'package:ng_test/angular_test.dart';
+import 'package:ngx_core/angular.dart';
+import 'package:ngx_test/angular_test.dart';
 
 import 'for_test.template.dart' as ng;
 

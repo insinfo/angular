@@ -1,7 +1,7 @@
 # CI for the angular9 branch of the insinfo/angular fork.
 #
-# This branch renames the packages to the ng_* family (ng_core, ng_forms,
-# ng_router, ng_test, ng_ast, ng_compiler) for stable publishing; the code
+# This branch renames the packages to the ngx_* family (ngx_core, ngx_forms,
+# ngx_router, ngx_test, ngx_ast, ngx_compiler) for stable publishing; the code
 # itself matches the angular8 branch (pub.dev-faithful sources).
 name: Dart CI
 on:
@@ -36,7 +36,7 @@ jobs:
       # not modify the published code, only errors fail the build.
       - name: Analyze packages
         run: |
-          for pkg in ng_ast ng_compiler ng_core ng_forms ng_router ng_test; do
+          for pkg in ngx_ast ngx_compiler ngx_core ngx_forms ngx_router ngx_test; do
             echo "::group::dart analyze $pkg"
             (cd $pkg && dart analyze --no-fatal-warnings)
             echo "::endgroup::"
@@ -50,19 +50,19 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - package: ng_ast
+          - package: ngx_ast
             command: dart run test -P ci
-          - package: ng_compiler
+          - package: ngx_compiler
             command: dart run test -P ci
           # --delete-conflicting-outputs: the pub.dev-published packages ship
           # their generated *.mocks.dart files, which build_runner detects as
           # pre-existing outputs and asks permission to replace (impossible in
           # a non-interactive runner, exit code 78).
-          - package: ng_forms
+          - package: ngx_forms
             command: dart run build_runner test --delete-conflicting-outputs --fail-on-severe -- -P ci
-          - package: ng_router
+          - package: ngx_router
             command: dart run build_runner test --delete-conflicting-outputs --fail-on-severe -- -P ci
-          - package: ng_test
+          - package: ngx_test
             command: dart run build_runner test --delete-conflicting-outputs --fail-on-severe -- -P ci
     steps:
       - name: Setup Dart SDK

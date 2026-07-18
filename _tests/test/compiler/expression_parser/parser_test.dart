@@ -1,11 +1,11 @@
 import 'package:_tests/test_util.dart';
-import 'package:ng_compiler/v1/src/compiler/compile_metadata.dart'
+import 'package:ngx_compiler/v1/src/compiler/compile_metadata.dart'
     show CompileIdentifierMetadata;
-import 'package:ng_compiler/v1/src/compiler/expression_parser/ast.dart'
+import 'package:ngx_compiler/v1/src/compiler/expression_parser/ast.dart'
     show ASTWithSource, Interpolation, PropertyRead;
-import 'package:ng_compiler/v1/src/compiler/expression_parser/parser.dart'
+import 'package:ngx_compiler/v1/src/compiler/expression_parser/parser.dart'
     show ParseException, ExpressionParser;
-import 'package:ng_compiler/v2/context.dart';
+import 'package:ngx_compiler/v2/context.dart';
 import 'package:test/test.dart';
 
 import 'unparser.dart' show Unparser;

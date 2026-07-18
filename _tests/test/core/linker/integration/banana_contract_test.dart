@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:test/test.dart';
-import 'package:ng_core/angular.dart';
-import 'package:ng_test/angular_test.dart';
+import 'package:ngx_core/angular.dart';
+import 'package:ngx_test/angular_test.dart';
 
 import 'banana_contract_test.template.dart' as ng;
 

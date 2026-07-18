@@ -1,7 +1,7 @@
 @TestOn('browser')
 
 import 'package:test/test.dart';
-import 'package:ng_core/src/security/html_sanitizer.dart';
+import 'package:ngx_core/src/security/html_sanitizer.dart';
 
 void _testSanitize(String input, String expectedOutput, bool knownFailure) {
   String? output;

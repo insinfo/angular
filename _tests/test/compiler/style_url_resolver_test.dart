@@ -1,5 +1,5 @@
-import 'package:ng_compiler/v1/angular_compiler.dart';
-import 'package:ng_compiler/v1/src/compiler/style_url_resolver.dart'
+import 'package:ngx_compiler/v1/angular_compiler.dart';
+import 'package:ngx_compiler/v1/src/compiler/style_url_resolver.dart'
     show extractStyleUrls, isStyleUrlResolvable;
 import 'package:test/test.dart';
 

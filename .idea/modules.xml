@@ -4,12 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/_tests/melos__tests.iml" filepath="$PROJECT_DIR$/_tests/melos__tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples/hello_world/melos_examples_hello_world.iml" filepath="$PROJECT_DIR$/examples/hello_world/melos_examples_hello_world.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ng_ast/melos_ng_ast.iml" filepath="$PROJECT_DIR$/ng_ast/melos_ng_ast.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ng_compiler/melos_ng_compiler.iml" filepath="$PROJECT_DIR$/ng_compiler/melos_ng_compiler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ng_core/melos_ng_core.iml" filepath="$PROJECT_DIR$/ng_core/melos_ng_core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ng_forms/melos_ng_forms.iml" filepath="$PROJECT_DIR$/ng_forms/melos_ng_forms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ng_router/melos_ng_router.iml" filepath="$PROJECT_DIR$/ng_router/melos_ng_router.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ng_test/melos_ng_test.iml" filepath="$PROJECT_DIR$/ng_test/melos_ng_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_ast/melos_ngx_ast.iml" filepath="$PROJECT_DIR$/ngx_ast/melos_ngx_ast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_compiler/melos_ngx_compiler.iml" filepath="$PROJECT_DIR$/ngx_compiler/melos_ngx_compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_core/melos_ngx_core.iml" filepath="$PROJECT_DIR$/ngx_core/melos_ngx_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_forms/melos_ngx_forms.iml" filepath="$PROJECT_DIR$/ngx_forms/melos_ngx_forms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_router/melos_ngx_router.iml" filepath="$PROJECT_DIR$/ngx_router/melos_ngx_router.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_test/melos_ngx_test.iml" filepath="$PROJECT_DIR$/ngx_test/melos_ngx_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/melos_angular.iml" filepath="$PROJECT_DIR$/melos_angular.iml" />
     </modules>
   </component>

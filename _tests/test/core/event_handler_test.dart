@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:html';
 
-import 'package:ng_core/angular.dart';
-import 'package:ng_test/angular_test.dart';
+import 'package:ngx_core/angular.dart';
+import 'package:ngx_test/angular_test.dart';
 import 'package:test/test.dart';
 
 import 'event_handler_test.template.dart' as ng;

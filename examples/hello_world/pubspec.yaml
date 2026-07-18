@@ -5,7 +5,7 @@ environment:
 
 dependencies:
   # No strict dependencies, we always use dependency_overrides.
-  ng_core:
+  ngx_core:
 
 dev_dependencies:
   build_runner: ^2.3.3

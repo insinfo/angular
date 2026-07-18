@@ -1,6 +1,6 @@
-import 'package:ng_compiler/v1/src/compiler/schema/dom_element_schema_registry.dart'
+import 'package:ngx_compiler/v1/src/compiler/schema/dom_element_schema_registry.dart'
     show DomElementSchemaRegistry;
-import 'package:ng_compiler/v1/src/compiler/security.dart';
+import 'package:ngx_compiler/v1/src/compiler/security.dart';
 import 'package:test/test.dart';
 
 void main() {

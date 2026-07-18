@@ -1,4 +1,4 @@
-import 'package:ng_core/angular.dart';
+import 'package:ngx_core/angular.dart';
 
 import 'visibility.template.dart' as ng;
 

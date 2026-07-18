@@ -2,10 +2,10 @@
 
 import 'package:test/test.dart';
 import 'package:_tests/matchers.dart';
-import 'package:ng_core/angular.dart';
-import 'package:ng_core/experimental.dart';
-import 'package:ng_core/src/di/injector.dart';
-import 'package:ng_test/angular_test.dart';
+import 'package:ngx_core/angular.dart';
+import 'package:ngx_core/experimental.dart';
+import 'package:ngx_core/src/di/injector.dart';
+import 'package:ngx_test/angular_test.dart';
 
 import 'injector_test.template.dart' as ng;
 

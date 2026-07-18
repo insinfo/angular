@@ -6,8 +6,8 @@ import 'package:build_resolvers/build_resolvers.dart';
 import 'package:build_test/build_test.dart' hide testBuilder;
 import 'package:glob/glob.dart';
 import 'package:logging/logging.dart';
-import 'package:ng_compiler/v2/context.dart';
-import 'package:ng_core/src/build.dart';
+import 'package:ngx_compiler/v2/context.dart';
+import 'package:ngx_core/src/build.dart';
 import 'package:test/test.dart';
 
 /// A 'test' build process (similar to the normal one).
@@ -26,17 +26,17 @@ final Future<PackageAssetReader> _packageAssets = (() async {
   }
   final root = Platform.environment['PKG_ANGULAR_ROOT'];
   final path = '$runfiles/$root';
-  if (!FileSystemEntity.isFileSync('$path/ng_core/lib/angular.dart')) {
-    throw StateError('Could not find $path/ng_core/lib/angular.dart');
+  if (!FileSystemEntity.isFileSync('$path/ngx_core/lib/angular.dart')) {
+    throw StateError('Could not find $path/ngx_core/lib/angular.dart');
   }
-  final pathToMeta = '$path/ng_core/lib/src/meta.dart';
+  final pathToMeta = '$path/ngx_core/lib/src/meta.dart';
   if (!FileSystemEntity.isFileSync(pathToMeta)) {
     throw StateError('Could not find $pathToMeta');
   }
-  print('file://$path/ng_core/lib');
+  print('file://$path/ngx_core/lib');
   return PackageAssetReader.forPackages({
-    ngPackage: '$path/ng_core/',
-    ngCompiler: '$path/ng_compiler/',
+    ngPackage: '$path/ngx_core/',
+    ngCompiler: '$path/ngx_compiler/',
   });
 })();
 
@@ -45,8 +45,8 @@ final Future<PackageAssetReader> _packageAssets = (() async {
 // **NOTE**: Be very careful changing this, there are hard-coded transformation
 // rules as part of open sourcing process to make sure this works both
 // externally and internally.
-const ngPackage = 'ng_core';
-const ngCompiler = 'ng_compiler';
+const ngPackage = 'ngx_core';
+const ngCompiler = 'ngx_compiler';
 const ngImport = 'package:$ngPackage/angular.dart';
 final _ngFiles = Glob('lib/**.dart');
 
@@ -130,7 +130,7 @@ Future<void> _testBuilder(
 /// )
 /// ```
 ///
-/// Note that `package:ng_core/**.dart` is always included.
+/// Note that `package:ngx_core/**.dart` is always included.
 Future<void> compilesExpecting(
   String input, {
   String? inputSource,

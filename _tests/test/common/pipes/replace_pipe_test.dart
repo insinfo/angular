@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
-import 'package:ng_core/src/common/pipes/invalid_pipe_argument_exception.dart';
-import 'package:ng_core/src/common/pipes/replace_pipe.dart';
+import 'package:ngx_core/src/common/pipes/invalid_pipe_argument_exception.dart';
+import 'package:ngx_core/src/common/pipes/replace_pipe.dart';
 
 final someNumber = 42;
 final str = 'Douglas Adams';

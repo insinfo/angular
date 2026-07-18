@@ -3,8 +3,8 @@
 // element that is assigned by the framework.
 
 import 'package:collection/collection.dart';
-import 'package:ng_core/angular.dart';
-import 'package:ng_test/angular_test.dart';
+import 'package:ngx_core/angular.dart';
+import 'package:ngx_test/angular_test.dart';
 import 'package:test/test.dart';
 
 /// A mixin for components that receive a list of child elements/directives.

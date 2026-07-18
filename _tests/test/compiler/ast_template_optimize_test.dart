@@ -1,10 +1,10 @@
-import 'package:ng_compiler/v1/cli.dart';
-import 'package:ng_compiler/v1/src/compiler/expression_parser/parser.dart';
-import 'package:ng_compiler/v1/src/compiler/schema/dom_element_schema_registry.dart';
-import 'package:ng_compiler/v1/src/compiler/template_ast.dart';
-import 'package:ng_compiler/v1/src/compiler/template_compiler.dart';
-import 'package:ng_compiler/v1/src/compiler/template_parser/ast_template_parser.dart';
-import 'package:ng_compiler/v2/context.dart';
+import 'package:ngx_compiler/v1/cli.dart';
+import 'package:ngx_compiler/v1/src/compiler/expression_parser/parser.dart';
+import 'package:ngx_compiler/v1/src/compiler/schema/dom_element_schema_registry.dart';
+import 'package:ngx_compiler/v1/src/compiler/template_ast.dart';
+import 'package:ngx_compiler/v1/src/compiler/template_compiler.dart';
+import 'package:ngx_compiler/v1/src/compiler/template_parser/ast_template_parser.dart';
+import 'package:ngx_compiler/v2/context.dart';
 import 'package:test/test.dart';
 
 import '../resolve_util.dart';

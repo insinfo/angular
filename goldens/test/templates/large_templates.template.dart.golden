@@ -3,22 +3,22 @@
 // **************************************************************************
 
 import 'large_templates.dart';
-import 'package:ng_core/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_core/src/core/linker/views/component_view.dart' as import0;
 import 'large_templates.dart' as import1;
-import 'package:ng_core/src/core/linker/view_container.dart';
-import 'package:ng_core/src/common/directives/ng_if.dart';
-import 'package:ng_core/src/core/linker/style_encapsulation.dart' as import4;
-import 'package:ng_core/src/core/linker/views/view.dart' as import5;
-import 'package:ng_core/src/meta/change_detection_constants.dart' as import6;
-import 'package:ng_core/src/utilities.dart' as import7;
+import 'package:ngx_core/src/core/linker/view_container.dart';
+import 'package:ngx_core/src/common/directives/ng_if.dart';
+import 'package:ngx_core/src/core/linker/style_encapsulation.dart' as import4;
+import 'package:ngx_core/src/core/linker/views/view.dart' as import5;
+import 'package:ngx_core/src/meta/change_detection_constants.dart' as import6;
+import 'package:ngx_core/src/utilities.dart' as import7;
 import 'dart:html' as import8;
-import 'package:ng_core/src/runtime/dom_helpers.dart' as import9;
-import 'package:ng_core/src/core/linker/template_ref.dart';
-import 'package:ng_core/src/devtools.dart' as import11;
-import 'package:ng_core/angular.dart';
-import 'package:ng_core/src/core/linker/views/embedded_view.dart' as import13;
-import 'package:ng_core/src/core/linker/views/render_view.dart' as import14;
-import 'package:ng_core/src/core/linker/views/host_view.dart' as import15;
+import 'package:ngx_core/src/runtime/dom_helpers.dart' as import9;
+import 'package:ngx_core/src/core/linker/template_ref.dart';
+import 'package:ngx_core/src/devtools.dart' as import11;
+import 'package:ngx_core/angular.dart';
+import 'package:ngx_core/src/core/linker/views/embedded_view.dart' as import13;
+import 'package:ngx_core/src/core/linker/views/render_view.dart' as import14;
+import 'package:ngx_core/src/core/linker/views/host_view.dart' as import15;
 
 final List<Object> styles$GoldenComponent = const [];
 

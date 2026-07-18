@@ -1,4 +1,4 @@
-import 'package:ng_compiler/v1/src/compiler/output/abstract_emitter.dart'
+import 'package:ngx_compiler/v1/src/compiler/output/abstract_emitter.dart'
     show escapeSingleQuoteString;
 import 'package:test/test.dart';
 
