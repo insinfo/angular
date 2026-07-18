@@ -2,7 +2,7 @@
 library golden;
 
 import 'package:js/js.dart';
-import 'package:ngdart/angular.dart';
+import 'package:ngx_dart/angular.dart';
 
 import 'injector_get_internal.template.dart' as ng;
 

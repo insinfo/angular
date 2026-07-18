@@ -3,24 +3,26 @@
 // **************************************************************************
 
 import 'events.dart';
-import 'package:ngdart/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_dart/src/core/linker/views/component_view.dart' as import0;
 import 'events.dart' as import1;
-import 'package:ngdart/src/core/linker/style_encapsulation.dart' as import2;
-import 'package:ngdart/src/core/linker/views/view.dart' as import3;
-import 'package:ngdart/src/meta/change_detection_constants.dart' as import4;
-import 'package:ngdart/src/utilities.dart' as import5;
-import 'dart:html' as import6;
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/linker/views/host_view.dart' as import8;
-import 'package:ngdart/src/runtime/dom_helpers.dart' as import9;
+import 'package:ngx_dart/src/core/linker/style_encapsulation.dart' as import2;
+import 'package:ngx_dart/src/core/linker/views/view.dart' as import3;
+import 'package:ngx_dart/src/meta/change_detection_constants.dart' as import4;
+import 'package:ngx_dart/src/utilities.dart' as import5;
+import 'package:web/src/dom/dom.dart' as import6;
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import8;
+import 'package:ngx_dart/src/runtime/dom_helpers.dart' as import9;
+import 'package:web/src/dom/html.dart' as import10;
+import 'dart:js_interop' as import11;
 
 final List<Object> styles$GoldenComponent = const [];
 
 class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent> {
   late final ViewUsesDomEvents0 _compView_0;
-  late final import1.UsesDomEvents _UsesDomEvents_0_5;
+  late final import1.UsesDomEvents _UsesDomEvents_0_6;
   late final ViewUsesOutputs0 _compView_1;
-  late final import1.UsesOutputs _UsesOutputs_1_5;
+  late final import1.UsesOutputs _UsesOutputs_1_6;
   static import2.ComponentStyles? _componentStyles;
   ViewGoldenComponent0(import3.View parentView, int parentIndex) : super(parentView, parentIndex, import4.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -36,13 +38,13 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     this._compView_0 = ViewUsesDomEvents0(this, 0);
     final _el_0 = this._compView_0.rootElement;
     parentRenderNode.append(_el_0);
-    this._UsesDomEvents_0_5 = import1.UsesDomEvents();
-    this._compView_0.create(this._UsesDomEvents_0_5);
+    this._UsesDomEvents_0_6 = import1.UsesDomEvents();
+    this._compView_0.create(this._UsesDomEvents_0_6);
     this._compView_1 = ViewUsesOutputs0(this, 1);
     final _el_1 = this._compView_1.rootElement;
     parentRenderNode.append(_el_1);
-    this._UsesOutputs_1_5 = import1.UsesOutputs();
-    this._compView_1.create(this._UsesOutputs_1_5);
+    this._UsesOutputs_1_6 = import1.UsesOutputs();
+    this._compView_1.create(this._UsesOutputs_1_6);
   }
 
   @override
@@ -115,14 +117,14 @@ class ViewUsesDomEvents0 extends import0.ComponentView<import1.UsesDomEvents> {
     final _ctx = this.ctx;
     final parentRenderNode = this.initViewRoot();
     final doc = import6.document;
-    final _el_0 = import9.appendElement<import6.ButtonElement>(doc, parentRenderNode, 'button');
+    final _el_0 = import9.appendElement<import10.HTMLButtonElement>(doc, parentRenderNode, 'button');
     final _text_1 = import9.appendText(parentRenderNode, ' ');
-    final _el_2 = import9.appendElement<import6.ButtonElement>(doc, parentRenderNode, 'button');
+    final _el_2 = import9.appendElement<import10.HTMLButtonElement>(doc, parentRenderNode, 'button');
     final _text_3 = import9.appendText(parentRenderNode, ' ');
-    final _el_4 = import9.appendElement<import6.ButtonElement>(doc, parentRenderNode, 'button');
-    _el_0.addEventListener('click', this.eventHandler0(_ctx.tearOffNoArguments));
-    _el_2.addEventListener('click', this.eventHandler1(_ctx.tearOffWithArguments));
-    _el_4.addEventListener('click', this.eventHandler1(_ctx.callEventWithArguments));
+    final _el_4 = import9.appendElement<import10.HTMLButtonElement>(doc, parentRenderNode, 'button');
+    _el_0.addEventListener('click', import11.FunctionToJSExportedDartFunction((this.eventHandler0(_ctx.tearOffNoArguments) as void Function(import6.Event))).toJS);
+    _el_2.addEventListener('click', import11.FunctionToJSExportedDartFunction((this.eventHandler1(_ctx.tearOffWithArguments) as void Function(import6.Event))).toJS);
+    _el_4.addEventListener('click', import11.FunctionToJSExportedDartFunction((this.eventHandler1(_ctx.callEventWithArguments) as void Function(import6.Event))).toJS);
   }
 
   static void _debugClearComponentStyles() {
@@ -170,7 +172,7 @@ final List<Object> styles$UsesOutputs = const [];
 
 class ViewUsesOutputs0 extends import0.ComponentView<import1.UsesOutputs> {
   late final ViewHasNgEvents0 _compView_0;
-  late final import1.HasNgEvents _HasNgEvents_0_5;
+  late final import1.HasNgEvents _HasNgEvents_0_6;
   static import2.ComponentStyles? _componentStyles;
   ViewUsesOutputs0(import3.View parentView, int parentIndex) : super(parentView, parentIndex, import4.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -187,11 +189,11 @@ class ViewUsesOutputs0 extends import0.ComponentView<import1.UsesOutputs> {
     this._compView_0 = ViewHasNgEvents0(this, 0);
     final _el_0 = this._compView_0.rootElement;
     parentRenderNode.append(_el_0);
-    this._HasNgEvents_0_5 = import1.HasNgEvents();
-    this._compView_0.create(this._HasNgEvents_0_5);
-    final subscription_0 = this._HasNgEvents_0_5.foo.listen(this.eventHandler0(_ctx.tearOffNoArguments));
-    final subscription_1 = this._HasNgEvents_0_5.bar.listen(this.eventHandler1(_ctx.tearOffWithArguments));
-    final subscription_2 = this._HasNgEvents_0_5.baz.listen(this.eventHandler1(_ctx.callEventWithArguments));
+    this._HasNgEvents_0_6 = import1.HasNgEvents();
+    this._compView_0.create(this._HasNgEvents_0_6);
+    final subscription_0 = this._HasNgEvents_0_6.foo.listen(this.eventHandler0(_ctx.tearOffNoArguments));
+    final subscription_1 = this._HasNgEvents_0_6.bar.listen(this.eventHandler1(_ctx.tearOffWithArguments));
+    final subscription_2 = this._HasNgEvents_0_6.baz.listen(this.eventHandler1(_ctx.callEventWithArguments));
     this.initSubscriptions([subscription_0, subscription_1, subscription_2]);
   }
 

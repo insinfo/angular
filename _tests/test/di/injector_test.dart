@@ -1,10 +1,10 @@
 // ignore_for_file: invalid_use_of_protected_member
 
 import 'package:_tests/matchers.dart';
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/experimental.dart';
-import 'package:ngdart/src/di/injector.dart';
-import 'package:ngtest/angular_test.dart';
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/experimental.dart';
+import 'package:ngx_dart/src/di/injector.dart';
+import 'package:ngx_test/angular_test.dart';
 import 'package:test/test.dart';
 
 import 'injector_test.template.dart' as ng;

@@ -1,63 +1,86 @@
-## AngularDart packages maintained by AngularDart Community
+## AngularDart (ngx_*) — development branch
 
-## Packages
+[![Build Status](https://img.shields.io/github/actions/workflow/status/insinfo/angular/dart.yml?branch=master)](https://github.com/insinfo/angular/actions/workflows/dart.yml)
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/angulardart-community/angular/dart.yml?branch=master)](https://github.com/angulardart-community/angular/actions/workflows/dart.yml)
+This repository is a fork of
+[angulardart-community/angular](https://github.com/angulardart-community/angular),
+maintained by [insinfo](https://github.com/insinfo). It keeps AngularDart
+alive under the **`ngx_*`** package family, published on pub.dev.
 
-| Source code |Published Version                                                                                 |Pre-Release Version (if any)                                                                                      |
-|-------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| [ngdart]    |[![Pub Package](https://img.shields.io/pub/v/ngdart.svg)](https://pub.dev/packages/ngdart)        |[![Pub Package](https://img.shields.io/pub/v/ngdart?include_prereleases)](https://pub.dev/packages/ngdart)        |
-| [ngforms]   |[![Pub Package](https://img.shields.io/pub/v/ngforms.svg)](https://pub.dev/packages/ngforms)      |[![Pub Package](https://img.shields.io/pub/v/ngforms?include_prereleases)](https://pub.dev/packages/ngforms)      |
-| [ngrouter]  |[![Pub Package](https://img.shields.io/pub/v/ngrouter.svg)](https://pub.dev/packages/ngrouter)    |[![Pub Package](https://img.shields.io/pub/v/ngrouter?include_prereleases)](https://pub.dev/packages/ngrouter)    |
-| [ngtest]    |[![Pub Package](https://img.shields.io/pub/v/ngtest.svg)](https://pub.dev/packages/ngtest)        |[![Pub Package](https://img.shields.io/pub/v/ngtest?include_prereleases)](https://pub.dev/packages/ngtest)        |
-| [ngast]     |[![Pub Package](https://img.shields.io/pub/v/ngast.svg)](https://pub.dev/packages/ngast)          |[![Pub Package](https://img.shields.io/pub/v/ngast?include_prereleases)](https://pub.dev/packages/ngast)          |
-| [ngcompiler]|[![Pub Package](https://img.shields.io/pub/v/ngcompiler.svg)](https://pub.dev/packages/ngcompiler)|[![Pub Package](https://img.shields.io/pub/v/ngcompiler?include_prereleases)](https://pub.dev/packages/ngcompiler)|
+### What this branch is
 
-The following packages are in an external repository:
+`master` is the **development line (9.0.0-dev.\*)**. It continues the
+migration started upstream from `dart:html` / `package:js` to the modern
+**`package:web`** + `dart:js_interop` stack. Nothing is published from this
+branch — releases will come out as `9.0.0-dev.*` versions once the migration
+stabilizes.
 
-- [ngdart_cli]: [![Pub Package](https://img.shields.io/pub/v/ngdart_cli.svg)](https://pub.dev/packages/ngdart_cli)
-- [ngcomponents]: [![Pub Package](https://img.shields.io/pub/v/ngcomponents.svg)](https://pub.dev/packages/ngcomponents)
+| Package | Dev version (master) | Stable on pub.dev (from `angular9`) |
+|---------|----------------------|--------------------------------------|
+| [ngx_dart]     | 9.0.0-dev.1 | [![Pub Package](https://img.shields.io/pub/v/ngx_dart.svg)](https://pub.dev/packages/ngx_dart) |
+| [ngx_forms]    | 9.0.0-dev.1 | [![Pub Package](https://img.shields.io/pub/v/ngx_forms.svg)](https://pub.dev/packages/ngx_forms) |
+| [ngx_router]   | 9.0.0-dev.1 | [![Pub Package](https://img.shields.io/pub/v/ngx_router.svg)](https://pub.dev/packages/ngx_router) |
+| [ngx_test]     | 9.0.0-dev.1 | [![Pub Package](https://img.shields.io/pub/v/ngx_test.svg)](https://pub.dev/packages/ngx_test) |
+| [ngx_ast]      | 9.0.0-dev.1 | [![Pub Package](https://img.shields.io/pub/v/ngx_ast.svg)](https://pub.dev/packages/ngx_ast) |
+| [ngx_compiler] | 9.0.0-dev.1 | [![Pub Package](https://img.shields.io/pub/v/ngx_compiler.svg)](https://pub.dev/packages/ngx_compiler) |
 
-## Resources
+From `9.0.0-dev.1` on, all packages share a unified version number, mirroring
+the versioning of the `@angular/*` packages in Angular TypeScript.
 
-AngularDart documentation: [https://angulardart.xyz](https://angulardart.xyz).
+### Branches
 
-Source code Git repositories [https://github.com/angulardart-community](https://github.com/angulardart-community)
+- **`master`** (this branch): 9.0.0-dev line — `ngx_*` names + the
+  `package:web` / `dart:js_interop` migration. Not published yet.
+- [`angular9`](../../tree/angular9): source of the **stable releases**
+  published on pub.dev (ngx_dart 8.0.0, ngx_forms 5.0.0, ngx_router 4.0.0,
+  ngx_test 5.0.0, ngx_ast 3.0.0, ngx_compiler 3.0.1) — code identical to the
+  original pub.dev releases, only renamed. Uses `dart:html`.
+- [`angular8`](../../tree/angular8): sources byte-identical to the original
+  pub.dev releases under the original names (ngdart 8.0.0-dev.4, ...), for
+  apps that keep the old names via git dependency.
 
-Join the [Gitter chat room](https://gitter.im/angulardart/community) to ask questions.
+### Using the stable packages
 
-## The original Packages (in the restricted maintenance mode)
+```yaml
+dependencies:
+  ngx_dart: ^8.0.0
+  ngx_forms: ^5.0.0
+  ngx_router: ^4.0.0
 
-See https://github.com/angulardart for updates on the original AngularDart project.
+dev_dependencies:
+  ngx_test: ^5.0.0
+```
 
-| Source code                  | Published Version                                                                                                  |
-|------------------------------|:------------------------------------------------------------------------------------------------------------------:|
-| [angular]                    | [![Pub Package](https://img.shields.io/pub/v/angular.svg)](https://pub.dev/packages/angular)                       |
-| [angular_forms]              | [![Pub Package](https://img.shields.io/pub/v/angular_forms.svg)](https://pub.dev/packages/angular_forms)           |
-| [angular_router]             | [![Pub Package](https://img.shields.io/pub/v/angular_router.svg)](https://pub.dev/packages/angular_router)         |
-| [angular_test]               | [![Pub Package](https://img.shields.io/pub/v/angular_test.svg)](https://pub.dev/packages/angular_test)             |
-| [angular_components]&dagger; | [![Pub Package](https://img.shields.io/pub/v/angular_components.svg)](https://pub.dev/packages/angular_components) |
-| [angular_ast]&ddagger;       | [![Pub Package](https://img.shields.io/pub/v/angular_ast.svg)](https://pub.dev/packages/angular_ast)               |
-| [angular_compiler]&ddagger;  | [![Pub Package](https://img.shields.io/pub/v/angular_compiler.svg)](https://pub.dev/packages/angular_compiler)     |
+Migrating an app from the original names: `ngdart` → `ngx_dart`,
+`ngforms` → `ngx_forms`, `ngrouter` → `ngx_router`, `ngtest` → `ngx_test`
+in `pubspec.yaml`, and the same substitution in your imports
+(`package:ngdart/angular.dart` → `package:ngx_dart/angular.dart`, ...).
+The public API is unchanged.
 
-&dagger; _`angular_components` source is in another [repository](https://github.com/angulardart/angular_components)._
+### Documentation site
 
-&ddagger; _Infrastructure packages. Not typically used directly.
-Included for completeness._
+A static mirror of the AngularDart documentation lives in [`site/`](site/)
+and is published at: **https://insinfo.github.io/angular/**
 
-[angular]: https://github.com/angulardart/angular/tree/master/angular
-[angular_ast]: https://github.com/angulardart/angular/tree/master/angular_ast
-[angular_compiler]: https://github.com/angulardart/angular/tree/master/angular_compiler
-[angular_components]: https://github.com/angulardart/angular_components/tree/master/angular_components
-[angular_forms]: https://github.com/angulardart/angular/tree/master/angular_forms
-[angular_router]: https://github.com/angulardart/angular/tree/master/angular_router
-[angular_test]: https://github.com/angulardart/angular/tree/master/angular_test
-[ngdart]: https://github.com/angulardart-community/angular/tree/master/ngdart 
-[ngforms]: https://github.com/angulardart-community/angular/tree/master/ngforms 
-[ngrouter]: https://github.com/angulardart-community/angular/tree/master/ngrouter 
-[ngtest]: https://github.com/angulardart-community/angular/tree/master/ngtest 
-[ngast]: https://github.com/angulardart-community/angular/tree/master/ngast 
-[ngcompiler]: https://github.com/angulardart-community/angular/tree/master/ngcompiler
-[ngdart_cli]: https://github.com/angulardart-community/ngdart_cli
-[ngcomponents]: https://github.com/angulardart-community/angular_components
+### Roadmap
 
+1. Finish the `package:web` + `dart:js_interop` migration on this branch
+   (started upstream in
+   [#82](https://github.com/angulardart-community/angular/pull/82)).
+2. Release `9.0.0-dev.*` pre-releases of the whole `ngx_*` family.
+3. Split `ngx_dart` into smaller packages following the Angular TS layout
+   (`ngx_common`, `ngx_web`, `ngx_http`, ...).
+
+### Upstream resources
+
+- Original repository: https://github.com/angulardart-community/angular
+- Original documentation site: https://angulardart.xyz
+- Original AngularDart project (restricted maintenance):
+  https://github.com/angulardart
+
+[ngx_dart]: https://github.com/insinfo/angular/tree/master/ngx_dart
+[ngx_forms]: https://github.com/insinfo/angular/tree/master/ngx_forms
+[ngx_router]: https://github.com/insinfo/angular/tree/master/ngx_router
+[ngx_test]: https://github.com/insinfo/angular/tree/master/ngx_test
+[ngx_ast]: https://github.com/insinfo/angular/tree/master/ngx_ast
+[ngx_compiler]: https://github.com/insinfo/angular/tree/master/ngx_compiler

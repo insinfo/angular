@@ -4,12 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/examples/hello_world/melos_examples_hello_world.iml" filepath="$PROJECT_DIR$/examples/hello_world/melos_examples_hello_world.iml" />
       <module fileurl="file://$PROJECT_DIR$/goldens/melos_goldens.iml" filepath="$PROJECT_DIR$/goldens/melos_goldens.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ngast/melos_ngast.iml" filepath="$PROJECT_DIR$/ngast/melos_ngast.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ngcompiler/melos_ngcompiler.iml" filepath="$PROJECT_DIR$/ngcompiler/melos_ngcompiler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ngdart/melos_ngdart.iml" filepath="$PROJECT_DIR$/ngdart/melos_ngdart.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ngforms/melos_ngforms.iml" filepath="$PROJECT_DIR$/ngforms/melos_ngforms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ngrouter/melos_ngrouter.iml" filepath="$PROJECT_DIR$/ngrouter/melos_ngrouter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ngtest/melos_ngtest.iml" filepath="$PROJECT_DIR$/ngtest/melos_ngtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_ast/melos_ngx_ast.iml" filepath="$PROJECT_DIR$/ngx_ast/melos_ngx_ast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_compiler/melos_ngx_compiler.iml" filepath="$PROJECT_DIR$/ngx_compiler/melos_ngx_compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_dart/melos_ngx_dart.iml" filepath="$PROJECT_DIR$/ngx_dart/melos_ngx_dart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_forms/melos_ngx_forms.iml" filepath="$PROJECT_DIR$/ngx_forms/melos_ngx_forms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_router/melos_ngx_router.iml" filepath="$PROJECT_DIR$/ngx_router/melos_ngx_router.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngx_test/melos_ngx_test.iml" filepath="$PROJECT_DIR$/ngx_test/melos_ngx_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/melos_angular.iml" filepath="$PROJECT_DIR$/melos_angular.iml" />
     </modules>
   </component>

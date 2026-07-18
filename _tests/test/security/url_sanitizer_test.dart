@@ -1,7 +1,7 @@
 @TestOn('browser')
 library;
 
-import 'package:ngdart/src/security/url_sanitizer.dart';
+import 'package:ngx_dart/src/security/url_sanitizer.dart';
 import 'package:test/test.dart';
 
 void main() {

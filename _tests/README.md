@@ -1,3 +1,3 @@
-This package is all the unit and component tests for `package:ngdart`. They
+This package is all the unit and component tests for `package:ngx_dart`. They
 are maintained here in order to avoid declaring circular dependencies between
-`ngdart` and `ngtest`, as well as adding private testing infrastructure.
+`ngx_dart` and `ngx_test`, as well as adding private testing infrastructure.

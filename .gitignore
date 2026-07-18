@@ -16,3 +16,6 @@ pubspec.lock
 
 referencias/
 
+# Claude Code local (per-machine) settings; .claude/settings.json IS versioned.
+.claude/settings.local.json
+

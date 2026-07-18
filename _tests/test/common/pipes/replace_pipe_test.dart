@@ -1,5 +1,5 @@
-import 'package:ngdart/src/common/pipes/invalid_pipe_argument_exception.dart';
-import 'package:ngdart/src/common/pipes/replace_pipe.dart';
+import 'package:ngx_dart/src/common/pipes/invalid_pipe_argument_exception.dart';
+import 'package:ngx_dart/src/common/pipes/replace_pipe.dart';
 import 'package:test/test.dart';
 
 final someNumber = 42;

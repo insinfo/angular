@@ -3,30 +3,30 @@
 // **************************************************************************
 
 import 'change_detection_link.dart';
-import 'package:ngdart/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_dart/src/core/linker/views/component_view.dart' as import0;
 import 'change_detection_link.dart' as import1;
-import 'package:ngdart/src/core/linker/style_encapsulation.dart' as import2;
-import 'package:ngdart/src/core/linker/views/view.dart' as import3;
-import 'package:ngdart/src/meta/change_detection_constants.dart' as import4;
-import 'package:ngdart/src/utilities.dart' as import5;
-import 'dart:html' as import6;
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/linker/views/host_view.dart' as import8;
-import 'package:ngdart/src/core/linker/view_container.dart';
-import 'package:ngdart/src/core/linker/template_ref.dart';
-import 'package:ngdart/src/common/directives/ng_if.dart';
-import 'package:ngdart/src/runtime/dom_helpers.dart' as import12;
-import 'package:ngdart/src/devtools.dart' as import13;
-import 'package:ngdart/src/runtime/check_binding.dart' as import14;
-import 'package:ngdart/src/runtime/queries.dart' as import15;
-import 'package:ngdart/src/core/linker/views/embedded_view.dart' as import16;
-import 'package:ngdart/src/core/linker/views/render_view.dart' as import17;
+import 'package:ngx_dart/src/core/linker/style_encapsulation.dart' as import2;
+import 'package:ngx_dart/src/core/linker/views/view.dart' as import3;
+import 'package:ngx_dart/src/meta/change_detection_constants.dart' as import4;
+import 'package:ngx_dart/src/utilities.dart' as import5;
+import 'package:web/src/dom/dom.dart' as import6;
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import8;
+import 'package:ngx_dart/src/core/linker/view_container.dart';
+import 'package:ngx_dart/src/core/linker/template_ref.dart';
+import 'package:ngx_dart/src/common/directives/ng_if.dart';
+import 'package:ngx_dart/src/runtime/dom_helpers.dart' as import12;
+import 'package:ngx_dart/src/devtools.dart' as import13;
+import 'package:ngx_dart/src/runtime/check_binding.dart' as import14;
+import 'package:ngx_dart/src/runtime/queries.dart' as import15;
+import 'package:ngx_dart/src/core/linker/views/embedded_view.dart' as import16;
+import 'package:ngx_dart/src/core/linker/views/render_view.dart' as import17;
 
 final List<Object> styles$GoldenComponent = const [];
 
 class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent> {
   late final ViewOnPushLink0 _compView_0;
-  late final import1.OnPushLink _OnPushLink_0_5;
+  late final import1.OnPushLink _OnPushLink_0_6;
   static import2.ComponentStyles? _componentStyles;
   ViewGoldenComponent0(import3.View parentView, int parentIndex) : super(parentView, parentIndex, import4.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -42,8 +42,8 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     this._compView_0 = ViewOnPushLink0(this, 0);
     final _el_0 = this._compView_0.rootElement;
     parentRenderNode.append(_el_0);
-    this._OnPushLink_0_5 = import1.OnPushLink();
-    this._compView_0.create(this._OnPushLink_0_5);
+    this._OnPushLink_0_6 = import1.OnPushLink();
+    this._compView_0.create(this._OnPushLink_0_6);
   }
 
   @override
@@ -102,15 +102,15 @@ final List<Object> styles$OnPushLink = const [];
 class ViewOnPushLink0 extends import0.ComponentView<import1.OnPushLink> {
   bool _viewQuery_embeddedContainer_1_isDirty = true;
   late final ViewContainer _appEl_0;
-  late final TemplateRef _TemplateRef_0_8;
+  late final TemplateRef _TemplateRef_0_9;
   late final ViewContainer _appEl_2;
-  late final NgIf _NgIf_2_9;
+  late final NgIf _NgIf_2_10;
   late final ViewNestedOnPush0 _compView_3;
-  late final import1.NestedOnPush _NestedOnPush_3_5;
+  late final import1.NestedOnPush _NestedOnPush_3_6;
   late final ViewNestedOnPushLink0 _compView_4;
-  late final import1.NestedOnPushLink _NestedOnPushLink_4_5;
+  late final import1.NestedOnPushLink _NestedOnPushLink_4_6;
   late final ViewContainer _appEl_5;
-  late final NgIf _NgIf_5_9;
+  late final NgIf _NgIf_5_10;
   static import2.ComponentStyles? _componentStyles;
   ViewOnPushLink0(import3.View parentView, int parentIndex) : super(parentView, parentIndex, import4.ChangeDetectionCheckedState.checkOnce) {
     this.initComponentStyles();
@@ -126,31 +126,31 @@ class ViewOnPushLink0 extends import0.ComponentView<import1.OnPushLink> {
     final parentRenderNode = this.initViewRoot();
     final _anchor_0 = import12.appendAnchor(parentRenderNode);
     this._appEl_0 = ViewContainer(0, null, this, _anchor_0);
-    this._TemplateRef_0_8 = TemplateRef(this._appEl_0, viewFactory_OnPushLink1);
+    this._TemplateRef_0_9 = TemplateRef(this._appEl_0, viewFactory_OnPushLink1);
     final _text_1 = import12.appendText(parentRenderNode, ' ');
     final _anchor_2 = import12.appendAnchor(parentRenderNode);
     this._appEl_2 = ViewContainer(2, null, this, _anchor_2);
-    var _TemplateRef_2_8 = TemplateRef(this._appEl_2, viewFactory_OnPushLink2);
-    this._NgIf_2_9 = NgIf(this._appEl_2, _TemplateRef_2_8);
+    var _TemplateRef_2_9 = TemplateRef(this._appEl_2, viewFactory_OnPushLink2);
+    this._NgIf_2_10 = NgIf(this._appEl_2, _TemplateRef_2_9);
     if (import13.isDevToolsEnabled) {
-      import13.Inspector.instance.registerDirective(_anchor_2, this._NgIf_2_9);
+      import13.Inspector.instance.registerDirective(_anchor_2, this._NgIf_2_10);
     }
     this._compView_3 = ViewNestedOnPush0(this, 3);
     final _el_3 = this._compView_3.rootElement;
     parentRenderNode.append(_el_3);
-    this._NestedOnPush_3_5 = import1.NestedOnPush();
-    this._compView_3.create(this._NestedOnPush_3_5);
+    this._NestedOnPush_3_6 = import1.NestedOnPush();
+    this._compView_3.create(this._NestedOnPush_3_6);
     this._compView_4 = ViewNestedOnPushLink0(this, 4);
     final _el_4 = this._compView_4.rootElement;
     parentRenderNode.append(_el_4);
-    this._NestedOnPushLink_4_5 = import1.NestedOnPushLink();
-    this._compView_4.create(this._NestedOnPushLink_4_5);
+    this._NestedOnPushLink_4_6 = import1.NestedOnPushLink();
+    this._compView_4.create(this._NestedOnPushLink_4_6);
     final _anchor_5 = import12.appendAnchor(parentRenderNode);
     this._appEl_5 = ViewContainer(5, null, this, _anchor_5);
-    var _TemplateRef_5_8 = TemplateRef(this._appEl_5, viewFactory_OnPushLink4);
-    this._NgIf_5_9 = NgIf(this._appEl_5, _TemplateRef_5_8);
+    var _TemplateRef_5_9 = TemplateRef(this._appEl_5, viewFactory_OnPushLink4);
+    this._NgIf_5_10 = NgIf(this._appEl_5, _TemplateRef_5_9);
     if (import13.isDevToolsEnabled) {
-      import13.Inspector.instance.registerDirective(_anchor_5, this._NgIf_5_9);
+      import13.Inspector.instance.registerDirective(_anchor_5, this._NgIf_5_10);
     }
     _ctx.container = this._appEl_0;
   }
@@ -167,13 +167,13 @@ class ViewOnPushLink0 extends import0.ComponentView<import1.OnPushLink> {
   void detectChangesInternal() {
     final _ctx = this.ctx;
     if (import13.isDevToolsEnabled) {
-      import13.Inspector.instance.recordInput(this._NgIf_2_9, 'ngIf', _ctx.isVisible);
+      import13.Inspector.instance.recordInput(this._NgIf_2_10, 'ngIf', _ctx.isVisible);
     }
-    this._NgIf_2_9.ngIf = _ctx.isVisible /* REF:asset:goldens/test/change_detection/change_detection_link.dart:959:976 */;
+    this._NgIf_2_10.ngIf = _ctx.isVisible /* REF:asset:goldens/test/change_detection/change_detection_link.dart:999:1016 */;
     if (import13.isDevToolsEnabled) {
-      import13.Inspector.instance.recordInput(this._NgIf_5_9, 'ngIf', _ctx.isVisible);
+      import13.Inspector.instance.recordInput(this._NgIf_5_10, 'ngIf', _ctx.isVisible);
     }
-    this._NgIf_5_9.ngIf = _ctx.isVisible /* REF:asset:goldens/test/change_detection/change_detection_link.dart:1156:1173 */;
+    this._NgIf_5_10.ngIf = _ctx.isVisible /* REF:asset:goldens/test/change_detection/change_detection_link.dart:1196:1213 */;
     this._appEl_0.detectChangesInNestedViews();
     this._appEl_2.detectChangesInNestedViews();
     this._appEl_5.detectChangesInNestedViews();
@@ -237,13 +237,13 @@ import16.EmbeddedView<void> viewFactory_OnPushLink1(import17.RenderView parentVi
 
 class _ViewOnPushLink2 extends import16.EmbeddedView<import1.OnPushLink> {
   late final ViewContainer _appEl_0;
-  late final TemplateRef _TemplateRef_0_8;
+  late final TemplateRef _TemplateRef_0_9;
   _ViewOnPushLink2(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     final _anchor_0 = import12.createAnchor();
     this._appEl_0 = ViewContainer(0, null, this, _anchor_0);
-    this._TemplateRef_0_8 = TemplateRef(this._appEl_0, viewFactory_OnPushLink3);
+    this._TemplateRef_0_9 = TemplateRef(this._appEl_0, viewFactory_OnPushLink3);
     this.initRootNode(this._appEl_0);
   }
 
@@ -286,14 +286,14 @@ import16.EmbeddedView<void> viewFactory_OnPushLink3(import17.RenderView parentVi
 
 class _ViewOnPushLink4 extends import16.EmbeddedView<import1.OnPushLink> {
   late final ViewNestedOnPushLink0 _compView_0;
-  late final import1.NestedOnPushLink _NestedOnPushLink_0_5;
+  late final import1.NestedOnPushLink _NestedOnPushLink_0_6;
   _ViewOnPushLink4(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewNestedOnPushLink0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._NestedOnPushLink_0_5 = import1.NestedOnPushLink();
-    this._compView_0.create(this._NestedOnPushLink_0_5);
+    this._NestedOnPushLink_0_6 = import1.NestedOnPushLink();
+    this._compView_0.create(this._NestedOnPushLink_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -395,7 +395,7 @@ final List<Object> styles$NestedOnPushLink = const [];
 
 class ViewNestedOnPushLink0 extends import0.ComponentView<import1.NestedOnPushLink> {
   late final ViewContainer _appEl_0;
-  late final TemplateRef _TemplateRef_0_8;
+  late final TemplateRef _TemplateRef_0_9;
   static import2.ComponentStyles? _componentStyles;
   ViewNestedOnPushLink0(import3.View parentView, int parentIndex) : super(parentView, parentIndex, import4.ChangeDetectionCheckedState.checkOnce) {
     this.initComponentStyles();
@@ -411,7 +411,7 @@ class ViewNestedOnPushLink0 extends import0.ComponentView<import1.NestedOnPushLi
     final parentRenderNode = this.initViewRoot();
     final _anchor_0 = import12.appendAnchor(parentRenderNode);
     this._appEl_0 = ViewContainer(0, null, this, _anchor_0);
-    this._TemplateRef_0_8 = TemplateRef(this._appEl_0, viewFactory_NestedOnPushLink1);
+    this._TemplateRef_0_9 = TemplateRef(this._appEl_0, viewFactory_NestedOnPushLink1);
     _ctx.container = this._appEl_0;
   }
 

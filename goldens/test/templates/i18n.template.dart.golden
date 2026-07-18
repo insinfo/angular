@@ -3,26 +3,27 @@
 // **************************************************************************
 
 import 'i18n.dart';
-import 'package:ngdart/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_dart/src/core/linker/views/component_view.dart' as import0;
 import 'i18n.dart' as import1;
 import 'package:intl/intl.dart' as import2;
-import 'package:ngdart/src/core/linker/style_encapsulation.dart' as import3;
-import 'package:ngdart/src/core/linker/views/view.dart' as import4;
-import 'package:ngdart/src/meta/change_detection_constants.dart' as import5;
-import 'package:ngdart/src/utilities.dart' as import6;
-import 'dart:html' as import7;
-import 'package:ngdart/src/runtime/dom_helpers.dart' as import8;
-import 'package:ngdart/src/core/linker/app_view_utils.dart' as import9;
-import 'package:ngdart/src/devtools.dart' as import10;
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/linker/views/host_view.dart' as import12;
+import 'package:ngx_dart/src/core/linker/style_encapsulation.dart' as import3;
+import 'package:ngx_dart/src/core/linker/views/view.dart' as import4;
+import 'package:ngx_dart/src/meta/change_detection_constants.dart' as import5;
+import 'package:ngx_dart/src/utilities.dart' as import6;
+import 'package:web/src/dom/dom.dart' as import7;
+import 'package:ngx_dart/src/runtime/dom_helpers.dart' as import8;
+import 'package:web/src/dom/html.dart' as import9;
+import 'package:ngx_dart/src/core/linker/app_view_utils.dart' as import10;
+import 'package:ngx_dart/src/devtools.dart' as import11;
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import13;
 
 final List<Object> styles$GoldenComponent = const [];
 
 class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent> {
   static final String _message_0 = import2.Intl.message('Message', desc: 'description', locale: 'en_US', meaning: 'meaning', skip: true);
   static final String _message_1 = import2.Intl.message('message', desc: 'description');
-  late final import1.MessageDirective _MessageDirective_7_5;
+  late final import1.MessageDirective _MessageDirective_7_6;
   static import3.ComponentStyles? _componentStyles;
   ViewGoldenComponent0(import4.View parentView, int parentIndex) : super(parentView, parentIndex, import5.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -36,19 +37,19 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
   void build() {
     final parentRenderNode = this.initViewRoot();
     final doc = import7.document;
-    final _el_0 = import8.appendElement<import7.HtmlElement>(doc, parentRenderNode, 'p');
+    final _el_0 = import8.appendElement<import9.HTMLElement>(doc, parentRenderNode, 'p');
     final _text_1 = import8.appendText(_el_0, _message_0);
     final _text_2 = import8.appendText(parentRenderNode, ' ');
-    final _el_3 = import8.appendElement<import7.HtmlElement>(doc, parentRenderNode, 'img');
+    final _el_3 = import8.appendElement<import9.HTMLElement>(doc, parentRenderNode, 'img');
     import8.setAttribute(_el_3, 'alt', _message_1);
     final _text_4 = import8.appendText(parentRenderNode, ' ');
-    final _el_5 = import8.appendElement<import7.HtmlElement>(doc, parentRenderNode, 'p');
-    final _html_6 = import9.createTrustedHtml(_message_2('<br>', '<i>', '<b>', '</b>', '</i>'));
+    final _el_5 = import8.appendElement<import9.HTMLElement>(doc, parentRenderNode, 'p');
+    final _html_6 = import10.createTrustedHtml(_message_2('<br>', '<i>', '<b>', '</b>', '</i>'));
     _el_5.append(_html_6);
     final _el_7 = import8.appendDiv(doc, parentRenderNode);
-    this._MessageDirective_7_5 = import1.MessageDirective();
-    if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_7, this._MessageDirective_7_5);
+    this._MessageDirective_7_6 = import1.MessageDirective();
+    if (import11.isDevToolsEnabled) {
+      import11.Inspector.instance.registerDirective(_el_7, this._MessageDirective_7_6);
     }
   }
 
@@ -56,10 +57,10 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
   void detectChangesInternal() {
     bool firstCheck = this.firstCheck;
     if (firstCheck) {
-      if (import10.isDevToolsEnabled) {
-        import10.Inspector.instance.recordInput(this._MessageDirective_7_5, 'message', _message_1);
+      if (import11.isDevToolsEnabled) {
+        import11.Inspector.instance.recordInput(this._MessageDirective_7_6, 'message', _message_1);
       }
-      this._MessageDirective_7_5.message = _message_1;
+      this._MessageDirective_7_6.message = _message_1;
     }
   }
 
@@ -94,7 +95,7 @@ ComponentFactory<import1.GoldenComponent> createGoldenComponentFactory() {
 
 final List<Object> styles$GoldenComponentHost = const [];
 
-class _ViewGoldenComponentHost0 extends import12.HostView<import1.GoldenComponent> {
+class _ViewGoldenComponentHost0 extends import13.HostView<import1.GoldenComponent> {
   @override
   void build() {
     this.componentView = ViewGoldenComponent0(this, 0);
@@ -104,6 +105,6 @@ class _ViewGoldenComponentHost0 extends import12.HostView<import1.GoldenComponen
   }
 }
 
-import12.HostView<import1.GoldenComponent> viewFactory_GoldenComponentHost0() {
+import13.HostView<import1.GoldenComponent> viewFactory_GoldenComponentHost0() {
   return _ViewGoldenComponentHost0();
 }

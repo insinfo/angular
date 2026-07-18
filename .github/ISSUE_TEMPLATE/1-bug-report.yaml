@@ -14,12 +14,12 @@ body:
     attributes:
       label: Which ng* package(s) are the source of the bug?
       options:
-        - ngast
-        - ngcompiler
-        - ngdart
-        - ngforms
-        - ngrouter
-        - ngtest
+        - ngx_ast
+        - ngx_compiler
+        - ngx_dart
+        - ngx_forms
+        - ngx_router
+        - ngx_test
         - Don't known / other
       multiple: true
     validations:

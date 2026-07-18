@@ -3,53 +3,53 @@
 // **************************************************************************
 
 import 'inlined_providers.dart';
-import 'package:ngdart/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_dart/src/core/linker/views/component_view.dart' as import0;
 import 'inlined_providers.dart' as import1;
-import 'package:ngdart/src/core/linker/style_encapsulation.dart' as import2;
-import 'package:ngdart/src/core/linker/views/view.dart' as import3;
-import 'package:ngdart/src/meta/change_detection_constants.dart' as import4;
-import 'package:ngdart/src/utilities.dart' as import5;
-import 'dart:html' as import6;
-import 'package:ngdart/src/runtime/dom_helpers.dart' as import7;
-import 'package:ngdart/src/devtools.dart' as import8;
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/linker/views/host_view.dart' as import10;
-import 'package:ngdart/src/di/errors.dart' as import11;
+import 'package:ngx_dart/src/core/linker/style_encapsulation.dart' as import2;
+import 'package:ngx_dart/src/core/linker/views/view.dart' as import3;
+import 'package:ngx_dart/src/meta/change_detection_constants.dart' as import4;
+import 'package:ngx_dart/src/utilities.dart' as import5;
+import 'package:web/src/dom/dom.dart' as import6;
+import 'package:ngx_dart/src/runtime/dom_helpers.dart' as import7;
+import 'package:ngx_dart/src/devtools.dart' as import8;
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import10;
+import 'package:ngx_dart/src/di/errors.dart' as import11;
 
 final List<Object> styles$GoldenComponent = const [];
 
 class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent> {
-  late import1.A _A_0_6 = import1.A();
-  late import1.B _B_0_7 = import1.B();
-  late import1.C _C_0_8 = import1.C();
-  late import1.A _A_1_6 = import1.A();
-  late import1.B _B_1_7 = import1.B();
-  late import1.C _C_1_8 = import1.C();
-  late import1.A2 _A_5_7 = import1.A2();
-  late import1.B _B_5_8 = import1.B();
-  late import1.C _C_5_9 = import1.C();
-  late import1.D2 _D_5_10 = import1.D2();
-  late import1.A2 _A_6_8 = import1.A2();
+  late import1.A _A_0_7 = import1.A();
+  late import1.B _B_0_8 = import1.B();
+  late import1.C _C_0_9 = import1.C();
+  late import1.A _A_1_7 = import1.A();
+  late import1.B _B_1_8 = import1.B();
+  late import1.C _C_1_9 = import1.C();
+  late import1.A2 _A_5_8 = import1.A2();
+  late import1.B _B_5_9 = import1.B();
+  late import1.C _C_5_10 = import1.C();
+  late import1.D2 _D_5_11 = import1.D2();
+  late import1.A2 _A_6_9 = import1.A2();
   late final ViewChildComponentProvidingA$B$C0 _compView_0;
-  late final import1.ChildComponentProvidingA$B$C _ChildComponentProvidingA$B$C_0_5;
+  late final import1.ChildComponentProvidingA$B$C _ChildComponentProvidingA$B$C_0_6;
   late final ViewChildComponentProvidingA$B$C0 _compView_1;
-  late final import1.ChildComponentProvidingA$B$C _ChildComponentProvidingA$B$C_1_5;
+  late final import1.ChildComponentProvidingA$B$C _ChildComponentProvidingA$B$C_1_6;
   late final ViewChildComponentWithNgContentProviding$D0 _compView_2;
-  late final import1.ChildComponentWithNgContentProviding$D _ChildComponentWithNgContentProviding$D_2_5;
-  late final import1.D _D_2_6;
+  late final import1.ChildComponentWithNgContentProviding$D _ChildComponentWithNgContentProviding$D_2_6;
+  late final import1.D _D_2_7;
   late final ViewChildComponentInjecting$D0 _compView_3;
-  late final import1.ChildComponentInjecting$D _ChildComponentInjecting$D_3_5;
+  late final import1.ChildComponentInjecting$D _ChildComponentInjecting$D_3_6;
   late final ViewChildComponentWithVisibilityAll0 _compView_4;
-  late final import1.ChildComponentWithVisibilityAll _ChildComponentWithVisibilityAll_4_5;
+  late final import1.ChildComponentWithVisibilityAll _ChildComponentWithVisibilityAll_4_6;
   late final ViewChildComponentProvidingA$B$C0 _compView_5;
-  late final import1.ChildComponentProvidingA$B$C _ChildComponentProvidingA$B$C_5_5;
-  late final import1.DirectiveProviding$A2$D2 _DirectiveProviding$A2$D2_5_6;
+  late final import1.ChildComponentProvidingA$B$C _ChildComponentProvidingA$B$C_5_6;
+  late final import1.DirectiveProviding$A2$D2 _DirectiveProviding$A2$D2_5_7;
   late final ViewChildComponentWithNgContentProviding$D0 _compView_6;
-  late final import1.ChildComponentWithNgContentProviding$D _ChildComponentWithNgContentProviding$D_6_5;
-  late final import1.DirectiveProviding$A2$D2 _DirectiveProviding$A2$D2_6_6;
-  late final import1.D2 _D_6_7;
+  late final import1.ChildComponentWithNgContentProviding$D _ChildComponentWithNgContentProviding$D_6_6;
+  late final import1.DirectiveProviding$A2$D2 _DirectiveProviding$A2$D2_6_7;
+  late final import1.D2 _D_6_8;
   late final ViewChildComponentInjecting$D0 _compView_7;
-  late final import1.ChildComponentInjecting$D _ChildComponentInjecting$D_7_5;
+  late final import1.ChildComponentInjecting$D _ChildComponentInjecting$D_7_6;
   static import2.ComponentStyles? _componentStyles;
   ViewGoldenComponent0(import3.View parentView, int parentIndex) : super(parentView, parentIndex, import4.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -65,55 +65,55 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     this._compView_0 = ViewChildComponentProvidingA$B$C0(this, 0);
     final _el_0 = this._compView_0.rootElement;
     parentRenderNode.append(_el_0);
-    this._ChildComponentProvidingA$B$C_0_5 = import1.ChildComponentProvidingA$B$C();
-    this._compView_0.create(this._ChildComponentProvidingA$B$C_0_5);
+    this._ChildComponentProvidingA$B$C_0_6 = import1.ChildComponentProvidingA$B$C();
+    this._compView_0.create(this._ChildComponentProvidingA$B$C_0_6);
     this._compView_1 = ViewChildComponentProvidingA$B$C0(this, 1);
     final _el_1 = this._compView_1.rootElement;
     parentRenderNode.append(_el_1);
-    this._ChildComponentProvidingA$B$C_1_5 = import1.ChildComponentProvidingA$B$C();
-    this._compView_1.create(this._ChildComponentProvidingA$B$C_1_5);
+    this._ChildComponentProvidingA$B$C_1_6 = import1.ChildComponentProvidingA$B$C();
+    this._compView_1.create(this._ChildComponentProvidingA$B$C_1_6);
     this._compView_2 = ViewChildComponentWithNgContentProviding$D0(this, 2);
     final _el_2 = this._compView_2.rootElement;
     parentRenderNode.append(_el_2);
-    this._ChildComponentWithNgContentProviding$D_2_5 = import1.ChildComponentWithNgContentProviding$D();
-    this._D_2_6 = import1.D();
+    this._ChildComponentWithNgContentProviding$D_2_6 = import1.ChildComponentWithNgContentProviding$D();
+    this._D_2_7 = import1.D();
     this._compView_3 = ViewChildComponentInjecting$D0(this, 3);
     final _el_3 = this._compView_3.rootElement;
-    this._ChildComponentInjecting$D_3_5 = import1.ChildComponentInjecting$D(this._D_2_6);
-    this._compView_3.create(this._ChildComponentInjecting$D_3_5);
-    this._compView_2.createAndProject(this._ChildComponentWithNgContentProviding$D_2_5, [
+    this._ChildComponentInjecting$D_3_6 = import1.ChildComponentInjecting$D(this._D_2_7);
+    this._compView_3.create(this._ChildComponentInjecting$D_3_6);
+    this._compView_2.createAndProject(this._ChildComponentWithNgContentProviding$D_2_6, [
       <Object>[_el_3]
     ]);
     this._compView_4 = ViewChildComponentWithVisibilityAll0(this, 4);
     final _el_4 = this._compView_4.rootElement;
     parentRenderNode.append(_el_4);
-    this._ChildComponentWithVisibilityAll_4_5 = import1.ChildComponentWithVisibilityAll();
-    this._compView_4.create(this._ChildComponentWithVisibilityAll_4_5);
+    this._ChildComponentWithVisibilityAll_4_6 = import1.ChildComponentWithVisibilityAll();
+    this._compView_4.create(this._ChildComponentWithVisibilityAll_4_6);
     this._compView_5 = ViewChildComponentProvidingA$B$C0(this, 5);
     final _el_5 = this._compView_5.rootElement;
     parentRenderNode.append(_el_5);
     import7.setAttribute(_el_5, 'directive-providing-a2-d2', '');
-    this._ChildComponentProvidingA$B$C_5_5 = import1.ChildComponentProvidingA$B$C();
-    this._DirectiveProviding$A2$D2_5_6 = import1.DirectiveProviding$A2$D2();
+    this._ChildComponentProvidingA$B$C_5_6 = import1.ChildComponentProvidingA$B$C();
+    this._DirectiveProviding$A2$D2_5_7 = import1.DirectiveProviding$A2$D2();
     if (import8.isDevToolsEnabled) {
-      import8.Inspector.instance.registerDirective(_el_5, this._DirectiveProviding$A2$D2_5_6);
+      import8.Inspector.instance.registerDirective(_el_5, this._DirectiveProviding$A2$D2_5_7);
     }
-    this._compView_5.create(this._ChildComponentProvidingA$B$C_5_5);
+    this._compView_5.create(this._ChildComponentProvidingA$B$C_5_6);
     this._compView_6 = ViewChildComponentWithNgContentProviding$D0(this, 6);
     final _el_6 = this._compView_6.rootElement;
     parentRenderNode.append(_el_6);
     import7.setAttribute(_el_6, 'directive-providing-a2-d2', '');
-    this._ChildComponentWithNgContentProviding$D_6_5 = import1.ChildComponentWithNgContentProviding$D();
-    this._DirectiveProviding$A2$D2_6_6 = import1.DirectiveProviding$A2$D2();
-    this._D_6_7 = import1.D2();
+    this._ChildComponentWithNgContentProviding$D_6_6 = import1.ChildComponentWithNgContentProviding$D();
+    this._DirectiveProviding$A2$D2_6_7 = import1.DirectiveProviding$A2$D2();
+    this._D_6_8 = import1.D2();
     if (import8.isDevToolsEnabled) {
-      import8.Inspector.instance.registerDirective(_el_6, this._DirectiveProviding$A2$D2_6_6);
+      import8.Inspector.instance.registerDirective(_el_6, this._DirectiveProviding$A2$D2_6_7);
     }
     this._compView_7 = ViewChildComponentInjecting$D0(this, 7);
     final _el_7 = this._compView_7.rootElement;
-    this._ChildComponentInjecting$D_7_5 = import1.ChildComponentInjecting$D(this._D_6_7);
-    this._compView_7.create(this._ChildComponentInjecting$D_7_5);
-    this._compView_6.createAndProject(this._ChildComponentWithNgContentProviding$D_6_5, [
+    this._ChildComponentInjecting$D_7_6 = import1.ChildComponentInjecting$D(this._D_6_8);
+    this._compView_7.create(this._ChildComponentInjecting$D_7_6);
+    this._compView_6.createAndProject(this._ChildComponentWithNgContentProviding$D_6_6, [
       <Object>[_el_7]
     ]);
   }
@@ -122,52 +122,52 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((0 == nodeIndex)) {
       if (identical(token, import1.A)) {
-        return this._A_0_6;
+        return this._A_0_7;
       }
       if (identical(token, import1.B)) {
-        return this._B_0_7;
+        return this._B_0_8;
       }
       if (identical(token, import1.C)) {
-        return this._C_0_8;
+        return this._C_0_9;
       }
     }
     if ((1 == nodeIndex)) {
       if (identical(token, import1.A)) {
-        return this._A_1_6;
+        return this._A_1_7;
       }
       if (identical(token, import1.B)) {
-        return this._B_1_7;
+        return this._B_1_8;
       }
       if (identical(token, import1.C)) {
-        return this._C_1_8;
+        return this._C_1_9;
       }
     }
     if ((identical(token, import1.D) && ((2 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return this._D_2_6;
+      return this._D_2_7;
     }
     if ((identical(token, import1.ChildComponentWithVisibilityAll) && (4 == nodeIndex))) {
-      return this._ChildComponentWithVisibilityAll_4_5;
+      return this._ChildComponentWithVisibilityAll_4_6;
     }
     if ((5 == nodeIndex)) {
       if (identical(token, import1.A)) {
-        return this._A_5_7;
+        return this._A_5_8;
       }
       if (identical(token, import1.B)) {
-        return this._B_5_8;
+        return this._B_5_9;
       }
       if (identical(token, import1.C)) {
-        return this._C_5_9;
+        return this._C_5_10;
       }
       if (identical(token, import1.D)) {
-        return this._D_5_10;
+        return this._D_5_11;
       }
     }
     if (((6 <= nodeIndex) && (nodeIndex <= 7))) {
       if (identical(token, import1.D)) {
-        return this._D_6_7;
+        return this._D_6_8;
       }
       if (identical(token, import1.A)) {
-        return this._A_6_8;
+        return this._A_6_9;
       }
     }
     return notFoundResult;
@@ -283,9 +283,9 @@ ComponentFactory<import1.ChildComponentProvidingA$B$C> createChildComponentProvi
 final List<Object> styles$ChildComponentProvidingA$B$CHost = const [];
 
 class _ViewChildComponentProvidingA$B$CHost0 extends import10.HostView<import1.ChildComponentProvidingA$B$C> {
-  late import1.A _A_0_6 = import1.A();
-  late import1.B _B_0_7 = import1.B();
-  late import1.C _C_0_8 = import1.C();
+  late import1.A _A_0_7 = import1.A();
+  late import1.B _B_0_8 = import1.B();
+  late import1.C _C_0_9 = import1.C();
   @override
   void build() {
     this.componentView = ViewChildComponentProvidingA$B$C0(this, 0);
@@ -298,13 +298,13 @@ class _ViewChildComponentProvidingA$B$CHost0 extends import10.HostView<import1.C
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((0 == nodeIndex)) {
       if (identical(token, import1.A)) {
-        return this._A_0_6;
+        return this._A_0_7;
       }
       if (identical(token, import1.B)) {
-        return this._B_0_7;
+        return this._B_0_8;
       }
       if (identical(token, import1.C)) {
-        return this._C_0_8;
+        return this._C_0_9;
       }
     }
     return notFoundResult;
@@ -361,7 +361,7 @@ ComponentFactory<import1.ChildComponentWithNgContentProviding$D> createChildComp
 final List<Object> styles$ChildComponentWithNgContentProviding$DHost = const [];
 
 class _ViewChildComponentWithNgContentProviding$DHost0 extends import10.HostView<import1.ChildComponentWithNgContentProviding$D> {
-  late import1.D _D_0_6 = import1.D();
+  late import1.D _D_0_7 = import1.D();
   @override
   void build() {
     this.componentView = ViewChildComponentWithNgContentProviding$D0(this, 0);
@@ -373,7 +373,7 @@ class _ViewChildComponentWithNgContentProviding$DHost0 extends import10.HostView
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import1.D) && (0 == nodeIndex))) {
-      return this._D_0_6;
+      return this._D_0_7;
     }
     return notFoundResult;
   }

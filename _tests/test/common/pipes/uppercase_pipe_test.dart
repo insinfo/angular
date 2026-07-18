@@ -1,4 +1,4 @@
-import 'package:ngdart/src/common/pipes/uppercase_pipe.dart';
+import 'package:ngx_dart/src/common/pipes/uppercase_pipe.dart';
 import 'package:test/test.dart';
 
 void main() {

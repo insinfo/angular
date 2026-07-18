@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:js_interop';
 
-import 'package:ngdart/angular.dart';
+import 'package:ngx_dart/angular.dart';
 import 'package:test/test.dart';
 import 'package:web/web.dart';
 

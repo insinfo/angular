@@ -3,23 +3,24 @@
 // **************************************************************************
 
 import 'directive_change_detector.dart';
-import 'package:ngdart/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_dart/src/core/linker/views/component_view.dart' as import0;
 import 'directive_change_detector.dart' as import1;
-import 'package:ngdart/src/core/linker/style_encapsulation.dart' as import2;
-import 'package:ngdart/src/core/linker/views/view.dart' as import3;
-import 'package:ngdart/src/meta/change_detection_constants.dart' as import4;
-import 'package:ngdart/src/utilities.dart' as import5;
-import 'dart:html' as import6;
-import 'package:ngdart/src/runtime/dom_helpers.dart' as import7;
-import 'package:ngdart/src/devtools.dart' as import8;
-import 'package:ngdart/src/runtime/check_binding.dart' as import9;
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/linker/views/host_view.dart' as import11;
+import 'package:ngx_dart/src/core/linker/style_encapsulation.dart' as import2;
+import 'package:ngx_dart/src/core/linker/views/view.dart' as import3;
+import 'package:ngx_dart/src/meta/change_detection_constants.dart' as import4;
+import 'package:ngx_dart/src/utilities.dart' as import5;
+import 'package:web/src/dom/dom.dart' as import6;
+import 'package:ngx_dart/src/runtime/dom_helpers.dart' as import7;
+import 'package:web/src/dom/html.dart' as import8;
+import 'package:ngx_dart/src/devtools.dart' as import9;
+import 'package:ngx_dart/src/runtime/check_binding.dart' as import10;
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import12;
 
 final List<Object> styles$GoldenComponent = const [];
 
 class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent> {
-  late final import1.NgModelLike _NgModelLike_0_5;
+  late final import1.NgModelLike _NgModelLike_0_6;
   Object? _expr_0;
   static import2.ComponentStyles? _componentStyles;
   ViewGoldenComponent0(import3.View parentView, int parentIndex) : super(parentView, parentIndex, import4.ChangeDetectionCheckedState.checkAlways) {
@@ -34,12 +35,12 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
   void build() {
     final parentRenderNode = this.initViewRoot();
     final doc = import6.document;
-    final _el_0 = import7.appendElement<import6.InputElement>(doc, parentRenderNode, 'input');
-    this._NgModelLike_0_5 = import1.NgModelLike();
-    if (import8.isDevToolsEnabled) {
-      import8.Inspector.instance.registerDirective(_el_0, this._NgModelLike_0_5);
+    final _el_0 = import7.appendElement<import8.HTMLInputElement>(doc, parentRenderNode, 'input');
+    this._NgModelLike_0_6 = import1.NgModelLike();
+    if (import9.isDevToolsEnabled) {
+      import9.Inspector.instance.registerDirective(_el_0, this._NgModelLike_0_6);
     }
-    final subscription_0 = this._NgModelLike_0_5.modelChange.listen(this.eventHandler1(this._handleEvent_0));
+    final subscription_0 = this._NgModelLike_0_6.modelChange.listen(this.eventHandler1(this._handleEvent_0));
     this.initSubscriptions([subscription_0]);
   }
 
@@ -50,19 +51,19 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     bool firstCheck = this.firstCheck;
     changed = false;
     final currVal_0 = _ctx.value;
-    if (import9.checkBinding(this._expr_0, currVal_0, 'value', 'asset:goldens/test/change_detection/directive_change_detector.dart')) {
-      if (import8.isDevToolsEnabled) {
-        import8.Inspector.instance.recordInput(this._NgModelLike_0_5, 'ngModel', currVal_0);
+    if (import10.checkBinding(this._expr_0, currVal_0, 'value', 'asset:goldens/test/change_detection/directive_change_detector.dart')) {
+      if (import9.isDevToolsEnabled) {
+        import9.Inspector.instance.recordInput(this._NgModelLike_0_6, 'ngModel', currVal_0);
       }
-      this._NgModelLike_0_5.model = currVal_0 /* REF:asset:goldens/test/change_detection/directive_change_detector.dart:415:434 */;
+      this._NgModelLike_0_6.model = currVal_0 /* REF:asset:goldens/test/change_detection/directive_change_detector.dart:439:458 */;
       changed = true;
       this._expr_0 = currVal_0;
     }
     if (changed) {
-      this._NgModelLike_0_5.ngAfterChanges();
+      this._NgModelLike_0_6.ngAfterChanges();
     }
-    if (((!import9.debugThrowIfChanged) && firstCheck)) {
-      this._NgModelLike_0_5.ngOnInit();
+    if (((!import10.debugThrowIfChanged) && firstCheck)) {
+      this._NgModelLike_0_6.ngOnInit();
     }
   }
 
@@ -98,7 +99,7 @@ ComponentFactory<import1.GoldenComponent> createGoldenComponentFactory() {
 
 final List<Object> styles$GoldenComponentHost = const [];
 
-class _ViewGoldenComponentHost0 extends import11.HostView<import1.GoldenComponent> {
+class _ViewGoldenComponentHost0 extends import12.HostView<import1.GoldenComponent> {
   @override
   void build() {
     this.componentView = ViewGoldenComponent0(this, 0);
@@ -108,6 +109,6 @@ class _ViewGoldenComponentHost0 extends import11.HostView<import1.GoldenComponen
   }
 }
 
-import11.HostView<import1.GoldenComponent> viewFactory_GoldenComponentHost0() {
+import12.HostView<import1.GoldenComponent> viewFactory_GoldenComponentHost0() {
   return _ViewGoldenComponentHost0();
 }

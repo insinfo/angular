@@ -1,8 +1,8 @@
 import 'dart:js_interop';
 
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/runtime/check_binding.dart';
-import 'package:ngtest/angular_test.dart';
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/runtime/check_binding.dart';
+import 'package:ngx_test/angular_test.dart';
 import 'package:test/test.dart';
 
 import 'if_test.template.dart' as ng;

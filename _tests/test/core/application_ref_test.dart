@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/application_ref.dart';
-import 'package:ngdart/src/core/linker/app_view_utils.dart';
-import 'package:ngdart/src/runtime/dom_events.dart';
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/application_ref.dart';
+import 'package:ngx_dart/src/core/linker/app_view_utils.dart';
+import 'package:ngx_dart/src/runtime/dom_events.dart';
 import 'package:test/test.dart';
 import 'package:web/web.dart';
 

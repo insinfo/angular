@@ -3,26 +3,26 @@
 // **************************************************************************
 
 import 'type_inference.dart';
-import 'package:ngdart/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_dart/src/core/linker/views/component_view.dart' as import0;
 import 'type_inference.dart' as import1;
-import 'package:ngdart/src/runtime/text_binding.dart' as import2;
-import 'package:ngdart/src/core/linker/view_container.dart';
-import 'package:ngdart/src/common/directives/ng_for.dart' as import4;
-import 'package:ngdart/src/core/linker/style_encapsulation.dart' as import5;
-import 'package:ngdart/src/core/linker/views/view.dart' as import6;
-import 'package:ngdart/src/meta/change_detection_constants.dart' as import7;
-import 'package:ngdart/src/utilities.dart' as import8;
-import 'dart:html' as import9;
-import 'package:ngdart/src/runtime/dom_helpers.dart' as import10;
-import 'package:ngdart/src/core/linker/template_ref.dart';
-import 'package:ngdart/src/devtools.dart' as import12;
-import 'package:ngdart/src/runtime/check_binding.dart' as import13;
-import 'package:ngdart/src/runtime/interpolate.dart' as import14;
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/linker/views/embedded_view.dart' as import16;
-import 'package:ngdart/src/core/linker/views/render_view.dart' as import17;
+import 'package:ngx_dart/src/runtime/text_binding.dart' as import2;
+import 'package:ngx_dart/src/core/linker/view_container.dart';
+import 'package:ngx_dart/src/common/directives/ng_for.dart' as import4;
+import 'package:ngx_dart/src/core/linker/style_encapsulation.dart' as import5;
+import 'package:ngx_dart/src/core/linker/views/view.dart' as import6;
+import 'package:ngx_dart/src/meta/change_detection_constants.dart' as import7;
+import 'package:ngx_dart/src/utilities.dart' as import8;
+import 'package:web/src/dom/dom.dart' as import9;
+import 'package:ngx_dart/src/runtime/dom_helpers.dart' as import10;
+import 'package:ngx_dart/src/core/linker/template_ref.dart';
+import 'package:ngx_dart/src/devtools.dart' as import12;
+import 'package:ngx_dart/src/runtime/check_binding.dart' as import13;
+import 'package:ngx_dart/src/runtime/interpolate.dart' as import14;
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/linker/views/embedded_view.dart' as import16;
+import 'package:ngx_dart/src/core/linker/views/render_view.dart' as import17;
 import 'dart:core';
-import 'package:ngdart/src/core/linker/views/host_view.dart' as import19;
+import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import19;
 
 final List<Object> styles$GoldenComponent = const [];
 
@@ -31,9 +31,9 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
   final import2.TextBinding _textBinding_4 = import2.TextBinding();
   final import2.TextBinding _textBinding_7 = import2.TextBinding();
   late final ViewContainer _appEl_9;
-  late final import4.NgFor _NgFor_9_9;
+  late final import4.NgFor _NgFor_9_10;
   late final ViewContainer _appEl_11;
-  late final import4.NgFor _NgFor_11_9;
+  late final import4.NgFor _NgFor_11_10;
   Object? _expr_0;
   Object? _expr_1;
   static import5.ComponentStyles? _componentStyles;
@@ -59,18 +59,18 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     final _text_8 = import10.appendText(parentRenderNode, ' ');
     final _anchor_9 = import10.appendAnchor(parentRenderNode);
     this._appEl_9 = ViewContainer(9, null, this, _anchor_9);
-    var _TemplateRef_9_8 = TemplateRef(this._appEl_9, viewFactory_GoldenComponent1);
-    this._NgFor_9_9 = import4.NgFor(this._appEl_9, _TemplateRef_9_8);
+    var _TemplateRef_9_9 = TemplateRef(this._appEl_9, viewFactory_GoldenComponent1);
+    this._NgFor_9_10 = import4.NgFor(this._appEl_9, _TemplateRef_9_9);
     if (import12.isDevToolsEnabled) {
-      import12.Inspector.instance.registerDirective(_anchor_9, this._NgFor_9_9);
+      import12.Inspector.instance.registerDirective(_anchor_9, this._NgFor_9_10);
     }
     final _text_10 = import10.appendText(parentRenderNode, ' ');
     final _anchor_11 = import10.appendAnchor(parentRenderNode);
     this._appEl_11 = ViewContainer(11, null, this, _anchor_11);
-    var _TemplateRef_11_8 = TemplateRef(this._appEl_11, viewFactory_GoldenComponent2);
-    this._NgFor_11_9 = import4.NgFor(this._appEl_11, _TemplateRef_11_8);
+    var _TemplateRef_11_9 = TemplateRef(this._appEl_11, viewFactory_GoldenComponent2);
+    this._NgFor_11_10 = import4.NgFor(this._appEl_11, _TemplateRef_11_9);
     if (import12.isDevToolsEnabled) {
-      import12.Inspector.instance.registerDirective(_anchor_11, this._NgFor_11_9);
+      import12.Inspector.instance.registerDirective(_anchor_11, this._NgFor_11_10);
     }
   }
 
@@ -80,30 +80,30 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     final currVal_0 = _ctx.durationList;
     if (import13.checkBinding(this._expr_0, currVal_0, 'durationList', 'asset:goldens/test/templates/type_inference.dart')) {
       if (import12.isDevToolsEnabled) {
-        import12.Inspector.instance.recordInput(this._NgFor_9_9, 'ngForOf', currVal_0);
+        import12.Inspector.instance.recordInput(this._NgFor_9_10, 'ngForOf', currVal_0);
       }
-      this._NgFor_9_9.ngForOf = currVal_0 /* REF:asset:goldens/test/templates/type_inference.dart:418:455 */;
+      this._NgFor_9_10.ngForOf = currVal_0 /* REF:asset:goldens/test/templates/type_inference.dart:434:471 */;
       this._expr_0 = currVal_0;
     }
     if ((!import13.debugThrowIfChanged)) {
-      this._NgFor_9_9.ngDoCheck();
+      this._NgFor_9_10.ngDoCheck();
     }
     final currVal_1 = _ctx.nestedLists;
     if (import13.checkBinding(this._expr_1, currVal_1, 'nestedLists', 'asset:goldens/test/templates/type_inference.dart')) {
       if (import12.isDevToolsEnabled) {
-        import12.Inspector.instance.recordInput(this._NgFor_11_9, 'ngForOf', currVal_1);
+        import12.Inspector.instance.recordInput(this._NgFor_11_10, 'ngForOf', currVal_1);
       }
-      this._NgFor_11_9.ngForOf = currVal_1 /* REF:asset:goldens/test/templates/type_inference.dart:530:570 */;
+      this._NgFor_11_10.ngForOf = currVal_1 /* REF:asset:goldens/test/templates/type_inference.dart:546:586 */;
       this._expr_1 = currVal_1;
     }
     if ((!import13.debugThrowIfChanged)) {
-      this._NgFor_11_9.ngDoCheck();
+      this._NgFor_11_10.ngDoCheck();
     }
     this._appEl_9.detectChangesInNestedViews();
     this._appEl_11.detectChangesInNestedViews();
-    this._textBinding_1.updateText(import14.interpolateString0((_ctx.stringA + _ctx.stringB))) /* REF:asset:goldens/test/templates/type_inference.dart:264:285 */;
-    this._textBinding_4.updateText(import14.interpolateString0(_ctx.stringA.toUpperCase())) /* REF:asset:goldens/test/templates/type_inference.dart:312:337 */;
-    this._textBinding_7.updateText(import14.interpolate0(import1.GoldenComponent.max(_ctx.int1, _ctx.int2).isEven)) /* REF:asset:goldens/test/templates/type_inference.dart:372:398 */;
+    this._textBinding_1.updateText(import14.interpolateString0((_ctx.stringA + _ctx.stringB))) /* REF:asset:goldens/test/templates/type_inference.dart:280:301 */;
+    this._textBinding_4.updateText(import14.interpolateString0(_ctx.stringA.toUpperCase())) /* REF:asset:goldens/test/templates/type_inference.dart:328:353 */;
+    this._textBinding_7.updateText(import14.interpolate0(import1.GoldenComponent.max(_ctx.int1, _ctx.int2).isEven)) /* REF:asset:goldens/test/templates/type_inference.dart:388:414 */;
   }
 
   @override
@@ -148,7 +148,7 @@ class _ViewGoldenComponent1 extends import16.EmbeddedView<import1.GoldenComponen
   @override
   void detectChangesInternal() {
     final local_duration = import8.unsafeCast<Duration>(this.locals['\$implicit']);
-    this._textBinding_0.updateTextWithPrimitive(local_duration.inMilliseconds) /* REF:asset:goldens/test/templates/type_inference.dart:463:490 */;
+    this._textBinding_0.updateTextWithPrimitive(local_duration.inMilliseconds) /* REF:asset:goldens/test/templates/type_inference.dart:479:506 */;
   }
 }
 
@@ -158,17 +158,17 @@ import16.EmbeddedView<void> viewFactory_GoldenComponent1(import17.RenderView par
 
 class _ViewGoldenComponent2 extends import16.EmbeddedView<import1.GoldenComponent> {
   late final ViewContainer _appEl_0;
-  late final import4.NgFor _NgFor_0_9;
+  late final import4.NgFor _NgFor_0_10;
   Object? _expr_0;
   _ViewGoldenComponent2(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     final _anchor_0 = import10.createAnchor();
     this._appEl_0 = ViewContainer(0, null, this, _anchor_0);
-    var _TemplateRef_0_8 = TemplateRef(this._appEl_0, viewFactory_GoldenComponent3);
-    this._NgFor_0_9 = import4.NgFor(this._appEl_0, _TemplateRef_0_8);
+    var _TemplateRef_0_9 = TemplateRef(this._appEl_0, viewFactory_GoldenComponent3);
+    this._NgFor_0_10 = import4.NgFor(this._appEl_0, _TemplateRef_0_9);
     if (import12.isDevToolsEnabled) {
-      import12.Inspector.instance.registerDirective(_anchor_0, this._NgFor_0_9);
+      import12.Inspector.instance.registerDirective(_anchor_0, this._NgFor_0_10);
     }
     this.initRootNode(this._appEl_0);
   }
@@ -179,13 +179,13 @@ class _ViewGoldenComponent2 extends import16.EmbeddedView<import1.GoldenComponen
     final currVal_0 = local_durationList;
     if (import13.checkBinding(this._expr_0, currVal_0, 'durationList', 'asset:goldens/test/templates/type_inference.dart')) {
       if (import12.isDevToolsEnabled) {
-        import12.Inspector.instance.recordInput(this._NgFor_0_9, 'ngForOf', currVal_0);
+        import12.Inspector.instance.recordInput(this._NgFor_0_10, 'ngForOf', currVal_0);
       }
-      this._NgFor_0_9.ngForOf = currVal_0 /* REF:asset:goldens/test/templates/type_inference.dart:592:629 */;
+      this._NgFor_0_10.ngForOf = currVal_0 /* REF:asset:goldens/test/templates/type_inference.dart:608:645 */;
       this._expr_0 = currVal_0;
     }
     if ((!import13.debugThrowIfChanged)) {
-      this._NgFor_0_9.ngDoCheck();
+      this._NgFor_0_10.ngDoCheck();
     }
     this._appEl_0.detectChangesInNestedViews();
   }
@@ -211,7 +211,7 @@ class _ViewGoldenComponent3 extends import16.EmbeddedView<import1.GoldenComponen
   @override
   void detectChangesInternal() {
     final local_duration = import8.unsafeCast<Duration>(this.locals['\$implicit']);
-    this._textBinding_0.updateTextWithPrimitive(local_duration.inMilliseconds) /* REF:asset:goldens/test/templates/type_inference.dart:639:666 */;
+    this._textBinding_0.updateTextWithPrimitive(local_duration.inMilliseconds) /* REF:asset:goldens/test/templates/type_inference.dart:655:682 */;
   }
 }
 

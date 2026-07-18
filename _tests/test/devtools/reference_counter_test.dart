@@ -1,5 +1,5 @@
-import 'package:ngdart/src/devtools/error.dart';
-import 'package:ngdart/src/devtools/reference_counter.dart';
+import 'package:ngx_dart/src/devtools/error.dart';
+import 'package:ngx_dart/src/devtools/reference_counter.dart';
 import 'package:test/test.dart';
 
 final throwsDevToolsError = throwsA(isA<DevToolsError>());

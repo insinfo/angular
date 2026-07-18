@@ -1,6 +1,6 @@
 import 'dart:collection';
 
-import 'package:ngdart/src/core/change_detection/differs/default_iterable_differ.dart';
+import 'package:ngx_dart/src/core/change_detection/differs/default_iterable_differ.dart';
 import 'package:test/test.dart';
 
 void main() {

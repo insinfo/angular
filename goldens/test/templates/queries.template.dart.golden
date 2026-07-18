@@ -3,51 +3,51 @@
 // **************************************************************************
 
 import 'queries.dart';
-import 'package:ngdart/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_dart/src/core/linker/views/component_view.dart' as import0;
 import 'queries.dart' as import1;
-import 'package:ngdart/src/core/linker/view_container.dart';
-import 'package:ngdart/src/common/directives/ng_if.dart';
-import 'package:ngdart/src/core/linker/style_encapsulation.dart' as import4;
-import 'package:ngdart/src/core/linker/views/view.dart' as import5;
-import 'package:ngdart/src/meta/change_detection_constants.dart' as import6;
-import 'package:ngdart/src/utilities.dart' as import7;
-import 'dart:html' as import8;
-import 'package:ngdart/src/runtime/dom_helpers.dart' as import9;
-import 'package:ngdart/src/devtools.dart' as import10;
-import 'package:ngdart/src/core/linker/template_ref.dart';
-import 'package:ngdart/src/core/linker/element_ref.dart';
-import 'package:ngdart/src/runtime/check_binding.dart' as import13;
-import 'package:ngdart/src/runtime/queries.dart' as import14;
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/linker/views/embedded_view.dart' as import16;
-import 'package:ngdart/src/core/linker/views/render_view.dart' as import17;
-import 'package:ngdart/src/core/linker/views/host_view.dart' as import18;
-import 'package:ngdart/src/common/directives/ng_for.dart' as import19;
-import 'package:ngdart/src/runtime/text_binding.dart' as import20;
-import 'package:ngdart/src/core/linker/ng_content_ref.dart' as import21;
-import 'package:ngdart/src/runtime/interpolate.dart' as import22;
+import 'package:ngx_dart/src/core/linker/view_container.dart';
+import 'package:ngx_dart/src/common/directives/ng_if.dart';
+import 'package:ngx_dart/src/core/linker/style_encapsulation.dart' as import4;
+import 'package:ngx_dart/src/core/linker/views/view.dart' as import5;
+import 'package:ngx_dart/src/meta/change_detection_constants.dart' as import6;
+import 'package:ngx_dart/src/utilities.dart' as import7;
+import 'package:web/src/dom/dom.dart' as import8;
+import 'package:ngx_dart/src/runtime/dom_helpers.dart' as import9;
+import 'package:ngx_dart/src/devtools.dart' as import10;
+import 'package:ngx_dart/src/core/linker/template_ref.dart';
+import 'package:ngx_dart/src/core/linker/element_ref.dart';
+import 'package:ngx_dart/src/runtime/check_binding.dart' as import13;
+import 'package:ngx_dart/src/runtime/queries.dart' as import14;
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/linker/views/embedded_view.dart' as import16;
+import 'package:ngx_dart/src/core/linker/views/render_view.dart' as import17;
+import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import18;
+import 'package:ngx_dart/src/common/directives/ng_for.dart' as import19;
+import 'package:ngx_dart/src/runtime/text_binding.dart' as import20;
+import 'package:ngx_dart/src/core/linker/ng_content_ref.dart' as import21;
+import 'package:ngx_dart/src/runtime/interpolate.dart' as import22;
 
 final List<Object> styles$GoldenComponent = const [];
 
 class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent> {
   bool _viewQuery_AnotherDirective_4_isDirty = true;
   bool _viewQuery_q3_5_isDirty = true;
-  late final import1.AnotherDirective _AnotherDirective_0_5;
-  late final import1.AnotherDirective _AnotherDirective_1_5;
+  late final import1.AnotherDirective _AnotherDirective_0_6;
+  late final import1.AnotherDirective _AnotherDirective_1_6;
   late final ViewContainer _appEl_2;
-  late final NgIf _NgIf_2_9;
+  late final NgIf _NgIf_2_10;
   late final ViewEmbeddedQueries0 _compView_3;
-  late final import1.EmbeddedQueries _EmbeddedQueries_3_5;
+  late final import1.EmbeddedQueries _EmbeddedQueries_3_6;
   late final ViewNestedNgForQueriesList0 _compView_4;
-  late final import1.NestedNgForQueriesList _NestedNgForQueriesList_4_5;
+  late final import1.NestedNgForQueriesList _NestedNgForQueriesList_4_6;
   late final ViewStaticSingleQuery0 _compView_5;
-  late final import1.StaticSingleQuery _StaticSingleQuery_5_5;
+  late final import1.StaticSingleQuery _StaticSingleQuery_5_6;
   late final ViewDynamicSingleQuery0 _compView_6;
-  late final import1.DynamicSingleQuery _DynamicSingleQuery_6_5;
+  late final import1.DynamicSingleQuery _DynamicSingleQuery_6_6;
   late final ViewContentQuery0 _compView_7;
-  late final import1.ContentQuery _ContentQuery_7_5;
+  late final import1.ContentQuery _ContentQuery_7_6;
   late final ViewContentHasReference0 _compView_8;
-  late final import1.ContentHasReference _ContentHasReference_8_5;
+  late final import1.ContentHasReference _ContentHasReference_8_6;
   static import4.ComponentStyles? _componentStyles;
   ViewGoldenComponent0(import5.View parentView, int parentIndex) : super(parentView, parentIndex, import6.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -64,80 +64,80 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     this.project(parentRenderNode, 0);
     final doc = import8.document;
     final _el_0 = import9.appendElement<import8.Element>(doc, parentRenderNode, 'another');
-    this._AnotherDirective_0_5 = import1.AnotherDirective();
+    this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_5);
+      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
     }
     final _el_1 = import9.appendElement<import8.Element>(doc, parentRenderNode, 'another');
-    this._AnotherDirective_1_5 = import1.AnotherDirective();
+    this._AnotherDirective_1_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_1, this._AnotherDirective_1_5);
+      import10.Inspector.instance.registerDirective(_el_1, this._AnotherDirective_1_6);
     }
     final _anchor_2 = import9.appendAnchor(parentRenderNode);
     this._appEl_2 = ViewContainer(2, null, this, _anchor_2);
-    var _TemplateRef_2_8 = TemplateRef(this._appEl_2, viewFactory_GoldenComponent1);
-    this._NgIf_2_9 = NgIf(this._appEl_2, _TemplateRef_2_8);
+    var _TemplateRef_2_9 = TemplateRef(this._appEl_2, viewFactory_GoldenComponent1);
+    this._NgIf_2_10 = NgIf(this._appEl_2, _TemplateRef_2_9);
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_anchor_2, this._NgIf_2_9);
+      import10.Inspector.instance.registerDirective(_anchor_2, this._NgIf_2_10);
     }
     this._compView_3 = ViewEmbeddedQueries0(this, 3);
     final _el_3 = this._compView_3.rootElement;
     parentRenderNode.append(_el_3);
-    this._EmbeddedQueries_3_5 = import1.EmbeddedQueries();
-    this._compView_3.create(this._EmbeddedQueries_3_5);
+    this._EmbeddedQueries_3_6 = import1.EmbeddedQueries();
+    this._compView_3.create(this._EmbeddedQueries_3_6);
     this._compView_4 = ViewNestedNgForQueriesList0(this, 4);
     final _el_4 = this._compView_4.rootElement;
     parentRenderNode.append(_el_4);
-    this._NestedNgForQueriesList_4_5 = import1.NestedNgForQueriesList();
-    this._compView_4.create(this._NestedNgForQueriesList_4_5);
+    this._NestedNgForQueriesList_4_6 = import1.NestedNgForQueriesList();
+    this._compView_4.create(this._NestedNgForQueriesList_4_6);
     this._compView_5 = ViewStaticSingleQuery0(this, 5);
     final _el_5 = this._compView_5.rootElement;
     parentRenderNode.append(_el_5);
-    this._StaticSingleQuery_5_5 = import1.StaticSingleQuery();
-    this._compView_5.create(this._StaticSingleQuery_5_5);
+    this._StaticSingleQuery_5_6 = import1.StaticSingleQuery();
+    this._compView_5.create(this._StaticSingleQuery_5_6);
     this._compView_6 = ViewDynamicSingleQuery0(this, 6);
     final _el_6 = this._compView_6.rootElement;
     parentRenderNode.append(_el_6);
-    this._DynamicSingleQuery_6_5 = import1.DynamicSingleQuery();
-    this._compView_6.create(this._DynamicSingleQuery_6_5);
+    this._DynamicSingleQuery_6_6 = import1.DynamicSingleQuery();
+    this._compView_6.create(this._DynamicSingleQuery_6_6);
     this._compView_7 = ViewContentQuery0(this, 7);
     final _el_7 = this._compView_7.rootElement;
     parentRenderNode.append(_el_7);
-    this._ContentQuery_7_5 = import1.ContentQuery();
-    this._compView_7.createAndProject(this._ContentQuery_7_5, [const <Object>[]]);
+    this._ContentQuery_7_6 = import1.ContentQuery();
+    this._compView_7.createAndProject(this._ContentQuery_7_6, [const <Object>[]]);
     this._compView_8 = ViewContentHasReference0(this, 8);
     final _el_8 = this._compView_8.rootElement;
     parentRenderNode.append(_el_8);
-    this._ContentHasReference_8_5 = import1.ContentHasReference();
-    this._compView_8.createAndProject(this._ContentHasReference_8_5, [const <Object>[]]);
-    _ctx.viewChildrenFromField = [this._AnotherDirective_1_5];
-    _ctx.viewChildFromField = this._AnotherDirective_1_5;
+    this._ContentHasReference_8_6 = import1.ContentHasReference();
+    this._compView_8.createAndProject(this._ContentHasReference_8_6, [const <Object>[]]);
+    _ctx.viewChildrenFromField = [this._AnotherDirective_1_6];
+    _ctx.viewChildFromField = this._AnotherDirective_1_6;
     _ctx.readDIFromElementRef = ElementRef(_el_1);
-    _ctx.readDIFromElement = _el_1;
+    _ctx.readDIFromElement = import7.unsafeCast(_el_1);
   }
 
   @override
   void detectChangesInternal() {
     final _ctx = this.ctx;
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.recordInput(this._NgIf_2_9, 'ngIf', _ctx.someValue);
+      import10.Inspector.instance.recordInput(this._NgIf_2_10, 'ngIf', _ctx.someValue);
     }
-    this._NgIf_2_9.ngIf = _ctx.someValue /* REF:asset:goldens/test/templates/queries.dart:664:681 */;
+    this._NgIf_2_10.ngIf = _ctx.someValue /* REF:asset:goldens/test/templates/queries.dart:708:725 */;
     this._appEl_2.detectChangesInNestedViews();
     if ((!import13.debugThrowIfChanged)) {
       if (this._viewQuery_AnotherDirective_4_isDirty) {
         _ctx.usingTypeFromField = [
-          this._AnotherDirective_0_5,
-          this._AnotherDirective_1_5,
+          this._AnotherDirective_0_6,
+          this._AnotherDirective_1_6,
           ...this._appEl_2.mapNestedViewsWithSingleResult((_ViewGoldenComponent1 nestedView) {
-            return nestedView._AnotherDirective_0_5;
+            return nestedView._AnotherDirective_0_6;
           })
         ];
         this._viewQuery_AnotherDirective_4_isDirty = false;
       }
       if (this._viewQuery_q3_5_isDirty) {
         _ctx.nestedViewChild = import14.firstOrNull(this._appEl_2.mapNestedViewsWithSingleResult((_ViewGoldenComponent1 nestedView) {
-          return nestedView._AnotherDirective_0_5;
+          return nestedView._AnotherDirective_0_6;
         }));
         this._viewQuery_q3_5_isDirty = false;
       }
@@ -187,15 +187,15 @@ ComponentFactory<import1.GoldenComponent> createGoldenComponentFactory() {
 }
 
 class _ViewGoldenComponent1 extends import16.EmbeddedView<import1.GoldenComponent> {
-  late final import1.AnotherDirective _AnotherDirective_0_5;
+  late final import1.AnotherDirective _AnotherDirective_0_6;
   _ViewGoldenComponent1(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     final doc = import8.document;
     final _el_0 = import7.unsafeCast(doc.createElement('another'));
-    this._AnotherDirective_0_5 = import1.AnotherDirective();
+    this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_5);
+      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
     }
     this.initRootNode(_el_0);
   }
@@ -232,7 +232,7 @@ final List<Object> styles$EmbeddedQueries = const [];
 
 class ViewEmbeddedQueries0 extends import0.ComponentView<import1.EmbeddedQueries> {
   bool _viewQuery_AnotherDirective_0_isDirty = true;
-  late final import1.AnotherDirective _AnotherDirective_0_5;
+  late final import1.AnotherDirective _AnotherDirective_0_6;
   late final ViewContainer _appEl_1;
   late final ViewContainer _appEl_2;
   static import4.ComponentStyles? _componentStyles;
@@ -249,16 +249,16 @@ class ViewEmbeddedQueries0 extends import0.ComponentView<import1.EmbeddedQueries
     final parentRenderNode = this.initViewRoot();
     final doc = import8.document;
     final _el_0 = import9.appendElement<import8.Element>(doc, parentRenderNode, 'another');
-    this._AnotherDirective_0_5 = import1.AnotherDirective();
+    this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_5);
+      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
     }
     final _anchor_1 = import9.appendAnchor(parentRenderNode);
     this._appEl_1 = ViewContainer(1, null, this, _anchor_1);
-    var _TemplateRef_1_7 = TemplateRef(this._appEl_1, viewFactory_EmbeddedQueries1);
+    var _TemplateRef_1_8 = TemplateRef(this._appEl_1, viewFactory_EmbeddedQueries1);
     final _anchor_2 = import9.appendAnchor(parentRenderNode);
     this._appEl_2 = ViewContainer(2, null, this, _anchor_2);
-    var _TemplateRef_2_7 = TemplateRef(this._appEl_2, viewFactory_EmbeddedQueries2);
+    var _TemplateRef_2_8 = TemplateRef(this._appEl_2, viewFactory_EmbeddedQueries2);
   }
 
   @override
@@ -267,12 +267,12 @@ class ViewEmbeddedQueries0 extends import0.ComponentView<import1.EmbeddedQueries
     if ((!import13.debugThrowIfChanged)) {
       if (this._viewQuery_AnotherDirective_0_isDirty) {
         _ctx.viewChildren = [
-          this._AnotherDirective_0_5,
+          this._AnotherDirective_0_6,
           ...this._appEl_1.mapNestedViewsWithSingleResult((_ViewEmbeddedQueries1 nestedView) {
-            return nestedView._AnotherDirective_0_5;
+            return nestedView._AnotherDirective_0_6;
           }),
           ...this._appEl_2.mapNestedViewsWithSingleResult((_ViewEmbeddedQueries2 nestedView) {
-            return nestedView._AnotherDirective_0_5;
+            return nestedView._AnotherDirective_0_6;
           })
         ];
         this._viewQuery_AnotherDirective_0_isDirty = false;
@@ -306,15 +306,15 @@ ComponentFactory<import1.EmbeddedQueries> createEmbeddedQueriesFactory() {
 }
 
 class _ViewEmbeddedQueries1 extends import16.EmbeddedView<import1.EmbeddedQueries> {
-  late final import1.AnotherDirective _AnotherDirective_0_5;
+  late final import1.AnotherDirective _AnotherDirective_0_6;
   _ViewEmbeddedQueries1(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     final doc = import8.document;
     final _el_0 = import7.unsafeCast(doc.createElement('another'));
-    this._AnotherDirective_0_5 = import1.AnotherDirective();
+    this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_5);
+      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
     }
     this.initRootNode(_el_0);
   }
@@ -330,15 +330,15 @@ import16.EmbeddedView<void> viewFactory_EmbeddedQueries1(import17.RenderView par
 }
 
 class _ViewEmbeddedQueries2 extends import16.EmbeddedView<import1.EmbeddedQueries> {
-  late final import1.AnotherDirective _AnotherDirective_0_5;
+  late final import1.AnotherDirective _AnotherDirective_0_6;
   _ViewEmbeddedQueries2(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     final doc = import8.document;
     final _el_0 = import7.unsafeCast(doc.createElement('another'));
-    this._AnotherDirective_0_5 = import1.AnotherDirective();
+    this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_5);
+      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
     }
     this.initRootNode(_el_0);
   }
@@ -373,7 +373,7 @@ final List<Object> styles$NestedNgForQueriesList = const [];
 
 class ViewNestedNgForQueriesList0 extends import0.ComponentView<import1.NestedNgForQueriesList> {
   late final ViewContainer _appEl_0;
-  late final NgIf _NgIf_0_9;
+  late final NgIf _NgIf_0_10;
   static import4.ComponentStyles? _componentStyles;
   ViewNestedNgForQueriesList0(import5.View parentView, int parentIndex) : super(parentView, parentIndex, import6.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -389,10 +389,10 @@ class ViewNestedNgForQueriesList0 extends import0.ComponentView<import1.NestedNg
     final parentRenderNode = this.initViewRoot();
     final _anchor_0 = import9.appendAnchor(parentRenderNode);
     this._appEl_0 = ViewContainer(0, null, this, _anchor_0);
-    var _TemplateRef_0_8 = TemplateRef(this._appEl_0, viewFactory_NestedNgForQueriesList1);
-    this._NgIf_0_9 = NgIf(this._appEl_0, _TemplateRef_0_8);
+    var _TemplateRef_0_9 = TemplateRef(this._appEl_0, viewFactory_NestedNgForQueriesList1);
+    this._NgIf_0_10 = NgIf(this._appEl_0, _TemplateRef_0_9);
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_anchor_0, this._NgIf_0_9);
+      import10.Inspector.instance.registerDirective(_anchor_0, this._NgIf_0_10);
     }
     _ctx.taggedItems = [];
   }
@@ -401,9 +401,9 @@ class ViewNestedNgForQueriesList0 extends import0.ComponentView<import1.NestedNg
   void detectChangesInternal() {
     final _ctx = this.ctx;
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.recordInput(this._NgIf_0_9, 'ngIf', _ctx.conditionA);
+      import10.Inspector.instance.recordInput(this._NgIf_0_10, 'ngIf', _ctx.conditionA);
     }
-    this._NgIf_0_9.ngIf = _ctx.conditionA /* REF:asset:goldens/test/templates/queries.dart:2619:2637 */;
+    this._NgIf_0_10.ngIf = _ctx.conditionA /* REF:asset:goldens/test/templates/queries.dart:2756:2774 */;
     this._appEl_0.detectChangesInNestedViews();
   }
 
@@ -439,7 +439,7 @@ ComponentFactory<import1.NestedNgForQueriesList> createNestedNgForQueriesListFac
 
 class _ViewNestedNgForQueriesList1 extends import16.EmbeddedView<import1.NestedNgForQueriesList> {
   late final ViewContainer _appEl_1;
-  late final NgIf _NgIf_1_9;
+  late final NgIf _NgIf_1_10;
   _ViewNestedNgForQueriesList1(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
@@ -447,10 +447,10 @@ class _ViewNestedNgForQueriesList1 extends import16.EmbeddedView<import1.NestedN
     final _el_0 = import7.unsafeCast(doc.createElement('div'));
     final _anchor_1 = import9.appendAnchor(_el_0);
     this._appEl_1 = ViewContainer(1, 0, this, _anchor_1);
-    var _TemplateRef_1_8 = TemplateRef(this._appEl_1, viewFactory_NestedNgForQueriesList2);
-    this._NgIf_1_9 = NgIf(this._appEl_1, _TemplateRef_1_8);
+    var _TemplateRef_1_9 = TemplateRef(this._appEl_1, viewFactory_NestedNgForQueriesList2);
+    this._NgIf_1_10 = NgIf(this._appEl_1, _TemplateRef_1_9);
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_anchor_1, this._NgIf_1_9);
+      import10.Inspector.instance.registerDirective(_anchor_1, this._NgIf_1_10);
     }
     this.initRootNode(_el_0);
   }
@@ -459,9 +459,9 @@ class _ViewNestedNgForQueriesList1 extends import16.EmbeddedView<import1.NestedN
   void detectChangesInternal() {
     final _ctx = this.ctx;
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.recordInput(this._NgIf_1_9, 'ngIf', _ctx.conditionB);
+      import10.Inspector.instance.recordInput(this._NgIf_1_10, 'ngIf', _ctx.conditionB);
     }
-    this._NgIf_1_9.ngIf = _ctx.conditionB /* REF:asset:goldens/test/templates/queries.dart:2650:2668 */;
+    this._NgIf_1_10.ngIf = _ctx.conditionB /* REF:asset:goldens/test/templates/queries.dart:2787:2805 */;
     this._appEl_1.detectChangesInNestedViews();
   }
 
@@ -477,7 +477,7 @@ import16.EmbeddedView<void> viewFactory_NestedNgForQueriesList1(import17.RenderV
 
 class _ViewNestedNgForQueriesList2 extends import16.EmbeddedView<import1.NestedNgForQueriesList> {
   late final ViewContainer _appEl_1;
-  late final import19.NgFor _NgFor_1_9;
+  late final import19.NgFor _NgFor_1_10;
   _ViewNestedNgForQueriesList2(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
@@ -485,10 +485,10 @@ class _ViewNestedNgForQueriesList2 extends import16.EmbeddedView<import1.NestedN
     final _el_0 = import7.unsafeCast(doc.createElement('div'));
     final _anchor_1 = import9.appendAnchor(_el_0);
     this._appEl_1 = ViewContainer(1, 0, this, _anchor_1);
-    var _TemplateRef_1_8 = TemplateRef(this._appEl_1, viewFactory_NestedNgForQueriesList3);
-    this._NgFor_1_9 = import19.NgFor(this._appEl_1, _TemplateRef_1_8);
+    var _TemplateRef_1_9 = TemplateRef(this._appEl_1, viewFactory_NestedNgForQueriesList3);
+    this._NgFor_1_10 = import19.NgFor(this._appEl_1, _TemplateRef_1_9);
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_anchor_1, this._NgFor_1_9);
+      import10.Inspector.instance.registerDirective(_anchor_1, this._NgFor_1_10);
     }
     this.initRootNode(_el_0);
   }
@@ -500,13 +500,13 @@ class _ViewNestedNgForQueriesList2 extends import16.EmbeddedView<import1.NestedN
     if (firstCheck) {
       if ((_ctx.items != null)) {
         if (import10.isDevToolsEnabled) {
-          import10.Inspector.instance.recordInput(this._NgFor_1_9, 'ngForOf', _ctx.items);
+          import10.Inspector.instance.recordInput(this._NgFor_1_10, 'ngForOf', _ctx.items);
         }
-        this._NgFor_1_9.ngForOf = _ctx.items /* REF:asset:goldens/test/templates/queries.dart:2683:2709 */;
+        this._NgFor_1_10.ngForOf = _ctx.items /* REF:asset:goldens/test/templates/queries.dart:2820:2846 */;
       }
     }
     if ((!import13.debugThrowIfChanged)) {
-      this._NgFor_1_9.ngDoCheck();
+      this._NgFor_1_10.ngDoCheck();
     }
     this._appEl_1.detectChangesInNestedViews();
   }
@@ -522,16 +522,16 @@ import16.EmbeddedView<void> viewFactory_NestedNgForQueriesList2(import17.RenderV
 }
 
 class _ViewNestedNgForQueriesList3 extends import16.EmbeddedView<import1.NestedNgForQueriesList> {
-  late final import1.AnotherDirective _AnotherDirective_1_5;
+  late final import1.AnotherDirective _AnotherDirective_1_6;
   _ViewNestedNgForQueriesList3(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     final doc = import8.document;
     final _el_0 = import7.unsafeCast(doc.createElement('div'));
     final _el_1 = import9.appendElement<import8.Element>(doc, _el_0, 'another');
-    this._AnotherDirective_1_5 = import1.AnotherDirective();
+    this._AnotherDirective_1_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_1, this._AnotherDirective_1_5);
+      import10.Inspector.instance.registerDirective(_el_1, this._AnotherDirective_1_6);
     }
     this.initRootNode(_el_0);
   }
@@ -560,9 +560,9 @@ import18.HostView<import1.NestedNgForQueriesList> viewFactory_NestedNgForQueries
 final List<Object> styles$StaticSingleQuery = const [];
 
 class ViewStaticSingleQuery0 extends import0.ComponentView<import1.StaticSingleQuery> {
-  late final import1.AnotherDirective _AnotherDirective_0_5;
+  late final import1.AnotherDirective _AnotherDirective_0_6;
   late final ViewContainer _appEl_1;
-  late final NgIf _NgIf_1_9;
+  late final NgIf _NgIf_1_10;
   static import4.ComponentStyles? _componentStyles;
   ViewStaticSingleQuery0(import5.View parentView, int parentIndex) : super(parentView, parentIndex, import6.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -578,27 +578,27 @@ class ViewStaticSingleQuery0 extends import0.ComponentView<import1.StaticSingleQ
     final parentRenderNode = this.initViewRoot();
     final doc = import8.document;
     final _el_0 = import9.appendElement<import8.Element>(doc, parentRenderNode, 'another');
-    this._AnotherDirective_0_5 = import1.AnotherDirective();
+    this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_5);
+      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
     }
     final _anchor_1 = import9.appendAnchor(parentRenderNode);
     this._appEl_1 = ViewContainer(1, null, this, _anchor_1);
-    var _TemplateRef_1_8 = TemplateRef(this._appEl_1, viewFactory_StaticSingleQuery1);
-    this._NgIf_1_9 = NgIf(this._appEl_1, _TemplateRef_1_8);
+    var _TemplateRef_1_9 = TemplateRef(this._appEl_1, viewFactory_StaticSingleQuery1);
+    this._NgIf_1_10 = NgIf(this._appEl_1, _TemplateRef_1_9);
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_anchor_1, this._NgIf_1_9);
+      import10.Inspector.instance.registerDirective(_anchor_1, this._NgIf_1_10);
     }
-    _ctx.another = this._AnotherDirective_0_5;
+    _ctx.another = this._AnotherDirective_0_6;
   }
 
   @override
   void detectChangesInternal() {
     final _ctx = this.ctx;
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.recordInput(this._NgIf_1_9, 'ngIf', _ctx.isVisible);
+      import10.Inspector.instance.recordInput(this._NgIf_1_10, 'ngIf', _ctx.isVisible);
     }
-    this._NgIf_1_9.ngIf = _ctx.isVisible /* REF:asset:goldens/test/templates/queries.dart:3261:3278 */;
+    this._NgIf_1_10.ngIf = _ctx.isVisible /* REF:asset:goldens/test/templates/queries.dart:3423:3440 */;
     this._appEl_1.detectChangesInNestedViews();
   }
 
@@ -633,15 +633,15 @@ ComponentFactory<import1.StaticSingleQuery> createStaticSingleQueryFactory() {
 }
 
 class _ViewStaticSingleQuery1 extends import16.EmbeddedView<import1.StaticSingleQuery> {
-  late final import1.AnotherDirective _AnotherDirective_0_5;
+  late final import1.AnotherDirective _AnotherDirective_0_6;
   _ViewStaticSingleQuery1(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     final doc = import8.document;
     final _el_0 = import7.unsafeCast(doc.createElement('another'));
-    this._AnotherDirective_0_5 = import1.AnotherDirective();
+    this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_5);
+      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
     }
     this.initRootNode(_el_0);
   }
@@ -672,9 +672,9 @@ final List<Object> styles$DynamicSingleQuery = const [];
 class ViewDynamicSingleQuery0 extends import0.ComponentView<import1.DynamicSingleQuery> {
   bool _viewQuery_AnotherDirective_0_isDirty = true;
   late final ViewContainer _appEl_0;
-  late final NgIf _NgIf_0_9;
-  late final import1.AnotherDirective _AnotherDirective_1_5;
-  late final import1.AnotherDirective _AnotherDirective_2_5;
+  late final NgIf _NgIf_0_10;
+  late final import1.AnotherDirective _AnotherDirective_1_6;
+  late final import1.AnotherDirective _AnotherDirective_2_6;
   static import4.ComponentStyles? _componentStyles;
   ViewDynamicSingleQuery0(import5.View parentView, int parentIndex) : super(parentView, parentIndex, import6.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -689,21 +689,21 @@ class ViewDynamicSingleQuery0 extends import0.ComponentView<import1.DynamicSingl
     final parentRenderNode = this.initViewRoot();
     final _anchor_0 = import9.appendAnchor(parentRenderNode);
     this._appEl_0 = ViewContainer(0, null, this, _anchor_0);
-    var _TemplateRef_0_8 = TemplateRef(this._appEl_0, viewFactory_DynamicSingleQuery1);
-    this._NgIf_0_9 = NgIf(this._appEl_0, _TemplateRef_0_8);
+    var _TemplateRef_0_9 = TemplateRef(this._appEl_0, viewFactory_DynamicSingleQuery1);
+    this._NgIf_0_10 = NgIf(this._appEl_0, _TemplateRef_0_9);
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_anchor_0, this._NgIf_0_9);
+      import10.Inspector.instance.registerDirective(_anchor_0, this._NgIf_0_10);
     }
     final doc = import8.document;
     final _el_1 = import9.appendElement<import8.Element>(doc, parentRenderNode, 'another');
-    this._AnotherDirective_1_5 = import1.AnotherDirective();
+    this._AnotherDirective_1_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_1, this._AnotherDirective_1_5);
+      import10.Inspector.instance.registerDirective(_el_1, this._AnotherDirective_1_6);
     }
     final _el_2 = import9.appendElement<import8.Element>(doc, parentRenderNode, 'another');
-    this._AnotherDirective_2_5 = import1.AnotherDirective();
+    this._AnotherDirective_2_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_2, this._AnotherDirective_2_5);
+      import10.Inspector.instance.registerDirective(_el_2, this._AnotherDirective_2_6);
     }
   }
 
@@ -711,17 +711,17 @@ class ViewDynamicSingleQuery0 extends import0.ComponentView<import1.DynamicSingl
   void detectChangesInternal() {
     final _ctx = this.ctx;
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.recordInput(this._NgIf_0_9, 'ngIf', _ctx.isVisible);
+      import10.Inspector.instance.recordInput(this._NgIf_0_10, 'ngIf', _ctx.isVisible);
     }
-    this._NgIf_0_9.ngIf = _ctx.isVisible /* REF:asset:goldens/test/templates/queries.dart:3705:3722 */;
+    this._NgIf_0_10.ngIf = _ctx.isVisible /* REF:asset:goldens/test/templates/queries.dart:3886:3903 */;
     this._appEl_0.detectChangesInNestedViews();
     if ((!import13.debugThrowIfChanged)) {
       if (this._viewQuery_AnotherDirective_0_isDirty) {
         _ctx.another = [
           ...this._appEl_0.mapNestedViewsWithSingleResult((_ViewDynamicSingleQuery1 nestedView) {
-            return nestedView._AnotherDirective_0_5;
+            return nestedView._AnotherDirective_0_6;
           }),
-          this._AnotherDirective_1_5
+          this._AnotherDirective_1_6
         ].first;
         this._viewQuery_AnotherDirective_0_isDirty = false;
       }
@@ -759,21 +759,21 @@ ComponentFactory<import1.DynamicSingleQuery> createDynamicSingleQueryFactory() {
 }
 
 class _ViewDynamicSingleQuery1 extends import16.EmbeddedView<import1.DynamicSingleQuery> {
-  late final import1.AnotherDirective _AnotherDirective_0_5;
-  late final import1.AnotherDirective _AnotherDirective_1_5;
+  late final import1.AnotherDirective _AnotherDirective_0_6;
+  late final import1.AnotherDirective _AnotherDirective_1_6;
   _ViewDynamicSingleQuery1(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     final doc = import8.document;
     final _el_0 = import7.unsafeCast(doc.createElement('another'));
-    this._AnotherDirective_0_5 = import1.AnotherDirective();
+    this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_5);
+      import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
     }
     final _el_1 = import7.unsafeCast(doc.createElement('another'));
-    this._AnotherDirective_1_5 = import1.AnotherDirective();
+    this._AnotherDirective_1_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
-      import10.Inspector.instance.registerDirective(_el_1, this._AnotherDirective_1_5);
+      import10.Inspector.instance.registerDirective(_el_1, this._AnotherDirective_1_6);
     }
     this.initRootNodesAndSubscriptions(import7.unsafeCast(<Object>[_el_0, _el_1]), null);
   }
@@ -823,7 +823,7 @@ class ViewContentQuery0 extends import0.ComponentView<import1.ContentQuery> {
     final doc = import8.document;
     final _el_0 = import9.appendDiv(doc, parentRenderNode);
     this.project(_el_0, 0);
-    _ctx.header = _el_0;
+    _ctx.header = import7.unsafeCast(_el_0);
   }
 
   static void _debugClearComponentStyles() {
@@ -872,7 +872,7 @@ final List<Object> styles$ContentHasReference = const [];
 class ViewContentHasReference0 extends import0.ComponentView<import1.ContentHasReference> {
   final import20.TextBinding _textBinding_2 = import20.TextBinding();
   final import20.TextBinding _textBinding_4 = import20.TextBinding();
-  late final import21.NgContentRef _NgContentRef_0_5;
+  late final import21.NgContentRef _NgContentRef_0_6;
   static import4.ComponentStyles? _componentStyles;
   ViewContentHasReference0(import5.View parentView, int parentIndex) : super(parentView, parentIndex, import6.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -887,20 +887,20 @@ class ViewContentHasReference0 extends import0.ComponentView<import1.ContentHasR
     final _ctx = this.ctx;
     final parentRenderNode = this.initViewRoot();
     this.project(parentRenderNode, 0);
-    this._NgContentRef_0_5 = import21.NgContentRef(this, 0);
+    this._NgContentRef_0_6 = import21.NgContentRef(this, 0);
     final _text_1 = import9.appendText(parentRenderNode, ' ');
     parentRenderNode.append(this._textBinding_2.element);
     final _text_3 = import9.appendText(parentRenderNode, ' ');
     parentRenderNode.append(this._textBinding_4.element);
-    _ctx.ref = this._NgContentRef_0_5;
+    _ctx.ref = this._NgContentRef_0_6;
   }
 
   @override
   void detectChangesInternal() {
     final _ctx = this.ctx;
-    final local_foo = this._NgContentRef_0_5;
-    this._textBinding_2.updateText(import22.interpolate0(local_foo.hasContent)) /* REF:asset:goldens/test/templates/queries.dart:4581:4599 */;
-    this._textBinding_4.updateText(import22.interpolate0((_ctx.ref!).hasContent)) /* REF:asset:goldens/test/templates/queries.dart:4604:4623 */;
+    final local_foo = this._NgContentRef_0_6;
+    this._textBinding_2.updateText(import22.interpolate0(local_foo.hasContent)) /* REF:asset:goldens/test/templates/queries.dart:4806:4824 */;
+    this._textBinding_4.updateText(import22.interpolate0((_ctx.ref!).hasContent)) /* REF:asset:goldens/test/templates/queries.dart:4829:4848 */;
   }
 
   static void _debugClearComponentStyles() {

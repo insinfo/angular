@@ -3,194 +3,194 @@
 // **************************************************************************
 
 import 'large_templates.dart';
-import 'package:ngdart/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_dart/src/core/linker/views/component_view.dart' as import0;
 import 'large_templates.dart' as import1;
-import 'package:ngdart/src/core/linker/view_container.dart';
-import 'package:ngdart/src/common/directives/ng_if.dart';
-import 'package:ngdart/src/core/linker/style_encapsulation.dart' as import4;
-import 'package:ngdart/src/core/linker/views/view.dart' as import5;
-import 'package:ngdart/src/meta/change_detection_constants.dart' as import6;
-import 'package:ngdart/src/utilities.dart' as import7;
-import 'dart:html' as import8;
-import 'package:ngdart/src/runtime/dom_helpers.dart' as import9;
-import 'package:ngdart/src/core/linker/template_ref.dart';
-import 'package:ngdart/src/devtools.dart' as import11;
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/linker/views/embedded_view.dart' as import13;
-import 'package:ngdart/src/core/linker/views/render_view.dart' as import14;
-import 'package:ngdart/src/core/linker/views/host_view.dart' as import15;
+import 'package:ngx_dart/src/core/linker/view_container.dart';
+import 'package:ngx_dart/src/common/directives/ng_if.dart';
+import 'package:ngx_dart/src/core/linker/style_encapsulation.dart' as import4;
+import 'package:ngx_dart/src/core/linker/views/view.dart' as import5;
+import 'package:ngx_dart/src/meta/change_detection_constants.dart' as import6;
+import 'package:ngx_dart/src/utilities.dart' as import7;
+import 'package:web/src/dom/dom.dart' as import8;
+import 'package:ngx_dart/src/runtime/dom_helpers.dart' as import9;
+import 'package:ngx_dart/src/core/linker/template_ref.dart';
+import 'package:ngx_dart/src/devtools.dart' as import11;
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/linker/views/embedded_view.dart' as import13;
+import 'package:ngx_dart/src/core/linker/views/render_view.dart' as import14;
+import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import15;
 
 final List<Object> styles$GoldenComponent = const [];
 
 class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent> {
   late final ViewContainer _appEl_0;
-  late final NgIf _NgIf_0_9;
+  late final NgIf _NgIf_0_10;
   late final ViewContainer _appEl_1;
-  late final NgIf _NgIf_1_9;
+  late final NgIf _NgIf_1_10;
   late final ViewContainer _appEl_2;
-  late final NgIf _NgIf_2_9;
+  late final NgIf _NgIf_2_10;
   late final ViewContainer _appEl_3;
-  late final NgIf _NgIf_3_9;
+  late final NgIf _NgIf_3_10;
   late final ViewContainer _appEl_4;
-  late final NgIf _NgIf_4_9;
+  late final NgIf _NgIf_4_10;
   late final ViewContainer _appEl_5;
-  late final NgIf _NgIf_5_9;
+  late final NgIf _NgIf_5_10;
   late final ViewContainer _appEl_6;
-  late final NgIf _NgIf_6_9;
+  late final NgIf _NgIf_6_10;
   late final ViewContainer _appEl_7;
-  late final NgIf _NgIf_7_9;
+  late final NgIf _NgIf_7_10;
   late final ViewContainer _appEl_8;
-  late final NgIf _NgIf_8_9;
+  late final NgIf _NgIf_8_10;
   late final ViewContainer _appEl_9;
-  late final NgIf _NgIf_9_9;
+  late final NgIf _NgIf_9_10;
   late final ViewContainer _appEl_10;
-  late final NgIf _NgIf_10_9;
+  late final NgIf _NgIf_10_10;
   late final ViewContainer _appEl_11;
-  late final NgIf _NgIf_11_9;
+  late final NgIf _NgIf_11_10;
   late final ViewContainer _appEl_12;
-  late final NgIf _NgIf_12_9;
+  late final NgIf _NgIf_12_10;
   late final ViewContainer _appEl_13;
-  late final NgIf _NgIf_13_9;
+  late final NgIf _NgIf_13_10;
   late final ViewContainer _appEl_14;
-  late final NgIf _NgIf_14_9;
+  late final NgIf _NgIf_14_10;
   late final ViewContainer _appEl_15;
-  late final NgIf _NgIf_15_9;
+  late final NgIf _NgIf_15_10;
   late final ViewContainer _appEl_16;
-  late final NgIf _NgIf_16_9;
+  late final NgIf _NgIf_16_10;
   late final ViewContainer _appEl_17;
-  late final NgIf _NgIf_17_9;
+  late final NgIf _NgIf_17_10;
   late final ViewContainer _appEl_18;
-  late final NgIf _NgIf_18_9;
+  late final NgIf _NgIf_18_10;
   late final ViewContainer _appEl_19;
-  late final NgIf _NgIf_19_9;
+  late final NgIf _NgIf_19_10;
   late final ViewContainer _appEl_20;
-  late final NgIf _NgIf_20_9;
+  late final NgIf _NgIf_20_10;
   late final ViewContainer _appEl_21;
-  late final NgIf _NgIf_21_9;
+  late final NgIf _NgIf_21_10;
   late final ViewContainer _appEl_22;
-  late final NgIf _NgIf_22_9;
+  late final NgIf _NgIf_22_10;
   late final ViewContainer _appEl_23;
-  late final NgIf _NgIf_23_9;
+  late final NgIf _NgIf_23_10;
   late final ViewContainer _appEl_24;
-  late final NgIf _NgIf_24_9;
+  late final NgIf _NgIf_24_10;
   late final ViewContainer _appEl_25;
-  late final NgIf _NgIf_25_9;
+  late final NgIf _NgIf_25_10;
   late final ViewContainer _appEl_26;
-  late final NgIf _NgIf_26_9;
+  late final NgIf _NgIf_26_10;
   late final ViewContainer _appEl_27;
-  late final NgIf _NgIf_27_9;
+  late final NgIf _NgIf_27_10;
   late final ViewContainer _appEl_28;
-  late final NgIf _NgIf_28_9;
+  late final NgIf _NgIf_28_10;
   late final ViewContainer _appEl_29;
-  late final NgIf _NgIf_29_9;
+  late final NgIf _NgIf_29_10;
   late final ViewContainer _appEl_30;
-  late final NgIf _NgIf_30_9;
+  late final NgIf _NgIf_30_10;
   late final ViewContainer _appEl_31;
-  late final NgIf _NgIf_31_9;
+  late final NgIf _NgIf_31_10;
   late final ViewContainer _appEl_32;
-  late final NgIf _NgIf_32_9;
+  late final NgIf _NgIf_32_10;
   late final ViewContainer _appEl_33;
-  late final NgIf _NgIf_33_9;
+  late final NgIf _NgIf_33_10;
   late final ViewContainer _appEl_34;
-  late final NgIf _NgIf_34_9;
+  late final NgIf _NgIf_34_10;
   late final ViewContainer _appEl_35;
-  late final NgIf _NgIf_35_9;
+  late final NgIf _NgIf_35_10;
   late final ViewContainer _appEl_36;
-  late final NgIf _NgIf_36_9;
+  late final NgIf _NgIf_36_10;
   late final ViewContainer _appEl_37;
-  late final NgIf _NgIf_37_9;
+  late final NgIf _NgIf_37_10;
   late final ViewContainer _appEl_38;
-  late final NgIf _NgIf_38_9;
+  late final NgIf _NgIf_38_10;
   late final ViewContainer _appEl_39;
-  late final NgIf _NgIf_39_9;
+  late final NgIf _NgIf_39_10;
   late final ViewContainer _appEl_40;
-  late final NgIf _NgIf_40_9;
+  late final NgIf _NgIf_40_10;
   late final ViewContainer _appEl_41;
-  late final NgIf _NgIf_41_9;
+  late final NgIf _NgIf_41_10;
   late final ViewContainer _appEl_42;
-  late final NgIf _NgIf_42_9;
+  late final NgIf _NgIf_42_10;
   late final ViewContainer _appEl_43;
-  late final NgIf _NgIf_43_9;
+  late final NgIf _NgIf_43_10;
   late final ViewContainer _appEl_44;
-  late final NgIf _NgIf_44_9;
+  late final NgIf _NgIf_44_10;
   late final ViewContainer _appEl_45;
-  late final NgIf _NgIf_45_9;
+  late final NgIf _NgIf_45_10;
   late final ViewContainer _appEl_46;
-  late final NgIf _NgIf_46_9;
+  late final NgIf _NgIf_46_10;
   late final ViewContainer _appEl_47;
-  late final NgIf _NgIf_47_9;
+  late final NgIf _NgIf_47_10;
   late final ViewContainer _appEl_48;
-  late final NgIf _NgIf_48_9;
+  late final NgIf _NgIf_48_10;
   late final ViewContainer _appEl_49;
-  late final NgIf _NgIf_49_9;
+  late final NgIf _NgIf_49_10;
   late final ViewContainer _appEl_50;
-  late final NgIf _NgIf_50_9;
+  late final NgIf _NgIf_50_10;
   late final ViewContainer _appEl_51;
-  late final NgIf _NgIf_51_9;
+  late final NgIf _NgIf_51_10;
   late final ViewContainer _appEl_52;
-  late final NgIf _NgIf_52_9;
+  late final NgIf _NgIf_52_10;
   late final ViewContainer _appEl_53;
-  late final NgIf _NgIf_53_9;
+  late final NgIf _NgIf_53_10;
   late final ViewContainer _appEl_54;
-  late final NgIf _NgIf_54_9;
+  late final NgIf _NgIf_54_10;
   late final ViewContainer _appEl_55;
-  late final NgIf _NgIf_55_9;
+  late final NgIf _NgIf_55_10;
   late final ViewContainer _appEl_56;
-  late final NgIf _NgIf_56_9;
+  late final NgIf _NgIf_56_10;
   late final ViewContainer _appEl_57;
-  late final NgIf _NgIf_57_9;
+  late final NgIf _NgIf_57_10;
   late final ViewContainer _appEl_58;
-  late final NgIf _NgIf_58_9;
+  late final NgIf _NgIf_58_10;
   late final ViewContainer _appEl_59;
-  late final NgIf _NgIf_59_9;
+  late final NgIf _NgIf_59_10;
   late final ViewContainer _appEl_60;
-  late final NgIf _NgIf_60_9;
+  late final NgIf _NgIf_60_10;
   late final ViewContainer _appEl_61;
-  late final NgIf _NgIf_61_9;
+  late final NgIf _NgIf_61_10;
   late final ViewContainer _appEl_62;
-  late final NgIf _NgIf_62_9;
+  late final NgIf _NgIf_62_10;
   late final ViewContainer _appEl_63;
-  late final NgIf _NgIf_63_9;
+  late final NgIf _NgIf_63_10;
   late final ViewContainer _appEl_64;
-  late final NgIf _NgIf_64_9;
+  late final NgIf _NgIf_64_10;
   late final ViewContainer _appEl_65;
-  late final NgIf _NgIf_65_9;
+  late final NgIf _NgIf_65_10;
   late final ViewContainer _appEl_66;
-  late final NgIf _NgIf_66_9;
+  late final NgIf _NgIf_66_10;
   late final ViewContainer _appEl_67;
-  late final NgIf _NgIf_67_9;
+  late final NgIf _NgIf_67_10;
   late final ViewContainer _appEl_68;
-  late final NgIf _NgIf_68_9;
+  late final NgIf _NgIf_68_10;
   late final ViewContainer _appEl_69;
-  late final NgIf _NgIf_69_9;
+  late final NgIf _NgIf_69_10;
   late final ViewContainer _appEl_70;
-  late final NgIf _NgIf_70_9;
+  late final NgIf _NgIf_70_10;
   late final ViewContainer _appEl_71;
-  late final NgIf _NgIf_71_9;
+  late final NgIf _NgIf_71_10;
   late final ViewContainer _appEl_72;
-  late final NgIf _NgIf_72_9;
+  late final NgIf _NgIf_72_10;
   late final ViewContainer _appEl_73;
-  late final NgIf _NgIf_73_9;
+  late final NgIf _NgIf_73_10;
   late final ViewContainer _appEl_74;
-  late final NgIf _NgIf_74_9;
+  late final NgIf _NgIf_74_10;
   late final ViewContainer _appEl_75;
-  late final NgIf _NgIf_75_9;
+  late final NgIf _NgIf_75_10;
   late final ViewContainer _appEl_76;
-  late final NgIf _NgIf_76_9;
+  late final NgIf _NgIf_76_10;
   late final ViewContainer _appEl_77;
-  late final NgIf _NgIf_77_9;
+  late final NgIf _NgIf_77_10;
   late final ViewContainer _appEl_78;
-  late final NgIf _NgIf_78_9;
+  late final NgIf _NgIf_78_10;
   late final ViewContainer _appEl_79;
-  late final NgIf _NgIf_79_9;
+  late final NgIf _NgIf_79_10;
   late final ViewContainer _appEl_80;
-  late final NgIf _NgIf_80_9;
+  late final NgIf _NgIf_80_10;
   late final ViewContainer _appEl_81;
-  late final NgIf _NgIf_81_9;
+  late final NgIf _NgIf_81_10;
   late final ViewContainer _appEl_82;
-  late final NgIf _NgIf_82_9;
+  late final NgIf _NgIf_82_10;
   late final ViewContainer _appEl_83;
-  late final NgIf _NgIf_83_9;
+  late final NgIf _NgIf_83_10;
   static import4.ComponentStyles? _componentStyles;
   ViewGoldenComponent0(import5.View parentView, int parentIndex) : super(parentView, parentIndex, import6.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -205,591 +205,591 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     final parentRenderNode = this.initViewRoot();
     final _anchor_0 = import9.appendAnchor(parentRenderNode);
     this._appEl_0 = ViewContainer(0, null, this, _anchor_0);
-    var _TemplateRef_0_8 = TemplateRef(this._appEl_0, viewFactory_GoldenComponent1);
-    this._NgIf_0_9 = NgIf(this._appEl_0, _TemplateRef_0_8);
+    var _TemplateRef_0_9 = TemplateRef(this._appEl_0, viewFactory_GoldenComponent1);
+    this._NgIf_0_10 = NgIf(this._appEl_0, _TemplateRef_0_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_0, this._NgIf_0_9);
+      import11.Inspector.instance.registerDirective(_anchor_0, this._NgIf_0_10);
     }
     final _anchor_1 = import9.appendAnchor(parentRenderNode);
     this._appEl_1 = ViewContainer(1, null, this, _anchor_1);
-    var _TemplateRef_1_8 = TemplateRef(this._appEl_1, viewFactory_GoldenComponent2);
-    this._NgIf_1_9 = NgIf(this._appEl_1, _TemplateRef_1_8);
+    var _TemplateRef_1_9 = TemplateRef(this._appEl_1, viewFactory_GoldenComponent2);
+    this._NgIf_1_10 = NgIf(this._appEl_1, _TemplateRef_1_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_1, this._NgIf_1_9);
+      import11.Inspector.instance.registerDirective(_anchor_1, this._NgIf_1_10);
     }
     final _anchor_2 = import9.appendAnchor(parentRenderNode);
     this._appEl_2 = ViewContainer(2, null, this, _anchor_2);
-    var _TemplateRef_2_8 = TemplateRef(this._appEl_2, viewFactory_GoldenComponent3);
-    this._NgIf_2_9 = NgIf(this._appEl_2, _TemplateRef_2_8);
+    var _TemplateRef_2_9 = TemplateRef(this._appEl_2, viewFactory_GoldenComponent3);
+    this._NgIf_2_10 = NgIf(this._appEl_2, _TemplateRef_2_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_2, this._NgIf_2_9);
+      import11.Inspector.instance.registerDirective(_anchor_2, this._NgIf_2_10);
     }
     final _anchor_3 = import9.appendAnchor(parentRenderNode);
     this._appEl_3 = ViewContainer(3, null, this, _anchor_3);
-    var _TemplateRef_3_8 = TemplateRef(this._appEl_3, viewFactory_GoldenComponent4);
-    this._NgIf_3_9 = NgIf(this._appEl_3, _TemplateRef_3_8);
+    var _TemplateRef_3_9 = TemplateRef(this._appEl_3, viewFactory_GoldenComponent4);
+    this._NgIf_3_10 = NgIf(this._appEl_3, _TemplateRef_3_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_3, this._NgIf_3_9);
+      import11.Inspector.instance.registerDirective(_anchor_3, this._NgIf_3_10);
     }
     final _anchor_4 = import9.appendAnchor(parentRenderNode);
     this._appEl_4 = ViewContainer(4, null, this, _anchor_4);
-    var _TemplateRef_4_8 = TemplateRef(this._appEl_4, viewFactory_GoldenComponent5);
-    this._NgIf_4_9 = NgIf(this._appEl_4, _TemplateRef_4_8);
+    var _TemplateRef_4_9 = TemplateRef(this._appEl_4, viewFactory_GoldenComponent5);
+    this._NgIf_4_10 = NgIf(this._appEl_4, _TemplateRef_4_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_4, this._NgIf_4_9);
+      import11.Inspector.instance.registerDirective(_anchor_4, this._NgIf_4_10);
     }
     final _anchor_5 = import9.appendAnchor(parentRenderNode);
     this._appEl_5 = ViewContainer(5, null, this, _anchor_5);
-    var _TemplateRef_5_8 = TemplateRef(this._appEl_5, viewFactory_GoldenComponent6);
-    this._NgIf_5_9 = NgIf(this._appEl_5, _TemplateRef_5_8);
+    var _TemplateRef_5_9 = TemplateRef(this._appEl_5, viewFactory_GoldenComponent6);
+    this._NgIf_5_10 = NgIf(this._appEl_5, _TemplateRef_5_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_5, this._NgIf_5_9);
+      import11.Inspector.instance.registerDirective(_anchor_5, this._NgIf_5_10);
     }
     final _anchor_6 = import9.appendAnchor(parentRenderNode);
     this._appEl_6 = ViewContainer(6, null, this, _anchor_6);
-    var _TemplateRef_6_8 = TemplateRef(this._appEl_6, viewFactory_GoldenComponent7);
-    this._NgIf_6_9 = NgIf(this._appEl_6, _TemplateRef_6_8);
+    var _TemplateRef_6_9 = TemplateRef(this._appEl_6, viewFactory_GoldenComponent7);
+    this._NgIf_6_10 = NgIf(this._appEl_6, _TemplateRef_6_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_6, this._NgIf_6_9);
+      import11.Inspector.instance.registerDirective(_anchor_6, this._NgIf_6_10);
     }
     final _anchor_7 = import9.appendAnchor(parentRenderNode);
     this._appEl_7 = ViewContainer(7, null, this, _anchor_7);
-    var _TemplateRef_7_8 = TemplateRef(this._appEl_7, viewFactory_GoldenComponent8);
-    this._NgIf_7_9 = NgIf(this._appEl_7, _TemplateRef_7_8);
+    var _TemplateRef_7_9 = TemplateRef(this._appEl_7, viewFactory_GoldenComponent8);
+    this._NgIf_7_10 = NgIf(this._appEl_7, _TemplateRef_7_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_7, this._NgIf_7_9);
+      import11.Inspector.instance.registerDirective(_anchor_7, this._NgIf_7_10);
     }
     final _anchor_8 = import9.appendAnchor(parentRenderNode);
     this._appEl_8 = ViewContainer(8, null, this, _anchor_8);
-    var _TemplateRef_8_8 = TemplateRef(this._appEl_8, viewFactory_GoldenComponent9);
-    this._NgIf_8_9 = NgIf(this._appEl_8, _TemplateRef_8_8);
+    var _TemplateRef_8_9 = TemplateRef(this._appEl_8, viewFactory_GoldenComponent9);
+    this._NgIf_8_10 = NgIf(this._appEl_8, _TemplateRef_8_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_8, this._NgIf_8_9);
+      import11.Inspector.instance.registerDirective(_anchor_8, this._NgIf_8_10);
     }
     final _anchor_9 = import9.appendAnchor(parentRenderNode);
     this._appEl_9 = ViewContainer(9, null, this, _anchor_9);
-    var _TemplateRef_9_8 = TemplateRef(this._appEl_9, viewFactory_GoldenComponent10);
-    this._NgIf_9_9 = NgIf(this._appEl_9, _TemplateRef_9_8);
+    var _TemplateRef_9_9 = TemplateRef(this._appEl_9, viewFactory_GoldenComponent10);
+    this._NgIf_9_10 = NgIf(this._appEl_9, _TemplateRef_9_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_9, this._NgIf_9_9);
+      import11.Inspector.instance.registerDirective(_anchor_9, this._NgIf_9_10);
     }
     final _anchor_10 = import9.appendAnchor(parentRenderNode);
     this._appEl_10 = ViewContainer(10, null, this, _anchor_10);
-    var _TemplateRef_10_8 = TemplateRef(this._appEl_10, viewFactory_GoldenComponent11);
-    this._NgIf_10_9 = NgIf(this._appEl_10, _TemplateRef_10_8);
+    var _TemplateRef_10_9 = TemplateRef(this._appEl_10, viewFactory_GoldenComponent11);
+    this._NgIf_10_10 = NgIf(this._appEl_10, _TemplateRef_10_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_10, this._NgIf_10_9);
+      import11.Inspector.instance.registerDirective(_anchor_10, this._NgIf_10_10);
     }
     final _anchor_11 = import9.appendAnchor(parentRenderNode);
     this._appEl_11 = ViewContainer(11, null, this, _anchor_11);
-    var _TemplateRef_11_8 = TemplateRef(this._appEl_11, viewFactory_GoldenComponent12);
-    this._NgIf_11_9 = NgIf(this._appEl_11, _TemplateRef_11_8);
+    var _TemplateRef_11_9 = TemplateRef(this._appEl_11, viewFactory_GoldenComponent12);
+    this._NgIf_11_10 = NgIf(this._appEl_11, _TemplateRef_11_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_11, this._NgIf_11_9);
+      import11.Inspector.instance.registerDirective(_anchor_11, this._NgIf_11_10);
     }
     final _anchor_12 = import9.appendAnchor(parentRenderNode);
     this._appEl_12 = ViewContainer(12, null, this, _anchor_12);
-    var _TemplateRef_12_8 = TemplateRef(this._appEl_12, viewFactory_GoldenComponent13);
-    this._NgIf_12_9 = NgIf(this._appEl_12, _TemplateRef_12_8);
+    var _TemplateRef_12_9 = TemplateRef(this._appEl_12, viewFactory_GoldenComponent13);
+    this._NgIf_12_10 = NgIf(this._appEl_12, _TemplateRef_12_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_12, this._NgIf_12_9);
+      import11.Inspector.instance.registerDirective(_anchor_12, this._NgIf_12_10);
     }
     final _anchor_13 = import9.appendAnchor(parentRenderNode);
     this._appEl_13 = ViewContainer(13, null, this, _anchor_13);
-    var _TemplateRef_13_8 = TemplateRef(this._appEl_13, viewFactory_GoldenComponent14);
-    this._NgIf_13_9 = NgIf(this._appEl_13, _TemplateRef_13_8);
+    var _TemplateRef_13_9 = TemplateRef(this._appEl_13, viewFactory_GoldenComponent14);
+    this._NgIf_13_10 = NgIf(this._appEl_13, _TemplateRef_13_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_13, this._NgIf_13_9);
+      import11.Inspector.instance.registerDirective(_anchor_13, this._NgIf_13_10);
     }
     final _anchor_14 = import9.appendAnchor(parentRenderNode);
     this._appEl_14 = ViewContainer(14, null, this, _anchor_14);
-    var _TemplateRef_14_8 = TemplateRef(this._appEl_14, viewFactory_GoldenComponent15);
-    this._NgIf_14_9 = NgIf(this._appEl_14, _TemplateRef_14_8);
+    var _TemplateRef_14_9 = TemplateRef(this._appEl_14, viewFactory_GoldenComponent15);
+    this._NgIf_14_10 = NgIf(this._appEl_14, _TemplateRef_14_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_14, this._NgIf_14_9);
+      import11.Inspector.instance.registerDirective(_anchor_14, this._NgIf_14_10);
     }
     final _anchor_15 = import9.appendAnchor(parentRenderNode);
     this._appEl_15 = ViewContainer(15, null, this, _anchor_15);
-    var _TemplateRef_15_8 = TemplateRef(this._appEl_15, viewFactory_GoldenComponent16);
-    this._NgIf_15_9 = NgIf(this._appEl_15, _TemplateRef_15_8);
+    var _TemplateRef_15_9 = TemplateRef(this._appEl_15, viewFactory_GoldenComponent16);
+    this._NgIf_15_10 = NgIf(this._appEl_15, _TemplateRef_15_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_15, this._NgIf_15_9);
+      import11.Inspector.instance.registerDirective(_anchor_15, this._NgIf_15_10);
     }
     final _anchor_16 = import9.appendAnchor(parentRenderNode);
     this._appEl_16 = ViewContainer(16, null, this, _anchor_16);
-    var _TemplateRef_16_8 = TemplateRef(this._appEl_16, viewFactory_GoldenComponent17);
-    this._NgIf_16_9 = NgIf(this._appEl_16, _TemplateRef_16_8);
+    var _TemplateRef_16_9 = TemplateRef(this._appEl_16, viewFactory_GoldenComponent17);
+    this._NgIf_16_10 = NgIf(this._appEl_16, _TemplateRef_16_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_16, this._NgIf_16_9);
+      import11.Inspector.instance.registerDirective(_anchor_16, this._NgIf_16_10);
     }
     final _anchor_17 = import9.appendAnchor(parentRenderNode);
     this._appEl_17 = ViewContainer(17, null, this, _anchor_17);
-    var _TemplateRef_17_8 = TemplateRef(this._appEl_17, viewFactory_GoldenComponent18);
-    this._NgIf_17_9 = NgIf(this._appEl_17, _TemplateRef_17_8);
+    var _TemplateRef_17_9 = TemplateRef(this._appEl_17, viewFactory_GoldenComponent18);
+    this._NgIf_17_10 = NgIf(this._appEl_17, _TemplateRef_17_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_17, this._NgIf_17_9);
+      import11.Inspector.instance.registerDirective(_anchor_17, this._NgIf_17_10);
     }
     final _anchor_18 = import9.appendAnchor(parentRenderNode);
     this._appEl_18 = ViewContainer(18, null, this, _anchor_18);
-    var _TemplateRef_18_8 = TemplateRef(this._appEl_18, viewFactory_GoldenComponent19);
-    this._NgIf_18_9 = NgIf(this._appEl_18, _TemplateRef_18_8);
+    var _TemplateRef_18_9 = TemplateRef(this._appEl_18, viewFactory_GoldenComponent19);
+    this._NgIf_18_10 = NgIf(this._appEl_18, _TemplateRef_18_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_18, this._NgIf_18_9);
+      import11.Inspector.instance.registerDirective(_anchor_18, this._NgIf_18_10);
     }
     final _anchor_19 = import9.appendAnchor(parentRenderNode);
     this._appEl_19 = ViewContainer(19, null, this, _anchor_19);
-    var _TemplateRef_19_8 = TemplateRef(this._appEl_19, viewFactory_GoldenComponent20);
-    this._NgIf_19_9 = NgIf(this._appEl_19, _TemplateRef_19_8);
+    var _TemplateRef_19_9 = TemplateRef(this._appEl_19, viewFactory_GoldenComponent20);
+    this._NgIf_19_10 = NgIf(this._appEl_19, _TemplateRef_19_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_19, this._NgIf_19_9);
+      import11.Inspector.instance.registerDirective(_anchor_19, this._NgIf_19_10);
     }
     final _anchor_20 = import9.appendAnchor(parentRenderNode);
     this._appEl_20 = ViewContainer(20, null, this, _anchor_20);
-    var _TemplateRef_20_8 = TemplateRef(this._appEl_20, viewFactory_GoldenComponent21);
-    this._NgIf_20_9 = NgIf(this._appEl_20, _TemplateRef_20_8);
+    var _TemplateRef_20_9 = TemplateRef(this._appEl_20, viewFactory_GoldenComponent21);
+    this._NgIf_20_10 = NgIf(this._appEl_20, _TemplateRef_20_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_20, this._NgIf_20_9);
+      import11.Inspector.instance.registerDirective(_anchor_20, this._NgIf_20_10);
     }
     final _anchor_21 = import9.appendAnchor(parentRenderNode);
     this._appEl_21 = ViewContainer(21, null, this, _anchor_21);
-    var _TemplateRef_21_8 = TemplateRef(this._appEl_21, viewFactory_GoldenComponent22);
-    this._NgIf_21_9 = NgIf(this._appEl_21, _TemplateRef_21_8);
+    var _TemplateRef_21_9 = TemplateRef(this._appEl_21, viewFactory_GoldenComponent22);
+    this._NgIf_21_10 = NgIf(this._appEl_21, _TemplateRef_21_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_21, this._NgIf_21_9);
+      import11.Inspector.instance.registerDirective(_anchor_21, this._NgIf_21_10);
     }
     final _anchor_22 = import9.appendAnchor(parentRenderNode);
     this._appEl_22 = ViewContainer(22, null, this, _anchor_22);
-    var _TemplateRef_22_8 = TemplateRef(this._appEl_22, viewFactory_GoldenComponent23);
-    this._NgIf_22_9 = NgIf(this._appEl_22, _TemplateRef_22_8);
+    var _TemplateRef_22_9 = TemplateRef(this._appEl_22, viewFactory_GoldenComponent23);
+    this._NgIf_22_10 = NgIf(this._appEl_22, _TemplateRef_22_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_22, this._NgIf_22_9);
+      import11.Inspector.instance.registerDirective(_anchor_22, this._NgIf_22_10);
     }
     final _anchor_23 = import9.appendAnchor(parentRenderNode);
     this._appEl_23 = ViewContainer(23, null, this, _anchor_23);
-    var _TemplateRef_23_8 = TemplateRef(this._appEl_23, viewFactory_GoldenComponent24);
-    this._NgIf_23_9 = NgIf(this._appEl_23, _TemplateRef_23_8);
+    var _TemplateRef_23_9 = TemplateRef(this._appEl_23, viewFactory_GoldenComponent24);
+    this._NgIf_23_10 = NgIf(this._appEl_23, _TemplateRef_23_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_23, this._NgIf_23_9);
+      import11.Inspector.instance.registerDirective(_anchor_23, this._NgIf_23_10);
     }
     final _anchor_24 = import9.appendAnchor(parentRenderNode);
     this._appEl_24 = ViewContainer(24, null, this, _anchor_24);
-    var _TemplateRef_24_8 = TemplateRef(this._appEl_24, viewFactory_GoldenComponent25);
-    this._NgIf_24_9 = NgIf(this._appEl_24, _TemplateRef_24_8);
+    var _TemplateRef_24_9 = TemplateRef(this._appEl_24, viewFactory_GoldenComponent25);
+    this._NgIf_24_10 = NgIf(this._appEl_24, _TemplateRef_24_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_24, this._NgIf_24_9);
+      import11.Inspector.instance.registerDirective(_anchor_24, this._NgIf_24_10);
     }
     final _anchor_25 = import9.appendAnchor(parentRenderNode);
     this._appEl_25 = ViewContainer(25, null, this, _anchor_25);
-    var _TemplateRef_25_8 = TemplateRef(this._appEl_25, viewFactory_GoldenComponent26);
-    this._NgIf_25_9 = NgIf(this._appEl_25, _TemplateRef_25_8);
+    var _TemplateRef_25_9 = TemplateRef(this._appEl_25, viewFactory_GoldenComponent26);
+    this._NgIf_25_10 = NgIf(this._appEl_25, _TemplateRef_25_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_25, this._NgIf_25_9);
+      import11.Inspector.instance.registerDirective(_anchor_25, this._NgIf_25_10);
     }
     final _anchor_26 = import9.appendAnchor(parentRenderNode);
     this._appEl_26 = ViewContainer(26, null, this, _anchor_26);
-    var _TemplateRef_26_8 = TemplateRef(this._appEl_26, viewFactory_GoldenComponent27);
-    this._NgIf_26_9 = NgIf(this._appEl_26, _TemplateRef_26_8);
+    var _TemplateRef_26_9 = TemplateRef(this._appEl_26, viewFactory_GoldenComponent27);
+    this._NgIf_26_10 = NgIf(this._appEl_26, _TemplateRef_26_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_26, this._NgIf_26_9);
+      import11.Inspector.instance.registerDirective(_anchor_26, this._NgIf_26_10);
     }
     final _anchor_27 = import9.appendAnchor(parentRenderNode);
     this._appEl_27 = ViewContainer(27, null, this, _anchor_27);
-    var _TemplateRef_27_8 = TemplateRef(this._appEl_27, viewFactory_GoldenComponent28);
-    this._NgIf_27_9 = NgIf(this._appEl_27, _TemplateRef_27_8);
+    var _TemplateRef_27_9 = TemplateRef(this._appEl_27, viewFactory_GoldenComponent28);
+    this._NgIf_27_10 = NgIf(this._appEl_27, _TemplateRef_27_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_27, this._NgIf_27_9);
+      import11.Inspector.instance.registerDirective(_anchor_27, this._NgIf_27_10);
     }
     final _anchor_28 = import9.appendAnchor(parentRenderNode);
     this._appEl_28 = ViewContainer(28, null, this, _anchor_28);
-    var _TemplateRef_28_8 = TemplateRef(this._appEl_28, viewFactory_GoldenComponent29);
-    this._NgIf_28_9 = NgIf(this._appEl_28, _TemplateRef_28_8);
+    var _TemplateRef_28_9 = TemplateRef(this._appEl_28, viewFactory_GoldenComponent29);
+    this._NgIf_28_10 = NgIf(this._appEl_28, _TemplateRef_28_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_28, this._NgIf_28_9);
+      import11.Inspector.instance.registerDirective(_anchor_28, this._NgIf_28_10);
     }
     final _anchor_29 = import9.appendAnchor(parentRenderNode);
     this._appEl_29 = ViewContainer(29, null, this, _anchor_29);
-    var _TemplateRef_29_8 = TemplateRef(this._appEl_29, viewFactory_GoldenComponent30);
-    this._NgIf_29_9 = NgIf(this._appEl_29, _TemplateRef_29_8);
+    var _TemplateRef_29_9 = TemplateRef(this._appEl_29, viewFactory_GoldenComponent30);
+    this._NgIf_29_10 = NgIf(this._appEl_29, _TemplateRef_29_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_29, this._NgIf_29_9);
+      import11.Inspector.instance.registerDirective(_anchor_29, this._NgIf_29_10);
     }
     final _anchor_30 = import9.appendAnchor(parentRenderNode);
     this._appEl_30 = ViewContainer(30, null, this, _anchor_30);
-    var _TemplateRef_30_8 = TemplateRef(this._appEl_30, viewFactory_GoldenComponent31);
-    this._NgIf_30_9 = NgIf(this._appEl_30, _TemplateRef_30_8);
+    var _TemplateRef_30_9 = TemplateRef(this._appEl_30, viewFactory_GoldenComponent31);
+    this._NgIf_30_10 = NgIf(this._appEl_30, _TemplateRef_30_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_30, this._NgIf_30_9);
+      import11.Inspector.instance.registerDirective(_anchor_30, this._NgIf_30_10);
     }
     final _anchor_31 = import9.appendAnchor(parentRenderNode);
     this._appEl_31 = ViewContainer(31, null, this, _anchor_31);
-    var _TemplateRef_31_8 = TemplateRef(this._appEl_31, viewFactory_GoldenComponent32);
-    this._NgIf_31_9 = NgIf(this._appEl_31, _TemplateRef_31_8);
+    var _TemplateRef_31_9 = TemplateRef(this._appEl_31, viewFactory_GoldenComponent32);
+    this._NgIf_31_10 = NgIf(this._appEl_31, _TemplateRef_31_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_31, this._NgIf_31_9);
+      import11.Inspector.instance.registerDirective(_anchor_31, this._NgIf_31_10);
     }
     final _anchor_32 = import9.appendAnchor(parentRenderNode);
     this._appEl_32 = ViewContainer(32, null, this, _anchor_32);
-    var _TemplateRef_32_8 = TemplateRef(this._appEl_32, viewFactory_GoldenComponent33);
-    this._NgIf_32_9 = NgIf(this._appEl_32, _TemplateRef_32_8);
+    var _TemplateRef_32_9 = TemplateRef(this._appEl_32, viewFactory_GoldenComponent33);
+    this._NgIf_32_10 = NgIf(this._appEl_32, _TemplateRef_32_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_32, this._NgIf_32_9);
+      import11.Inspector.instance.registerDirective(_anchor_32, this._NgIf_32_10);
     }
     final _anchor_33 = import9.appendAnchor(parentRenderNode);
     this._appEl_33 = ViewContainer(33, null, this, _anchor_33);
-    var _TemplateRef_33_8 = TemplateRef(this._appEl_33, viewFactory_GoldenComponent34);
-    this._NgIf_33_9 = NgIf(this._appEl_33, _TemplateRef_33_8);
+    var _TemplateRef_33_9 = TemplateRef(this._appEl_33, viewFactory_GoldenComponent34);
+    this._NgIf_33_10 = NgIf(this._appEl_33, _TemplateRef_33_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_33, this._NgIf_33_9);
+      import11.Inspector.instance.registerDirective(_anchor_33, this._NgIf_33_10);
     }
     final _anchor_34 = import9.appendAnchor(parentRenderNode);
     this._appEl_34 = ViewContainer(34, null, this, _anchor_34);
-    var _TemplateRef_34_8 = TemplateRef(this._appEl_34, viewFactory_GoldenComponent35);
-    this._NgIf_34_9 = NgIf(this._appEl_34, _TemplateRef_34_8);
+    var _TemplateRef_34_9 = TemplateRef(this._appEl_34, viewFactory_GoldenComponent35);
+    this._NgIf_34_10 = NgIf(this._appEl_34, _TemplateRef_34_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_34, this._NgIf_34_9);
+      import11.Inspector.instance.registerDirective(_anchor_34, this._NgIf_34_10);
     }
     final _anchor_35 = import9.appendAnchor(parentRenderNode);
     this._appEl_35 = ViewContainer(35, null, this, _anchor_35);
-    var _TemplateRef_35_8 = TemplateRef(this._appEl_35, viewFactory_GoldenComponent36);
-    this._NgIf_35_9 = NgIf(this._appEl_35, _TemplateRef_35_8);
+    var _TemplateRef_35_9 = TemplateRef(this._appEl_35, viewFactory_GoldenComponent36);
+    this._NgIf_35_10 = NgIf(this._appEl_35, _TemplateRef_35_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_35, this._NgIf_35_9);
+      import11.Inspector.instance.registerDirective(_anchor_35, this._NgIf_35_10);
     }
     final _anchor_36 = import9.appendAnchor(parentRenderNode);
     this._appEl_36 = ViewContainer(36, null, this, _anchor_36);
-    var _TemplateRef_36_8 = TemplateRef(this._appEl_36, viewFactory_GoldenComponent37);
-    this._NgIf_36_9 = NgIf(this._appEl_36, _TemplateRef_36_8);
+    var _TemplateRef_36_9 = TemplateRef(this._appEl_36, viewFactory_GoldenComponent37);
+    this._NgIf_36_10 = NgIf(this._appEl_36, _TemplateRef_36_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_36, this._NgIf_36_9);
+      import11.Inspector.instance.registerDirective(_anchor_36, this._NgIf_36_10);
     }
     final _anchor_37 = import9.appendAnchor(parentRenderNode);
     this._appEl_37 = ViewContainer(37, null, this, _anchor_37);
-    var _TemplateRef_37_8 = TemplateRef(this._appEl_37, viewFactory_GoldenComponent38);
-    this._NgIf_37_9 = NgIf(this._appEl_37, _TemplateRef_37_8);
+    var _TemplateRef_37_9 = TemplateRef(this._appEl_37, viewFactory_GoldenComponent38);
+    this._NgIf_37_10 = NgIf(this._appEl_37, _TemplateRef_37_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_37, this._NgIf_37_9);
+      import11.Inspector.instance.registerDirective(_anchor_37, this._NgIf_37_10);
     }
     final _anchor_38 = import9.appendAnchor(parentRenderNode);
     this._appEl_38 = ViewContainer(38, null, this, _anchor_38);
-    var _TemplateRef_38_8 = TemplateRef(this._appEl_38, viewFactory_GoldenComponent39);
-    this._NgIf_38_9 = NgIf(this._appEl_38, _TemplateRef_38_8);
+    var _TemplateRef_38_9 = TemplateRef(this._appEl_38, viewFactory_GoldenComponent39);
+    this._NgIf_38_10 = NgIf(this._appEl_38, _TemplateRef_38_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_38, this._NgIf_38_9);
+      import11.Inspector.instance.registerDirective(_anchor_38, this._NgIf_38_10);
     }
     final _anchor_39 = import9.appendAnchor(parentRenderNode);
     this._appEl_39 = ViewContainer(39, null, this, _anchor_39);
-    var _TemplateRef_39_8 = TemplateRef(this._appEl_39, viewFactory_GoldenComponent40);
-    this._NgIf_39_9 = NgIf(this._appEl_39, _TemplateRef_39_8);
+    var _TemplateRef_39_9 = TemplateRef(this._appEl_39, viewFactory_GoldenComponent40);
+    this._NgIf_39_10 = NgIf(this._appEl_39, _TemplateRef_39_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_39, this._NgIf_39_9);
+      import11.Inspector.instance.registerDirective(_anchor_39, this._NgIf_39_10);
     }
     final _anchor_40 = import9.appendAnchor(parentRenderNode);
     this._appEl_40 = ViewContainer(40, null, this, _anchor_40);
-    var _TemplateRef_40_8 = TemplateRef(this._appEl_40, viewFactory_GoldenComponent41);
-    this._NgIf_40_9 = NgIf(this._appEl_40, _TemplateRef_40_8);
+    var _TemplateRef_40_9 = TemplateRef(this._appEl_40, viewFactory_GoldenComponent41);
+    this._NgIf_40_10 = NgIf(this._appEl_40, _TemplateRef_40_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_40, this._NgIf_40_9);
+      import11.Inspector.instance.registerDirective(_anchor_40, this._NgIf_40_10);
     }
     final _anchor_41 = import9.appendAnchor(parentRenderNode);
     this._appEl_41 = ViewContainer(41, null, this, _anchor_41);
-    var _TemplateRef_41_8 = TemplateRef(this._appEl_41, viewFactory_GoldenComponent42);
-    this._NgIf_41_9 = NgIf(this._appEl_41, _TemplateRef_41_8);
+    var _TemplateRef_41_9 = TemplateRef(this._appEl_41, viewFactory_GoldenComponent42);
+    this._NgIf_41_10 = NgIf(this._appEl_41, _TemplateRef_41_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_41, this._NgIf_41_9);
+      import11.Inspector.instance.registerDirective(_anchor_41, this._NgIf_41_10);
     }
     final _anchor_42 = import9.appendAnchor(parentRenderNode);
     this._appEl_42 = ViewContainer(42, null, this, _anchor_42);
-    var _TemplateRef_42_8 = TemplateRef(this._appEl_42, viewFactory_GoldenComponent43);
-    this._NgIf_42_9 = NgIf(this._appEl_42, _TemplateRef_42_8);
+    var _TemplateRef_42_9 = TemplateRef(this._appEl_42, viewFactory_GoldenComponent43);
+    this._NgIf_42_10 = NgIf(this._appEl_42, _TemplateRef_42_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_42, this._NgIf_42_9);
+      import11.Inspector.instance.registerDirective(_anchor_42, this._NgIf_42_10);
     }
     final _anchor_43 = import9.appendAnchor(parentRenderNode);
     this._appEl_43 = ViewContainer(43, null, this, _anchor_43);
-    var _TemplateRef_43_8 = TemplateRef(this._appEl_43, viewFactory_GoldenComponent44);
-    this._NgIf_43_9 = NgIf(this._appEl_43, _TemplateRef_43_8);
+    var _TemplateRef_43_9 = TemplateRef(this._appEl_43, viewFactory_GoldenComponent44);
+    this._NgIf_43_10 = NgIf(this._appEl_43, _TemplateRef_43_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_43, this._NgIf_43_9);
+      import11.Inspector.instance.registerDirective(_anchor_43, this._NgIf_43_10);
     }
     final _anchor_44 = import9.appendAnchor(parentRenderNode);
     this._appEl_44 = ViewContainer(44, null, this, _anchor_44);
-    var _TemplateRef_44_8 = TemplateRef(this._appEl_44, viewFactory_GoldenComponent45);
-    this._NgIf_44_9 = NgIf(this._appEl_44, _TemplateRef_44_8);
+    var _TemplateRef_44_9 = TemplateRef(this._appEl_44, viewFactory_GoldenComponent45);
+    this._NgIf_44_10 = NgIf(this._appEl_44, _TemplateRef_44_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_44, this._NgIf_44_9);
+      import11.Inspector.instance.registerDirective(_anchor_44, this._NgIf_44_10);
     }
     final _anchor_45 = import9.appendAnchor(parentRenderNode);
     this._appEl_45 = ViewContainer(45, null, this, _anchor_45);
-    var _TemplateRef_45_8 = TemplateRef(this._appEl_45, viewFactory_GoldenComponent46);
-    this._NgIf_45_9 = NgIf(this._appEl_45, _TemplateRef_45_8);
+    var _TemplateRef_45_9 = TemplateRef(this._appEl_45, viewFactory_GoldenComponent46);
+    this._NgIf_45_10 = NgIf(this._appEl_45, _TemplateRef_45_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_45, this._NgIf_45_9);
+      import11.Inspector.instance.registerDirective(_anchor_45, this._NgIf_45_10);
     }
     final _anchor_46 = import9.appendAnchor(parentRenderNode);
     this._appEl_46 = ViewContainer(46, null, this, _anchor_46);
-    var _TemplateRef_46_8 = TemplateRef(this._appEl_46, viewFactory_GoldenComponent47);
-    this._NgIf_46_9 = NgIf(this._appEl_46, _TemplateRef_46_8);
+    var _TemplateRef_46_9 = TemplateRef(this._appEl_46, viewFactory_GoldenComponent47);
+    this._NgIf_46_10 = NgIf(this._appEl_46, _TemplateRef_46_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_46, this._NgIf_46_9);
+      import11.Inspector.instance.registerDirective(_anchor_46, this._NgIf_46_10);
     }
     final _anchor_47 = import9.appendAnchor(parentRenderNode);
     this._appEl_47 = ViewContainer(47, null, this, _anchor_47);
-    var _TemplateRef_47_8 = TemplateRef(this._appEl_47, viewFactory_GoldenComponent48);
-    this._NgIf_47_9 = NgIf(this._appEl_47, _TemplateRef_47_8);
+    var _TemplateRef_47_9 = TemplateRef(this._appEl_47, viewFactory_GoldenComponent48);
+    this._NgIf_47_10 = NgIf(this._appEl_47, _TemplateRef_47_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_47, this._NgIf_47_9);
+      import11.Inspector.instance.registerDirective(_anchor_47, this._NgIf_47_10);
     }
     final _anchor_48 = import9.appendAnchor(parentRenderNode);
     this._appEl_48 = ViewContainer(48, null, this, _anchor_48);
-    var _TemplateRef_48_8 = TemplateRef(this._appEl_48, viewFactory_GoldenComponent49);
-    this._NgIf_48_9 = NgIf(this._appEl_48, _TemplateRef_48_8);
+    var _TemplateRef_48_9 = TemplateRef(this._appEl_48, viewFactory_GoldenComponent49);
+    this._NgIf_48_10 = NgIf(this._appEl_48, _TemplateRef_48_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_48, this._NgIf_48_9);
+      import11.Inspector.instance.registerDirective(_anchor_48, this._NgIf_48_10);
     }
     final _anchor_49 = import9.appendAnchor(parentRenderNode);
     this._appEl_49 = ViewContainer(49, null, this, _anchor_49);
-    var _TemplateRef_49_8 = TemplateRef(this._appEl_49, viewFactory_GoldenComponent50);
-    this._NgIf_49_9 = NgIf(this._appEl_49, _TemplateRef_49_8);
+    var _TemplateRef_49_9 = TemplateRef(this._appEl_49, viewFactory_GoldenComponent50);
+    this._NgIf_49_10 = NgIf(this._appEl_49, _TemplateRef_49_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_49, this._NgIf_49_9);
+      import11.Inspector.instance.registerDirective(_anchor_49, this._NgIf_49_10);
     }
     final _anchor_50 = import9.appendAnchor(parentRenderNode);
     this._appEl_50 = ViewContainer(50, null, this, _anchor_50);
-    var _TemplateRef_50_8 = TemplateRef(this._appEl_50, viewFactory_GoldenComponent51);
-    this._NgIf_50_9 = NgIf(this._appEl_50, _TemplateRef_50_8);
+    var _TemplateRef_50_9 = TemplateRef(this._appEl_50, viewFactory_GoldenComponent51);
+    this._NgIf_50_10 = NgIf(this._appEl_50, _TemplateRef_50_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_50, this._NgIf_50_9);
+      import11.Inspector.instance.registerDirective(_anchor_50, this._NgIf_50_10);
     }
     final _anchor_51 = import9.appendAnchor(parentRenderNode);
     this._appEl_51 = ViewContainer(51, null, this, _anchor_51);
-    var _TemplateRef_51_8 = TemplateRef(this._appEl_51, viewFactory_GoldenComponent52);
-    this._NgIf_51_9 = NgIf(this._appEl_51, _TemplateRef_51_8);
+    var _TemplateRef_51_9 = TemplateRef(this._appEl_51, viewFactory_GoldenComponent52);
+    this._NgIf_51_10 = NgIf(this._appEl_51, _TemplateRef_51_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_51, this._NgIf_51_9);
+      import11.Inspector.instance.registerDirective(_anchor_51, this._NgIf_51_10);
     }
     final _anchor_52 = import9.appendAnchor(parentRenderNode);
     this._appEl_52 = ViewContainer(52, null, this, _anchor_52);
-    var _TemplateRef_52_8 = TemplateRef(this._appEl_52, viewFactory_GoldenComponent53);
-    this._NgIf_52_9 = NgIf(this._appEl_52, _TemplateRef_52_8);
+    var _TemplateRef_52_9 = TemplateRef(this._appEl_52, viewFactory_GoldenComponent53);
+    this._NgIf_52_10 = NgIf(this._appEl_52, _TemplateRef_52_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_52, this._NgIf_52_9);
+      import11.Inspector.instance.registerDirective(_anchor_52, this._NgIf_52_10);
     }
     final _anchor_53 = import9.appendAnchor(parentRenderNode);
     this._appEl_53 = ViewContainer(53, null, this, _anchor_53);
-    var _TemplateRef_53_8 = TemplateRef(this._appEl_53, viewFactory_GoldenComponent54);
-    this._NgIf_53_9 = NgIf(this._appEl_53, _TemplateRef_53_8);
+    var _TemplateRef_53_9 = TemplateRef(this._appEl_53, viewFactory_GoldenComponent54);
+    this._NgIf_53_10 = NgIf(this._appEl_53, _TemplateRef_53_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_53, this._NgIf_53_9);
+      import11.Inspector.instance.registerDirective(_anchor_53, this._NgIf_53_10);
     }
     final _anchor_54 = import9.appendAnchor(parentRenderNode);
     this._appEl_54 = ViewContainer(54, null, this, _anchor_54);
-    var _TemplateRef_54_8 = TemplateRef(this._appEl_54, viewFactory_GoldenComponent55);
-    this._NgIf_54_9 = NgIf(this._appEl_54, _TemplateRef_54_8);
+    var _TemplateRef_54_9 = TemplateRef(this._appEl_54, viewFactory_GoldenComponent55);
+    this._NgIf_54_10 = NgIf(this._appEl_54, _TemplateRef_54_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_54, this._NgIf_54_9);
+      import11.Inspector.instance.registerDirective(_anchor_54, this._NgIf_54_10);
     }
     final _anchor_55 = import9.appendAnchor(parentRenderNode);
     this._appEl_55 = ViewContainer(55, null, this, _anchor_55);
-    var _TemplateRef_55_8 = TemplateRef(this._appEl_55, viewFactory_GoldenComponent56);
-    this._NgIf_55_9 = NgIf(this._appEl_55, _TemplateRef_55_8);
+    var _TemplateRef_55_9 = TemplateRef(this._appEl_55, viewFactory_GoldenComponent56);
+    this._NgIf_55_10 = NgIf(this._appEl_55, _TemplateRef_55_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_55, this._NgIf_55_9);
+      import11.Inspector.instance.registerDirective(_anchor_55, this._NgIf_55_10);
     }
     final _anchor_56 = import9.appendAnchor(parentRenderNode);
     this._appEl_56 = ViewContainer(56, null, this, _anchor_56);
-    var _TemplateRef_56_8 = TemplateRef(this._appEl_56, viewFactory_GoldenComponent57);
-    this._NgIf_56_9 = NgIf(this._appEl_56, _TemplateRef_56_8);
+    var _TemplateRef_56_9 = TemplateRef(this._appEl_56, viewFactory_GoldenComponent57);
+    this._NgIf_56_10 = NgIf(this._appEl_56, _TemplateRef_56_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_56, this._NgIf_56_9);
+      import11.Inspector.instance.registerDirective(_anchor_56, this._NgIf_56_10);
     }
     final _anchor_57 = import9.appendAnchor(parentRenderNode);
     this._appEl_57 = ViewContainer(57, null, this, _anchor_57);
-    var _TemplateRef_57_8 = TemplateRef(this._appEl_57, viewFactory_GoldenComponent58);
-    this._NgIf_57_9 = NgIf(this._appEl_57, _TemplateRef_57_8);
+    var _TemplateRef_57_9 = TemplateRef(this._appEl_57, viewFactory_GoldenComponent58);
+    this._NgIf_57_10 = NgIf(this._appEl_57, _TemplateRef_57_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_57, this._NgIf_57_9);
+      import11.Inspector.instance.registerDirective(_anchor_57, this._NgIf_57_10);
     }
     final _anchor_58 = import9.appendAnchor(parentRenderNode);
     this._appEl_58 = ViewContainer(58, null, this, _anchor_58);
-    var _TemplateRef_58_8 = TemplateRef(this._appEl_58, viewFactory_GoldenComponent59);
-    this._NgIf_58_9 = NgIf(this._appEl_58, _TemplateRef_58_8);
+    var _TemplateRef_58_9 = TemplateRef(this._appEl_58, viewFactory_GoldenComponent59);
+    this._NgIf_58_10 = NgIf(this._appEl_58, _TemplateRef_58_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_58, this._NgIf_58_9);
+      import11.Inspector.instance.registerDirective(_anchor_58, this._NgIf_58_10);
     }
     final _anchor_59 = import9.appendAnchor(parentRenderNode);
     this._appEl_59 = ViewContainer(59, null, this, _anchor_59);
-    var _TemplateRef_59_8 = TemplateRef(this._appEl_59, viewFactory_GoldenComponent60);
-    this._NgIf_59_9 = NgIf(this._appEl_59, _TemplateRef_59_8);
+    var _TemplateRef_59_9 = TemplateRef(this._appEl_59, viewFactory_GoldenComponent60);
+    this._NgIf_59_10 = NgIf(this._appEl_59, _TemplateRef_59_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_59, this._NgIf_59_9);
+      import11.Inspector.instance.registerDirective(_anchor_59, this._NgIf_59_10);
     }
     final _anchor_60 = import9.appendAnchor(parentRenderNode);
     this._appEl_60 = ViewContainer(60, null, this, _anchor_60);
-    var _TemplateRef_60_8 = TemplateRef(this._appEl_60, viewFactory_GoldenComponent61);
-    this._NgIf_60_9 = NgIf(this._appEl_60, _TemplateRef_60_8);
+    var _TemplateRef_60_9 = TemplateRef(this._appEl_60, viewFactory_GoldenComponent61);
+    this._NgIf_60_10 = NgIf(this._appEl_60, _TemplateRef_60_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_60, this._NgIf_60_9);
+      import11.Inspector.instance.registerDirective(_anchor_60, this._NgIf_60_10);
     }
     final _anchor_61 = import9.appendAnchor(parentRenderNode);
     this._appEl_61 = ViewContainer(61, null, this, _anchor_61);
-    var _TemplateRef_61_8 = TemplateRef(this._appEl_61, viewFactory_GoldenComponent62);
-    this._NgIf_61_9 = NgIf(this._appEl_61, _TemplateRef_61_8);
+    var _TemplateRef_61_9 = TemplateRef(this._appEl_61, viewFactory_GoldenComponent62);
+    this._NgIf_61_10 = NgIf(this._appEl_61, _TemplateRef_61_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_61, this._NgIf_61_9);
+      import11.Inspector.instance.registerDirective(_anchor_61, this._NgIf_61_10);
     }
     final _anchor_62 = import9.appendAnchor(parentRenderNode);
     this._appEl_62 = ViewContainer(62, null, this, _anchor_62);
-    var _TemplateRef_62_8 = TemplateRef(this._appEl_62, viewFactory_GoldenComponent63);
-    this._NgIf_62_9 = NgIf(this._appEl_62, _TemplateRef_62_8);
+    var _TemplateRef_62_9 = TemplateRef(this._appEl_62, viewFactory_GoldenComponent63);
+    this._NgIf_62_10 = NgIf(this._appEl_62, _TemplateRef_62_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_62, this._NgIf_62_9);
+      import11.Inspector.instance.registerDirective(_anchor_62, this._NgIf_62_10);
     }
     final _anchor_63 = import9.appendAnchor(parentRenderNode);
     this._appEl_63 = ViewContainer(63, null, this, _anchor_63);
-    var _TemplateRef_63_8 = TemplateRef(this._appEl_63, viewFactory_GoldenComponent64);
-    this._NgIf_63_9 = NgIf(this._appEl_63, _TemplateRef_63_8);
+    var _TemplateRef_63_9 = TemplateRef(this._appEl_63, viewFactory_GoldenComponent64);
+    this._NgIf_63_10 = NgIf(this._appEl_63, _TemplateRef_63_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_63, this._NgIf_63_9);
+      import11.Inspector.instance.registerDirective(_anchor_63, this._NgIf_63_10);
     }
     final _anchor_64 = import9.appendAnchor(parentRenderNode);
     this._appEl_64 = ViewContainer(64, null, this, _anchor_64);
-    var _TemplateRef_64_8 = TemplateRef(this._appEl_64, viewFactory_GoldenComponent65);
-    this._NgIf_64_9 = NgIf(this._appEl_64, _TemplateRef_64_8);
+    var _TemplateRef_64_9 = TemplateRef(this._appEl_64, viewFactory_GoldenComponent65);
+    this._NgIf_64_10 = NgIf(this._appEl_64, _TemplateRef_64_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_64, this._NgIf_64_9);
+      import11.Inspector.instance.registerDirective(_anchor_64, this._NgIf_64_10);
     }
     final _anchor_65 = import9.appendAnchor(parentRenderNode);
     this._appEl_65 = ViewContainer(65, null, this, _anchor_65);
-    var _TemplateRef_65_8 = TemplateRef(this._appEl_65, viewFactory_GoldenComponent66);
-    this._NgIf_65_9 = NgIf(this._appEl_65, _TemplateRef_65_8);
+    var _TemplateRef_65_9 = TemplateRef(this._appEl_65, viewFactory_GoldenComponent66);
+    this._NgIf_65_10 = NgIf(this._appEl_65, _TemplateRef_65_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_65, this._NgIf_65_9);
+      import11.Inspector.instance.registerDirective(_anchor_65, this._NgIf_65_10);
     }
     final _anchor_66 = import9.appendAnchor(parentRenderNode);
     this._appEl_66 = ViewContainer(66, null, this, _anchor_66);
-    var _TemplateRef_66_8 = TemplateRef(this._appEl_66, viewFactory_GoldenComponent67);
-    this._NgIf_66_9 = NgIf(this._appEl_66, _TemplateRef_66_8);
+    var _TemplateRef_66_9 = TemplateRef(this._appEl_66, viewFactory_GoldenComponent67);
+    this._NgIf_66_10 = NgIf(this._appEl_66, _TemplateRef_66_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_66, this._NgIf_66_9);
+      import11.Inspector.instance.registerDirective(_anchor_66, this._NgIf_66_10);
     }
     final _anchor_67 = import9.appendAnchor(parentRenderNode);
     this._appEl_67 = ViewContainer(67, null, this, _anchor_67);
-    var _TemplateRef_67_8 = TemplateRef(this._appEl_67, viewFactory_GoldenComponent68);
-    this._NgIf_67_9 = NgIf(this._appEl_67, _TemplateRef_67_8);
+    var _TemplateRef_67_9 = TemplateRef(this._appEl_67, viewFactory_GoldenComponent68);
+    this._NgIf_67_10 = NgIf(this._appEl_67, _TemplateRef_67_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_67, this._NgIf_67_9);
+      import11.Inspector.instance.registerDirective(_anchor_67, this._NgIf_67_10);
     }
     final _anchor_68 = import9.appendAnchor(parentRenderNode);
     this._appEl_68 = ViewContainer(68, null, this, _anchor_68);
-    var _TemplateRef_68_8 = TemplateRef(this._appEl_68, viewFactory_GoldenComponent69);
-    this._NgIf_68_9 = NgIf(this._appEl_68, _TemplateRef_68_8);
+    var _TemplateRef_68_9 = TemplateRef(this._appEl_68, viewFactory_GoldenComponent69);
+    this._NgIf_68_10 = NgIf(this._appEl_68, _TemplateRef_68_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_68, this._NgIf_68_9);
+      import11.Inspector.instance.registerDirective(_anchor_68, this._NgIf_68_10);
     }
     final _anchor_69 = import9.appendAnchor(parentRenderNode);
     this._appEl_69 = ViewContainer(69, null, this, _anchor_69);
-    var _TemplateRef_69_8 = TemplateRef(this._appEl_69, viewFactory_GoldenComponent70);
-    this._NgIf_69_9 = NgIf(this._appEl_69, _TemplateRef_69_8);
+    var _TemplateRef_69_9 = TemplateRef(this._appEl_69, viewFactory_GoldenComponent70);
+    this._NgIf_69_10 = NgIf(this._appEl_69, _TemplateRef_69_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_69, this._NgIf_69_9);
+      import11.Inspector.instance.registerDirective(_anchor_69, this._NgIf_69_10);
     }
     final _anchor_70 = import9.appendAnchor(parentRenderNode);
     this._appEl_70 = ViewContainer(70, null, this, _anchor_70);
-    var _TemplateRef_70_8 = TemplateRef(this._appEl_70, viewFactory_GoldenComponent71);
-    this._NgIf_70_9 = NgIf(this._appEl_70, _TemplateRef_70_8);
+    var _TemplateRef_70_9 = TemplateRef(this._appEl_70, viewFactory_GoldenComponent71);
+    this._NgIf_70_10 = NgIf(this._appEl_70, _TemplateRef_70_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_70, this._NgIf_70_9);
+      import11.Inspector.instance.registerDirective(_anchor_70, this._NgIf_70_10);
     }
     final _anchor_71 = import9.appendAnchor(parentRenderNode);
     this._appEl_71 = ViewContainer(71, null, this, _anchor_71);
-    var _TemplateRef_71_8 = TemplateRef(this._appEl_71, viewFactory_GoldenComponent72);
-    this._NgIf_71_9 = NgIf(this._appEl_71, _TemplateRef_71_8);
+    var _TemplateRef_71_9 = TemplateRef(this._appEl_71, viewFactory_GoldenComponent72);
+    this._NgIf_71_10 = NgIf(this._appEl_71, _TemplateRef_71_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_71, this._NgIf_71_9);
+      import11.Inspector.instance.registerDirective(_anchor_71, this._NgIf_71_10);
     }
     final _anchor_72 = import9.appendAnchor(parentRenderNode);
     this._appEl_72 = ViewContainer(72, null, this, _anchor_72);
-    var _TemplateRef_72_8 = TemplateRef(this._appEl_72, viewFactory_GoldenComponent73);
-    this._NgIf_72_9 = NgIf(this._appEl_72, _TemplateRef_72_8);
+    var _TemplateRef_72_9 = TemplateRef(this._appEl_72, viewFactory_GoldenComponent73);
+    this._NgIf_72_10 = NgIf(this._appEl_72, _TemplateRef_72_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_72, this._NgIf_72_9);
+      import11.Inspector.instance.registerDirective(_anchor_72, this._NgIf_72_10);
     }
     final _anchor_73 = import9.appendAnchor(parentRenderNode);
     this._appEl_73 = ViewContainer(73, null, this, _anchor_73);
-    var _TemplateRef_73_8 = TemplateRef(this._appEl_73, viewFactory_GoldenComponent74);
-    this._NgIf_73_9 = NgIf(this._appEl_73, _TemplateRef_73_8);
+    var _TemplateRef_73_9 = TemplateRef(this._appEl_73, viewFactory_GoldenComponent74);
+    this._NgIf_73_10 = NgIf(this._appEl_73, _TemplateRef_73_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_73, this._NgIf_73_9);
+      import11.Inspector.instance.registerDirective(_anchor_73, this._NgIf_73_10);
     }
     final _anchor_74 = import9.appendAnchor(parentRenderNode);
     this._appEl_74 = ViewContainer(74, null, this, _anchor_74);
-    var _TemplateRef_74_8 = TemplateRef(this._appEl_74, viewFactory_GoldenComponent75);
-    this._NgIf_74_9 = NgIf(this._appEl_74, _TemplateRef_74_8);
+    var _TemplateRef_74_9 = TemplateRef(this._appEl_74, viewFactory_GoldenComponent75);
+    this._NgIf_74_10 = NgIf(this._appEl_74, _TemplateRef_74_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_74, this._NgIf_74_9);
+      import11.Inspector.instance.registerDirective(_anchor_74, this._NgIf_74_10);
     }
     final _anchor_75 = import9.appendAnchor(parentRenderNode);
     this._appEl_75 = ViewContainer(75, null, this, _anchor_75);
-    var _TemplateRef_75_8 = TemplateRef(this._appEl_75, viewFactory_GoldenComponent76);
-    this._NgIf_75_9 = NgIf(this._appEl_75, _TemplateRef_75_8);
+    var _TemplateRef_75_9 = TemplateRef(this._appEl_75, viewFactory_GoldenComponent76);
+    this._NgIf_75_10 = NgIf(this._appEl_75, _TemplateRef_75_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_75, this._NgIf_75_9);
+      import11.Inspector.instance.registerDirective(_anchor_75, this._NgIf_75_10);
     }
     final _anchor_76 = import9.appendAnchor(parentRenderNode);
     this._appEl_76 = ViewContainer(76, null, this, _anchor_76);
-    var _TemplateRef_76_8 = TemplateRef(this._appEl_76, viewFactory_GoldenComponent77);
-    this._NgIf_76_9 = NgIf(this._appEl_76, _TemplateRef_76_8);
+    var _TemplateRef_76_9 = TemplateRef(this._appEl_76, viewFactory_GoldenComponent77);
+    this._NgIf_76_10 = NgIf(this._appEl_76, _TemplateRef_76_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_76, this._NgIf_76_9);
+      import11.Inspector.instance.registerDirective(_anchor_76, this._NgIf_76_10);
     }
     final _anchor_77 = import9.appendAnchor(parentRenderNode);
     this._appEl_77 = ViewContainer(77, null, this, _anchor_77);
-    var _TemplateRef_77_8 = TemplateRef(this._appEl_77, viewFactory_GoldenComponent78);
-    this._NgIf_77_9 = NgIf(this._appEl_77, _TemplateRef_77_8);
+    var _TemplateRef_77_9 = TemplateRef(this._appEl_77, viewFactory_GoldenComponent78);
+    this._NgIf_77_10 = NgIf(this._appEl_77, _TemplateRef_77_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_77, this._NgIf_77_9);
+      import11.Inspector.instance.registerDirective(_anchor_77, this._NgIf_77_10);
     }
     final _anchor_78 = import9.appendAnchor(parentRenderNode);
     this._appEl_78 = ViewContainer(78, null, this, _anchor_78);
-    var _TemplateRef_78_8 = TemplateRef(this._appEl_78, viewFactory_GoldenComponent79);
-    this._NgIf_78_9 = NgIf(this._appEl_78, _TemplateRef_78_8);
+    var _TemplateRef_78_9 = TemplateRef(this._appEl_78, viewFactory_GoldenComponent79);
+    this._NgIf_78_10 = NgIf(this._appEl_78, _TemplateRef_78_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_78, this._NgIf_78_9);
+      import11.Inspector.instance.registerDirective(_anchor_78, this._NgIf_78_10);
     }
     final _anchor_79 = import9.appendAnchor(parentRenderNode);
     this._appEl_79 = ViewContainer(79, null, this, _anchor_79);
-    var _TemplateRef_79_8 = TemplateRef(this._appEl_79, viewFactory_GoldenComponent80);
-    this._NgIf_79_9 = NgIf(this._appEl_79, _TemplateRef_79_8);
+    var _TemplateRef_79_9 = TemplateRef(this._appEl_79, viewFactory_GoldenComponent80);
+    this._NgIf_79_10 = NgIf(this._appEl_79, _TemplateRef_79_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_79, this._NgIf_79_9);
+      import11.Inspector.instance.registerDirective(_anchor_79, this._NgIf_79_10);
     }
     final _anchor_80 = import9.appendAnchor(parentRenderNode);
     this._appEl_80 = ViewContainer(80, null, this, _anchor_80);
-    var _TemplateRef_80_8 = TemplateRef(this._appEl_80, viewFactory_GoldenComponent81);
-    this._NgIf_80_9 = NgIf(this._appEl_80, _TemplateRef_80_8);
+    var _TemplateRef_80_9 = TemplateRef(this._appEl_80, viewFactory_GoldenComponent81);
+    this._NgIf_80_10 = NgIf(this._appEl_80, _TemplateRef_80_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_80, this._NgIf_80_9);
+      import11.Inspector.instance.registerDirective(_anchor_80, this._NgIf_80_10);
     }
     final _anchor_81 = import9.appendAnchor(parentRenderNode);
     this._appEl_81 = ViewContainer(81, null, this, _anchor_81);
-    var _TemplateRef_81_8 = TemplateRef(this._appEl_81, viewFactory_GoldenComponent82);
-    this._NgIf_81_9 = NgIf(this._appEl_81, _TemplateRef_81_8);
+    var _TemplateRef_81_9 = TemplateRef(this._appEl_81, viewFactory_GoldenComponent82);
+    this._NgIf_81_10 = NgIf(this._appEl_81, _TemplateRef_81_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_81, this._NgIf_81_9);
+      import11.Inspector.instance.registerDirective(_anchor_81, this._NgIf_81_10);
     }
     final _anchor_82 = import9.appendAnchor(parentRenderNode);
     this._appEl_82 = ViewContainer(82, null, this, _anchor_82);
-    var _TemplateRef_82_8 = TemplateRef(this._appEl_82, viewFactory_GoldenComponent83);
-    this._NgIf_82_9 = NgIf(this._appEl_82, _TemplateRef_82_8);
+    var _TemplateRef_82_9 = TemplateRef(this._appEl_82, viewFactory_GoldenComponent83);
+    this._NgIf_82_10 = NgIf(this._appEl_82, _TemplateRef_82_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_82, this._NgIf_82_9);
+      import11.Inspector.instance.registerDirective(_anchor_82, this._NgIf_82_10);
     }
     final _anchor_83 = import9.appendAnchor(parentRenderNode);
     this._appEl_83 = ViewContainer(83, null, this, _anchor_83);
-    var _TemplateRef_83_8 = TemplateRef(this._appEl_83, viewFactory_GoldenComponent84);
-    this._NgIf_83_9 = NgIf(this._appEl_83, _TemplateRef_83_8);
+    var _TemplateRef_83_9 = TemplateRef(this._appEl_83, viewFactory_GoldenComponent84);
+    this._NgIf_83_10 = NgIf(this._appEl_83, _TemplateRef_83_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_83, this._NgIf_83_9);
+      import11.Inspector.instance.registerDirective(_anchor_83, this._NgIf_83_10);
     }
   }
 
@@ -797,341 +797,341 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
   void detectChangesInternal() {
     final _ctx = this.ctx;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_0_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_0_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_0_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:610:627 */;
+    this._NgIf_0_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:638:655 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_1_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_1_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_1_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:648:665 */;
+    this._NgIf_1_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:676:693 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_2_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_2_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_2_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:686:703 */;
+    this._NgIf_2_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:714:731 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_3_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_3_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_3_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:724:741 */;
+    this._NgIf_3_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:752:769 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_4_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_4_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_4_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:762:779 */;
+    this._NgIf_4_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:790:807 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_5_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_5_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_5_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:800:817 */;
+    this._NgIf_5_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:828:845 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_6_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_6_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_6_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:838:855 */;
+    this._NgIf_6_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:866:883 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_7_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_7_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_7_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:876:893 */;
+    this._NgIf_7_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:904:921 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_8_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_8_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_8_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:914:931 */;
+    this._NgIf_8_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:942:959 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_9_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_9_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_9_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:952:969 */;
+    this._NgIf_9_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:980:997 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_10_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_10_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_10_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:990:1007 */;
+    this._NgIf_10_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1018:1035 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_11_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_11_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_11_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1028:1045 */;
+    this._NgIf_11_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1056:1073 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_12_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_12_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_12_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1066:1083 */;
+    this._NgIf_12_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1094:1111 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_13_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_13_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_13_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1104:1121 */;
+    this._NgIf_13_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1132:1149 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_14_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_14_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_14_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1142:1159 */;
+    this._NgIf_14_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1170:1187 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_15_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_15_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_15_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1180:1197 */;
+    this._NgIf_15_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1208:1225 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_16_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_16_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_16_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1218:1235 */;
+    this._NgIf_16_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1246:1263 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_17_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_17_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_17_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1256:1273 */;
+    this._NgIf_17_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1284:1301 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_18_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_18_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_18_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1294:1311 */;
+    this._NgIf_18_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1322:1339 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_19_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_19_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_19_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1332:1349 */;
+    this._NgIf_19_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1360:1377 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_20_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_20_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_20_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1370:1387 */;
+    this._NgIf_20_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1398:1415 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_21_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_21_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_21_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1408:1425 */;
+    this._NgIf_21_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1436:1453 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_22_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_22_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_22_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1446:1463 */;
+    this._NgIf_22_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1474:1491 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_23_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_23_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_23_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1484:1501 */;
+    this._NgIf_23_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1512:1529 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_24_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_24_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_24_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1522:1539 */;
+    this._NgIf_24_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1550:1567 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_25_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_25_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_25_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1560:1577 */;
+    this._NgIf_25_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1588:1605 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_26_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_26_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_26_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1598:1615 */;
+    this._NgIf_26_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1626:1643 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_27_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_27_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_27_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1636:1653 */;
+    this._NgIf_27_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1664:1681 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_28_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_28_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_28_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1674:1691 */;
+    this._NgIf_28_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1702:1719 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_29_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_29_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_29_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1712:1729 */;
+    this._NgIf_29_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1740:1757 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_30_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_30_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_30_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1750:1767 */;
+    this._NgIf_30_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1778:1795 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_31_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_31_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_31_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1788:1805 */;
+    this._NgIf_31_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1816:1833 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_32_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_32_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_32_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1826:1843 */;
+    this._NgIf_32_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1854:1871 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_33_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_33_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_33_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1864:1881 */;
+    this._NgIf_33_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1892:1909 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_34_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_34_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_34_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1902:1919 */;
+    this._NgIf_34_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1930:1947 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_35_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_35_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_35_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1940:1957 */;
+    this._NgIf_35_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1968:1985 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_36_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_36_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_36_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:1978:1995 */;
+    this._NgIf_36_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2006:2023 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_37_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_37_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_37_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2016:2033 */;
+    this._NgIf_37_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2044:2061 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_38_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_38_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_38_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2054:2071 */;
+    this._NgIf_38_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2082:2099 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_39_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_39_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_39_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2092:2109 */;
+    this._NgIf_39_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2120:2137 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_40_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_40_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_40_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2130:2147 */;
+    this._NgIf_40_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2158:2175 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_41_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_41_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_41_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2168:2185 */;
+    this._NgIf_41_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2196:2213 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_42_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_42_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_42_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2206:2223 */;
+    this._NgIf_42_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2234:2251 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_43_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_43_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_43_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2244:2261 */;
+    this._NgIf_43_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2272:2289 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_44_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_44_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_44_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2282:2299 */;
+    this._NgIf_44_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2310:2327 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_45_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_45_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_45_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2320:2337 */;
+    this._NgIf_45_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2348:2365 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_46_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_46_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_46_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2358:2375 */;
+    this._NgIf_46_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2386:2403 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_47_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_47_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_47_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2396:2413 */;
+    this._NgIf_47_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2424:2441 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_48_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_48_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_48_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2434:2451 */;
+    this._NgIf_48_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2462:2479 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_49_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_49_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_49_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2472:2489 */;
+    this._NgIf_49_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2500:2517 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_50_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_50_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_50_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2510:2527 */;
+    this._NgIf_50_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2538:2555 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_51_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_51_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_51_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2548:2565 */;
+    this._NgIf_51_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2576:2593 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_52_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_52_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_52_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2586:2603 */;
+    this._NgIf_52_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2614:2631 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_53_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_53_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_53_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2624:2641 */;
+    this._NgIf_53_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2652:2669 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_54_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_54_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_54_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2662:2679 */;
+    this._NgIf_54_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2690:2707 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_55_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_55_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_55_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2700:2717 */;
+    this._NgIf_55_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2728:2745 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_56_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_56_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_56_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2738:2755 */;
+    this._NgIf_56_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2766:2783 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_57_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_57_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_57_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2776:2793 */;
+    this._NgIf_57_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2804:2821 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_58_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_58_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_58_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2814:2831 */;
+    this._NgIf_58_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2842:2859 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_59_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_59_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_59_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2852:2869 */;
+    this._NgIf_59_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2880:2897 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_60_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_60_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_60_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2890:2907 */;
+    this._NgIf_60_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2918:2935 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_61_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_61_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_61_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2928:2945 */;
+    this._NgIf_61_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2956:2973 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_62_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_62_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_62_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2966:2983 */;
+    this._NgIf_62_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:2994:3011 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_63_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_63_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_63_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3004:3021 */;
+    this._NgIf_63_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3032:3049 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_64_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_64_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_64_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3042:3059 */;
+    this._NgIf_64_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3070:3087 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_65_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_65_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_65_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3080:3097 */;
+    this._NgIf_65_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3108:3125 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_66_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_66_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_66_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3118:3135 */;
+    this._NgIf_66_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3146:3163 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_67_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_67_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_67_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3156:3173 */;
+    this._NgIf_67_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3184:3201 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_68_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_68_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_68_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3194:3211 */;
+    this._NgIf_68_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3222:3239 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_69_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_69_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_69_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3232:3249 */;
+    this._NgIf_69_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3260:3277 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_70_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_70_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_70_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3270:3287 */;
+    this._NgIf_70_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3298:3315 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_71_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_71_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_71_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3308:3325 */;
+    this._NgIf_71_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3336:3353 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_72_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_72_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_72_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3346:3363 */;
+    this._NgIf_72_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3374:3391 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_73_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_73_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_73_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3384:3401 */;
+    this._NgIf_73_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3412:3429 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_74_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_74_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_74_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3422:3439 */;
+    this._NgIf_74_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3450:3467 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_75_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_75_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_75_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3460:3477 */;
+    this._NgIf_75_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3488:3505 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_76_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_76_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_76_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3498:3515 */;
+    this._NgIf_76_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3526:3543 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_77_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_77_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_77_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3536:3553 */;
+    this._NgIf_77_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3564:3581 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_78_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_78_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_78_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3574:3591 */;
+    this._NgIf_78_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3602:3619 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_79_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_79_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_79_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3612:3629 */;
+    this._NgIf_79_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3640:3657 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_80_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_80_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_80_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3650:3667 */;
+    this._NgIf_80_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3678:3695 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_81_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_81_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_81_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3688:3705 */;
+    this._NgIf_81_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3716:3733 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_82_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_82_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_82_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3726:3743 */;
+    this._NgIf_82_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3754:3771 */;
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_83_9, 'ngIf', _ctx.isLoading);
+      import11.Inspector.instance.recordInput(this._NgIf_83_10, 'ngIf', _ctx.isLoading);
     }
-    this._NgIf_83_9.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3764:3781 */;
+    this._NgIf_83_10.ngIf = _ctx.isLoading /* REF:asset:goldens/test/templates/large_templates.dart:3792:3809 */;
     this._appEl_0.detectChangesInNestedViews();
     this._appEl_1.detectChangesInNestedViews();
     this._appEl_2.detectChangesInNestedViews();
@@ -1333,14 +1333,14 @@ ComponentFactory<import1.GoldenComponent> createGoldenComponentFactory() {
 
 class _ViewGoldenComponent1 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent1(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1361,14 +1361,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent1(import14.RenderView par
 
 class _ViewGoldenComponent2 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent2(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1389,14 +1389,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent2(import14.RenderView par
 
 class _ViewGoldenComponent3 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent3(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1417,14 +1417,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent3(import14.RenderView par
 
 class _ViewGoldenComponent4 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent4(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1445,14 +1445,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent4(import14.RenderView par
 
 class _ViewGoldenComponent5 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent5(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1473,14 +1473,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent5(import14.RenderView par
 
 class _ViewGoldenComponent6 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent6(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1501,14 +1501,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent6(import14.RenderView par
 
 class _ViewGoldenComponent7 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent7(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1529,14 +1529,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent7(import14.RenderView par
 
 class _ViewGoldenComponent8 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent8(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1557,14 +1557,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent8(import14.RenderView par
 
 class _ViewGoldenComponent9 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent9(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1585,14 +1585,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent9(import14.RenderView par
 
 class _ViewGoldenComponent10 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent10(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1613,14 +1613,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent10(import14.RenderView pa
 
 class _ViewGoldenComponent11 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent11(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1641,14 +1641,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent11(import14.RenderView pa
 
 class _ViewGoldenComponent12 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent12(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1669,14 +1669,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent12(import14.RenderView pa
 
 class _ViewGoldenComponent13 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent13(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1697,14 +1697,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent13(import14.RenderView pa
 
 class _ViewGoldenComponent14 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent14(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1725,14 +1725,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent14(import14.RenderView pa
 
 class _ViewGoldenComponent15 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent15(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1753,14 +1753,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent15(import14.RenderView pa
 
 class _ViewGoldenComponent16 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent16(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1781,14 +1781,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent16(import14.RenderView pa
 
 class _ViewGoldenComponent17 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent17(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1809,14 +1809,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent17(import14.RenderView pa
 
 class _ViewGoldenComponent18 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent18(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1837,14 +1837,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent18(import14.RenderView pa
 
 class _ViewGoldenComponent19 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent19(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1865,14 +1865,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent19(import14.RenderView pa
 
 class _ViewGoldenComponent20 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent20(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1893,14 +1893,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent20(import14.RenderView pa
 
 class _ViewGoldenComponent21 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent21(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1921,14 +1921,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent21(import14.RenderView pa
 
 class _ViewGoldenComponent22 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent22(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1949,14 +1949,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent22(import14.RenderView pa
 
 class _ViewGoldenComponent23 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent23(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -1977,14 +1977,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent23(import14.RenderView pa
 
 class _ViewGoldenComponent24 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent24(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2005,14 +2005,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent24(import14.RenderView pa
 
 class _ViewGoldenComponent25 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent25(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2033,14 +2033,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent25(import14.RenderView pa
 
 class _ViewGoldenComponent26 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent26(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2061,14 +2061,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent26(import14.RenderView pa
 
 class _ViewGoldenComponent27 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent27(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2089,14 +2089,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent27(import14.RenderView pa
 
 class _ViewGoldenComponent28 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent28(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2117,14 +2117,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent28(import14.RenderView pa
 
 class _ViewGoldenComponent29 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent29(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2145,14 +2145,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent29(import14.RenderView pa
 
 class _ViewGoldenComponent30 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent30(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2173,14 +2173,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent30(import14.RenderView pa
 
 class _ViewGoldenComponent31 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent31(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2201,14 +2201,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent31(import14.RenderView pa
 
 class _ViewGoldenComponent32 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent32(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2229,14 +2229,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent32(import14.RenderView pa
 
 class _ViewGoldenComponent33 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent33(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2257,14 +2257,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent33(import14.RenderView pa
 
 class _ViewGoldenComponent34 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent34(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2285,14 +2285,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent34(import14.RenderView pa
 
 class _ViewGoldenComponent35 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent35(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2313,14 +2313,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent35(import14.RenderView pa
 
 class _ViewGoldenComponent36 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent36(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2341,14 +2341,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent36(import14.RenderView pa
 
 class _ViewGoldenComponent37 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent37(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2369,14 +2369,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent37(import14.RenderView pa
 
 class _ViewGoldenComponent38 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent38(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2397,14 +2397,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent38(import14.RenderView pa
 
 class _ViewGoldenComponent39 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent39(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2425,14 +2425,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent39(import14.RenderView pa
 
 class _ViewGoldenComponent40 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent40(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2453,14 +2453,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent40(import14.RenderView pa
 
 class _ViewGoldenComponent41 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent41(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2481,14 +2481,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent41(import14.RenderView pa
 
 class _ViewGoldenComponent42 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent42(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2509,14 +2509,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent42(import14.RenderView pa
 
 class _ViewGoldenComponent43 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent43(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2537,14 +2537,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent43(import14.RenderView pa
 
 class _ViewGoldenComponent44 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent44(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2565,14 +2565,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent44(import14.RenderView pa
 
 class _ViewGoldenComponent45 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent45(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2593,14 +2593,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent45(import14.RenderView pa
 
 class _ViewGoldenComponent46 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent46(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2621,14 +2621,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent46(import14.RenderView pa
 
 class _ViewGoldenComponent47 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent47(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2649,14 +2649,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent47(import14.RenderView pa
 
 class _ViewGoldenComponent48 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent48(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2677,14 +2677,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent48(import14.RenderView pa
 
 class _ViewGoldenComponent49 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent49(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2705,14 +2705,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent49(import14.RenderView pa
 
 class _ViewGoldenComponent50 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent50(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2733,14 +2733,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent50(import14.RenderView pa
 
 class _ViewGoldenComponent51 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent51(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2761,14 +2761,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent51(import14.RenderView pa
 
 class _ViewGoldenComponent52 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent52(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2789,14 +2789,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent52(import14.RenderView pa
 
 class _ViewGoldenComponent53 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent53(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2817,14 +2817,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent53(import14.RenderView pa
 
 class _ViewGoldenComponent54 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent54(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2845,14 +2845,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent54(import14.RenderView pa
 
 class _ViewGoldenComponent55 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent55(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2873,14 +2873,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent55(import14.RenderView pa
 
 class _ViewGoldenComponent56 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent56(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2901,14 +2901,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent56(import14.RenderView pa
 
 class _ViewGoldenComponent57 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent57(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2929,14 +2929,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent57(import14.RenderView pa
 
 class _ViewGoldenComponent58 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent58(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2957,14 +2957,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent58(import14.RenderView pa
 
 class _ViewGoldenComponent59 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent59(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -2985,14 +2985,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent59(import14.RenderView pa
 
 class _ViewGoldenComponent60 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent60(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3013,14 +3013,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent60(import14.RenderView pa
 
 class _ViewGoldenComponent61 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent61(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3041,14 +3041,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent61(import14.RenderView pa
 
 class _ViewGoldenComponent62 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent62(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3069,14 +3069,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent62(import14.RenderView pa
 
 class _ViewGoldenComponent63 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent63(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3097,14 +3097,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent63(import14.RenderView pa
 
 class _ViewGoldenComponent64 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent64(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3125,14 +3125,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent64(import14.RenderView pa
 
 class _ViewGoldenComponent65 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent65(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3153,14 +3153,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent65(import14.RenderView pa
 
 class _ViewGoldenComponent66 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent66(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3181,14 +3181,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent66(import14.RenderView pa
 
 class _ViewGoldenComponent67 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent67(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3209,14 +3209,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent67(import14.RenderView pa
 
 class _ViewGoldenComponent68 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent68(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3237,14 +3237,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent68(import14.RenderView pa
 
 class _ViewGoldenComponent69 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent69(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3265,14 +3265,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent69(import14.RenderView pa
 
 class _ViewGoldenComponent70 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent70(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3293,14 +3293,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent70(import14.RenderView pa
 
 class _ViewGoldenComponent71 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent71(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3321,14 +3321,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent71(import14.RenderView pa
 
 class _ViewGoldenComponent72 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent72(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3349,14 +3349,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent72(import14.RenderView pa
 
 class _ViewGoldenComponent73 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent73(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3377,14 +3377,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent73(import14.RenderView pa
 
 class _ViewGoldenComponent74 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent74(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3405,14 +3405,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent74(import14.RenderView pa
 
 class _ViewGoldenComponent75 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent75(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3433,14 +3433,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent75(import14.RenderView pa
 
 class _ViewGoldenComponent76 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent76(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3461,14 +3461,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent76(import14.RenderView pa
 
 class _ViewGoldenComponent77 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent77(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3489,14 +3489,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent77(import14.RenderView pa
 
 class _ViewGoldenComponent78 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent78(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3517,14 +3517,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent78(import14.RenderView pa
 
 class _ViewGoldenComponent79 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent79(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3545,14 +3545,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent79(import14.RenderView pa
 
 class _ViewGoldenComponent80 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent80(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3573,14 +3573,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent80(import14.RenderView pa
 
 class _ViewGoldenComponent81 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent81(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3601,14 +3601,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent81(import14.RenderView pa
 
 class _ViewGoldenComponent82 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent82(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3629,14 +3629,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent82(import14.RenderView pa
 
 class _ViewGoldenComponent83 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent83(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -3657,14 +3657,14 @@ import13.EmbeddedView<void> viewFactory_GoldenComponent83(import14.RenderView pa
 
 class _ViewGoldenComponent84 extends import13.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   _ViewGoldenComponent84(import14.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 

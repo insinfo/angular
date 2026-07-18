@@ -3,35 +3,35 @@
 // **************************************************************************
 
 import 'after_queries.dart';
-import 'package:ngdart/src/core/linker/views/component_view.dart' as import0;
+import 'package:ngx_dart/src/core/linker/views/component_view.dart' as import0;
 import 'after_queries.dart' as import1;
-import 'package:ngdart/src/core/linker/view_container.dart';
-import 'package:ngdart/src/common/directives/ng_if.dart';
-import 'package:ngdart/src/core/linker/style_encapsulation.dart' as import4;
-import 'package:ngdart/src/core/linker/views/view.dart' as import5;
-import 'package:ngdart/src/meta/change_detection_constants.dart' as import6;
-import 'package:ngdart/src/utilities.dart' as import7;
-import 'dart:html' as import8;
-import 'package:ngdart/src/runtime/dom_helpers.dart' as import9;
-import 'package:ngdart/src/core/linker/template_ref.dart';
-import 'package:ngdart/src/devtools.dart' as import11;
-import 'package:ngdart/src/runtime/check_binding.dart' as import12;
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/core/linker/views/embedded_view.dart' as import14;
-import 'package:ngdart/src/core/linker/views/render_view.dart' as import15;
-import 'package:ngdart/src/core/linker/views/host_view.dart' as import16;
+import 'package:ngx_dart/src/core/linker/view_container.dart';
+import 'package:ngx_dart/src/common/directives/ng_if.dart';
+import 'package:ngx_dart/src/core/linker/style_encapsulation.dart' as import4;
+import 'package:ngx_dart/src/core/linker/views/view.dart' as import5;
+import 'package:ngx_dart/src/meta/change_detection_constants.dart' as import6;
+import 'package:ngx_dart/src/utilities.dart' as import7;
+import 'package:web/src/dom/dom.dart' as import8;
+import 'package:ngx_dart/src/runtime/dom_helpers.dart' as import9;
+import 'package:ngx_dart/src/core/linker/template_ref.dart';
+import 'package:ngx_dart/src/devtools.dart' as import11;
+import 'package:ngx_dart/src/runtime/check_binding.dart' as import12;
+import 'package:ngx_dart/angular.dart';
+import 'package:ngx_dart/src/core/linker/views/embedded_view.dart' as import14;
+import 'package:ngx_dart/src/core/linker/views/render_view.dart' as import15;
+import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import16;
 
 final List<Object> styles$GoldenComponent = const [];
 
 class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent> {
   late final ViewUsesAfterView0 _compView_0;
-  late final import1.UsesAfterView _UsesAfterView_0_5;
+  late final import1.UsesAfterView _UsesAfterView_0_6;
   late final ViewUsesAfterContent0 _compView_1;
-  late final import1.UsesAfterContent _UsesAfterContent_1_5;
+  late final import1.UsesAfterContent _UsesAfterContent_1_6;
   late final ViewChildComponent0 _compView_2;
-  late final import1.ChildComponent _ChildComponent_2_5;
+  late final import1.ChildComponent _ChildComponent_2_6;
   late final ViewContainer _appEl_3;
-  late final NgIf _NgIf_3_9;
+  late final NgIf _NgIf_3_10;
   Object? _expr_0;
   static import4.ComponentStyles? _componentStyles;
   ViewGoldenComponent0(import5.View parentView, int parentIndex) : super(parentView, parentIndex, import6.ChangeDetectionCheckedState.checkAlways) {
@@ -48,24 +48,24 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     this._compView_0 = ViewUsesAfterView0(this, 0);
     final _el_0 = this._compView_0.rootElement;
     parentRenderNode.append(_el_0);
-    this._UsesAfterView_0_5 = import1.UsesAfterView();
-    this._compView_0.create(this._UsesAfterView_0_5);
+    this._UsesAfterView_0_6 = import1.UsesAfterView();
+    this._compView_0.create(this._UsesAfterView_0_6);
     this._compView_1 = ViewUsesAfterContent0(this, 1);
     final _el_1 = this._compView_1.rootElement;
     parentRenderNode.append(_el_1);
-    this._UsesAfterContent_1_5 = import1.UsesAfterContent();
+    this._UsesAfterContent_1_6 = import1.UsesAfterContent();
     this._compView_2 = ViewChildComponent0(this, 2);
     final _el_2 = this._compView_2.rootElement;
-    this._ChildComponent_2_5 = import1.ChildComponent();
-    this._compView_2.create(this._ChildComponent_2_5);
+    this._ChildComponent_2_6 = import1.ChildComponent();
+    this._compView_2.create(this._ChildComponent_2_6);
     final _anchor_3 = import9.createAnchor();
     this._appEl_3 = ViewContainer(3, 1, this, _anchor_3);
-    var _TemplateRef_3_8 = TemplateRef(this._appEl_3, viewFactory_GoldenComponent1);
-    this._NgIf_3_9 = NgIf(this._appEl_3, _TemplateRef_3_8);
+    var _TemplateRef_3_9 = TemplateRef(this._appEl_3, viewFactory_GoldenComponent1);
+    this._NgIf_3_10 = NgIf(this._appEl_3, _TemplateRef_3_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_3, this._NgIf_3_9);
+      import11.Inspector.instance.registerDirective(_anchor_3, this._NgIf_3_10);
     }
-    this._compView_1.createAndProject(this._UsesAfterContent_1_5, [
+    this._compView_1.createAndProject(this._UsesAfterContent_1_6, [
       <Object>[_el_2, this._appEl_3]
     ]);
   }
@@ -77,30 +77,30 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     final currVal_0 = _ctx.value;
     if (import12.checkBinding(this._expr_0, currVal_0, 'value', 'asset:goldens/test/lifecycle_hooks/after_queries.dart')) {
       if (import11.isDevToolsEnabled) {
-        import11.Inspector.instance.recordInput(this._ChildComponent_2_5, 'value', currVal_0);
+        import11.Inspector.instance.recordInput(this._ChildComponent_2_6, 'value', currVal_0);
       }
-      this._ChildComponent_2_5.value = currVal_0 /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:545:560 */;
+      this._ChildComponent_2_6.value = currVal_0 /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:572:587 */;
       this._expr_0 = currVal_0;
     }
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_3_9, 'ngIf', _ctx.showValue);
+      import11.Inspector.instance.recordInput(this._NgIf_3_10, 'ngIf', _ctx.showValue);
     }
-    this._NgIf_3_9.ngIf = _ctx.showValue /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:606:623 */;
+    this._NgIf_3_10.ngIf = _ctx.showValue /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:633:650 */;
     this._appEl_3.detectChangesInNestedViews();
     if ((!import12.debugThrowIfChanged)) {
       if (firstCheck) {
-        this._UsesAfterContent_1_5.ngAfterContentInit();
+        this._UsesAfterContent_1_6.ngAfterContentInit();
       }
-      this._UsesAfterContent_1_5.ngAfterContentChecked();
+      this._UsesAfterContent_1_6.ngAfterContentChecked();
     }
     this._compView_0.detectChanges();
     this._compView_1.detectChanges();
     this._compView_2.detectChanges();
     if ((!import12.debugThrowIfChanged)) {
       if (firstCheck) {
-        this._UsesAfterView_0_5.ngAfterViewInit();
+        this._UsesAfterView_0_6.ngAfterViewInit();
       }
-      this._UsesAfterView_0_5.ngAfterViewChecked();
+      this._UsesAfterView_0_6.ngAfterViewChecked();
     }
   }
 
@@ -139,15 +139,15 @@ ComponentFactory<import1.GoldenComponent> createGoldenComponentFactory() {
 
 class _ViewGoldenComponent1 extends import14.EmbeddedView<import1.GoldenComponent> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   Object? _expr_0;
   _ViewGoldenComponent1(import15.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -157,9 +157,9 @@ class _ViewGoldenComponent1 extends import14.EmbeddedView<import1.GoldenComponen
     final currVal_0 = _ctx.value;
     if (import12.checkBinding(this._expr_0, currVal_0, 'value', 'asset:goldens/test/lifecycle_hooks/after_queries.dart')) {
       if (import11.isDevToolsEnabled) {
-        import11.Inspector.instance.recordInput(this._ChildComponent_0_5, 'value', currVal_0);
+        import11.Inspector.instance.recordInput(this._ChildComponent_0_6, 'value', currVal_0);
       }
-      this._ChildComponent_0_5.value = currVal_0 /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:624:639 */;
+      this._ChildComponent_0_6.value = currVal_0 /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:651:666 */;
       this._expr_0 = currVal_0;
     }
     this._compView_0.detectChanges();
@@ -195,9 +195,9 @@ final List<Object> styles$UsesAfterView = const [];
 
 class ViewUsesAfterView0 extends import0.ComponentView<import1.UsesAfterView> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   late final ViewContainer _appEl_1;
-  late final NgIf _NgIf_1_9;
+  late final NgIf _NgIf_1_10;
   Object? _expr_0;
   static import4.ComponentStyles? _componentStyles;
   ViewUsesAfterView0(import5.View parentView, int parentIndex) : super(parentView, parentIndex, import6.ChangeDetectionCheckedState.checkAlways) {
@@ -214,14 +214,14 @@ class ViewUsesAfterView0 extends import0.ComponentView<import1.UsesAfterView> {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
     parentRenderNode.append(_el_0);
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     final _anchor_1 = import9.appendAnchor(parentRenderNode);
     this._appEl_1 = ViewContainer(1, null, this, _anchor_1);
-    var _TemplateRef_1_8 = TemplateRef(this._appEl_1, viewFactory_UsesAfterView1);
-    this._NgIf_1_9 = NgIf(this._appEl_1, _TemplateRef_1_8);
+    var _TemplateRef_1_9 = TemplateRef(this._appEl_1, viewFactory_UsesAfterView1);
+    this._NgIf_1_10 = NgIf(this._appEl_1, _TemplateRef_1_9);
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.registerDirective(_anchor_1, this._NgIf_1_9);
+      import11.Inspector.instance.registerDirective(_anchor_1, this._NgIf_1_10);
     }
   }
 
@@ -231,15 +231,15 @@ class ViewUsesAfterView0 extends import0.ComponentView<import1.UsesAfterView> {
     final currVal_0 = _ctx.value;
     if (import12.checkBinding(this._expr_0, currVal_0, 'value', 'asset:goldens/test/lifecycle_hooks/after_queries.dart')) {
       if (import11.isDevToolsEnabled) {
-        import11.Inspector.instance.recordInput(this._ChildComponent_0_5, 'value', currVal_0);
+        import11.Inspector.instance.recordInput(this._ChildComponent_0_6, 'value', currVal_0);
       }
-      this._ChildComponent_0_5.value = currVal_0 /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:982:997 */;
+      this._ChildComponent_0_6.value = currVal_0 /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:1037:1052 */;
       this._expr_0 = currVal_0;
     }
     if (import11.isDevToolsEnabled) {
-      import11.Inspector.instance.recordInput(this._NgIf_1_9, 'ngIf', _ctx.showValue);
+      import11.Inspector.instance.recordInput(this._NgIf_1_10, 'ngIf', _ctx.showValue);
     }
-    this._NgIf_1_9.ngIf = _ctx.showValue /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:1039:1056 */;
+    this._NgIf_1_10.ngIf = _ctx.showValue /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:1094:1111 */;
     this._appEl_1.detectChangesInNestedViews();
     this._compView_0.detectChanges();
   }
@@ -277,15 +277,15 @@ ComponentFactory<import1.UsesAfterView> createUsesAfterViewFactory() {
 
 class _ViewUsesAfterView1 extends import14.EmbeddedView<import1.UsesAfterView> {
   late final ViewChildComponent0 _compView_0;
-  late final import1.ChildComponent _ChildComponent_0_5;
+  late final import1.ChildComponent _ChildComponent_0_6;
   Object? _expr_0;
   _ViewUsesAfterView1(import15.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     this._compView_0 = ViewChildComponent0(this, 0);
     final _el_0 = this._compView_0.rootElement;
-    this._ChildComponent_0_5 = import1.ChildComponent();
-    this._compView_0.create(this._ChildComponent_0_5);
+    this._ChildComponent_0_6 = import1.ChildComponent();
+    this._compView_0.create(this._ChildComponent_0_6);
     this.initRootNode(_el_0);
   }
 
@@ -295,9 +295,9 @@ class _ViewUsesAfterView1 extends import14.EmbeddedView<import1.UsesAfterView> {
     final currVal_0 = _ctx.value;
     if (import12.checkBinding(this._expr_0, currVal_0, 'value', 'asset:goldens/test/lifecycle_hooks/after_queries.dart')) {
       if (import11.isDevToolsEnabled) {
-        import11.Inspector.instance.recordInput(this._ChildComponent_0_5, 'value', currVal_0);
+        import11.Inspector.instance.recordInput(this._ChildComponent_0_6, 'value', currVal_0);
       }
-      this._ChildComponent_0_5.value = currVal_0 /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:1057:1072 */;
+      this._ChildComponent_0_6.value = currVal_0 /* REF:asset:goldens/test/lifecycle_hooks/after_queries.dart:1112:1127 */;
       this._expr_0 = currVal_0;
     }
     this._compView_0.detectChanges();
