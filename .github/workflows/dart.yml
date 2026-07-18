@@ -30,11 +30,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Resolve workspace
         run: dart pub get
+      # The packages are lint-clean on master, so infos are fatal here (the
+      # angular8/angular9 branches keep --no-fatal-warnings since their code
+      # must stay identical to the published sources).
       - name: Analyze packages
         run: |
           for pkg in ngx_ast ngx_compiler ngx_dart ngx_forms ngx_router ngx_test; do
             echo "::group::dart analyze $pkg"
-            (cd $pkg && dart analyze --no-fatal-warnings)
+            (cd $pkg && dart analyze --fatal-infos)
             echo "::endgroup::"
           done
 
