@@ -1,27 +1,20 @@
 [![Pub package](https://img.shields.io/pub/v/ngx_test.svg)](https://pub.dev/packages/ngx_test)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/angulardart-community/angular/dart.yml?branch=master)](https://github.com/angulardart-community/angular/actions/workflows/dart.yml)
-[![Gitter](https://img.shields.io/gitter/room/angulardart/community)](https://gitter.im/angulardart/community)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/insinfo/angular/dart.yml?branch=master)](https://github.com/insinfo/angular/actions/workflows/dart.yml)
 
 Testing infrastructure for [AngularDart][webdev_angular], used with the
 [`build_runner` package][build_runner].
 
-See https://github.com/angulardart-community for current updates on this project.
+Part of the `ngx_*` family maintained by the [insinfo/angular][repo] fork
+(continuation of the original `angular_test`/`ngtest` package).
 
 Documentation and examples:
 
-* [`_tests/test/`][test_folder] (tests for the main dart-lang/angular package)
+* [`_tests/test/`][test_folder] (tests for the main framework package)
 
-[pub_ng_test]: https://pub.dev/packages/ngx_test
-[pub_test]: https://pub.dev/packages/test
 [build_runner]: https://pub.dev/packages/build_runner
-[test_folder]: https://github.com/angulardart-community/angular/tree/master/_tests/test
+[test_folder]: https://github.com/insinfo/angular/tree/master/_tests/test
 [webdev_angular]: https://pub.dev/packages/ngx_dart
-
-Additional resources:
-
-*   Community/support: [Gitter chat room]
-
-[Gitter chat room]: https://gitter.im/angulardart/community
+[repo]: https://github.com/insinfo/angular
 
 ## Overview
 

@@ -2,7 +2,8 @@ name: ngx_forms
 description: >
   Forms framework for AngularDart.
   Easily create forms to accept input from users.
-version: 5.0.0
+version: 5.0.1
+homepage: https://insinfo.github.io/angular
 repository: https://github.com/insinfo/angular
 
 resolution: workspace

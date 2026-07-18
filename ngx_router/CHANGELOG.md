@@ -1,3 +1,9 @@
+## 4.0.1
+
+- Update package metadata only (no code changes): README now points to the
+  insinfo/angular fork, its documentation site and the migration guide;
+  add the homepage field.
+
 ## 4.0.0-dev.3
 
  - **REFACTOR**(all): update to Dart 3 ([#68](https://github.com/angulardart-community/angular/issues/68)).

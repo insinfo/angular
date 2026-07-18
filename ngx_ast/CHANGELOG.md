@@ -1,3 +1,9 @@
+## 3.0.1
+
+- Update package metadata only (no code changes): README now points to the
+  insinfo/angular fork, its documentation site and the migration guide;
+  add the homepage field.
+
 ## 3.0.0-dev.2
 
  - **REFACTOR**(ngast,ngcompiler): reduce dynamic usage in i18n.

@@ -1,3 +1,9 @@
+## 5.0.1
+
+- Update package metadata only (no code changes): README now points to the
+  insinfo/angular fork, its documentation site and the migration guide;
+  add the homepage field.
+
 ## 5.0.0-dev.3
 
 > Note: This release has breaking changes.

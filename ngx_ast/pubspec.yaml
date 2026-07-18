@@ -1,6 +1,7 @@
 name: ngx_ast
 description: Parser and utilities for AngularDart templates
-version: 3.0.0
+version: 3.0.1
+homepage: https://insinfo.github.io/angular
 repository: https://github.com/insinfo/angular
 
 resolution: workspace

@@ -2,13 +2,14 @@
 
 <!-- Badges -->
 
-[![Pub Package](https://img.shields.io/pub/v/ngx_ast.svg)](https://pub.dartlang.org/packages/ngx_ast)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/angulardart-community/angular/dart.yml?branch=master)](https://github.com/angulardart-community/angular/actions/workflows/dart.yml)
-[![Gitter](https://img.shields.io/gitter/room/angulardart/community)](https://gitter.im/angulardart/community)
+[![Pub Package](https://img.shields.io/pub/v/ngx_ast.svg)](https://pub.dev/packages/ngx_ast)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/insinfo/angular/dart.yml?branch=master)](https://github.com/insinfo/angular/actions/workflows/dart.yml)
 
-Parser and utilities for [AngularDart][gh_angular_dart] templates.
+Parser and utilities for [AngularDart][gh_angular_dart] templates. Part of the
+`ngx_*` family maintained by the insinfo/angular fork (continuation of the
+original `angular_ast`/`ngast` package).
 
-[gh_angular_dart]: https://github.com/angulardart-community/angular
+[gh_angular_dart]: https://github.com/insinfo/angular
 
 ## Usage
 

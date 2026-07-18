@@ -1,3 +1,9 @@
+## 3.0.2
+
+- Update package metadata only (no code changes): README now points to the
+  insinfo/angular fork, its documentation site and the migration guide;
+  add the homepage field.
+
 ## 3.0.1
 
 - Depend on `ngx_dart` instead of `ngx_core` (the `ngx_core` name on pub.dev

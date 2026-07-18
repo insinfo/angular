@@ -3,7 +3,8 @@ description: >
   The AngularDart compiler.
   It compiles your component files written in Dart into templates so that you
   don't have to worry about all the complicated hassle.
-version: 3.0.1
+version: 3.0.2
+homepage: https://insinfo.github.io/angular
 repository: https://github.com/insinfo/angular
 
 resolution: workspace
