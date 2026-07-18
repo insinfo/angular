@@ -1,9 +1,9 @@
 import 'dart:async';
+import 'dart:html';
 
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'event_handler_test.template.dart' as ng;
 
@@ -55,8 +55,7 @@ void main() {
       );
       final fixture = await testBed.create();
       await fixture.update((_) {
-        (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-            .click();
+        fixture.rootElement.querySelector('button')!.click();
       });
       expect(fixture.assertOnlyInstance.captured, ['bar']);
     });
@@ -67,8 +66,7 @@ void main() {
       );
       final fixture = await testBed.create();
       await fixture.update((_) {
-        (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-            .click();
+        fixture.rootElement.querySelector('button')!.click();
       });
       expect(fixture.assertOnlyInstance.captured, ['bar']);
     });
@@ -79,8 +77,7 @@ void main() {
       );
       final fixture = await testBed.create();
       await fixture.update((_) {
-        (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-            .click();
+        fixture.rootElement.querySelector('button')!.click();
       });
       expect(fixture.assertOnlyInstance.captured, ['bar']);
     });
@@ -91,8 +88,7 @@ void main() {
       );
       final fixture = await testBed.create();
       await fixture.update((_) {
-        (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-            .click();
+        fixture.rootElement.querySelector('button')!.click();
       });
       expect(fixture.assertOnlyInstance.captured, ['bar']);
     });
@@ -103,8 +99,7 @@ void main() {
       );
       final fixture = await testBed.create();
       await fixture.update((_) {
-        (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-            .click();
+        fixture.rootElement.querySelector('button')!.click();
       });
       expect(fixture.assertOnlyInstance.captured, ['bar']);
     });
@@ -115,8 +110,7 @@ void main() {
       );
       final fixture = await testBed.create();
       await fixture.update((_) {
-        (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-            .click();
+        fixture.rootElement.querySelector('button')!.click();
       });
       expect(fixture.assertOnlyInstance.captured, ['bar']);
     });
@@ -129,8 +123,7 @@ void main() {
     final fixture = await testBed.create();
     overrideTopLevelDoCapture = expectAsync0(() {});
     await fixture.update((_) {
-      (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-          .click();
+      fixture.rootElement.querySelector('button')!.click();
     });
   }, skip: 'https://github.com/angulardart/angular/issues/1670');
 
@@ -141,8 +134,7 @@ void main() {
     final fixture = await testBed.create();
     overrideTopLevelDoCapture = expectAsync0(() {});
     await fixture.update((_) {
-      (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-          .click();
+      fixture.rootElement.querySelector('button')!.click();
     });
   });
 
@@ -153,8 +145,7 @@ void main() {
     final fixture = await testBed.create();
     TestStaticMethods.overrideDoCapture = expectAsync0(() {});
     await fixture.update((_) {
-      (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-          .click();
+      fixture.rootElement.querySelector('button')!.click();
     });
   });
 
@@ -165,8 +156,7 @@ void main() {
     final fixture = await testBed.create();
     TestStaticMethodsDirect.overrideDoCapture = expectAsync0(() {});
     await fixture.update((_) {
-      (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-          .click();
+      fixture.rootElement.querySelector('button')!.click();
     });
   });
 
@@ -177,8 +167,7 @@ void main() {
     final fixture = await testBed.create();
     fixture.assertOnlyInstance.bar.overrideDoCapture = expectAsync0(() {});
     await fixture.update((_) {
-      (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-          .click();
+      fixture.rootElement.querySelector('button')!.click();
     });
   }, skip: 'https://github.com/angulardart/angular/issues/1670');
 
@@ -189,8 +178,7 @@ void main() {
     final fixture = await testBed.create();
     fixture.assertOnlyInstance.bar.overrideDoCapture = expectAsync0(() {});
     await fixture.update((_) {
-      (fixture.rootElement.querySelector('button') as HTMLButtonElement)
-          .click();
+      fixture.rootElement.querySelector('button')!.click();
     });
   });
 
@@ -200,7 +188,7 @@ void main() {
         ng.createComponentWithHostEventThatThrowsFactory());
     final fixture = await testBed.create();
     expect(
-      fixture.update((_) => (fixture.rootElement as HTMLElement).click()),
+      fixture.update((_) => fixture.rootElement.click()),
       throwsIntentional,
     );
   });
@@ -218,19 +206,19 @@ void main() {
 )
 class ClickHandler extends SuperClick {
   @ViewChild('noArg')
-  HTMLElement? noArgButton;
+  HtmlElement? noArgButton;
 
   @ViewChild('oneArg')
-  HTMLElement? oneArgButton;
+  HtmlElement? oneArgButton;
 
   @ViewChild('noArgTearoff')
-  HTMLElement? noArgTearoffButton;
+  HtmlElement? noArgTearoffButton;
 
   @ViewChild('oneArgTearoff')
-  HTMLElement? oneArgTearoffButton;
+  HtmlElement? oneArgTearoffButton;
 
   @ViewChild('superTearoff')
-  HTMLElement? superTearoffButton;
+  HtmlElement? superTearoffButton;
 
   void onClick() {
     _clicks.add(null);

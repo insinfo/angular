@@ -1,11 +1,11 @@
 import 'dart:async';
+import 'dart:html';
 
+import 'package:test/test.dart';
 import 'package:ngdart/angular.dart';
 import 'package:ngdart/src/core/application_ref.dart';
 import 'package:ngdart/src/core/linker/app_view_utils.dart';
 import 'package:ngdart/src/runtime/dom_events.dart';
-import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'application_ref_test.template.dart' as ng;
 
@@ -55,12 +55,11 @@ void main() {
 
   group('bootstrap should', () {
     test('replace an existing element if in the DOM', () {
-      final existing = document.createElement('hello-component')
-        ..textContent = 'Loading...';
+      final existing = Element.tag('hello-component')..text = 'Loading...';
       document.body!.append(existing);
       final comp =
           appRef.bootstrap<HelloComponent>(ng.createHelloComponentFactory());
-      expect(comp.location.textContent, 'Hello World');
+      expect(comp.location.text, 'Hello World');
       expect(
         document.body!.querySelector('hello-component'),
         same(comp.location),
@@ -70,7 +69,7 @@ void main() {
     test('create a new element if missing from the DOM', () {
       final comp =
           appRef.bootstrap<HelloComponent>(ng.createHelloComponentFactory());
-      expect(comp.location.textContent, 'Hello World');
+      expect(comp.location.text, 'Hello World');
       expect(
         document.body!.querySelector('hello-component'),
         same(comp.location),
@@ -101,12 +100,12 @@ void main() {
 
     test('return an asynchronous null', () {
       final result = appRef.run(() async => null);
-      expect(result, isA<Future<void>>());
+      expect(result, isInstanceOf<Future<void>>());
     });
 
     test('return an asynchronous nullable value', () {
       final result = appRef.run<String?>(() async => null);
-      expect(result, isA<Future<String?>>());
+      expect(result, isInstanceOf<Future<String?>>());
     });
 
     test('never return (threw synchronously)', () {

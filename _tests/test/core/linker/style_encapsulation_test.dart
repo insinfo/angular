@@ -1,30 +1,21 @@
-import 'dart:js_interop';
+import 'dart:html';
 
+import 'package:test/test.dart';
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
-import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'style_encapsulation_test.template.dart' as ng;
 
 void main() {
   tearDown(() {
-    JSArray.from<HTMLElement>(document.head!.querySelectorAll('style'))
-        .toDart
-        .forEach((style) {
-      style.remove();
-    });
-
+    document.head!.querySelectorAll('style').forEach((e) => e.remove());
     return disposeAnyRunningTest();
   });
 
   String failureReason(Element target) {
     final lastStyles = document.head!.querySelectorAll('style');
-    final styleText = JSArray.from<HTMLStyleElement>(lastStyles)
-        .toDart
-        .map((e) => e.textContent)
-        .join('\n');
-    return 'HTML:\n\n${(target.outerHTML as JSString).toDart}\nCSS:\n\n$styleText';
+    final styleText = lastStyles.map((e) => e.text).join('\n');
+    return 'HTML:\n\n${target.outerHtml}\nCSS:\n\n$styleText';
   }
 
   test('should encapsulate usages of [class]=', () async {
@@ -33,7 +24,7 @@ void main() {
     final fixture = await testBed.create();
     final element = fixture.rootElement.querySelector('div')!;
     expect(
-      window.getComputedStyle(element).position,
+      element.getComputedStyle().position,
       'absolute',
       reason: failureReason(element),
     );
@@ -45,7 +36,7 @@ void main() {
     final fixture = await testBed.create();
     final element = fixture.rootElement.querySelector('div')!;
     expect(
-      window.getComputedStyle(element).position,
+      element.getComputedStyle().position,
       'absolute',
       reason: failureReason(element),
     );
@@ -57,7 +48,7 @@ void main() {
     final fixture = await testBed.create();
     final element = fixture.rootElement.querySelector('button')!;
     expect(
-      window.getComputedStyle(element).textTransform,
+      element.getComputedStyle().textTransform,
       isNot('uppercase'),
       reason: failureReason(element),
     );

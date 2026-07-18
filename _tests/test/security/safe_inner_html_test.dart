@@ -1,10 +1,9 @@
 @TestOn('browser')
-library;
 
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/security.dart';
 import 'package:ngtest/angular_test.dart';
 import 'package:test/test.dart';
+import 'package:ngdart/angular.dart';
+import 'package:ngdart/security.dart';
 
 import 'safe_inner_html_test.template.dart' as ng;
 
@@ -46,7 +45,9 @@ void main() {
       final testBed =
           NgTestBed(ng.createInterpolatedTrustedInnerHtmlTestFactory());
       final testRoot = await testBed.create();
+      print(testRoot.rootElement.innerHtml);
       await testRoot.update();
+      print(testRoot.rootElement.innerHtml);
       expect(testRoot.text, contains('(Unsafe)'));
     },
         skip:

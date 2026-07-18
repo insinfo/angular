@@ -1,8 +1,13 @@
+// @dart=2.9
+
 import 'dart:async';
 
-import 'package:_tests/test_util.dart';
 import 'package:logging/logging.dart';
+import 'package:term_glyph/term_glyph.dart' as term_glyph;
+import 'package:test/test.dart';
+import 'package:_tests/test_util.dart';
 import 'package:ngcompiler/v1/cli.dart';
+import 'package:ngcompiler/v1/src/compiler/analyzed_class.dart';
 import 'package:ngcompiler/v1/src/compiler/compile_metadata.dart';
 import 'package:ngcompiler/v1/src/compiler/expression_parser/parser.dart';
 import 'package:ngcompiler/v1/src/compiler/identifiers.dart'
@@ -15,8 +20,6 @@ import 'package:ngcompiler/v1/src/compiler/schema/element_schema_registry.dart'
 import 'package:ngcompiler/v1/src/compiler/template_ast.dart';
 import 'package:ngcompiler/v1/src/compiler/template_parser/ast_template_parser.dart';
 import 'package:ngcompiler/v2/context.dart';
-import 'package:term_glyph/term_glyph.dart' as term_glyph;
-import 'package:test/test.dart';
 
 import 'schema_registry_mock.dart' show MockSchemaRegistry;
 import 'template_humanizer_util.dart';
@@ -25,8 +28,8 @@ const someModuleUrl = 'package:someModule';
 
 typedef ParseTemplate = List<TemplateAst> Function(
   String template,
-  List<CompileDirectiveMetadata>? directives, [
-  List<CompilePipeMetadata>? pipes,
+  List<CompileDirectiveMetadata> directives, [
+  List<CompilePipeMetadata> pipes,
 ]);
 
 class ArrayConsole {
@@ -59,7 +62,10 @@ class ArrayConsole {
 
 void main() {
   CompileContext.overrideForTesting();
-  term_glyph.ascii = true;
+
+  setUpAll(() {
+    term_glyph.ascii = true;
+  });
 
   final console = ArrayConsole();
   final ngIf = createCompileDirectiveMetadata(
@@ -71,12 +77,12 @@ void main() {
       type: CompileTypeMetadata(moduleUrl: someModuleUrl, name: 'Root'),
       metadataType: CompileDirectiveMetadataType.component);
 
-  late ParseTemplate parseTemplate;
+  ParseTemplate parseTemplate;
 
   List<TemplateAst> parse(
     String template, [
-    List<CompileDirectiveMetadata>? directive,
-    List<CompilePipeMetadata>? pipes,
+    List<CompileDirectiveMetadata> directive,
+    List<CompilePipeMetadata> pipes,
   ]) {
     return runZoned(() => parseTemplate(template, directive, pipes),
         zoneValues: {
@@ -85,8 +91,8 @@ void main() {
   }
 
   void setUpParser({
-    ElementSchemaRegistry? elementSchemaRegistry,
-    CompilerFlags? compilerFlags,
+    ElementSchemaRegistry elementSchemaRegistry,
+    CompilerFlags compilerFlags,
   }) {
     elementSchemaRegistry ??= MockSchemaRegistry(
       {'invalidProp': false},
@@ -601,7 +607,7 @@ void main() {
       });
 
       group('providers', () {
-        late int nextProviderId;
+        int nextProviderId;
         CompileTokenMetadata createToken(String value) {
           CompileTokenMetadata token;
           if (value.startsWith('type:')) {
@@ -657,8 +663,8 @@ void main() {
         }
 
         CompileDirectiveMetadata createDir(String selector,
-            {List<CompileProviderMetadata> providers = const [],
-            List<CompileProviderMetadata> viewProviders = const [],
+            {List<CompileProviderMetadata> providers,
+            List<CompileProviderMetadata> viewProviders,
             List<String> deps = const [],
             List<String> queries = const []}) {
           var isComponent = !selector.startsWith('[');
@@ -899,8 +905,8 @@ void main() {
         test('should change missing @Self() that are optional to nulls', () {
           var dirA = createDir('[dirA]', deps: ['optional:self:provider0']);
           var elAst = parse('<div dirA></div>', [dirA])[0] as ElementAst;
-          expect(elAst.providers[0].providers[0].deps?[0]?.isValue, true);
-          expect(elAst.providers[0].providers[0].deps?[0]?.value, isNull);
+          expect(elAst.providers[0].providers[0].deps[0].isValue, true);
+          expect(elAst.providers[0].providers[0].deps[0].value, isNull);
         });
 
         test('should report missing @Host() deps as errors', () {
@@ -918,8 +924,8 @@ void main() {
         test('should change missing @Host() that are optional to nulls', () {
           var dirA = createDir('[dirA]', deps: ['optional:host:provider0']);
           var elAst = parse('<div dirA></div>', [dirA])[0] as ElementAst;
-          expect(elAst.providers[0].providers[0].deps?[0]?.isValue, true);
-          expect(elAst.providers[0].providers[0].deps?[0]?.value, isNull);
+          expect(elAst.providers[0].providers[0].deps[0].isValue, true);
+          expect(elAst.providers[0].providers[0].deps[0].value, isNull);
         });
 
         test('should report cyclic dependencies as errors', () {
@@ -1337,7 +1343,6 @@ void main() {
 
         test('should internationalize directive property', () {
           final directive = createCompileDirectiveMetadata(
-            type: CompileTypeMetadata(moduleUrl: someModuleUrl, name: 'Comp'),
             selector: 'test',
             inputs: ['input'],
           );
@@ -1729,7 +1734,7 @@ void main() {
     });
 
     group('content projection', () {
-      late int compCounter;
+      int compCounter;
       setUp(() {
         compCounter = 0;
       });
@@ -2312,7 +2317,6 @@ void main() {
 
       test('should report error for invalid internationalized expression', () {
         final directive = createCompileDirectiveMetadata(
-          type: CompileTypeMetadata(moduleUrl: someModuleUrl, name: 'Comp'),
           selector: 'test',
           inputs: ['input'],
         );
@@ -2618,17 +2622,17 @@ void main() {
 }
 
 CompileDirectiveMetadata createCompileDirectiveMetadata({
-  required CompileTypeMetadata type,
+  CompileTypeMetadata type,
   CompileDirectiveMetadataType metadataType =
       CompileDirectiveMetadataType.directive,
-  String? selector,
-  String? exportAs,
-  List<String>? inputs,
-  List<String>? outputs,
+  String selector,
+  String exportAs,
+  List<String> inputs,
+  List<String> outputs,
   List<CompileProviderMetadata> providers = const [],
   List<CompileProviderMetadata> viewProviders = const [],
   List<CompileQueryMetadata> queries = const [],
-  CompileTemplateMetadata? template,
+  CompileTemplateMetadata template,
 }) {
   final inputsMap = <String, String>{};
   final inputTypeMap = <String, CompileTypeMetadata>{};
@@ -2663,6 +2667,7 @@ CompileDirectiveMetadata createCompileDirectiveMetadata({
     viewProviders: viewProviders,
     queries: queries,
     template: template ?? CompileTemplateMetadata(),
+    analyzedClass: AnalyzedClass(null),
   );
 }
 

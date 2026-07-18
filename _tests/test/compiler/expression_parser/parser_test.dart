@@ -1,3 +1,6 @@
+// @dart=2.9
+
+import 'package:test/test.dart';
 import 'package:_tests/test_util.dart';
 import 'package:ngcompiler/v1/src/compiler/compile_metadata.dart'
     show CompileIdentifierMetadata;
@@ -6,7 +9,6 @@ import 'package:ngcompiler/v1/src/compiler/expression_parser/ast.dart'
 import 'package:ngcompiler/v1/src/compiler/expression_parser/parser.dart'
     show ParseException, ExpressionParser;
 import 'package:ngcompiler/v2/context.dart';
-import 'package:test/test.dart';
 
 import 'unparser.dart' show Unparser;
 
@@ -24,15 +26,15 @@ void main() {
 }
 
 void _runTests(ExpressionParser Function() createParser) {
-  ASTWithSource parseAction(String? text, [String location = '']) {
+  ASTWithSource parseAction(String text, [String location]) {
     return createParser().parseAction(text, location, []);
   }
 
-  ASTWithSource parseBinding(String text, [String location = '']) {
+  ASTWithSource parseBinding(String text, [String location]) {
     return createParser().parseBinding(text, location, []);
   }
 
-  ASTWithSource? parseInterpolation(String text, [String location = '']) {
+  ASTWithSource parseInterpolation(String text, [String location]) {
     return createParser().parseInterpolation(text, location, []);
   }
 
@@ -40,19 +42,19 @@ void _runTests(ExpressionParser Function() createParser) {
     return Unparser().unparse(ast);
   }
 
-  void checkInterpolation(String exp, [String? expected]) {
-    var ast = parseInterpolation(exp)!;
+  void checkInterpolation(String exp, [String expected]) {
+    var ast = parseInterpolation(exp);
     expected ??= exp;
     expect(unparse(ast), expected);
   }
 
-  void checkBinding(String exp, [String? expected]) {
+  void checkBinding(String exp, [String expected]) {
     var ast = parseBinding(exp);
     expected ??= exp;
     expect(unparse(ast), expected);
   }
 
-  void checkAction(String exp, [String? expected]) {
+  void checkAction(String exp, [String expected]) {
     var ast = parseAction(exp);
     expected ??= exp;
     expect(unparse(ast), expected);
@@ -62,7 +64,7 @@ void _runTests(ExpressionParser Function() createParser) {
     expect(() => parseInterpolation(text), matcher);
   }
 
-  void expectActionError(String? text, Object matcher) {
+  void expectActionError(String text, Object matcher) {
     expect(() => parseAction(text), matcher);
   }
 
@@ -167,7 +169,7 @@ void _runTests(ExpressionParser Function() createParser) {
           final parser = createParser();
           final text = 'fn(a: 1)';
           final export = CompileIdentifierMetadata(name: 'a');
-          final ast = parser.parseAction(text, '', [export]);
+          final ast = parser.parseAction(text, null, [export]);
           expect(unparse(ast), text);
         });
       });
@@ -306,14 +308,14 @@ void _runTests(ExpressionParser Function() createParser) {
         expect(parseInterpolation('nothing'), isNull);
       });
       test('should parse no prefix/suffix interpolation', () {
-        var ast = parseInterpolation('{{a}}')!.ast as Interpolation;
+        var ast = parseInterpolation('{{a}}').ast as Interpolation;
         expect(ast.strings, ['', '']);
         expect(ast.expressions.length, 1);
         expect((ast.expressions[0] as PropertyRead).name, 'a');
       });
       test('should parse prefix/suffix with multiple interpolation', () {
         var originalExp = 'before {{ a }} middle {{ b }} after';
-        var ast = parseInterpolation(originalExp)!;
+        var ast = parseInterpolation(originalExp);
         expect(Unparser().unparse(ast), originalExp);
       });
       test('should throw on empty interpolation expressions', () {

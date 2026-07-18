@@ -1,7 +1,8 @@
+import 'dart:html';
+
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'host_annotation_test.template.dart' as ng;
 
@@ -9,13 +10,11 @@ void main() {
   tearDown(disposeAnyRunningTest);
 
   /// Returns the root [Element] created by initializing [component].
-  Future<HTMLElement> rootElementOf<T extends Object>(
+  Future<Element> rootElementOf<T extends Object>(
     ComponentFactory<T> component,
   ) {
     final testBed = NgTestBed(component);
-    return testBed
-        .create()
-        .then((fixture) => fixture.rootElement as HTMLElement);
+    return testBed.create().then((fixture) => fixture.rootElement);
   }
 
   group('@HostBinding', () {
@@ -89,16 +88,16 @@ void main() {
       );
       final fixture = await testBed.create();
       final element = fixture.rootElement;
-      expect(element.getAttribute('disabled'), isNull);
-      expect(element.getAttribute('aria-disabled'), isNull);
+      expect(element.attributes, isNot(contains('disabled')));
+      expect(element.attributes, isNot(contains('aria-disabled')));
 
       await fixture.update((c) => c.disabledBackingValue = true);
-      expect(element.getAttribute('disabled'), isNotNull);
-      expect(element.getAttribute('aria-disabled'), isNotNull);
+      expect(element.attributes, contains('disabled'));
+      expect(element.attributes, contains('aria-disabled'));
 
       await fixture.update((c) => c.disabledBackingValue = false);
-      expect(element.getAttribute('disabled'), isNull);
-      expect(element.getAttribute('aria-disabled'), isNull);
+      expect(element.attributes, isNot(contains('disabled')));
+      expect(element.attributes, isNot(contains('aria-disabled')));
     });
 
     test('should support conditional attributes on static members', () async {
@@ -107,8 +106,8 @@ void main() {
       );
       final fixture = await testBed.create();
       final element = fixture.rootElement;
-      expect(element.getAttribute('disabled'), isNotNull);
-      expect(element.getAttribute('aria-disabled'), isNotNull);
+      expect(element.attributes, contains('disabled'));
+      expect(element.attributes, contains('aria-disabled'));
     });
 
     test('should support conditional classes', () async {
@@ -117,13 +116,13 @@ void main() {
       );
       final fixture = await testBed.create();
       final element = fixture.rootElement;
-      expect(element.classList.value, isNot(contains('fancy')));
+      expect(element.classes, isNot(contains('fancy')));
 
       await fixture.update((c) => c.fancy = true);
-      expect(element.classList.value, contains('fancy'));
+      expect(element.classes, contains('fancy'));
 
       await fixture.update((c) => c.fancy = false);
-      expect(element.classList.value, isNot(contains('fancy')));
+      expect(element.classes, isNot(contains('fancy')));
     });
 
     test('should support multiple annotations on a single field', () async {
@@ -140,7 +139,7 @@ void main() {
           NgTestBed<HostListenerClick>(ng.createHostListenerClickFactory());
       final fixture = await testBed.create();
       fixture.assertOnlyInstance.clickHandler = expectAsync0(() {});
-      await fixture.update((_) => (fixture.rootElement as HTMLElement).click());
+      await fixture.update((_) => fixture.rootElement.click());
     });
 
     test('should support click through inheritance', () async {
@@ -148,7 +147,7 @@ void main() {
           ng.createHostListenerInheritedClickFactory());
       final fixture = await testBed.create();
       fixture.assertOnlyInstance.clickHandler = expectAsync0(() {});
-      await fixture.update((_) => (fixture.rootElement as HTMLElement).click());
+      await fixture.update((_) => fixture.rootElement.click());
     });
 
     test('should support multiple annotations on a single field', () async {

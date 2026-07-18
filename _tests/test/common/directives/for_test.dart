@@ -1,9 +1,11 @@
+library angular2.test.common.directives.for_test;
+
 import 'dart:async';
 
+import 'package:test/test.dart';
 import 'package:_tests/matchers.dart';
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
-import 'package:test/test.dart';
 
 import 'for_test.template.dart' as ng;
 
@@ -296,7 +298,7 @@ void main() {
       await testFixture.update((component) {
         component.child!.items = ['a', 'b', 'c'];
       });
-      expect(testFixture.text, equals('0: a;1: b;2: c;'));
+      expect(testFixture.text, hasTextContent('0: a;1: b;2: c;'));
     });
 
     test('should use a default template if a custom one is null', () async {
@@ -306,7 +308,7 @@ void main() {
       await testFixture.update((NgForCustomTemplateNullTest component) {
         component.child!.items = ['a', 'b', 'c'];
       });
-      expect(testFixture.text, equals('0: a;1: b;2: c;'));
+      expect(testFixture.text, hasTextContent('0: a;1: b;2: c;'));
     });
 
     test(
@@ -318,7 +320,7 @@ void main() {
       await testFixture.update((NgForCustomTemplatePrecedenceTest component) {
         component.child!.items = ['a', 'b', 'c'];
       });
-      expect(testFixture.text, equals('0: a;1: b;2: c;'));
+      expect(testFixture.text, hasTextContent('0: a;1: b;2: c;'));
     });
 
     group('track by', () {
@@ -378,8 +380,8 @@ void main() {
           ];
         });
         var endElements = testFixture.rootElement.querySelectorAll('p');
-        expect(startElements.item(0), endElements.item(1));
-        expect(startElements.item(1), endElements.item(0));
+        expect(startElements[0], endElements[1]);
+        expect(startElements[1], endElements[0]);
       });
 
       test(

@@ -1,9 +1,11 @@
+// @dart=2.9
+
+import 'package:test/test.dart';
 import 'package:ngcompiler/v1/src/compiler/compile_metadata.dart'
     show CompileIdentifierMetadata;
 import 'package:ngcompiler/v1/src/compiler/output/dart_emitter.dart'
     show DartEmitter;
 import 'package:ngcompiler/v1/src/compiler/output/output_ast.dart' as o;
-import 'package:test/test.dart';
 
 var someModuleUrl = 'asset:somePackage/lib/somePath';
 var anotherModuleUrl = 'asset:somePackage/lib/someOtherPath';
@@ -20,8 +22,8 @@ void main() {
   //   Dart exports everything that has no `_` in its name.
   // - return types for function expressions
   group('DartEmitter', () {
-    late DartEmitter emitter;
-    late o.ReadVarExpr someVar;
+    DartEmitter emitter;
+    o.ReadVarExpr someVar;
     setUp(() {
       emitter = DartEmitter();
       someVar = o.variable('someVar');
@@ -380,7 +382,7 @@ void main() {
       expect(emitStmt(o.ThrowStmt(someVar)), 'throw someVar;');
     });
     group('classes', () {
-      late o.Statement callSomeMethod;
+      o.Statement callSomeMethod;
       setUp(() {
         callSomeMethod = o.thisExpr.callMethod('someMethod', []).toStmt();
       });
@@ -548,8 +550,7 @@ void main() {
             'GenericClass',
             o.importExpr(
               CompileIdentifierMetadata(name: 'GenericParent'),
-              // typeParams: o.importType(CompileIdentifierMetadata(name: 'T'))?.typeParams ?? [],
-              typeParams: [o.importType(CompileIdentifierMetadata(name: 'T'))!],
+              typeParams: [o.importType(CompileIdentifierMetadata(name: 'T'))],
             ),
             [],
             [],

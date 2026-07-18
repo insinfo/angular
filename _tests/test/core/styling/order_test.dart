@@ -1,7 +1,6 @@
+import 'package:test/test.dart';
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
-import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'order_test.template.dart' as ng;
 
@@ -30,7 +29,7 @@ void main() {
       );
       // Styles from Child are applied because they load second.
       final secondChild = testFixture.rootElement.querySelector('.test')!;
-      expect(window.getComputedStyle(secondChild).margin, '16px');
+      expect(secondChild.getComputedStyle().margin, '16px');
     });
 
     test('from Parent win when Child is created before Parent', () async {
@@ -44,7 +43,7 @@ void main() {
       );
       // Styles from Parent are applied because they load second.
       final secondChild = testFixture.rootElement.querySelector('.test')!;
-      expect(window.getComputedStyle(secondChild).margin, '8px');
+      expect(secondChild.getComputedStyle().margin, '8px');
     });
   });
 }

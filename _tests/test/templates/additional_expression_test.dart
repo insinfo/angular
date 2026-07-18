@@ -1,7 +1,6 @@
+import 'package:test/test.dart';
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
-import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'additional_expression_lib.dart' as lib;
 import 'additional_expression_test.template.dart' as ng;
@@ -14,7 +13,8 @@ void main() {
 
   test('should parse identifiers from prefixed exports', () async {
     final fixture = await NgTestBed<TestPrefixedExports>(
-            ng.createTestPrefixedExportsFactory())
+            ng.createTestPrefixedExportsFactory()
+                as ComponentFactory<TestPrefixedExports>)
         .create();
     expect(
       fixture.text,
@@ -32,7 +32,8 @@ void main() {
 
     setUp(() async {
       fixture = await NgTestBed<TestNonRootAssignment>(
-              ng.createTestNonRootAssignmentFactory())
+              ng.createTestNonRootAssignmentFactory()
+                  as ComponentFactory<TestNonRootAssignment>)
           .create();
     });
 
@@ -40,9 +41,7 @@ void main() {
       expect(fixture.assertOnlyInstance.a, isNull);
 
       await fixture.update(
-        (_) => (fixture.rootElement.querySelectorAll('button').item(0)
-                as HTMLButtonElement)
-            .click(),
+        (_) => fixture.rootElement.querySelectorAll('button')[0].click(),
       );
 
       expect(fixture.assertOnlyInstance.a, isNotNull);
@@ -52,10 +51,9 @@ void main() {
       expect(fixture.assertOnlyInstance.a, isNull);
       expect(fixture.assertOnlyInstance.b, isNull);
 
-      await fixture.update((_) => (fixture.rootElement
-              .querySelectorAll('button')
-              .item(1) as HTMLButtonElement)
-          .click());
+      await fixture.update(
+        (_) => fixture.rootElement.querySelectorAll('button')[1].click(),
+      );
 
       expect(fixture.assertOnlyInstance.a, isNotNull);
       expect(fixture.assertOnlyInstance.a, fixture.assertOnlyInstance.b);
@@ -66,9 +64,7 @@ void main() {
       expect(fixture.assertOnlyInstance.b, isNull);
 
       await fixture.update(
-        (_) => (fixture.rootElement.querySelectorAll('button').item(2)
-                as HTMLButtonElement)
-            .click(),
+        (_) => fixture.rootElement.querySelectorAll('button')[2].click(),
       );
 
       expect(fixture.assertOnlyInstance.a, isNotNull);
@@ -78,7 +74,8 @@ void main() {
 
   test('should parse null-aware method invocations', () async {
     final fixture = await NgTestBed<TestNullAwareFunctions>(
-            ng.createTestNullAwareFunctionsFactory())
+            ng.createTestNullAwareFunctionsFactory()
+                as ComponentFactory<TestNullAwareFunctions>)
         .create();
     expect(
       fixture.text,

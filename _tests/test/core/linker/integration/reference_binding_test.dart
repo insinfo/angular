@@ -1,7 +1,8 @@
+import 'dart:html';
+
+import 'package:test/test.dart';
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
-import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'reference_binding_test.template.dart' as ng;
 
@@ -28,7 +29,7 @@ void main() {
     final testFixture = await testBed.create();
     expect(
       testFixture.assertOnlyInstance.captured!.reference,
-      const TypeMatcher<HTMLDivElement>(),
+      const TypeMatcher<DivElement>(),
     );
   });
 

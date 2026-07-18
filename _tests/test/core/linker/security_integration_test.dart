@@ -1,12 +1,11 @@
 @TestOn('browser')
-library;
 
-import 'package:_tests/matchers.dart';
-import 'package:ngdart/angular.dart';
-import 'package:ngdart/src/security/dom_sanitization_service.dart';
+import 'dart:html';
+
 import 'package:ngtest/angular_test.dart';
+import 'package:ngdart/src/security/dom_sanitization_service.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
+import 'package:ngdart/angular.dart';
 
 import 'security_integration_test.template.dart' as ng;
 
@@ -15,10 +14,9 @@ void main() {
 
   test('should escape unsafe attributes', () async {
     const unsafeUrl = 'javascript:alert(1)';
-    final testBed = NgTestBed<UnsafeAttributeComponent>(
-        ng.createUnsafeAttributeComponentFactory());
+    final testBed = NgTestBed(ng.createUnsafeAttributeComponentFactory());
     final testFixture = await testBed.create();
-    final a = testFixture.rootElement.querySelector('a') as HTMLAnchorElement;
+    final a = testFixture.rootElement.querySelector('a') as AnchorElement;
     expect(a.href, matches(r'.*/hello$'));
     await testFixture.update((component) {
       component.href = unsafeUrl;
@@ -27,53 +25,52 @@ void main() {
   });
 
   test('should not escape values marked as trusted', () async {
-    final testBed = NgTestBed<TrustedValueComponent>(
-        ng.createTrustedValueComponentFactory());
+    final testBed = NgTestBed(ng.createTrustedValueComponentFactory());
     final testFixture = await testBed.create();
-    final a = testFixture.rootElement.querySelector('a') as HTMLAnchorElement;
+    final a = testFixture.rootElement.querySelector('a') as AnchorElement;
     expect(a.href, 'javascript:alert(1)');
   });
 
   test('should throw error when using the wrong trusted value', () async {
-    final testBed = NgTestBed<WrongTrustedValueComponent>(
-        ng.createWrongTrustedValueComponentFactory());
+    final testBed = NgTestBed(ng.createWrongTrustedValueComponentFactory());
     expect(testBed.create(), throwsA(isUnsupportedError));
   });
 
   test('should escape unsafe styles', () async {
-    final testBed =
-        NgTestBed<UnsafeStyleComponent>(ng.createUnsafeStyleComponentFactory());
+    final testBed = NgTestBed(ng.createUnsafeStyleComponentFactory());
     final testFixture = await testBed.create();
-    final div = testFixture.rootElement.querySelector('div') as HTMLDivElement;
-    expect(div.style.background, matches('red'));
+    final div = testFixture.rootElement.querySelector('div');
+    expect(div?.style.background, matches('red'));
     await testFixture.update((component) {
       component.backgroundStyle = 'url(javascript:evil())';
     });
-    expect(div.style.background, isNot(contains('javascript')));
+    expect(div?.style.background, isNot(contains('javascript')));
   });
 
   test('should escape unsafe HTML', () async {
-    final testBed =
-        NgTestBed<UnsafeHtmlComponent>(ng.createUnsafeHtmlComponentFactory());
+    final testBed = NgTestBed(ng.createUnsafeHtmlComponentFactory());
     final testFixture = await testBed.create();
-    final div = testFixture.rootElement.querySelector('div') as HTMLDivElement;
-    expect(div, hasInnerHtml('some <p>text</p>'));
+    final div = testFixture.rootElement.querySelector('div');
+    expect(div?.innerHtml, 'some <p>text</p>');
     await testFixture.update((component) {
       var c = component;
       c.html = 'ha <script>evil()</script>';
     });
-    expect(div, hasInnerHtml('ha '));
+    expect(div?.innerHtml, 'ha ');
     await testFixture.update((component) {
       var c = component;
       c.html = 'also <img src="x" onerror="evil()"> evil';
     });
-    expect(div, hasInnerHtml('also <img src="x"> evil'));
+    expect(div?.innerHtml, 'also <img src="x"> evil');
     await testFixture.update((component) {
       final srcdoc = '<div></div><script></script>';
       var c = component;
       c.html = 'also <iframe srcdoc="$srcdoc"> content</iframe>';
     });
-    expect(div, hasInnerHtml('also <iframe> content</iframe>'));
+    expect(
+      div?.innerHtml,
+      'also <iframe> content</iframe>',
+    );
   });
 }
 

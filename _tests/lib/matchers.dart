@@ -1,17 +1,10 @@
-import 'dart:js_interop';
+import 'dart:html';
 
-import 'package:ngdart/angular.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
+import 'package:ngdart/angular.dart';
 
 /// Matches textual content of an element including children.
 Matcher hasTextContent(String expected) => _HasTextContent(expected);
-
-/// Matches DOMTokenList.
-Matcher hasDomTokenList(List<String> expected) => _HasDomTokenList(expected);
-
-/// Matches textual content of an element including children.
-Matcher hasInnerHtml(String expected) => _HasInnerHtml(expected);
 
 final throwsNoProviderError = throwsA(_isNoProviderError);
 final _isNoProviderError = const TypeMatcher<NoProviderError>();
@@ -22,8 +15,7 @@ class _HasTextContent extends Matcher {
   const _HasTextContent(this.expectedText);
 
   @override
-  bool matches(Object? item, void _) =>
-      _elementText(item as JSAny?) == expectedText;
+  bool matches(Object? item, void _) => _elementText(item) == expectedText;
 
   @override
   Description describe(Description description) =>
@@ -37,100 +29,33 @@ class _HasTextContent extends Matcher {
     void __,
   ) {
     mismatchDescription.add('Text content of element: '
-        '\'${_elementText(item as JSAny?)}\'');
+        '\'${_elementText(item)}\'');
     return mismatchDescription;
   }
 }
 
-String? _elementText(JSAny? node) {
-  if (node.isA<NodeList>()) {
-    return <String?>[
-      for (var i = 0; i < (node as NodeList).length; i++)
-        _elementText(node.item(i))
-    ].join('');
-  }
-
-  if (node.isA<Node>()) {
-    if (node.isA<Comment>()) {
+String? _elementText(Object? n) {
+  if (n is Iterable) {
+    return n.map(_elementText).join('');
+  } else if (n is Node) {
+    if (n is Comment) {
       return '';
     }
 
-    if (node.isA<Element>() && (node as Element).shadowRoot != null) {
-      return _elementText(node.shadowRoot!.childNodes);
+    if (n is ContentElement) {
+      return _elementText(n.getDistributedNodes());
     }
 
-    if ((node as Node).childNodes.length != 0) {
-      return _elementText(node.childNodes);
+    if (n is Element && n.shadowRoot != null) {
+      return _elementText(n.shadowRoot!.nodes);
     }
 
-    return node.textContent;
-  }
-
-  return null;
-}
-
-class _HasDomTokenList extends Matcher {
-  final List<String?> expectedTokens;
-
-  const _HasDomTokenList(this.expectedTokens);
-
-  @override
-  bool matches(Object? item, void _) {
-    final tokens = item as DOMTokenList;
-
-    if (tokens.length != expectedTokens.length) {
-      return false;
+    if (n.nodes.isNotEmpty) {
+      return _elementText(n.nodes);
     }
 
-    for (var i = 0; i < expectedTokens.length; i++) {
-      if (tokens.item(i) != expectedTokens[i]) {
-        return false;
-      }
-    }
-
-    return true;
-  }
-
-  @override
-  Description describe(Description description) {
-    return description.add(expectedTokens.join(','));
-  }
-
-  @override
-  Description describeMismatch(
-    item,
-    Description mismatchDescription,
-    void _,
-    void __,
-  ) {
-    mismatchDescription.add('DOMTokenList: \'$item}\'');
-    return mismatchDescription;
-  }
-}
-
-class _HasInnerHtml extends Matcher {
-  final String expectedHtml;
-
-  const _HasInnerHtml(this.expectedHtml);
-
-  @override
-  bool matches(Object? item, void _) {
-    return ((item as Element).innerHTML as JSString).toDart == expectedHtml;
-  }
-
-  @override
-  Description describe(Description description) =>
-      description.add(expectedHtml);
-
-  @override
-  Description describeMismatch(
-    item,
-    Description mismatchDescription,
-    void _,
-    void __,
-  ) {
-    mismatchDescription.add('Inner HTML of element: '
-        '\'${_elementText(item as Element)}\'');
-    return mismatchDescription;
+    return n.text;
+  } else {
+    return '$n';
   }
 }

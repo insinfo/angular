@@ -1,6 +1,8 @@
+// @dart=2.9
+
+import 'package:test/test.dart';
 import 'package:_tests/compiler.dart';
 import 'package:ngcompiler/v2/context.dart';
-import 'package:test/test.dart';
 
 const ngExperimentalImport = 'package:$ngPackage/experimental.dart';
 
@@ -35,11 +37,12 @@ void main() {
         )
         class CheckAlwaysComponent {}
       """, errors: [
-        allOf(
-          contains('Only supported on components that use '
-              '"ChangeDetectionStrategy.onPush" change detection'),
+        allOf([
+          contains(
+            'Only supported on components that use "OnPush" change detection',
+          ),
           containsSourceLocation(4, 9),
-        ),
+        ]),
       ]);
     });
 
@@ -52,11 +55,12 @@ void main() {
         @Directive(selector: '[test]')
         class TestDirective {}
       """, errors: [
-        allOf(
-          contains('Only supported on components that use '
-              '"ChangeDetectionStrategy.onPush" change detection'),
+        allOf([
+          contains(
+            'Only supported on components that use "OnPush" change detection',
+          ),
           containsSourceLocation(4, 9),
-        ),
+        ]),
       ]);
     });
   });

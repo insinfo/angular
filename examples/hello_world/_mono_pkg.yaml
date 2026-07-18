@@ -1,5 +1,5 @@
 sdk:
-  - 2.19.6
+  - stable
   - pubspec
 
 stages:
@@ -7,4 +7,4 @@ stages:
       - format
       - analyze
   - build:
-      - command: dart run build_runner build --delete-conflicting-outputs --fail-on-severe
+      - command: dart run build_runner build --fail-on-severe

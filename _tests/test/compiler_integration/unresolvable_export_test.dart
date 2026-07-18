@@ -1,13 +1,14 @@
+// @dart=2.9
+
+import 'package:test/test.dart';
 import 'package:_tests/compiler.dart';
 import 'package:ngcompiler/v2/context.dart';
-import 'package:test/test.dart';
 
 void main() {
   CompileContext.overrideForTesting();
 
   test('should fail build for unresolved exports', () async {
-    await compilesExpecting(
-      '''
+    await compilesExpecting('''
       import '$ngImport';
 
       class GoodExport {}
@@ -18,21 +19,17 @@ void main() {
         exports: const [BadExport, GoodExport],
       )
       class BadComponent {}
-    ''',
-      errors: [
-        allOf(
-          contains(
-              'Compiling @Component-annotated class "BadComponent" failed'),
-          contains('BadExport'),
-          containsSourceLocation(8, 25),
-        ),
-      ],
-    );
+    ''', errors: [
+      allOf([
+        contains('Compiling @Component-annotated class "BadComponent" failed'),
+        contains('BadExport'),
+        containsSourceLocation(8, 25)
+      ]),
+    ]);
   });
 
   test('should fail build for non identifier exports', () async {
-    await compilesExpecting(
-      '''
+    await compilesExpecting('''
       import '$ngImport';
 
       @Component(
@@ -41,14 +38,12 @@ void main() {
         exports: const [1],
       )
       class BadComponent {}
-    ''',
-      errors: [
-        allOf(
-          contains('Item 1 in the "exports" field must be an identifier'),
-          containsSourceLocation(3, 7),
-        ),
-      ],
-    );
+    ''', errors: [
+      allOf([
+        contains('Item 1 in the "exports" field must be an identifier'),
+        containsSourceLocation(3, 7)
+      ]),
+    ]);
   });
 
   test(
@@ -68,12 +63,12 @@ void main() {
       )
       class BadComponent {}
     ''', errors: [
-      allOf(
-        contains('must be either a simple identifier or an identifier'),
-        contains('with a library prefix'),
+      allOf([
+        contains('must be either a simple identifier or an identifier with a '
+            'library prefix'),
         contains('Foo.bar'),
-        containsSourceLocation(7, 7),
-      ),
+        containsSourceLocation(7, 7)
+      ])
     ]);
   });
 }

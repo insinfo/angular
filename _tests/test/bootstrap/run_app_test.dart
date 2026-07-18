@@ -1,9 +1,12 @@
-import 'dart:async';
-import 'dart:js_interop';
+@JS()
+library angular.test.bootstrap.run_app_test;
 
-import 'package:ngdart/angular.dart';
+import 'dart:async';
+import 'dart:html';
+
+import 'package:js/js.dart';
 import 'package:test/test.dart';
-import 'package:web/web.dart';
+import 'package:ngdart/angular.dart';
 
 import 'run_app_test.template.dart' as ng;
 
@@ -24,9 +27,9 @@ void main() {
 
   /// Verify that the DOM of the page represents the component.
   void verifyDomAndStyles({String innerText = 'Hello World!'}) {
-    expect(rootDomContainer.textContent, innerText);
+    expect(rootDomContainer.text, innerText);
     final h1 = rootDomContainer.querySelector('h1');
-    expect(window.getComputedStyle(h1!).height, '100px');
+    expect(h1!.getComputedStyle().height, '100px');
   }
 
   /// Verify the `Testability` interface is working for this application.
@@ -35,21 +38,21 @@ void main() {
   void verifyTestability() {
     expect(component.injector.get(Testability), isNotNull);
     var jsTestability = getAngularTestability(
-      rootDomContainer.children.item(0)!,
+      rootDomContainer.children.first,
     );
-    expect(getAllAngularTestabilities().length, isNot(equals(0)));
+    expect(getAllAngularTestabilities(), isNot(hasLength(0)));
     expect(jsTestability.isStable(), isTrue, reason: 'Expected stability');
-    jsTestability.whenStable(expectAsync0(() {
+    jsTestability.whenStable(allowInterop(expectAsync0(() {
       Future(expectAsync0(() {
         verifyDomAndStyles(innerText: 'Hello Universe!');
       }));
-    }).toJS);
+    })));
     runInApp(() => HelloWorldComponent.doAsyncTaskAndThenRename('Universe'));
   }
 
   setUp(() {
-    rootDomContainer = HTMLDivElement()..id = 'test-root-dom';
-    rootDomContainer.append(document.createElement('hello-world'));
+    rootDomContainer = DivElement()..id = 'test-root-dom';
+    rootDomContainer.append(Element.tag('hello-world'));
     document.body!.append(rootDomContainer);
     HelloWorldComponent.name = 'World';
   });
@@ -163,9 +166,10 @@ class StubExceptionHandler implements ExceptionHandler {
 external JsTestability getAngularTestability(Element e);
 
 @JS()
-external JSArray<JsTestability> getAllAngularTestabilities();
+external List<JsTestability> getAllAngularTestabilities();
 
-extension type JsTestability._(JSObject _) implements JSObject {
+@JS()
+abstract class JsTestability {
   external bool isStable();
-  external void whenStable(JSFunction fn);
+  external void whenStable(void Function() fn);
 }

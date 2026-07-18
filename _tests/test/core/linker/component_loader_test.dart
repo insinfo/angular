@@ -1,6 +1,6 @@
+import 'package:test/test.dart';
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
-import 'package:test/test.dart';
 
 import 'component_loader_test.template.dart' as ng;
 
@@ -48,7 +48,7 @@ void main() {
           ng.createDynamicCompFactory(),
           injector: logInjector(comp.context),
         );
-        expect(ref.location.textContent, 'Dynamic');
+        expect(ref.location.text, 'Dynamic');
       });
     });
 
@@ -149,7 +149,7 @@ void main() {
           ng.createDynamicOnPushCompFactory(),
           injector: logInjector(comp.context),
         );
-        expect(ref.location.textContent, 'Dynamic');
+        expect(ref.location.text, 'Dynamic');
       });
     });
 

@@ -1,7 +1,8 @@
+import 'dart:html';
+
+import 'package:test/test.dart';
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
-import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'query_integration_test.template.dart' as ng;
 
@@ -226,7 +227,7 @@ void main() {
 
       while (divIt.moveNext()) {
         itemIt.moveNext();
-        expect(divIt.current.textContent, itemIt.current);
+        expect(divIt.current.text, itemIt.current);
       }
 
       expect(itemIt.moveNext(), false);
@@ -249,7 +250,7 @@ void main() {
       await testFixture.update((component) {
         component.showEmbeddedViews = true;
       });
-      expect(testFixture.assertOnlyInstance.div?.textContent, 'First');
+      expect(testFixture.assertOnlyInstance.div?.text, 'First');
     });
   });
 }
@@ -838,7 +839,7 @@ class LabeledElementViewChildrenComponent {
   List<String> list = <String>['3', '1', '4'];
 
   @ViewChildren('divLabel')
-  List<HTMLElement>? elementRefs;
+  List<HtmlElement>? elementRefs;
 }
 
 @Component(
@@ -853,5 +854,5 @@ class TestSingleDynamicResult {
   var showEmbeddedViews = false;
 
   @ViewChild('label')
-  HTMLElement? div;
+  HtmlElement? div;
 }

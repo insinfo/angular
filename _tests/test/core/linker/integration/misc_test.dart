@@ -1,7 +1,6 @@
+import 'package:test/test.dart';
 import 'package:ngdart/angular.dart';
 import 'package:ngtest/angular_test.dart';
-import 'package:test/test.dart';
-import 'package:web/web.dart';
 
 import 'misc_test.template.dart' as ng;
 
@@ -19,15 +18,15 @@ void main() {
     final testBed = NgTestBed<HostAttributeFromDirectiveComponent>(
         ng.createHostAttributeFromDirectiveComponentFactory());
     final testFixture = await testBed.create();
-    final div = testFixture.rootElement.children.item(0) as HTMLDivElement;
-    expect(div.getAttribute('role'), equals('button'));
+    final div = testFixture.rootElement.children.first;
+    expect(div.attributes, containsPair('role', 'button'));
   });
 
   test('should support updating host element via host properties', () async {
     final testBed = NgTestBed<HostPropertyFromDirectiveComponent>(
         ng.createHostPropertyFromDirectiveComponentFactory());
     final testFixture = await testBed.create();
-    final div = testFixture.rootElement.children.item(0) as HTMLDivElement;
+    final div = testFixture.rootElement.children.first;
     expect(div.id, 'one');
     await testFixture.update((component) => component.directive!.id = 'two');
     expect(div.id, 'two');
@@ -149,9 +148,12 @@ class DynamicViewport {
 
   DynamicViewport(ViewContainerRef vc) {
     final myService = MyService()..greeting = 'dynamic greet';
-    final injector = Injector.map({MyService: myService}, vc.injector);
-    final factoryFuture =
-        Future<ComponentFactory>.value(ng.createChildCompUsingServiceFactory());
+    final injector = Injector.map({
+      MyService: myService,
+    }, vc.injector);
+    final factoryFuture = Future.value(
+      ng.createChildCompUsingServiceFactory(),
+    );
     done = factoryFuture.then((componentFactory) =>
         vc.createComponent<Object>(componentFactory, 0, injector));
   }
