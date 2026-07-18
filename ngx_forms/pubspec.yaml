@@ -3,6 +3,7 @@ description: >
   Forms framework for AngularDart.
   Easily create forms to accept input from users.
 version: 9.0.0-dev.1
+homepage: https://insinfo.github.io/angular
 repository: https://github.com/insinfo/angular
 
 environment:

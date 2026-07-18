@@ -3,6 +3,7 @@ description: >
   Testing runner and library for AngularDart.
   This package is necessary to write component tests for AngularDart components.
 version: 9.0.0-dev.1
+homepage: https://insinfo.github.io/angular
 repository: https://github.com/insinfo/angular
 
 environment:

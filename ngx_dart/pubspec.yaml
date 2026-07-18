@@ -4,6 +4,7 @@ description: >-
   Separate, but similar to the JavaScript framework with a similar name.
 version: 9.0.0-dev.1
 repository: https://github.com/insinfo/angular
+homepage: https://insinfo.github.io/angular
 
 environment:
   sdk: ">=3.6.0 <4.0.0"

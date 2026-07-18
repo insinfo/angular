@@ -1,0 +1,60 @@
+# Publishes the static AngularDart documentation site (site/) to
+# GitHub Pages at https://insinfo.github.io/angular/.
+#
+# The site links everything with root-absolute paths (/guide, /assets, ...).
+# Project pages are served under the /angular/ subpath, so this workflow
+# rewrites those paths at deploy time, keeping the copy in the repo pristine.
+#
+# The site is deployed from master (the development line); the copy on the
+# angular8 branch is frozen.
+name: Deploy site to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "site/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Prepare site (rewrite absolute paths for the /angular/ subpath)
+        run: |
+          cp -r site _site
+          BASE="/angular"
+          # Rewrite href="/...", src="/..." and action="/..." in HTML (but not
+          # protocol-relative href="//..." URLs), and url(/...) in CSS.
+          # The replace="/regex/..." attributes of code examples are left alone.
+          find _site \( -name '*.html' -o -name '*.css' \) -print0 | xargs -0 sed -i -E \
+            -e "s|(href=\")/([^/\"])|\1${BASE}/\2|g" \
+            -e "s|href=\"/\"|href=\"${BASE}/\"|g" \
+            -e "s|(src=\")/([^/\"])|\1${BASE}/\2|g" \
+            -e "s|(action=\")/([^/\"])|\1${BASE}/\2|g" \
+            -e "s|url\(\"/([^/])|url(\"${BASE}/\1|g" \
+            -e "s|url\('/([^/])|url('${BASE}/\1|g" \
+            -e "s|url\(/([^/])|url(${BASE}/\1|g"
+          touch _site/.nojekyll
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

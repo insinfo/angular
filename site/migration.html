@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Language" content="en_US" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The versions that this documentation and its examples use.">
-  <title>Versions | AngularDart Community Documentation</title>
+  <meta name="description" content="How to migrate an app from ngdart to ngx_dart 8.0.0, and how to prepare for the package:web based 9.x releases.">
+  <title>Migrating to ngx_* | AngularDart Community Documentation</title>
 
   <!-- Favicon / Touch Icons -->
   <link rel="icon" sizes="64x64" href="/assets/images/angulardart_64x64.png">
@@ -18,13 +18,13 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@dart_lang" />
-  <meta name="twitter:title" content="Versions" />
-  <meta name="twitter:description" content="The versions that this documentation and its examples use." />
+  <meta name="twitter:title" content="Migrating to ngx_*" />
+  <meta name="twitter:description" content="How to migrate an app from ngdart to ngx_dart 8.0.0, and how to prepare for the package:web based 9.x releases." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Versions" />
-  <meta property="og:description" content="The versions that this documentation and its examples use." />
-  <meta property="og:url" content="https://angulardart.xyz/version" />
+  <meta property="og:title" content="Migrating to ngx_*" />
+  <meta property="og:description" content="How to migrate an app from ngdart to ngx_dart 8.0.0, and how to prepare for the package:web based 9.x releases." />
+  <meta property="og:url" content="https://insinfo.github.io/angular/migration" />
   <meta property="og:image" content="https://angulardart.xyz/assets/shared/dart-logo-for-shares.png?4" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
@@ -187,7 +187,11 @@
     <h4>On this page
       <a href="#page-content" title="Back to top" class="pull-right"><i class="icon icon-caret-up"></i></a>
     </h4>
-    <ul id="toc" class="section-nav"></ul>
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#from-ngdart-to-ngx_dart-800">From ngdart 8.0.0-dev to ngx_dart 8.0.0</a></li>
+<li class="toc-entry toc-h2"><a href="#preparing-for-9x-packageweb">Preparing for 9.x: package:web</a></li>
+<li class="toc-entry toc-h2"><a href="#version-map">Version map</a></li>
+</ul>
   </div>
 </div>
 
@@ -205,7 +209,7 @@
           <div>
             <ul class="page-github-links-menu" role="group">
   <li>
-    <a href="https://github.com/insinfo/angular/tree/master/src/version.md"
+    <a href="https://github.com/insinfo/angular/tree/master/site/migration.html"
       class="no-automatic-external"
       title="View page source"
       target="_blank" rel="noopener">
@@ -213,46 +217,127 @@
     </a>
   </li>
   <li>
-    <a href="https://github.com/insinfo/angular/issues/new?title='Versions' page issue&body=From URL: https://angulardart.xyz/version"
+    <a href="https://github.com/insinfo/angular/issues/new?title='Migration' page issue&body=From URL: https://insinfo.github.io/angular/migration"
       class="no-automatic-external"
       title="Report a bug on this page" target="_blank" rel="noopener">
       <i class="fas fa-bug fa-sm"></i>
     </a>
   </li>
 </ul>
-            <h1>Versions</h1>
+            <h1>Migrating to ngx_*</h1>
           </div>
           <hr>
-          <p>Current versions of the <b>ngx_*</b> family published on
-<a href="https://pub.dev/publishers" class="no-automatic-external">pub.dev</a> by the
-<a href="https://github.com/insinfo/angular" class="no-automatic-external">insinfo/angular</a> fork.
-Coming from the original packages (<code>ngdart</code>, <code>ngforms</code>, ...)? See the
-<a href="/migration">migration guide</a>.</p>
+          <p>The original AngularDart packages (<code>ngdart</code>, <code>ngforms</code>,
+<code>ngrouter</code>, <code>ngtest</code>) stopped receiving updates and their last
+releases stayed as <code>-dev</code> pre-releases. The
+<a href="https://github.com/insinfo/angular" class="no-automatic-external">insinfo/angular</a> fork
+republished the exact same code as stable versions under the <b>ngx_*</b> family.</p>
+
+<h2 id="from-ngdart-to-ngx_dart-800">
+<a class="anchor" href="#from-ngdart-to-ngx_dart-800" aria-hidden="true"><span class="octicon octicon-link"></span></a>From ngdart 8.0.0-dev to ngx_dart 8.0.0</h2>
+
+<p>The public API is <b>identical</b> — only the package names changed. Migrating an
+app is a mechanical find &amp; replace:</p>
+
+<p><b>1. Update <code>pubspec.yaml</code>:</b></p>
+
+<pre><code># Before                          # After
+dependencies:                     dependencies:
+  ngdart: 8.0.0-dev.4               ngx_dart: ^8.0.0
+  ngforms: ^5.0.0-dev.3             ngx_forms: ^5.0.0
+  ngrouter: ^4.0.0-dev.3            ngx_router: ^4.0.0
+dev_dependencies:                 dev_dependencies:
+  ngtest: ^5.0.0-dev.3              ngx_test: ^5.0.0
+</code></pre>
+
+<p><b>2. Update the imports</b> in your Dart code (project-wide find &amp; replace):</p>
+
+<pre><code>package:ngdart/   -&gt; package:ngx_dart/
+package:ngforms/ngforms.dart   -&gt; package:ngx_forms/ngx_forms.dart
+package:ngrouter/ngrouter.dart -&gt; package:ngx_router/ngx_router.dart
+package:ngtest/angular_test.dart -&gt; package:ngx_test/angular_test.dart
+</code></pre>
+
+<p><b>3. Rebuild:</b></p>
+
+<pre><code>dart run build_runner build --delete-conflicting-outputs
+</code></pre>
+
+<aside class="alert alert-info">
+  <p>If your <code>build.yaml</code> customizes AngularDart builder options, also rename
+  the builder keys there (<code>ngdart</code>/<code>ngcompiler</code> &rarr;
+  <code>ngx_dart</code>/<code>ngx_compiler</code>).</p>
+</aside>
+
+<h2 id="preparing-for-9x-packageweb">
+<a class="anchor" href="#preparing-for-9x-packageweb" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preparing for 9.x: package:web</h2>
+
+<p>The next generation (<code>ngx_dart 9.0.0-dev.*</code>, developed on the
+<a href="https://github.com/insinfo/angular" class="no-automatic-external">master branch</a>)
+replaces the deprecated <code>dart:html</code> / <code>package:js</code> stack with
+<a href="https://pub.dev/packages/web" class="no-automatic-external">package:web</a> and
+<code>dart:js_interop</code> — the same move the Dart team made for the whole ecosystem.
+It unlocks <b>WebAssembly (dart2wasm)</b> support and keeps the framework aligned with
+the browser APIs of the Web IDL.</p>
+
+<p>Your <i>templates and components do not change</i>, but application code that touches
+the DOM directly will need the standard Dart migration. The checklist, condensed from the
+<a href="https://dart.dev/interop/js-interop/package-web" class="no-automatic-external">official migration guide</a>:</p>
+
+<ul>
+  <li><b>Swap the import:</b> <code>import 'dart:html';</code> &rarr;
+      <code>import 'package:web/web.dart';</code> and run <code>dart pub add web</code>.</li>
+  <li><b>Renames:</b> package:web uses the original IDL names
+      (<code>HtmlElement</code> &rarr; <code>HTMLElement</code>, <code>appendChild</code> is
+      <code>append</code>, ...). Run <code>dart fix --dry-run</code> to apply most renames
+      automatically.</li>
+  <li><b><code>Element</code> vs <code>HTMLElement</code>:</b> <code>querySelector</code>
+      returns <code>Element</code>; downcast with
+      <code>as HTMLElement</code> when you need <code>.style</code> and friends.</li>
+  <li><b>Lists:</b> <code>querySelectorAll</code>/<code>children</code> no longer implement
+      <code>List</code>; iterate with the item()/length pair or the package:web helpers.</li>
+  <li><b>Type tests:</b> <code>obj is InputElement</code> &rarr;
+      <code>obj.isA&lt;HTMLInputElement&gt;()</code> (Dart 3.4+).</li>
+  <li><b>Callbacks:</b> listeners passed to raw DOM APIs need <code>.toJS</code>
+      (<code>addEventListener('click', callback.toJS)</code>). Stream-based
+      <code>onClick.listen(...)</code> keeps working via the helpers.</li>
+  <li><b>Conditional imports:</b> replace <code>dart.library.html</code> with
+      <code>dart.library.js_interop</code>.</li>
+  <li><b>Nullability:</b> some package:web APIs are stricter than dart:html — e.g.
+      <code>style.setProperty()</code> takes a non-nullable <code>String</code>
+      (use <code>''</code> to remove a property, which is what <code>null</code> used to do).</li>
+</ul>
+
+<aside class="alert alert-warning">
+  <p><code>ngx_dart 9.0.0-dev.*</code> is under active development and not published yet.
+  Track progress on the
+  <a href="https://github.com/insinfo/angular" class="no-automatic-external">master branch</a>.</p>
+</aside>
+
+<h2 id="version-map">
+<a class="anchor" href="#version-map" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version map</h2>
 
 <style>#pkgs span.pad { padding-right: 0.2em }</style>
 <dl id="pkgs">
-  <dt>ngx_dart</dt>
+  <dt>ngx_dart (was ngdart)</dt>
   <dd><span class="pad"><strong>8.0.0</strong></span>
-      (<a href="https://pub.dev/packages/ngx_dart" class="no-automatic-external">package</a>, <a href="/guide">docs</a>) — 9.0.0-dev in development</dd>
-  <dt>ngx_forms</dt>
+      (<a href="https://pub.dev/packages/ngx_dart" class="no-automatic-external">package</a>) — next: 9.0.0-dev</dd>
+  <dt>ngx_forms (was ngforms)</dt>
   <dd><span class="pad"><strong>5.0.0</strong></span>
-      (<a href="https://pub.dev/packages/ngx_forms" class="no-automatic-external">package</a>, <a href="/guide/forms">docs</a>)</dd>
-  <dt>ngx_router</dt>
+      (<a href="https://pub.dev/packages/ngx_forms" class="no-automatic-external">package</a>)</dd>
+  <dt>ngx_router (was ngrouter)</dt>
   <dd><span class="pad"><strong>4.0.0</strong></span>
-      (<a href="https://pub.dev/packages/ngx_router" class="no-automatic-external">package</a>, <a href="/guide/router">docs</a>)</dd>
-  <dt>ngx_test</dt>
+      (<a href="https://pub.dev/packages/ngx_router" class="no-automatic-external">package</a>)</dd>
+  <dt>ngx_test (was ngtest)</dt>
   <dd><span class="pad"><strong>5.0.0</strong></span>
-      (<a href="https://pub.dev/packages/ngx_test" class="no-automatic-external">package</a>, <a href="/guide/testing/component">docs</a>)</dd>
-  <dt>ngx_compiler</dt>
+      (<a href="https://pub.dev/packages/ngx_test" class="no-automatic-external">package</a>)</dd>
+  <dt>ngx_compiler (was ngcompiler)</dt>
   <dd><span class="pad"><strong>3.0.1</strong></span>
       (<a href="https://pub.dev/packages/ngx_compiler" class="no-automatic-external">package</a>)</dd>
-  <dt>ngx_ast</dt>
+  <dt>ngx_ast (was ngast)</dt>
   <dd><span class="pad"><strong>3.0.0</strong></span>
       (<a href="https://pub.dev/packages/ngx_ast" class="no-automatic-external">package</a>)</dd>
 </dl>
-
-<p>The documentation and examples on this site still describe the 8.x line, which is
-API-identical to the original <code>ngdart 8.0.0-dev.4</code>.</p>
 
         </div>
       </article>

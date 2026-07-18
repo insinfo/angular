@@ -4,6 +4,7 @@ description: >
   It compiles your component files written in Dart into templates so that you
   don't have to worry about all the complicated hassle.
 version: 9.0.0-dev.1
+homepage: https://insinfo.github.io/angular
 repository: https://github.com/insinfo/angular
 
 environment:
