@@ -12,11 +12,5 @@ workspace:
   - ngrouter
   - ngtest
 
-  - examples/hello_world
-
-  - _tests
-  - goldens
-
 dev_dependencies:
-  lints: ^5.1.0
-  melos: ^6.2.0
+  lints: ^2.1.0

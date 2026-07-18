@@ -5,8 +5,10 @@ description: >
 version: 4.0.0-dev.3
 repository: https://github.com/angulardart-community/angular
 
+resolution: workspace
+
 environment:
-  sdk: ">=3.1.0 <4.0.0"
+  sdk: ">=3.6.0 <4.0.0"
 
 dependencies:
   collection: ^1.18.0
