@@ -460,16 +460,16 @@ class InputBinding implements BindingTarget {
 abstract class BoundEvent implements BindingTarget {
   final String name;
 
-  BoundEvent(this.name);
+  BoundEvent(this.name, [this.type]);
 
   @override
   final securityContext = TemplateSecurityContext.none;
   @override
-  final o.OutputType? type = null;
+  final o.OutputType? type;
 }
 
 class NativeEvent extends BoundEvent {
-  NativeEvent(super.name);
+  NativeEvent(super.name, [super.type]);
 
   @override
   R accept<R, C, CO extends C>(BindingTargetVisitor<R, C> visitor,
@@ -478,7 +478,7 @@ class NativeEvent extends BoundEvent {
 }
 
 class CustomEvent extends BoundEvent {
-  CustomEvent(super.name);
+  CustomEvent(super.name, [super.type]);
 
   @override
   R accept<R, C, CO extends C>(BindingTargetVisitor<R, C> visitor,
@@ -487,7 +487,7 @@ class CustomEvent extends BoundEvent {
 }
 
 class DirectiveOutput extends BoundEvent {
-  DirectiveOutput(super.name);
+  DirectiveOutput(super.name, [super.type]);
 
   @override
   R accept<R, C, CO extends C>(BindingTargetVisitor<R, C> visitor,

@@ -4174,23 +4174,9 @@
       return new A.ViewFragment(nodesOrViewContainers);
     },
     ViewFragment__flattenDomNodes(target, nodes) {
-      var i, node, nestedViews, $length, n;
-      for (i = 0; i < 1; ++i) {
-        node = nodes[i];
-        if (node instanceof A.ViewContainer) {
-          B.JSArray_methods.add$1(target, node.nativeElement);
-          nestedViews = node.nestedViews;
-          if (nestedViews != null) {
-            $length = nestedViews.length;
-            for (n = 0; n < $length; ++n) {
-              if (!(n < nestedViews.length))
-                return A.ioore(nestedViews, n);
-              A.ViewFragment__flattenDomNodes(target, nestedViews[n].get$viewFragment()._nodesOrViewContainers);
-            }
-          }
-        } else
-          B.JSArray_methods.add$1(target, node);
-      }
+      var i;
+      for (i = 0; i < 1; ++i)
+        B.JSArray_methods.add$1(target, nodes[i]);
       return target;
     },
     ViewFragment: function ViewFragment(t0) {
@@ -7986,14 +7972,8 @@
   };
   A.ViewFragment.prototype = {
     findLastDomNode$0() {
-      var nestedViews, t1,
-        lastNode = B.JSArray_methods.get$last(this._nodesOrViewContainers);
-      if (lastNode instanceof A.ViewContainer) {
-        nestedViews = lastNode.nestedViews;
-        t1 = nestedViews != null && nestedViews.length !== 0 ? (nestedViews && B.JSArray_methods).get$last(nestedViews).get$viewFragment().findLastDomNode$0() : lastNode.nativeElement;
-      } else
-        t1 = lastNode;
-      return t1;
+      var lastNode = B.JSArray_methods.get$last(this._nodesOrViewContainers);
+      return lastNode;
     },
     flattenDomNodes$0() {
       return A.ViewFragment__flattenDomNodes(A._setArrayType([], type$.JSArray_JSObject), this._nodesOrViewContainers);
@@ -8602,7 +8582,7 @@
       var t1 = type$.JSObject,
         _el_0 = t1._as(t1._as(self.document).createElement("div"));
       A.appendText(_el_0, "Show some ");
-      _el_0.append$1(this._textBinding_2.element);
+      _el_0.append(this._textBinding_2.element);
       A.appendText(_el_0, ".");
       this.initRootNode$1(_el_0);
     },
@@ -8621,11 +8601,11 @@
       var _this = this,
         t1 = type$.JSObject,
         _el_0 = t1._as(t1._as(self.document).createElement("li"));
-      _el_0.append$1(_this._textBinding_1.element);
+      _el_0.append(_this._textBinding_1.element);
       A.appendText(_el_0, ": ");
-      _el_0.append$1(_this._textBinding_3.element);
+      _el_0.append(_this._textBinding_3.element);
       A.appendText(_el_0, " (");
-      _el_0.append$1(_this._textBinding_5.element);
+      _el_0.append(_this._textBinding_5.element);
       A.appendText(_el_0, ")");
       _this.initRootNode$1(_el_0);
     },

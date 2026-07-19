@@ -254,8 +254,9 @@ class _UpdateStatementsVisitor
         [
           o.literal(nativeEvent.name),
           o.importExpr(JsInterop.functionToJSExportedDartFunction).instantiate([
-            renderValue!.cast(
-                o.FunctionType(o.voidType, [o.importType(Identifiers.event)!]))
+            renderValue!.cast(o.FunctionType(o.voidType, [
+              nativeEvent.type ?? o.importType(Identifiers.event)!,
+            ]))
           ]).prop('toJS')
         ],
       ).toStmt();

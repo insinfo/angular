@@ -15,6 +15,7 @@ import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import8;
 import 'package:ngx_dart/src/runtime/dom_helpers.dart' as import9;
 import 'package:web/src/dom/html.dart' as import10;
 import 'dart:js_interop' as import11;
+import 'package:web/src/dom/uievents.dart' as import12;
 
 final List<Object> styles$GoldenComponent = const [];
 
@@ -122,9 +123,9 @@ class ViewUsesDomEvents0 extends import0.ComponentView<import1.UsesDomEvents> {
     final _el_2 = import9.appendElement<import10.HTMLButtonElement>(doc, parentRenderNode, 'button');
     final _text_3 = import9.appendText(parentRenderNode, ' ');
     final _el_4 = import9.appendElement<import10.HTMLButtonElement>(doc, parentRenderNode, 'button');
-    _el_0.addEventListener('click', import11.FunctionToJSExportedDartFunction((this.eventHandler0(_ctx.tearOffNoArguments) as void Function(import6.Event))).toJS);
-    _el_2.addEventListener('click', import11.FunctionToJSExportedDartFunction((this.eventHandler1(_ctx.tearOffWithArguments) as void Function(import6.Event))).toJS);
-    _el_4.addEventListener('click', import11.FunctionToJSExportedDartFunction((this.eventHandler1(_ctx.callEventWithArguments) as void Function(import6.Event))).toJS);
+    _el_0.addEventListener('click', import11.FunctionToJSExportedDartFunction((this.eventHandler0(_ctx.tearOffNoArguments) as void Function(import12.MouseEvent))).toJS);
+    _el_2.addEventListener('click', import11.FunctionToJSExportedDartFunction((this.eventHandler1(_ctx.tearOffWithArguments) as void Function(import12.MouseEvent))).toJS);
+    _el_4.addEventListener('click', import11.FunctionToJSExportedDartFunction((this.eventHandler1(_ctx.callEventWithArguments) as void Function(import12.MouseEvent))).toJS);
   }
 
   static void _debugClearComponentStyles() {

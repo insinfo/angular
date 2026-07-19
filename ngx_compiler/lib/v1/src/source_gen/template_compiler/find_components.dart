@@ -210,6 +210,7 @@ class _ComponentVisitor
   final _inputs = <String, String>{};
   final _inputTypes = <String, CompileTypeMetadata>{};
   final _outputs = <String, String>{};
+  final _outputTypes = <String, o.OutputType>{};
   final _hostBindings = <String, ast.AST>{};
   final _hostListeners = <String, String>{};
   final _queries = <CompileQueryMetadata>[];
@@ -348,6 +349,10 @@ class _ComponentVisitor
       } else if (annotationInfo.isOutputType) {
         if (isGetter && element.isPublic) {
           _addPropertyBindingTo(_outputs, annotation, element);
+          final outputType = _outputType(element);
+          if (outputType != null) {
+            _outputTypes[element.displayName] = outputType;
+          }
         } else {
           log.severe('@Output can only be used on a public getter or field, '
               'but was found on $element.');
@@ -402,6 +407,40 @@ class _ComponentVisitor
         }
       }
     }
+  }
+
+  /// Returns the payload type emitted by an `@Output` stream.
+  ///
+  /// Output bindings subscribe to a [Stream], so the generated event handler
+  /// receives the stream's type argument rather than the stream itself. For
+  /// untyped or otherwise unsupported outputs, code generation intentionally
+  /// falls back to a dynamic event parameter.
+  o.OutputType? _outputType(Element element) {
+    final DartType? declaredType;
+    if (element is FieldElement) {
+      declaredType = element.type;
+    } else if (element is PropertyAccessorElement) {
+      declaredType = element.returnType;
+    } else {
+      declaredType = null;
+    }
+    if (declaredType == null) {
+      return null;
+    }
+    final streamType = declaredType.asInstanceOf(
+      element.library!.typeProvider.streamElement,
+    );
+    if (streamType == null || streamType.typeArguments.length != 1) {
+      return null;
+    }
+    final payloadType = streamType.typeArguments.single;
+    // A `void` value cannot be read inside a generated handler. Historically,
+    // `$event` for `Stream<void>` outputs was dynamic, which also reflects that
+    // these streams conventionally emit no meaningful payload.
+    if (payloadType is VoidType) {
+      return o.dynamicType;
+    }
+    return fromDartType(payloadType);
   }
 
   void _refuseLateFinalInputs(FieldElement field) {
@@ -693,6 +732,7 @@ class _ComponentVisitor
       inputs: _inputs,
       inputTypes: _inputTypes,
       outputs: _outputs,
+      outputTypes: _outputTypes,
       hostBindings: _hostBindings,
       hostListeners: _hostListeners,
       analyzedClass: analyzedClass,

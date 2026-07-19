@@ -295,6 +295,35 @@ class Identifiers {
   // can't import `package:web/web.dart` to initialize here.
   static var event = CompileIdentifierMetadata(
       name: 'Event', moduleUrl: 'asset:web/lib/src/dom/dom.dart');
+  static final animationEvent = CompileIdentifierMetadata(
+      name: 'AnimationEvent',
+      moduleUrl: 'asset:web/lib/src/dom/css_animations.dart');
+  static final clipboardEvent = CompileIdentifierMetadata(
+      name: 'ClipboardEvent',
+      moduleUrl: 'asset:web/lib/src/dom/clipboard_apis.dart');
+  static final compositionEvent = CompileIdentifierMetadata(
+      name: 'CompositionEvent',
+      moduleUrl: 'asset:web/lib/src/dom/uievents.dart');
+  static final dragEvent = CompileIdentifierMetadata(
+      name: 'DragEvent', moduleUrl: 'asset:web/lib/src/dom/html.dart');
+  static final focusEvent = CompileIdentifierMetadata(
+      name: 'FocusEvent', moduleUrl: 'asset:web/lib/src/dom/uievents.dart');
+  static final inputEvent = CompileIdentifierMetadata(
+      name: 'InputEvent', moduleUrl: 'asset:web/lib/src/dom/uievents.dart');
+  static final keyboardEvent = CompileIdentifierMetadata(
+      name: 'KeyboardEvent', moduleUrl: 'asset:web/lib/src/dom/uievents.dart');
+  static final mouseEvent = CompileIdentifierMetadata(
+      name: 'MouseEvent', moduleUrl: 'asset:web/lib/src/dom/uievents.dart');
+  static final pointerEvent = CompileIdentifierMetadata(
+      name: 'PointerEvent',
+      moduleUrl: 'asset:web/lib/src/dom/pointerevents.dart');
+  static final touchEvent = CompileIdentifierMetadata(
+      name: 'TouchEvent', moduleUrl: 'asset:web/lib/src/dom/touch_events.dart');
+  static final transitionEvent = CompileIdentifierMetadata(
+      name: 'TransitionEvent',
+      moduleUrl: 'asset:web/lib/src/dom/css_transitions.dart');
+  static final wheelEvent = CompileIdentifierMetadata(
+      name: 'WheelEvent', moduleUrl: 'asset:web/lib/src/dom/uievents.dart');
   static var commentNode = CompileIdentifierMetadata(
       name: 'Comment', moduleUrl: 'asset:web/lib/src/dom/dom.dart');
   static var textNode = CompileIdentifierMetadata(

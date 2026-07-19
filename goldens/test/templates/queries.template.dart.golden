@@ -22,10 +22,11 @@ import 'package:ngx_dart/angular.dart';
 import 'package:ngx_dart/src/core/linker/views/embedded_view.dart' as import16;
 import 'package:ngx_dart/src/core/linker/views/render_view.dart' as import17;
 import 'package:ngx_dart/src/core/linker/views/host_view.dart' as import18;
-import 'package:ngx_dart/src/common/directives/ng_for.dart' as import19;
-import 'package:ngx_dart/src/runtime/text_binding.dart' as import20;
-import 'package:ngx_dart/src/core/linker/ng_content_ref.dart' as import21;
-import 'package:ngx_dart/src/runtime/interpolate.dart' as import22;
+import 'package:web/src/dom/html.dart' as import19;
+import 'package:ngx_dart/src/common/directives/ng_for.dart' as import20;
+import 'package:ngx_dart/src/runtime/text_binding.dart' as import21;
+import 'package:ngx_dart/src/core/linker/ng_content_ref.dart' as import22;
+import 'package:ngx_dart/src/runtime/interpolate.dart' as import23;
 
 final List<Object> styles$GoldenComponent = const [];
 
@@ -192,7 +193,7 @@ class _ViewGoldenComponent1 extends import16.EmbeddedView<import1.GoldenComponen
   @override
   void build() {
     final doc = import8.document;
-    final _el_0 = import7.unsafeCast(doc.createElement('another'));
+    final _el_0 = import7.unsafeCast<import8.Element>(doc.createElement('another'));
     this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
       import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
@@ -311,7 +312,7 @@ class _ViewEmbeddedQueries1 extends import16.EmbeddedView<import1.EmbeddedQuerie
   @override
   void build() {
     final doc = import8.document;
-    final _el_0 = import7.unsafeCast(doc.createElement('another'));
+    final _el_0 = import7.unsafeCast<import8.Element>(doc.createElement('another'));
     this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
       import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
@@ -335,7 +336,7 @@ class _ViewEmbeddedQueries2 extends import16.EmbeddedView<import1.EmbeddedQuerie
   @override
   void build() {
     final doc = import8.document;
-    final _el_0 = import7.unsafeCast(doc.createElement('another'));
+    final _el_0 = import7.unsafeCast<import8.Element>(doc.createElement('another'));
     this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
       import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
@@ -444,7 +445,7 @@ class _ViewNestedNgForQueriesList1 extends import16.EmbeddedView<import1.NestedN
   @override
   void build() {
     final doc = import8.document;
-    final _el_0 = import7.unsafeCast(doc.createElement('div'));
+    final _el_0 = import7.unsafeCast<import19.HTMLDivElement>(doc.createElement('div'));
     final _anchor_1 = import9.appendAnchor(_el_0);
     this._appEl_1 = ViewContainer(1, 0, this, _anchor_1);
     var _TemplateRef_1_9 = TemplateRef(this._appEl_1, viewFactory_NestedNgForQueriesList2);
@@ -477,16 +478,16 @@ import16.EmbeddedView<void> viewFactory_NestedNgForQueriesList1(import17.RenderV
 
 class _ViewNestedNgForQueriesList2 extends import16.EmbeddedView<import1.NestedNgForQueriesList> {
   late final ViewContainer _appEl_1;
-  late final import19.NgFor _NgFor_1_10;
+  late final import20.NgFor _NgFor_1_10;
   _ViewNestedNgForQueriesList2(import17.RenderView parentView, int parentIndex) : super(parentView, parentIndex);
   @override
   void build() {
     final doc = import8.document;
-    final _el_0 = import7.unsafeCast(doc.createElement('div'));
+    final _el_0 = import7.unsafeCast<import19.HTMLDivElement>(doc.createElement('div'));
     final _anchor_1 = import9.appendAnchor(_el_0);
     this._appEl_1 = ViewContainer(1, 0, this, _anchor_1);
     var _TemplateRef_1_9 = TemplateRef(this._appEl_1, viewFactory_NestedNgForQueriesList3);
-    this._NgFor_1_10 = import19.NgFor(this._appEl_1, _TemplateRef_1_9);
+    this._NgFor_1_10 = import20.NgFor(this._appEl_1, _TemplateRef_1_9);
     if (import10.isDevToolsEnabled) {
       import10.Inspector.instance.registerDirective(_anchor_1, this._NgFor_1_10);
     }
@@ -527,7 +528,7 @@ class _ViewNestedNgForQueriesList3 extends import16.EmbeddedView<import1.NestedN
   @override
   void build() {
     final doc = import8.document;
-    final _el_0 = import7.unsafeCast(doc.createElement('div'));
+    final _el_0 = import7.unsafeCast<import19.HTMLDivElement>(doc.createElement('div'));
     final _el_1 = import9.appendElement<import8.Element>(doc, _el_0, 'another');
     this._AnotherDirective_1_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
@@ -638,7 +639,7 @@ class _ViewStaticSingleQuery1 extends import16.EmbeddedView<import1.StaticSingle
   @override
   void build() {
     final doc = import8.document;
-    final _el_0 = import7.unsafeCast(doc.createElement('another'));
+    final _el_0 = import7.unsafeCast<import8.Element>(doc.createElement('another'));
     this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
       import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
@@ -765,12 +766,12 @@ class _ViewDynamicSingleQuery1 extends import16.EmbeddedView<import1.DynamicSing
   @override
   void build() {
     final doc = import8.document;
-    final _el_0 = import7.unsafeCast(doc.createElement('another'));
+    final _el_0 = import7.unsafeCast<import8.Element>(doc.createElement('another'));
     this._AnotherDirective_0_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
       import10.Inspector.instance.registerDirective(_el_0, this._AnotherDirective_0_6);
     }
-    final _el_1 = import7.unsafeCast(doc.createElement('another'));
+    final _el_1 = import7.unsafeCast<import8.Element>(doc.createElement('another'));
     this._AnotherDirective_1_6 = import1.AnotherDirective();
     if (import10.isDevToolsEnabled) {
       import10.Inspector.instance.registerDirective(_el_1, this._AnotherDirective_1_6);
@@ -870,9 +871,9 @@ import18.HostView<import1.ContentQuery> viewFactory_ContentQueryHost0() {
 final List<Object> styles$ContentHasReference = const [];
 
 class ViewContentHasReference0 extends import0.ComponentView<import1.ContentHasReference> {
-  final import20.TextBinding _textBinding_2 = import20.TextBinding();
-  final import20.TextBinding _textBinding_4 = import20.TextBinding();
-  late final import21.NgContentRef _NgContentRef_0_6;
+  final import21.TextBinding _textBinding_2 = import21.TextBinding();
+  final import21.TextBinding _textBinding_4 = import21.TextBinding();
+  late final import22.NgContentRef _NgContentRef_0_6;
   static import4.ComponentStyles? _componentStyles;
   ViewContentHasReference0(import5.View parentView, int parentIndex) : super(parentView, parentIndex, import6.ChangeDetectionCheckedState.checkAlways) {
     this.initComponentStyles();
@@ -887,7 +888,7 @@ class ViewContentHasReference0 extends import0.ComponentView<import1.ContentHasR
     final _ctx = this.ctx;
     final parentRenderNode = this.initViewRoot();
     this.project(parentRenderNode, 0);
-    this._NgContentRef_0_6 = import21.NgContentRef(this, 0);
+    this._NgContentRef_0_6 = import22.NgContentRef(this, 0);
     final _text_1 = import9.appendText(parentRenderNode, ' ');
     parentRenderNode.append(this._textBinding_2.element);
     final _text_3 = import9.appendText(parentRenderNode, ' ');
@@ -899,8 +900,8 @@ class ViewContentHasReference0 extends import0.ComponentView<import1.ContentHasR
   void detectChangesInternal() {
     final _ctx = this.ctx;
     final local_foo = this._NgContentRef_0_6;
-    this._textBinding_2.updateText(import22.interpolate0(local_foo.hasContent)) /* REF:asset:goldens/test/templates/queries.dart:4908:4926 */;
-    this._textBinding_4.updateText(import22.interpolate0((_ctx.ref!).hasContent)) /* REF:asset:goldens/test/templates/queries.dart:4931:4950 */;
+    this._textBinding_2.updateText(import23.interpolate0(local_foo.hasContent)) /* REF:asset:goldens/test/templates/queries.dart:4908:4926 */;
+    this._textBinding_4.updateText(import23.interpolate0((_ctx.ref!).hasContent)) /* REF:asset:goldens/test/templates/queries.dart:4931:4950 */;
   }
 
   static void _debugClearComponentStyles() {

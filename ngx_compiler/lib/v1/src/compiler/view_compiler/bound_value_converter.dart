@@ -97,9 +97,10 @@ abstract class BoundValueConverter
       o.ReadPropExpr(method.receiver, method.name!);
 
   @override
-  o.Expression visitComplexEventHandler(ir.ComplexEventHandler handler, [_]) {
+  o.Expression visitComplexEventHandler(ir.ComplexEventHandler handler,
+      [o.OutputType? type]) {
     var statements = _convertToStatements(handler);
-    return _wrapHandler(_createEventHandler(statements), 1);
+    return _wrapHandler(_createEventHandler(statements, type), 1);
   }
 
   o.Expression _convertToExpression(ir.SimpleEventHandler handler) {
@@ -133,7 +134,8 @@ abstract class BoundValueConverter
         [handlerExpr],
       );
 
-  o.Expression _createEventHandler(List<o.Statement> statements);
+  o.Expression _createEventHandler(
+      List<o.Statement> statements, o.OutputType? eventType);
 }
 
 /// Converts values bound by a directive change detector.
@@ -158,7 +160,8 @@ class _DirectiveBoundValueConverter extends BoundValueConverter {
   }
 
   @override
-  o.Expression _createEventHandler(List<o.Statement> statements) {
+  o.Expression _createEventHandler(
+      List<o.Statement> statements, o.OutputType? eventType) {
     throw UnsupportedError(
         'Cannot create event handler expression without a view');
   }
@@ -180,9 +183,11 @@ class _ViewBoundValueConverter extends BoundValueConverter {
       _view.createI18nMessage(message);
 
   @override
-  o.Expression _createEventHandler(List<o.Statement> statements) =>
+  o.Expression _createEventHandler(
+          List<o.Statement> statements, o.OutputType? eventType) =>
       _view.createEventHandler(
         statements,
+        eventType: eventType,
         localDeclarations: _nameResolver!.getLocalDeclarations(),
       );
 

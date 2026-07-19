@@ -109,7 +109,7 @@ class _ViewGoldenComponent1 extends import15.EmbeddedView<import1.GoldenComponen
   @override
   void build() {
     final doc = import8.document;
-    final _el_0 = import7.unsafeCast(doc.createElement('tr'));
+    final _el_0 = import7.unsafeCast<import10.HTMLElement>(doc.createElement('tr'));
     final _anchor_1 = import9.appendAnchor(_el_0);
     this._appEl_1 = ViewContainer(1, 0, this, _anchor_1);
     var _TemplateRef_1_9 = TemplateRef(this._appEl_1, viewFactory_GoldenComponent2);
@@ -156,7 +156,7 @@ class _ViewGoldenComponent2 extends import15.EmbeddedView<import1.GoldenComponen
   @override
   void build() {
     final doc = import8.document;
-    final _el_0 = import7.unsafeCast(doc.createElement('td'));
+    final _el_0 = import7.unsafeCast<import10.HTMLElement>(doc.createElement('td'));
     final _anchor_1 = import9.appendAnchor(_el_0);
     this._appEl_1 = ViewContainer(1, 0, this, _anchor_1);
     var _TemplateRef_1_9 = TemplateRef(this._appEl_1, viewFactory_GoldenComponent3);

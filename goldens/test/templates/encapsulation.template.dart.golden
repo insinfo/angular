@@ -52,7 +52,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     parentRenderNode.append(_el_0);
     this._NoEncapsulation_0_6 = import1.NoEncapsulation();
     final doc = import7.document;
-    final _el_1 = import6.unsafeCast(doc.createElement('div'));
+    final _el_1 = import6.unsafeCast<import2.HTMLDivElement>(doc.createElement('div'));
     import8.setAttribute(_el_1, 'trailing', '');
     final _text_2 = import8.appendText(_el_1, 'Hello ');
     this._el_3 = import8.appendSpan(doc, _el_1);
@@ -64,7 +64,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     final _el_5 = this._compView_5.rootElement;
     parentRenderNode.append(_el_5);
     this._EmulatedEncapsulation_5_6 = import1.EmulatedEncapsulation();
-    final _el_6 = import6.unsafeCast(doc.createElement('div'));
+    final _el_6 = import6.unsafeCast<import2.HTMLDivElement>(doc.createElement('div'));
     import8.setAttribute(_el_6, 'trailing', '');
     final _text_7 = import8.appendText(_el_6, 'Hello ');
     this._el_8 = import8.appendSpan(doc, _el_6);

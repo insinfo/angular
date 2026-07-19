@@ -723,22 +723,34 @@ class CompileView {
   int _eventHandlerCount = 0;
 
   // TODO(alorenzen): Convert to NodeReference.
-  o.Expression createEventHandler(List<o.Statement> stmts,
-      {List<o.Statement> localDeclarations = const []}) {
+  o.Expression createEventHandler(
+    List<o.Statement> stmts, {
+    o.OutputType? eventType,
+    List<o.Statement> localDeclarations = const [],
+  }) {
     var methodName = '_handleEvent_${_eventHandlerCount++}';
     methods.add(_createEventHandlerMethod(
       methodName,
       stmts,
       localDeclarations,
+      eventType,
     ));
     return o.ReadClassMemberExpr(methodName);
   }
 
-  o.ClassMethod _createEventHandlerMethod(String methodName,
-          List<o.Statement> stmts, List<o.Statement> localDeclarations) =>
+  o.ClassMethod _createEventHandlerMethod(
+          String methodName,
+          List<o.Statement> stmts,
+          List<o.Statement> localDeclarations,
+          o.OutputType? eventType) =>
       o.ClassMethod(
           methodName,
-          [_eventParam],
+          [
+            o.FnParam(
+              EventHandlerVars.event.name!,
+              eventType ?? o.importType(null),
+            ),
+          ],
           [
             ...localDeclarations,
             ...maybeCachedCtxDeclarationStatement(statements: stmts),
@@ -746,11 +758,6 @@ class CompileView {
           ],
           null,
           [o.StmtModifier.privateStmt]);
-
-  static final _eventParam = o.FnParam(
-    EventHandlerVars.event.name!,
-    o.importType(null),
-  );
 
   /// Create an html node and appends to parent element.
   void createElement(

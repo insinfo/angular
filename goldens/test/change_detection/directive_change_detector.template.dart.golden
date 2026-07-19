@@ -67,7 +67,7 @@ class ViewGoldenComponent0 extends import0.ComponentView<import1.GoldenComponent
     }
   }
 
-  void _handleEvent_0($event) {
+  void _handleEvent_0(dynamic $event) {
     final _ctx = this.ctx;
     _ctx.value = $event;
   }

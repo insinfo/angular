@@ -1,3 +1,6 @@
+import 'package:ngx_compiler/v1/src/compiler/compile_metadata.dart';
+import 'package:ngx_compiler/v1/src/compiler/identifiers.dart';
+
 // https://www.w3schools.com/jsref/dom_obj_event.asp
 // Updated Aug 5, 2020
 const _nativeEventSet = <String>{
@@ -110,3 +113,65 @@ const _nativeEventSet = <String>{
 /// Returns true if event is an html event that is handled by DOM apis
 /// directly and doesn't need to go through plugin system.
 bool isNativeHtmlEvent(String eventName) => _nativeEventSet.contains(eventName);
+
+/// Returns the most specific `package:web` event type known for [eventName].
+///
+/// A generic [Identifiers.event] fallback keeps less specialized native events
+/// statically dispatched without incorrectly narrowing them. The specialized
+/// types preserve assignability when a complex template handler forwards
+/// `$event` to a component method that accepts a DOM event subtype.
+CompileIdentifierMetadata nativeHtmlEventType(String eventName) =>
+    _nativeEventTypes[eventName] ?? Identifiers.event;
+
+final _nativeEventTypes = <String, CompileIdentifierMetadata>{
+  'animationend': Identifiers.animationEvent,
+  'animationiteration': Identifiers.animationEvent,
+  'animationstart': Identifiers.animationEvent,
+  'blur': Identifiers.focusEvent,
+  'click': Identifiers.mouseEvent,
+  'compositionend': Identifiers.compositionEvent,
+  'compositionstart': Identifiers.compositionEvent,
+  'compositionupdate': Identifiers.compositionEvent,
+  'contextmenu': Identifiers.mouseEvent,
+  'copy': Identifiers.clipboardEvent,
+  'cut': Identifiers.clipboardEvent,
+  'dblclick': Identifiers.mouseEvent,
+  'drag': Identifiers.dragEvent,
+  'dragend': Identifiers.dragEvent,
+  'dragenter': Identifiers.dragEvent,
+  'dragleave': Identifiers.dragEvent,
+  'dragover': Identifiers.dragEvent,
+  'dragstart': Identifiers.dragEvent,
+  'drop': Identifiers.dragEvent,
+  'focus': Identifiers.focusEvent,
+  'focusin': Identifiers.focusEvent,
+  'focusout': Identifiers.focusEvent,
+  'gotpointercapture': Identifiers.pointerEvent,
+  'input': Identifiers.inputEvent,
+  'keydown': Identifiers.keyboardEvent,
+  'keypress': Identifiers.keyboardEvent,
+  'keyup': Identifiers.keyboardEvent,
+  'lostpointercapture': Identifiers.pointerEvent,
+  'mousedown': Identifiers.mouseEvent,
+  'mouseenter': Identifiers.mouseEvent,
+  'mouseleave': Identifiers.mouseEvent,
+  'mousemove': Identifiers.mouseEvent,
+  'mouseout': Identifiers.mouseEvent,
+  'mouseover': Identifiers.mouseEvent,
+  'mouseup': Identifiers.mouseEvent,
+  'paste': Identifiers.clipboardEvent,
+  'pointercancel': Identifiers.pointerEvent,
+  'pointerdown': Identifiers.pointerEvent,
+  'pointerenter': Identifiers.pointerEvent,
+  'pointerleave': Identifiers.pointerEvent,
+  'pointermove': Identifiers.pointerEvent,
+  'pointerout': Identifiers.pointerEvent,
+  'pointerover': Identifiers.pointerEvent,
+  'pointerup': Identifiers.pointerEvent,
+  'touchcancel': Identifiers.touchEvent,
+  'touchend': Identifiers.touchEvent,
+  'touchmove': Identifiers.touchEvent,
+  'touchstart': Identifiers.touchEvent,
+  'transitionend': Identifiers.transitionEvent,
+  'wheel': Identifiers.wheelEvent,
+};

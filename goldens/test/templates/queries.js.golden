@@ -9009,7 +9009,7 @@
         _el_0 = t1._as(t1._as(self.document).createElement("another"));
       this.___ViewGoldenComponent1__AnotherDirective_0_6_F !== $ && A.throwLateFieldAI("_AnotherDirective_0_6");
       this.___ViewGoldenComponent1__AnotherDirective_0_6_F = new A.AnotherDirective();
-      this.initRootNode$1(_el_0 == null ? type$.Object._as(_el_0) : _el_0);
+      this.initRootNode$1(_el_0);
     },
     dirtyParentQueriesInternal$0() {
       var t1 = this._embedded_view$_data.parentView;
@@ -9238,7 +9238,7 @@
         _el_0 = t1._as(t1._as(self.document).createElement("another"));
       this.___ViewStaticSingleQuery1__AnotherDirective_0_6_F !== $ && A.throwLateFieldAI("_AnotherDirective_0_6");
       this.___ViewStaticSingleQuery1__AnotherDirective_0_6_F = new A.AnotherDirective();
-      this.initRootNode$1(_el_0 == null ? type$.Object._as(_el_0) : _el_0);
+      this.initRootNode$1(_el_0);
     }
   };
   A.ViewDynamicSingleQuery0.prototype = {
@@ -9303,8 +9303,7 @@
       _el_1 = t1._as(doc.createElement("another"));
       _this.___ViewDynamicSingleQuery1__AnotherDirective_1_6_F !== $ && A.throwLateFieldAI("_AnotherDirective_1_6");
       _this.___ViewDynamicSingleQuery1__AnotherDirective_1_6_F = new A.AnotherDirective();
-      t1 = _el_0 == null ? type$.Object._as(_el_0) : _el_0;
-      _this.initRootNodesAndSubscriptions$2(A._setArrayType([t1, _el_1 == null ? type$.Object._as(_el_1) : _el_1], type$.JSArray_Object), null);
+      _this.initRootNodesAndSubscriptions$2(A._setArrayType([_el_0, _el_1], type$.JSArray_Object), null);
     },
     dirtyParentQueriesInternal$0() {
       this._embedded_view$_data.parentView._viewQuery_AnotherDirective_0_isDirty = true;

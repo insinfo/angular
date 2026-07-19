@@ -455,6 +455,7 @@ class CompileDirectiveMetadata implements CompileMetadataWithType {
   final Map<String, String> inputs;
   final Map<String, CompileTypeMetadata> inputTypes;
   final Map<String, String> outputs;
+  final Map<String, o.OutputType> outputTypes;
   final Map<String, ast.AST> hostBindings;
   final Map<String, String> hostListeners;
   final List<LifecycleHooks> lifecycleHooks;
@@ -482,6 +483,7 @@ class CompileDirectiveMetadata implements CompileMetadataWithType {
     this.inputs = const {},
     this.inputTypes = const {},
     this.outputs = const {},
+    this.outputTypes = const {},
     this.hostBindings = const {},
     this.hostListeners = const {},
     this.analyzedClass,
@@ -507,6 +509,7 @@ class CompileDirectiveMetadata implements CompileMetadataWithType {
         inputs = other.inputs,
         inputTypes = other.inputTypes,
         outputs = other.outputs,
+        outputTypes = other.outputTypes,
         hostBindings = other.hostBindings,
         hostListeners = other.hostListeners,
         analyzedClass = analyzedClass ?? other.analyzedClass,
@@ -630,6 +633,7 @@ CompileDirectiveMetadata createHostComponentMeta(
     inputs: const {},
     inputTypes: const {},
     outputs: const {},
+    outputTypes: const {},
     hostBindings: const {},
     hostListeners: const {},
     metadataType: CompileDirectiveMetadataType.component,

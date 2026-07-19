@@ -72,7 +72,8 @@ ir.Binding convertHostListenerToBinding(
         _IrBindingContext(null, null, null),
       ),
       target: isNativeHtmlEvent(eventName)
-          ? ir.NativeEvent(eventName)
+          ? ir.NativeEvent(
+              eventName, o.importType(nativeHtmlEventType(eventName)))
           : ir.CustomEvent(eventName),
     );
 
@@ -204,7 +205,10 @@ class _ToBindingVisitor
       ir.Binding(
         source:
             _handlerFor(ast.templateName, ast.handler, ast.sourceSpan, context),
-        target: ir.DirectiveOutput(ast.memberName),
+        target: ir.DirectiveOutput(
+          ast.memberName,
+          context.directive!.outputTypes[ast.memberName],
+        ),
       );
 
   @override
@@ -225,7 +229,10 @@ class _ToBindingVisitor
       ir.Binding(
         source: _handlerFor(ast.name, ast.handler, ast.sourceSpan, context),
         target: isNativeHtmlEvent(ast.name)
-            ? ir.NativeEvent(ast.name)
+            ? ir.NativeEvent(
+                ast.name,
+                o.importType(nativeHtmlEventType(ast.name)),
+              )
             : ir.CustomEvent(ast.name),
       );
 

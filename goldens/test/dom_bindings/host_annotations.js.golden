@@ -5911,7 +5911,7 @@
     call$1(_) {
       return this.originalSource;
     },
-    $signature: 22
+    $signature: 9
   };
   A._Future__propagateToListeners_handleValueCallback.prototype = {
     call$0() {
@@ -8065,7 +8065,7 @@
       t4 = type$.Object;
       parentRenderNode.addEventListener("dblclick", A._functionToJS1(_this.eventHandler1$2$1(t1.get$onDblClickInferArgument(), t2, t4)));
       parentRenderNode.addEventListener("mousedown", A._functionToJS1(_this.eventHandler1$2$1(t1.get$onMouseDownManualArgument(), t2, t4)));
-      parentRenderNode.addEventListener("mouseup", A._functionToJS1(_this.eventHandler1$2$1(_this.get$_handleEvent_0(), t2, t2)));
+      parentRenderNode.addEventListener("mouseup", A._functionToJS1(_this.eventHandler1$2$1(_this.get$_handleEvent_0(), t2, t3)));
       $.__appViewUtils._readField$0().eventManager.addEventListener$3(parentRenderNode, "keydown.space", _this.eventHandler0$1$1(t1.get$onSpecialKeyHandler(), t3));
     },
     detectChangesInternal$0() {
@@ -8074,8 +8074,9 @@
       t1.detectChangesDeprecated$0();
     },
     _handleEvent_0$1($$event) {
+      type$.JSObject._as($$event);
       this.__ComponentView_ctx_F === $ && A.throwLateFieldNI("ctx");
-      A.deopt(A._setArrayType(["onMouseUpMultipleArguments", $$event == null ? type$.Object._as($$event) : $$event, "Hello"], type$.JSArray_Object), type$.dynamic);
+      A.deopt(A._setArrayType(["onMouseUpMultipleArguments", $$event, "Hello"], type$.JSArray_Object), type$.dynamic);
     }
   };
   A._ViewGoldenComponentHost0.prototype = {
@@ -8167,44 +8168,44 @@
     _static_1(A, "async__AsyncRun__scheduleImmediateWithSetImmediate$closure", "_AsyncRun__scheduleImmediateWithSetImmediate", 3);
     _static_1(A, "async__AsyncRun__scheduleImmediateWithTimer$closure", "_AsyncRun__scheduleImmediateWithTimer", 3);
     _static_0(A, "async___startMicrotaskLoop$closure", "_startMicrotaskLoop", 0);
-    _static_1(A, "async___nullDataHandler$closure", "_nullDataHandler", 9);
+    _static_1(A, "async___nullDataHandler$closure", "_nullDataHandler", 31);
     _static_2(A, "async___nullErrorHandler$closure", "_nullErrorHandler", 5);
     _static_0(A, "async___nullDoneHandler$closure", "_nullDoneHandler", 0);
-    _static(A, "async___rootHandleUncaughtError$closure", 5, null, ["call$5"], ["_rootHandleUncaughtError"], 31, 0);
+    _static(A, "async___rootHandleUncaughtError$closure", 5, null, ["call$5"], ["_rootHandleUncaughtError"], 32, 0);
     _static(A, "async___rootRun$closure", 4, null, ["call$1$4", "call$4"], ["_rootRun", function($self, $parent, zone, f) {
       return A._rootRun($self, $parent, zone, f, type$.dynamic);
-    }], 32, 0);
+    }], 33, 0);
     _static(A, "async___rootRunUnary$closure", 5, null, ["call$2$5", "call$5"], ["_rootRunUnary", function($self, $parent, zone, f, arg) {
       var t1 = type$.dynamic;
       return A._rootRunUnary($self, $parent, zone, f, arg, t1, t1);
-    }], 33, 0);
-    _static(A, "async___rootRunBinary$closure", 6, null, ["call$3$6"], ["_rootRunBinary"], 34, 0);
+    }], 34, 0);
+    _static(A, "async___rootRunBinary$closure", 6, null, ["call$3$6"], ["_rootRunBinary"], 35, 0);
     _static(A, "async___rootRegisterCallback$closure", 4, null, ["call$1$4", "call$4"], ["_rootRegisterCallback", function($self, $parent, zone, f) {
       return A._rootRegisterCallback($self, $parent, zone, f, type$.dynamic);
-    }], 35, 0);
+    }], 36, 0);
     _static(A, "async___rootRegisterUnaryCallback$closure", 4, null, ["call$2$4", "call$4"], ["_rootRegisterUnaryCallback", function($self, $parent, zone, f) {
       var t1 = type$.dynamic;
       return A._rootRegisterUnaryCallback($self, $parent, zone, f, t1, t1);
-    }], 36, 0);
+    }], 37, 0);
     _static(A, "async___rootRegisterBinaryCallback$closure", 4, null, ["call$3$4", "call$4"], ["_rootRegisterBinaryCallback", function($self, $parent, zone, f) {
       var t1 = type$.dynamic;
       return A._rootRegisterBinaryCallback($self, $parent, zone, f, t1, t1, t1);
-    }], 37, 0);
-    _static(A, "async___rootErrorCallback$closure", 5, null, ["call$5"], ["_rootErrorCallback"], 38, 0);
-    _static(A, "async___rootScheduleMicrotask$closure", 4, null, ["call$4"], ["_rootScheduleMicrotask"], 39, 0);
+    }], 38, 0);
+    _static(A, "async___rootErrorCallback$closure", 5, null, ["call$5"], ["_rootErrorCallback"], 39, 0);
+    _static(A, "async___rootScheduleMicrotask$closure", 4, null, ["call$4"], ["_rootScheduleMicrotask"], 40, 0);
     _static(A, "async___rootCreateTimer$closure", 5, null, ["call$5"], ["_rootCreateTimer"], 8, 0);
-    _static(A, "async___rootCreatePeriodicTimer$closure", 5, null, ["call$5"], ["_rootCreatePeriodicTimer"], 40, 0);
-    _static(A, "async___rootPrint$closure", 4, null, ["call$4"], ["_rootPrint"], 41, 0);
-    _static(A, "async___rootFork$closure", 5, null, ["call$5"], ["_rootFork"], 42, 0);
+    _static(A, "async___rootCreatePeriodicTimer$closure", 5, null, ["call$5"], ["_rootCreatePeriodicTimer"], 41, 0);
+    _static(A, "async___rootPrint$closure", 4, null, ["call$4"], ["_rootPrint"], 42, 0);
+    _static(A, "async___rootFork$closure", 5, null, ["call$5"], ["_rootFork"], 43, 0);
     _instance_2_u(A._Future.prototype, "get$_completeError", "_completeError$2", 5);
     _instance_0_u(A._DoneStreamSubscription.prototype, "get$_onMicrotask", "_onMicrotask$0", 0);
-    _static_1(A, "run___identityInjector$closure", "_identityInjector", 43);
+    _static_1(A, "run___identityInjector$closure", "_identityInjector", 44);
     _instance_0_u(A.ChangeDetectionHost.prototype, "get$tick", "tick$0", 0);
     _static_0(A, "ng_zone_NgZone___new_tearOff$closure", "NgZone___new_tearOff", 4);
     var _;
     _instance(_ = A.NgZone.prototype, "get$_ng_zone$_scheduleMicrotask", 0, 4, null, ["call$4"], ["_ng_zone$_scheduleMicrotask$4"], 20, 0, 0);
     _instance(_, "get$_run", 0, 4, null, ["call$1$4", "call$4"], ["_run$1$4", "_run$4"], 21, 0, 0);
-    _instance(_, "get$_runUnary", 0, 5, null, ["call$2$5", "call$5"], ["_runUnary$2$5", "_runUnary$5"], 44, 0, 0);
+    _instance(_, "get$_runUnary", 0, 5, null, ["call$2$5", "call$5"], ["_runUnary$2$5", "_runUnary$5"], 22, 0, 0);
     _instance(_, "get$_runBinary", 0, 6, null, ["call$3$6"], ["_runBinary$3$6"], 23, 0, 0);
     _instance(_, "get$_handleUncaughtError", 0, 5, null, ["call$5"], ["_handleUncaughtError$5"], 24, 0, 0);
     _instance(_, "get$_createTimer", 0, 5, null, ["call$5"], ["_createTimer$5"], 8, 0, 0);
@@ -8214,7 +8215,7 @@
     _instance_0_u(_, "get$onSpecialKeyHandler", "onSpecialKeyHandler$0", 0);
     _instance_0_u(A.ListensToOutput.prototype, "get$onCustomEvent", "onCustomEvent$0", 0);
     _static_0(A, "host_annotations_template__viewFactory_GoldenComponentHost0$closure", "viewFactory_GoldenComponentHost0", 29);
-    _instance_1_u(A.ViewGoldenComponent0.prototype, "get$_handleEvent_0", "_handleEvent_0$1", 9);
+    _instance_1_u(A.ViewGoldenComponent0.prototype, "get$_handleEvent_0", "_handleEvent_0$1", 45);
   })();
   (function inheritance() {
     var _mixin = hunkHelpers.mixin,
@@ -8280,7 +8281,7 @@
     typeUniverse: {eC: new Map(), tR: {}, eT: {}, tPV: {}, sEA: []},
     mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List", Object: "Object", Map: "Map"},
     mangledNames: {},
-    types: ["~()", "Null()", "bool(JSObject)", "~(~())", "NgZone()", "~(Object,StackTrace)", "Null(@)", "~(Object)", "Timer(Zone,ZoneDelegate,Zone,Duration,~())", "~(@)", "~(@,@)", "~(Object?,Object?)", "String()", "ApplicationRef()", "AppViewUtils()", "@(@)", "Injector()", "~(UncaughtError)", "~(~)", "Null(@,@)", "~(Zone,ZoneDelegate,Zone,~())", "0^(Zone,ZoneDelegate,Zone,0^())<Object?>", "_Future<@>(@)", "0^(Zone,ZoneDelegate,Zone,0^(1^,2^),1^,2^)<Object?,Object?,Object?>", "~(Zone,ZoneDelegate,Zone,Object,StackTrace)", "Null(Object,StackTrace)", "Null(JSObject)", "@(String)", "@(@,String)", "HostView<GoldenComponent>()", "Null(~())", "~(Zone?,ZoneDelegate?,Zone,Object,StackTrace)", "0^(Zone?,ZoneDelegate?,Zone,0^())<Object?>", "0^(Zone?,ZoneDelegate?,Zone,0^(1^),1^)<Object?,Object?>", "0^(Zone?,ZoneDelegate?,Zone,0^(1^,2^),1^,2^)<Object?,Object?,Object?>", "0^()(Zone,ZoneDelegate,Zone,0^())<Object?>", "0^(1^)(Zone,ZoneDelegate,Zone,0^(1^))<Object?,Object?>", "0^(1^,2^)(Zone,ZoneDelegate,Zone,0^(1^,2^))<Object?,Object?,Object?>", "AsyncError?(Zone,ZoneDelegate,Zone,Object,StackTrace?)", "~(Zone?,ZoneDelegate?,Zone,~())", "Timer(Zone,ZoneDelegate,Zone,Duration,~(Timer))", "~(Zone,ZoneDelegate,Zone,String)", "Zone(Zone?,ZoneDelegate?,Zone,ZoneSpecification?,Map<Object?,Object?>?)", "Injector(Injector)", "0^(Zone,ZoneDelegate,Zone,0^(1^),1^)<Object?,Object?>"],
+    types: ["~()", "Null()", "bool(JSObject)", "~(~())", "NgZone()", "~(Object,StackTrace)", "Null(@)", "~(Object)", "Timer(Zone,ZoneDelegate,Zone,Duration,~())", "_Future<@>(@)", "~(@,@)", "~(Object?,Object?)", "String()", "ApplicationRef()", "AppViewUtils()", "@(@)", "Injector()", "~(UncaughtError)", "~(~)", "Null(@,@)", "~(Zone,ZoneDelegate,Zone,~())", "0^(Zone,ZoneDelegate,Zone,0^())<Object?>", "0^(Zone,ZoneDelegate,Zone,0^(1^),1^)<Object?,Object?>", "0^(Zone,ZoneDelegate,Zone,0^(1^,2^),1^,2^)<Object?,Object?,Object?>", "~(Zone,ZoneDelegate,Zone,Object,StackTrace)", "Null(Object,StackTrace)", "Null(JSObject)", "@(String)", "@(@,String)", "HostView<GoldenComponent>()", "Null(~())", "~(@)", "~(Zone?,ZoneDelegate?,Zone,Object,StackTrace)", "0^(Zone?,ZoneDelegate?,Zone,0^())<Object?>", "0^(Zone?,ZoneDelegate?,Zone,0^(1^),1^)<Object?,Object?>", "0^(Zone?,ZoneDelegate?,Zone,0^(1^,2^),1^,2^)<Object?,Object?,Object?>", "0^()(Zone,ZoneDelegate,Zone,0^())<Object?>", "0^(1^)(Zone,ZoneDelegate,Zone,0^(1^))<Object?,Object?>", "0^(1^,2^)(Zone,ZoneDelegate,Zone,0^(1^,2^))<Object?,Object?,Object?>", "AsyncError?(Zone,ZoneDelegate,Zone,Object,StackTrace?)", "~(Zone?,ZoneDelegate?,Zone,~())", "Timer(Zone,ZoneDelegate,Zone,Duration,~(Timer))", "~(Zone,ZoneDelegate,Zone,String)", "Zone(Zone?,ZoneDelegate?,Zone,ZoneSpecification?,Map<Object?,Object?>?)", "Injector(Injector)", "~(JSObject)"],
     interceptorsByTag: null,
     leafTags: null,
     arrayRti: Symbol("$ti")
