@@ -1,3 +1,16 @@
+## 9.0.0-dev.2
+
+- Fixed dependency injection for DOM tokens declared through typedefs: the
+  generated DI now resolves the underlying `package:web` type instead of
+  failing on the alias.
+- Compiler context errors are now preserved and reported instead of being
+  swallowed during template compilation.
+- View compiler keeps the concrete `package:web` element type for nodes in
+  detached roots (e.g. `*ngIf`/embedded views), instead of widening to
+  `HTMLElement`.
+- Event bindings and `@Output` streams keep their typed `package:web` event
+  payloads (e.g. `MouseEvent`, `KeyboardEvent`) in generated code.
+
 ## 9.0.0-dev.1
 
 - Renamed from `ngcompiler`. Package renamed as part of the ngx_* family, maintained by the [insinfo/angular](https://github.com/insinfo/angular) fork - see the [migration guide](https://insinfo.github.io/angular/migration). All ngx_* packages now share a unified version number, mirroring the versioning of the Angular TS @angular/* packages.

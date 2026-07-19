@@ -1,3 +1,7 @@
+## 9.0.0-dev.2
+
+- No source changes. Lockstep release with the ngx_* 9.0.0-dev.2 family.
+
 ## 9.0.0-dev.1
 
 - Renamed from `ngtest`. Package renamed as part of the ngx_* family, maintained by the [insinfo/angular](https://github.com/insinfo/angular) fork - see the [migration guide](https://insinfo.github.io/angular/migration). All ngx_* packages now share a unified version number, mirroring the versioning of the Angular TS @angular/* packages.

@@ -1,3 +1,10 @@
+## 9.0.0-dev.2
+
+- Value accessors read control values from typed `package:web` elements
+  (`HTMLInputElement`/`HTMLSelectElement`) instead of dynamic casts, fixing
+  broken reads in dart2js/dart2wasm release builds.
+- Lockstep release with `ngx_compiler 9.0.0-dev.2`.
+
 ## 9.0.0-dev.1
 
 - Renamed from `ngforms`. Package renamed as part of the ngx_* family, maintained by the [insinfo/angular](https://github.com/insinfo/angular) fork - see the [migration guide](https://insinfo.github.io/angular/migration). All ngx_* packages now share a unified version number, mirroring the versioning of the Angular TS @angular/* packages.

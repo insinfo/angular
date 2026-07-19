@@ -2,7 +2,7 @@ name: ngx_dart
 description: >-
   Fast and productive web framework by Google.
   Separate, but similar to the JavaScript framework with a similar name.
-version: 9.0.0-dev.1
+version: 9.0.0-dev.2
 repository: https://github.com/insinfo/angular
 homepage: https://insinfo.github.io/angular
 

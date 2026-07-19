@@ -2,7 +2,7 @@ name: ngx_router
 description: >
   Router for AngularDart.
   It enables navigation from one view to the next as users perform tasks.
-version: 9.0.0-dev.1
+version: 9.0.0-dev.2
 homepage: https://insinfo.github.io/angular
 repository: https://github.com/insinfo/angular
 
