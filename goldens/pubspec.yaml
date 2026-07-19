@@ -8,7 +8,7 @@ environment:
 resolution: workspace
 
 dependencies:
-  web: ^1.1.0
+  web: ^1.1.1
   meta: ^1.16.0
   ngx_dart: ^9.0.0-dev.1
 
