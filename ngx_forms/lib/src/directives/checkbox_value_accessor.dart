@@ -30,8 +30,9 @@ class CheckboxControlValueAccessor extends Object
   CheckboxControlValueAccessor(HTMLElement element)
       : _element = element as HTMLInputElement;
 
-  @HostListener('change', ['\$event.target.checked'])
-  void handleChange(bool checked) {
+  @HostListener('change')
+  void handleChange() {
+    final checked = _element.checked;
     onChange(checked, rawValue: '$checked');
   }
 

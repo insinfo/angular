@@ -267,7 +267,7 @@ class DirectiveUpdatesDomComponent {
 )
 class DirectiveWithPropDecorators {
   final StreamController<String> _streamController = StreamController<String>();
-  Element? target;
+  EventTarget? target;
 
   @Input('elProp')
   String? dirProp;
@@ -279,7 +279,7 @@ class DirectiveWithPropDecorators {
   String? myAttr;
 
   @HostListener('click', ['\$event.target'])
-  void onClick(Element target) {
+  void onClick(EventTarget? target) {
     this.target = target;
   }
 

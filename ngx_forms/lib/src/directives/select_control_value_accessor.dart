@@ -47,8 +47,9 @@ class SelectControlValueAccessor extends Object
   SelectControlValueAccessor(HTMLElement element)
       : _element = element as HTMLSelectElement;
 
-  @HostListener('change', ['\$event.target.value'])
-  void handleChange(String value) {
+  @HostListener('change')
+  void handleChange() {
+    final value = _element.value;
     onChange(_getOptionValue(value), rawValue: value);
   }
 

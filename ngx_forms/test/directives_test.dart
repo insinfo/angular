@@ -1,3 +1,6 @@
+import 'dart:js_interop';
+import 'dart:js_interop_unsafe';
+
 import 'package:mockito/annotations.dart';
 import 'package:ngx_forms/ngx_forms.dart';
 import 'package:ngx_forms/src/directives/shared.dart';
@@ -36,6 +39,85 @@ Matcher throwsWith(String s) =>
 Future<void> flushMicrotasks() async => await Future.microtask(() => null);
 
 void main() {
+  group('Native value accessors', () {
+    test('default accessor reads input, textarea, and custom element values',
+        () {
+      final input = HTMLInputElement()..value = 'input value';
+      final textarea = HTMLTextAreaElement()..value = 'textarea value';
+      final custom = HTMLDivElement()..['value'] = 'custom element value'.toJS;
+
+      for (final (element, expected) in [
+        (input as HTMLElement, 'input value'),
+        (textarea as HTMLElement, 'textarea value'),
+        (custom as HTMLElement, 'custom element value'),
+      ]) {
+        final accessor = DefaultValueAccessor(element);
+        String? changedValue;
+        String? changedRawValue;
+        accessor.onChange = (String value, {String? rawValue}) {
+          changedValue = value;
+          changedRawValue = rawValue;
+        };
+
+        accessor.handleChange();
+
+        expect(changedValue, expected);
+        expect(changedRawValue, expected);
+      }
+    });
+
+    test('number accessor reads the injected input value', () {
+      final element = HTMLInputElement()..value = '12.5';
+      final accessor = NumberValueAccessor(element);
+      double? changedValue;
+      String? changedRawValue;
+      accessor.onChange = (double? value, {String? rawValue}) {
+        changedValue = value;
+        changedRawValue = rawValue;
+      };
+
+      accessor.handleChange();
+
+      expect(changedValue, 12.5);
+      expect(changedRawValue, '12.5');
+    });
+
+    test('checkbox accessor reads the injected input checked state', () {
+      final element = HTMLInputElement()..checked = true;
+      final accessor = CheckboxControlValueAccessor(element);
+      bool? changedValue;
+      String? changedRawValue;
+      accessor.onChange = (bool value, {String? rawValue}) {
+        changedValue = value;
+        changedRawValue = rawValue;
+      };
+
+      accessor.handleChange();
+
+      expect(changedValue, isTrue);
+      expect(changedRawValue, 'true');
+    });
+
+    test('select accessor reads the injected select value', () {
+      final element = HTMLSelectElement()
+        ..append(HTMLOptionElement()
+          ..value = 'selected'
+          ..selected = true);
+      final accessor = SelectControlValueAccessor(element);
+      Object? changedValue;
+      String? changedRawValue;
+      accessor.onChange = (value, {String? rawValue}) {
+        changedValue = value;
+        changedRawValue = rawValue;
+      };
+
+      accessor.handleChange();
+
+      expect(changedValue, 'selected');
+      expect(changedRawValue, 'selected');
+    });
+  });
+
   group('Shared selectValueAccessor', () {
     late DefaultValueAccessor defaultAccessor;
 

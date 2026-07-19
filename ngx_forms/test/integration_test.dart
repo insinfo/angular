@@ -849,6 +849,10 @@ void main() {
   ],
 )
 class WrappedAccessor implements ControlValueAccessor<dynamic> {
+  final HTMLInputElement _element;
+
+  WrappedAccessor(HTMLElement element) : _element = element as HTMLInputElement;
+
   @HostBinding('attr.value')
   dynamic value;
 
@@ -867,8 +871,9 @@ class WrappedAccessor implements ControlValueAccessor<dynamic> {
   @override
   void registerOnTouched(fn) {}
 
-  @HostListener('input', [r'$event.target.value'])
-  void handleOnInput(value) {
+  @HostListener('input')
+  void handleOnInput() {
+    final value = _element.value;
     onChange(value.substring(1, value.length - 1));
   }
 

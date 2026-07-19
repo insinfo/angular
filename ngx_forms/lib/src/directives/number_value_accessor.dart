@@ -29,9 +29,10 @@ class NumberValueAccessor extends Object
   NumberValueAccessor(HTMLElement element)
       : _element = element as HTMLInputElement;
 
-  @HostListener('change', ['\$event.target.value'])
-  @HostListener('input', ['\$event.target.value'])
-  void handleChange(String value) {
+  @HostListener('change')
+  @HostListener('input')
+  void handleChange() {
+    final value = _element.value;
     onChange(value == '' ? null : double.parse(value), rawValue: value);
   }
 

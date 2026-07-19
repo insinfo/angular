@@ -36,9 +36,20 @@ class DefaultValueAccessor extends Object
 
   DefaultValueAccessor(this._element);
 
-  @HostListener('input', ['\$event.target.value'])
-  void handleChange(String value) {
+  @HostListener('input')
+  void handleChange() {
+    final value = _readElementValue();
     onChange(value, rawValue: value);
+  }
+
+  String _readElementValue() {
+    if (_element.isA<HTMLInputElement>()) {
+      return (_element as HTMLInputElement).value;
+    }
+    if (_element.isA<HTMLTextAreaElement>()) {
+      return (_element as HTMLTextAreaElement).value;
+    }
+    return _element.getProperty<JSString>('value'.toJS).toDart;
   }
 
   @override
