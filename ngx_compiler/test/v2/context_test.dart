@@ -154,5 +154,25 @@ void main() {
       );
       expect(result, 'Done');
     });
+
+    test('should preserve an error and its stack trace', () async {
+      final error = BuildError.withoutContext('Oops');
+      final originalStackTrace = StackTrace.fromString('original stack trace');
+
+      Object? caughtError;
+      StackTrace? caughtStackTrace;
+      try {
+        await runWithContext<String>(
+          CompileContext.forTesting(),
+          () => Error.throwWithStackTrace(error, originalStackTrace),
+        );
+      } on Object catch (error, stackTrace) {
+        caughtError = error;
+        caughtStackTrace = stackTrace;
+      }
+
+      expect(caughtError, same(error));
+      expect(caughtStackTrace.toString(), originalStackTrace.toString());
+    });
   });
 }

@@ -41,7 +41,7 @@ Future<T> runWithContext<T>(
   // executing or catching an unhandled error are considered exclusive).
   //
   // This completer is (manually) completed when the function finishes or fails.
-  final buildCompletedOrFailed = Completer<T>.sync();
+  final buildCompletedOrFailed = Completer<T>();
   runZonedGuarded(
     run,
     (e, s) {
@@ -71,7 +71,7 @@ Future<T> runWithContext<T>(
         );
       }
       if (!buildCompletedOrFailed.isCompleted) {
-        buildCompletedOrFailed.complete();
+        buildCompletedOrFailed.completeError(e, s);
       }
     },
     zoneSpecification: ZoneSpecification(

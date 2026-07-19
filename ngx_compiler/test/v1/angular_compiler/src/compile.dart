@@ -6,22 +6,22 @@ import 'package:test/test.dart';
 
 import 'resolve.dart';
 
-Future<T> _recordLogs<T>(
-  Future<T> Function() run,
+Future<void> _recordLogs(
+  Future<void> Function() run,
   void Function(List<LogRecord>) onLog,
 ) {
   final logger = Logger('_recordLogs');
   final records = <LogRecord>[];
   final subscription = logger.onRecord.listen(records.add);
   return scopeLogAsync(() async {
-    return runWithContext(
-      CompileContext.forTesting(),
-      run,
-    ).then((result) {
-      subscription.cancel();
-      onLog(records);
-      return result;
-    });
+    try {
+      await runWithContext<void>(CompileContext.forTesting(), run);
+    } on Object {
+      // Errors are expected by this helper and have already been logged by
+      // runWithContext. The assertions below validate those log records.
+    }
+    await subscription.cancel();
+    onLog(records);
   }, logger);
 }
 
@@ -44,8 +44,8 @@ Future<void> compilesExpecting(
 }
 
 /// Executes the [run] function, and expects specified [errors] or [warnings].
-Future<T> runsExpecting<T>(
-  Future<T> Function() run, {
+Future<void> runsExpecting(
+  Future<void> Function() run, {
   Object? /* Matcher | List<Matcher> | List<String> */ errors,
   Object? /* Matcher | List<Matcher> | List<String> */ warnings,
 }) {
