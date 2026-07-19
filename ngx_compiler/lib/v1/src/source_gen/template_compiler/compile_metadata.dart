@@ -9,6 +9,7 @@ import 'package:analyzer/src/generated/utilities_dart.dart';
 import 'package:ngx_compiler/v1/angular_compiler.dart';
 import 'package:ngx_compiler/v1/cli.dart';
 import 'package:ngx_compiler/v1/src/compiler/compile_metadata.dart';
+import 'package:ngx_compiler/v1/src/compiler/identifiers.dart';
 import 'package:ngx_compiler/v1/src/compiler/output/convert.dart';
 import 'package:ngx_compiler/v1/src/compiler/output/output_ast.dart' as o;
 import 'package:ngx_compiler/v1/src/source_gen/common/url_resolver.dart';
@@ -455,9 +456,36 @@ class CompileTypeMetadataVisitor
 
   CompileTokenMetadata _tokenForType(DartType type,
       {String libraryIdentifier = '', bool isInstance = false}) {
+    final aliasedRenderNodeToken = _aliasedRenderNodeToken(type);
     return CompileTokenMetadata(
-        identifier: _idFor(type, libraryIdentifier: libraryIdentifier),
+        identifier: aliasedRenderNodeToken?.identifier ??
+            _idFor(type, libraryIdentifier: libraryIdentifier),
         identifierIsInstance: isInstance);
+  }
+
+  /// Returns the framework token for a type alias of a built-in render node.
+  ///
+  /// A Dart type alias has the same runtime type as its aliased type. Keeping
+  /// the alias declaration as the DI token prevents it from matching the
+  /// built-in `Element` or `HTMLElement` provider registered by a view node.
+  CompileTokenMetadata? _aliasedRenderNodeToken(DartType type) {
+    if (type.alias == null || type is! InterfaceType) {
+      return null;
+    }
+    final element = type.element;
+    final unaliasedToken = CompileTokenMetadata(
+      identifier: CompileIdentifierMetadata(
+        name: element.name,
+        moduleUrl: moduleUrl(element),
+      ),
+    );
+    if (unaliasedToken.equalsTo(Identifiers.htmlElementToken)) {
+      return Identifiers.htmlElementToken;
+    }
+    if (unaliasedToken.equalsTo(Identifiers.elementToken)) {
+      return Identifiers.elementToken;
+    }
+    return null;
   }
 
   CompileIdentifierMetadata _idFor(DartType type,
