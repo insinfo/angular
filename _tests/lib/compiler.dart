@@ -95,25 +95,28 @@ Future<InMemoryAssetWriter> _testBuilder(
 
   final logger = Logger('_testBuilder');
   final logSub = logger.onRecord.listen(onLog);
-  await runWithContext(
-    // This is test-only code (just not in "test/").
-    // ignore: invalid_use_of_visible_for_testing_member
-    CompileContext.forTesting(),
-    () {
-      return withEnabledExperiments(
-        () => runBuilder(
-          builder,
-          inputIds,
-          reader,
-          writer,
-          AnalyzerResolvers.custom(),
-          logger: logger,
-        ),
-        ['non-nullable'],
-      );
-    },
-  );
-  await logSub.cancel();
+  try {
+    await runWithContext(
+      // This is test-only code (just not in "test/").
+      // ignore: invalid_use_of_visible_for_testing_member
+      CompileContext.forTesting(),
+      () {
+        return withEnabledExperiments(
+          () => runBuilder(
+            builder,
+            inputIds,
+            reader,
+            writer,
+            AnalyzerResolvers.custom(),
+            logger: logger,
+          ),
+          ['non-nullable'],
+        );
+      },
+    );
+  } finally {
+    await logSub.cancel();
+  }
   return writer;
 }
 
@@ -155,21 +158,37 @@ Future<void> compilesExpecting(
 
   // Run the builder.
   final records = <Level, List<LogRecord>>{};
-  final writer = await _testBuilder(
-    _testAngularBuilder,
-    sources,
-    runBuilderOn: runBuilderOn?.toList(),
-    onLog: (record) {
-      records.putIfAbsent(record.level, () => []).add(record);
-    },
-  );
+  InMemoryAssetWriter? writer;
+  try {
+    writer = await _testBuilder(
+      _testAngularBuilder,
+      sources,
+      runBuilderOn: runBuilderOn?.toList(),
+      onLog: (record) {
+        records.putIfAbsent(record.level, () => []).add(record);
+      },
+    );
+  } catch (_) {
+    // Production compilation intentionally propagates build failures. Tests
+    // that declare expected errors still need to inspect the corresponding
+    // severe log records; every other failure must retain its original stack.
+    if (errors == null) {
+      rethrow;
+    }
+  }
 
   expectLogRecords(records[Level.SEVERE], errors, 'Errors');
   expectLogRecords(records[Level.WARNING], warnings, 'Warnings');
   expectLogRecords(records[Level.INFO], notices, 'Notices');
   if (outputs is Map<String, Object>) {
+    if (writer == null) {
+      fail('Cannot check generated outputs after a failed build.');
+    }
     checkOutputs(outputs, writer.assets.keys, writer);
   } else if (outputs != null) {
+    if (writer == null) {
+      fail('Cannot check generated outputs after a failed build.');
+    }
     expect(writer.assets, outputs);
   }
 }
