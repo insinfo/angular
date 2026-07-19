@@ -1,3 +1,8 @@
+## 9.0.0-dev.1
+
+- Renamed from `ngrouter`. Package renamed as part of the ngx_* family, maintained by the [insinfo/angular](https://github.com/insinfo/angular) fork - see the [migration guide](https://insinfo.github.io/angular/migration). All ngx_* packages now share a unified version number, mirroring the versioning of the Angular TS @angular/* packages.
+- Migrated with the framework to `package:web` + `dart:js_interop`.
+
 ## 4.0.0-dev.3
 
  - **REFACTOR**(all): update to Dart 3 ([#68](https://github.com/angulardart-community/angular/issues/68)).
