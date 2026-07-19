@@ -51,7 +51,7 @@ const ngImport = 'package:$ngPackage/angular.dart';
 final _ngFiles = Glob('lib/**.dart');
 
 /// Modeled after `package:build_test/build_test.dart#testBuilder`.
-Future<void> _testBuilder(
+Future<InMemoryAssetWriter> _testBuilder(
   Builder builder,
   Map<String, String> sourceAssets, {
   List<AssetId>? runBuilderOn,
@@ -114,6 +114,7 @@ Future<void> _testBuilder(
     },
   );
   await logSub.cancel();
+  return writer;
 }
 
 /// Returns a future that completes, asserting potential end states.
@@ -154,7 +155,7 @@ Future<void> compilesExpecting(
 
   // Run the builder.
   final records = <Level, List<LogRecord>>{};
-  await _testBuilder(
+  final writer = await _testBuilder(
     _testAngularBuilder,
     sources,
     runBuilderOn: runBuilderOn?.toList(),
@@ -166,6 +167,11 @@ Future<void> compilesExpecting(
   expectLogRecords(records[Level.SEVERE], errors, 'Errors');
   expectLogRecords(records[Level.WARNING], warnings, 'Warnings');
   expectLogRecords(records[Level.INFO], notices, 'Notices');
+  if (outputs is Map<String, Object>) {
+    checkOutputs(outputs, writer.assets.keys, writer);
+  } else if (outputs != null) {
+    expect(writer.assets, outputs);
+  }
 }
 
 void expectLogRecords(

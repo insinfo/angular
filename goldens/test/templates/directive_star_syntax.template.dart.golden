@@ -123,7 +123,7 @@ class _ViewGoldenComponent1 extends import16.EmbeddedView<import1.GoldenComponen
   @override
   void build() {
     final doc = import9.document;
-    final _el_0 = import8.unsafeCast(doc.createElement('div'));
+    final _el_0 = import8.unsafeCast<import13.HTMLDivElement>(doc.createElement('div'));
     final _text_1 = import10.appendText(_el_0, 'Show some ');
     _el_0.append(this._textBinding_2.element);
     final _text_3 = import10.appendText(_el_0, '.');
@@ -149,7 +149,7 @@ class _ViewGoldenComponent2 extends import16.EmbeddedView<import1.GoldenComponen
   @override
   void build() {
     final doc = import9.document;
-    final _el_0 = import8.unsafeCast(doc.createElement('li'));
+    final _el_0 = import8.unsafeCast<import13.HTMLElement>(doc.createElement('li'));
     _el_0.append(this._textBinding_1.element);
     final _text_2 = import10.appendText(_el_0, ': ');
     _el_0.append(this._textBinding_3.element);

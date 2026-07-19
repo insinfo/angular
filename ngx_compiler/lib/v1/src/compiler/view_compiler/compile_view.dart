@@ -819,7 +819,12 @@ class CompileView {
         [o.literal(tagName)],
       );
       _createMethod.addStmt(
-        elementRef.toWriteStmt(unsafeCast(createRenderNodeExpr)),
+        // package:web extension-type members require static dispatch. Keep the
+        // known Web IDL type on detached/local roots so calls such as `append`
+        // are not emitted as minifiable dynamic Dart selectors.
+        elementRef.toWriteStmt(
+          unsafeCast(createRenderNodeExpr, elementRef._type),
+        ),
       );
     }
 
